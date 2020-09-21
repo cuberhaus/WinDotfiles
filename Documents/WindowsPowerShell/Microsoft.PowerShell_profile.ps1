@@ -1,4 +1,5 @@
 ﻿
+
 function Test-Elevated {
     $wid = [System.Security.Principal.WindowsIdentity]::GetCurrent()
     $prp = New-Object System.Security.Principal.WindowsPrincipal($wid)
@@ -34,9 +35,10 @@ function ga {
 function gb {
     git branch $args
 }
-function gc {
+function gcommit {
     git commit -m $args
 }
+New-Alias -Name gc -Value gcommit
 function gf {
     git fetch $args
 }
