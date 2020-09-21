@@ -35,10 +35,10 @@ function ga {
 function gb {
     git branch $args
 }
-function gcommit {
+function gcmm{
     git commit -m $args
 }
-New-Alias -Name gc -Value gcommit
+
 function gf {
     git fetch $args
 }
