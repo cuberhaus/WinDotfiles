@@ -1,6 +1,4 @@
-﻿
-
-function Test-Elevated {
+﻿function Test-Elevated {
     $wid = [System.Security.Principal.WindowsIdentity]::GetCurrent()
     $prp = New-Object System.Security.Principal.WindowsPrincipal($wid)
     $adm = [System.Security.Principal.WindowsBuiltInRole]::Administrator
@@ -54,5 +52,5 @@ function gs {
 function gsu {
     git submodule update --remote --recursive $args
 }
-
+Import-Module git-aliases -DisableNameChecking
 Import-Module 'C:\tools\poshgit\dahlbyk-posh-git-9bda399\src\posh-git.psd1'
