@@ -12,6 +12,9 @@ function update {
 function o {
     explorer .
 }
+function .. {
+    cd ..
+}
 function ... {
     cd ../..
 }
