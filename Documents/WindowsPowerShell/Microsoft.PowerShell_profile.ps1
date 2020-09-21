@@ -9,4 +9,7 @@ function update {
     Get-WindowsUpdate
     Install-WindowsUpdate
 }
+function o {
+    explorer .
+}
 Import-Module 'C:\tools\poshgit\dahlbyk-posh-git-9bda399\src\posh-git.psd1'
