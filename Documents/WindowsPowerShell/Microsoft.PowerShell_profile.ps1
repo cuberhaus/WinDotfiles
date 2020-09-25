@@ -55,5 +55,8 @@ function gs {
 function gsu {
     git submodule update --remote --recursive $args
 }
+function vim {
+    nvim
+}
 Import-Module git-aliases -DisableNameChecking
 Import-Module 'C:\tools\poshgit\dahlbyk-posh-git-9bda399\src\posh-git.psd1'
