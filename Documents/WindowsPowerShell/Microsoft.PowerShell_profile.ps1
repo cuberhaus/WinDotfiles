@@ -5,7 +5,7 @@
     $prp.IsInRole($adm)
 }
 function update {
-    choco update all
+    choco upgrade all
     Get-WindowsUpdate
     Install-WindowsUpdate
 }
@@ -30,16 +30,15 @@ function c {
 function g {
     git $args
 }
+function vim {
+    nvim $args
+}
+
+Import-Module git-aliases -DisableNameChecking
+
 function ga {
     git add $args
 }
-function gb {
-    git branch $args
-}
-function gcmm{
-    git commit -m $args
-}
-
 function gf {
     git fetch $args
 }
@@ -55,8 +54,4 @@ function gs {
 function gsu {
     git submodule update --remote --recursive $args
 }
-function vim {
-    nvim
-}
-Import-Module git-aliases -DisableNameChecking
 Import-Module 'C:\tools\poshgit\dahlbyk-posh-git-9bda399\src\posh-git.psd1'
