@@ -24,3 +24,5 @@ uncap 0x1b:0x14
 To add a task at login, use task scheduler
 #### Import
 Import XML files from previously created tasks
+
+[Windows 10 icon]: https://i.imgur.com/b3co2Zl.png
