@@ -37,8 +37,9 @@ choco install r.project         Rem Probabilitat i estadística
 choco install r.studio          Rem Probabilitat i estadística IDE
 choco install poshgit           Rem git bar
 choco install adobereader -y 	Rem Pdf viewer
-choco install chromium -y 	    Rem Open source Web browser
-choco install firefox -y        Rem Open source web browser
+Rem choco install chromium -y 	    Rem Open source Web browser
+Rem choco install firefox -y        Rem Open source web browser
+choco install googlechrome 	    Rem Web browser
 choco install skype -y		    Rem Skype
 choco install ccleaner -y 	    Rem Cleanup
 choco install 7zip.install -y   Rem Archiver
@@ -69,7 +70,6 @@ REM choco install qbittorrent -y    Rem Torrent client
 Rem choco install slack         Rem Slack
 Rem choco install autohotkey.portable -y Rem Automation software
 Rem choco install git-lfs
-Rem choco install googlechrome 	Rem Web browser
 Rem choco install jre8
 Rem choco install teamviewer 	
 Rem choco install virtualbox
