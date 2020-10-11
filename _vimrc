@@ -568,7 +568,9 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 """"""""""""""""""""""""""""""
 " => Python section
 """"""""""""""""""""""""""""""
-let python_highlight_all = 1
+"let g:python3_host_prog = 'C:\Python39\python.exe'
+let g:python3_host_prog = exepath("python")
+
 au FileType python syn keyword pythonDecorator True None False self
 
 au BufNewFile,BufRead *.jinja set syntax=htmljinja
