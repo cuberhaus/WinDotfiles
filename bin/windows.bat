@@ -32,6 +32,7 @@ Install-Module git-aliases -Scope CurrentUser -AllowClobber Rem https://github.c
 Install-Module PSWindowsUpdate
 Get-WindowsUpdate
 Install-WindowsUpdate
+choco install python
 choco install fzf               Rem Fuzzy finder
 choco install r.project         Rem Probabilitat i estadística
 choco install r.studio          Rem Probabilitat i estadística IDE
@@ -68,7 +69,7 @@ choco install audacity          Rem Audio editor
 choco install transmission -y   Rem Simple torrent client
 REM choco install qbittorrent -y    Rem Torrent client
 Rem choco install slack         Rem Slack
-Rem choco install autohotkey.portable -y Rem Automation software
+choco install autohotkey.portable -y Rem Automation software
 Rem choco install git-lfs
 Rem choco install jre8
 Rem choco install teamviewer 	
