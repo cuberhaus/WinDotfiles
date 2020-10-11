@@ -20,8 +20,6 @@ Rem npm
 npm install -g neovim
 Rem gem environments
 gem install neovim
-Rem perl
-choco install strawberryperl
 Rem Python3
 pip install --upgrade neovim
 EXIT /B 0
@@ -36,6 +34,8 @@ Install-Module git-aliases -Scope CurrentUser -AllowClobber Rem https://github.c
 Install-Module PSWindowsUpdate
 Get-WindowsUpdate
 Install-WindowsUpdate
+choco install strawberryperl
+choco install python2
 choco install python
 choco install fzf               Rem Fuzzy finder
 choco install r.project         Rem Probabilitat i estadística
