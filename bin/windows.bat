@@ -18,6 +18,10 @@ iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
     ni $HOME/vimfiles/autoload/plug.vim -Force
 Rem npm
 npm install -g neovim
+Rem gem environments
+gem install neovim
+Rem perl
+choco install strawberryperl
 Rem Python3
 pip install --upgrade neovim
 EXIT /B 0
