@@ -109,12 +109,14 @@ endif
 call plug#begin('~/.vim/plugged')
 " Plugins, make sure you use single quotes
 call plug#begin()
-Plug 'lambdalisue/suda.vim'
-Plug 'mattn/emmet-vim'
+Plug 'ryanoasis/vim-devicons'
+Plug 'easymotion/vim-easymotion'
+"Plug 'mattn/emmet-vim'
 Plug 'morhetz/gruvbox'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 "Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+Plug 'jiangmiao/auto-pairs'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'tpope/vim-repeat'
 Plug 'sheerun/vim-polyglot'
