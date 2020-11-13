@@ -1,9 +1,28 @@
-﻿function Test-Elevated {
+﻿$dotfiles = "C:\Users\polcg\WinDotfiles\dotfiles\"
+
+# Set UNIX-like aliases for the admin command, so sudo <command> will run the command
+# with elevated rights. 
+Set-Alias -Name su -Value admin
+Set-Alias -Name sudo -Value admin
+
+function vimrc {
+    vim $dotfiles\_vimrc
+}
+
+function windows {
+    vim $dotfiles\bin\windows.bat
+}
+
+# Quick shortcut to start notepad
+function n { notepad $args }
+
+function Test-Elevated {
     $wid = [System.Security.Principal.WindowsIdentity]::GetCurrent()
     $prp = New-Object System.Security.Principal.WindowsPrincipal($wid)
     $adm = [System.Security.Principal.WindowsBuiltInRole]::Administrator
     $prp.IsInRole($adm)
 }
+
 function update {
     choco upgrade all
     Get-WindowsUpdate
@@ -16,6 +35,8 @@ function cleanup {
 function o {
     explorer .
 }
+
+# Navegation
 function .. {
     cd ..
 }
@@ -28,18 +49,20 @@ function .... {
 function ..... {
     cd ../../../..
 }
+
 function c {
     clear
-}
-function g {
-    git $args
 }
 function vim {
     nvim $args
 }
 
+# GIT
 Import-Module git-aliases -DisableNameChecking
 
+function g {
+    git $args
+}
 function ga {
     git add $args
 }
