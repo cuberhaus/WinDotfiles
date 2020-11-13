@@ -1,4 +1,6 @@
-set uncap=~\WinDotfiles\dotfiles\uncap.exe Rem uncap location
+Rem uncap location
+set uncap=~\WinDotfiles\dotfiles\uncap.exe 
+
 CALL :windows_install
 CALL :vim_install
 cd "~\dotfiles\.local\bin\
@@ -82,6 +84,7 @@ Rem choco install virtualbox
 Rem choco install chocolateygui -y  Rem A gui for chocolatey package manager
 Rem choco install autoruns -y		Rem What programs are configured to startup automatically
 EXIT /B 0
+
 Rem office?
 Rem Deezloader Remix?
 Rem Maple
