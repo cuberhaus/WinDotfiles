@@ -36,6 +36,7 @@ Get-WindowsUpdate
 Install-WindowsUpdate
 choco install strawberryperl
 Rem choco install python2 // THIS BREAKS NEOVIM PYTHON
+choco install windirstat
 choco install python
 choco install fzf               Rem Fuzzy finder
 choco install r.project         Rem Probabilitat i estadística

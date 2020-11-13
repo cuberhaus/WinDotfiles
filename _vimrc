@@ -1,10 +1,3 @@
-"   ____       _     ____
-"  |  _ \ ___ | |   / ___|
-"  | |_) / _ \| |  | |
-"  |  __/ (_) | |  | |___
-"  |_|   \___/|_|   \____|
-"
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Sections:
 "    -> General
@@ -25,41 +18,60 @@
 "    -> PLUGINS
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
-
-"" Requires YCM install
-
-
-
+"
+" Launch without anything: vim --clean
+" Install vim-gtk
+"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 if has('unix') || has('macunix')
+    "echo 'test'
+    "autocmd VimEnter * echo 'test'
     " Clean-up
     set undodir=$XDG_DATA_HOME/vim/undo
     set directory=$XDG_DATA_HOME/vim/swap
     set backupdir=$XDG_DATA_HOME/vim/backup
     set viewdir=$XDG_DATA_HOME/vim/view
-    set viminfo+='1000,n$XDG_DATA_HOME/vim/viminfo
+    if has('nvim')
+        set viminfo+='1000,n$XDG_DATA_HOME/vim/viminfo
+    endif
     if !has('nvim')
-        set viminfo+=~/.vim/viminfo
+        set nocompatible
+        " if (cannot open viminfo file for reading) create a cache folder and viminfo
+        set viminfo=%,<800,'10,/50,:100,h,f0,n~/.vim/cache/viminfo
+"                   | |    |   |   |    | |  + viminfo file path
+"                   | |    |   |   |    | + file marks 0-9,A-Z 0=NOT stored
+"                   | |    |   |   |    + disable 'hlsearch' loading viminfo
+"                   | |    |   |   + command-line history saved
+"                   | |    |   + search history saved
+"                   | |    + files marks saved
+"                   | + lines saved each register (old name for <, vi6.2)
+"                   + save/restore buffer list
     endif
 endif
-"set runtimepath=$XDG_CONFIG_HOME/vim,$VIMRUNTIME,$XDG_CONFIG_HOME/vim/after
-" Launch without anything: vim --clean
+
+" With a map leader it's possible to do extra key combinations
+" like <leader>w saves the current file
+"nnoremap <SPACE> <Nop>
+"map <Space> <leader>
+let mapleader=" "
+set showcmd
 " Sets how many lines of history VIM has to remember
 set history=500
 
 " Sets default yank register to same as linux system
-" Install vim-gtk
-if has('unix') || has('macunix')
-    set clipboard=unnamedplus
-endif
-
-if has('win32')
+if has('win32') 
     set clipboard=unnamed
 endif
+
+if system('uname -s') == "Darwin\n"
+  set clipboard=unnamed "OSX
+else
+  set clipboard=unnamedplus "Linux
+endif
+
 " Enable filetype plugins
 filetype plugin indent on
 " Same as this 3 commands together: filetype on | filetype plugin on | filetype indent on
@@ -68,16 +80,6 @@ filetype plugin indent on
 set autoread
 au FocusGained,BufEnter * checktime
 
-" With a map leader it's possible to do extra key combinations
-" like <leader>w saves the current file
-nnoremap <SPACE> <Nop>
-let mapleader=" "
-
-" Fast saving
-nmap <leader>w :w!<cr>
-
-" :W sudo saves the file (useful for handling the permission-denied error)
-command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 "Fa que el escape sigui instantani
 set timeoutlen=1000 ttimeoutlen=0
 
@@ -91,7 +93,7 @@ set timeoutlen=1000 ttimeoutlen=0
 :set mouse=a
 
 " Disable auto comments
-"autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " Si plug.vim no existeix ho instala
 if has('unix') || has('macunix')
@@ -101,52 +103,46 @@ if has('unix') || has('macunix')
       autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
   endif
 endif
-" vim repeat cs'" to change surround from ' to "
-" " ysiw" to add " to a word
-" " ds" to remove surround
 " tabular comes before vim markdown
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
-" Plugins, make sure you use single quotes
 call plug#begin()
-Plug 'ryanoasis/vim-devicons'
-Plug 'easymotion/vim-easymotion'
-"Plug 'mattn/emmet-vim'
-Plug 'morhetz/gruvbox'
-Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
-"Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
-Plug 'jiangmiao/auto-pairs'
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-Plug 'tpope/vim-repeat'
-Plug 'sheerun/vim-polyglot'
-Plug 'christoomey/vim-tmux-navigator'
 Plug 'Chiel92/vim-autoformat'
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'airblade/vim-gitgutter'
 Plug 'amix/vim-zenroom2'
+Plug 'ap/vim-css-color'
 Plug 'chriskempson/base16-vim'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+Plug 'christoomey/vim-tmux-navigator'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'easymotion/vim-easymotion'
+Plug 'godlygeek/tabular'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+Plug 'jiangmiao/auto-pairs'
+Plug 'joshdick/onedark.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'maxbrunsfeld/vim-yankstack'
-Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'plasticboy/vim-markdown'
 Plug 'preservim/nerdtree'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'ryanoasis/vim-devicons'
+Plug 'sheerun/vim-polyglot'
 Plug 'tmux-plugins/vim-tmux'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-obsession'
+Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-scripts/bufexplorer.zip'
 Plug 'ycm-core/YouCompleteMe'
-Plug 'ap/vim-css-color'
-Plug 'joshdick/onedark.vim'
 call plug#end()
 "Acaben els plugins
+
 "Configuracions del plugin YouCompleteMe
 let g:ycm_confirm_extra_conf = 0 "Disables prompting for script every time
 let g:ycm_clangd_uses_ycmd_caching = 0
@@ -160,12 +156,49 @@ if has('macunix')
 endif
 
 let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_add_preview_to_completeopt = 0
+let g:ycm_add_preview_to_completeopt = 1
 
-let g:suda_smart_edit = 1
+if !has('nvim')
+    set completeopt+=popup
+endif
+
+function s:Hover()
+    " get the doc string from YCM
+    let response = youcompleteme#GetCommandResponse('GetDoc')
+    if response == ''
+        return
+    endif
+    " set the width
+    let s:width = min([winwidth('%') * 9 / 10, 100])
+    " calculate the height to show the whole doc with wrap enabled
+    let lines = split(response, '\n')
+    let s:height = len(lines) + 1
+    for s:line in lines
+        let s:height = s:height + len(s:line) / s:width
+    endfor
+    " nvim floating window interface
+    let buf = nvim_create_buf(v:false, v:true)
+    call nvim_buf_set_lines(buf, 0, -1, v:true, lines)
+    let opts = {'relative': 'cursor', 'width': s:width, 'height': len(lines) + 1, 'col': 1,
+                \ 'row': 0, 'anchor': 'SW', 'style': 'minimal'}
+    let s:win = nvim_open_win(buf, 0, opts)
+    " set the window option
+    call nvim_win_set_option(s:win, 'winhl', 'Normal:NormalFloat')
+    call nvim_win_set_option(s:win, 'wrap', v:true)
+    call nvim_win_set_option(s:win, 'linebreak', v:true)
+    " close the window once the cursor moved
+    autocmd CursorMoved <buffer> ++once call nvim_win_close(s:win, v:false)
+endfunction
+
+command YcmGetDocFloatWin :call <SID>Hover()
+autocmd FileType c,cpp,h,hpp nmap <leader>k :YcmGetDocFloatWin<cr>
+
+set guifont="SauceCodePro\ Nerd\ Font\ 13"
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " Set 4 lines to the cursor - when moving vertically using j/k
 set so=4
 
@@ -197,7 +230,8 @@ set hid
 
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
-set whichwrap+=<,>,h,l
+" Move across lines with h and l
+"set whichwrap+=<,>,h,l
 
 " Ignore case when searching
 set ignorecase
@@ -223,11 +257,6 @@ set showmatch
 " How many tenths of a second to blink when matching brackets
 set mat=2
 
-" No annoying sound on errors
-set noerrorbells
-set novisualbell
-set t_vb=
-set tm=500
 "This one is the one that works
 set belloff=all
 
@@ -254,7 +283,8 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
+
+" Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 if (empty($TMUX))
   if (has("nvim"))
     let $NVIM_TUI_ENABLE_TRUE_COLOR=1
@@ -282,20 +312,33 @@ if filereadable(expand("~/.vimrc_background"))
     let base16colorspace=256
     source ~/.vimrc_background
 endif
+" TRUECOLOR SCHEMES uncheck to enable
 "autocmd vimenter * colorscheme gruvbox
-colorscheme onedark
-" fixes glitch? in colors when using vim with tmux
-set background=dark
 set t_Co=256
 
+" Dark truecolor
+set background=dark
+colorscheme onedark
+function! Dark()
+    set background=dark
+    colorscheme onedark
+endfunction
+command Dark :call Dark()
+
+" Light truecolor
+function! Light()
+    set background=light
+    colorscheme PaperColor
+endfunction
+
+command Light :call Light()
 " This is what sets vim to use 24-bit colors. It will also work for any version of neovim
 set termguicolors
 
 "Barra
-" Configuració per a vim-airline
-"fica automaticament els buffers a la barreta
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='dracula'
+" Configuració per a vim-airline 
+let g:airline#extensions#tabline#enabled = 1 "fica automaticament els buffers a la barreta
+"let g:airline_theme='dracula'
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -357,8 +400,58 @@ vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
 vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Moving around, tabs, windows and buffers
+" => Keybindings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Per comentar una linea gcc per comentar gc per fer moviments
+" vim repeat cs'" to change surround from ' to "
+" " ysiw" to add " to a word
+" " ds" to remove surround
+
+" :Obsess to start recording vim session
+" vim -S to source the session
+
+" Press ctrl+m to toggle markdown preview
+nmap <C-m> <Plug>MarkdownPreviewToggle
+
+" Toggle fullscreen
+"noremap <M-f> :FullscreenToggle<CR>
+
+"Autoformat
+noremap <F3> :Autoformat<CR>
+
+if system('uname -s') == "Darwin\n"
+    "Toggle nerd Tree ctrl-spacebar
+    nmap <c-@> :NERDTreeToggle <CR>
+else
+    nmap <c-Space> :NERDTreeToggle <CR>
+endif
+
+"Open bufexplorer to see and manage the current buffers (<leader>o):
+map <leader>o :BufExplorer<cr>
+
+" Ctrlp Quickly find and open a file in the current working directory
+let g:ctrlp_map = '<C-f>'
+let g:ctrlp_cmd = 'CtrlP'
+
+" FZF
+"map <leader>f :Files ~/<cr>
+
+" Vimroom
+nnoremap <silent> <leader>z :Goyo<cr>
+
+" YankStack
+nmap <C-p> <Plug>yankstack_substitute_older_paste
+nmap <C-n> <Plug>yankstack_substitute_newer_paste
+
+" Git gutter toggle
+nnoremap <silent> <leader>d :GitGutterToggle<cr>
+
+" Fast saving
+nmap <leader>w :w!<cr>
+
+" :W sudo saves the file (useful for handling the permission-denied error)
+command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
+
 map <C-down> <C-E>
 map <C-up> <C-Y>
 " Disable highlight when <leader><cr> is pressed
@@ -372,7 +465,7 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
-" Close a window (with c we run into inconsistencies and problems thats the reason it's an x)
+" Close a window
 map <leader>c <C-W>c
 " Vertical split
 map <leader>v <C-W>v
@@ -396,13 +489,26 @@ map <leader>tc :tabclose<cr>
 map <leader>t<leader> :tabnext <cr>
 
 " Git Gutter
-nmap [c <Plug>(GitGutterNextHunk)
-nmap ]c <Plug>(GitGutterPrevHunk)
-nmap <leader>hp <Plug>(GitGutterPreviewHunk)
+"nmap [c <Plug>(GitGutterNextHunk)
+"nmap ]c <Plug>(GitGutterPrevHunk)
+nmap <leader>hn <Plug>(GitGutterNextHunk)
+nmap <leader>hp <Plug>(GitGutterPrevHunk)
+nmap <leader>hv <Plug>(GitGutterPreviewHunk)
 nmap <leader>hs <Plug>(GitGutterStageHunk)
 nmap <leader>hu <Plug>(GitGutterUndoHunk)
 
-" Specify the behavior when switching between buffers
+" :help updatetime 
+set updatetime=100
+
+"Press Enter to jump to the subject (topic) under the cursor.
+"Press Backspace to return from the last jump.
+"This breaks some stuff
+"map <buffer> <CR> <C-]>
+"map <buffer> <BS> <C-T>
+
+""""""""""""""""""""""""""""""
+" => Moving around
+""""""""""""""""""""""""""""""
 try
     set switchbuf=useopen,usetab,newtab
     set stal=2
@@ -458,13 +564,13 @@ endif
 map <leader>q :e ~/buffer<cr>
 
 " Toggle paste mode on and off
-map <leader>p :setlocal paste!<cr>
+map <leader>pp :setlocal paste!<cr>
 
 " Quickly open a markdown buffer for scribble
 "map <leader>pm :e ~/buffer.md<cr>
 
 " Remove the Windows ^M - when the encodings gets messed up
-noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+"noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
@@ -534,98 +640,10 @@ catch
 endtry
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Parenthesis/bracket
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"Surround the visual selection in parenthesis/brackets/etc.:
-vnoremap $1 <esc>`>a)<esc>`<i(<esc>
-vnoremap $2 <esc>`>a]<esc>`<i[<esc>
-vnoremap $3 <esc>`>a}<esc>`<i{<esc>
-vnoremap $$ <esc>`>a"<esc>`<i"<esc>
-vnoremap $q <esc>`>a'<esc>`<i'<esc>
-vnoremap $e <esc>`>a"<esc>`<i"<esc>
-
-"Quickly insert parenthesis/brackets/etc.:
-
-inoremap $1 ()<esc>i
-inoremap $2 []<esc>i
-inoremap $3 {}<esc>i
-inoremap $4 {<esc>o}<esc>O
-inoremap $q ''<esc>i
-inoremap $e ""<esc>i
-inoremap $t <><esc>i
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General abbreviations
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Insert the current date and time (useful for timestamps):
 iab xdate <C-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Omni complete functions
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-
-
-" FILETYPES
-""""""""""""""""""""""""""""""
-" => Python section
-""""""""""""""""""""""""""""""
-"let g:python3_host_prog = 'C:\Python39\python.exe'
-let g:python3_host_prog = exepath("python")
-
-au FileType python syn keyword pythonDecorator True None False self
-
-au BufNewFile,BufRead *.jinja set syntax=htmljinja
-au BufNewFile,BufRead *.mako set ft=mako
-
-au FileType python map <buffer> F :set foldmethod=indent<cr>
-
-au FileType python inoremap <buffer> $r return
-au FileType python inoremap <buffer> $i import
-au FileType python inoremap <buffer> $p print
-au FileType python inoremap <buffer> $f # --- <esc>a
-au FileType python map <buffer> <leader>1 /class
-au FileType python map <buffer> <leader>2 /def
-au FileType python map <buffer> <leader>C ?class
-au FileType python map <buffer> <leader>D ?def
-
-
-""""""""""""""""""""""""""""""
-" => JavaScript section
-"""""""""""""""""""""""""""""""
-au FileType javascript call JavaScriptFold()
-au FileType javascript setl fen
-au FileType javascript setl nocindent
-
-au FileType javascript imap <C-t> $log();<esc>hi
-au FileType javascript imap <C-a> alert();<esc>hi
-
-au FileType javascript inoremap <buffer> $r return
-au FileType javascript inoremap <buffer> $f // --- PH<esc>FP2xi
-
-function! JavaScriptFold()
-    setl foldmethod=syntax
-    setl foldlevelstart=1
-    syn region foldBraces start=/{/ end=/}/ transparent fold keepend extend
-
-    function! FoldText()
-        return substitute(getline(v:foldstart), '{.*', '{...}', '')
-    endfunction
-    setl foldtext=FoldText()
-endfunction
-
-
-""""""""""""""""""""""""""""""
-" => CoffeeScript section
-"""""""""""""""""""""""""""""""
-function! CoffeeScriptFold()
-    setl foldmethod=indent
-    setl foldlevelstart=1
-endfunction
-au FileType coffee call CoffeeScriptFold()
-
-au FileType gitcommit call setpos('.', [0, 1, 1, 0])
-
 
 """"""""""""""""""""""""""""""
 " => Shell section
@@ -639,21 +657,9 @@ if exists('$TMUX')
 endif
 
 """"""""""""""""""""""""""""""
-" => Twig section
-""""""""""""""""""""""""""""""
-autocmd BufRead *.twig set syntax=html filetype=html
-
-""""""""""""""""""""""""""""""
 " => Markdown
 """"""""""""""""""""""""""""""
 let vim_markdown_folding_disabled = 1
-" Press ctrl+m to toggle markdown preview
-nmap <C-m> <Plug>MarkdownPreviewToggle
-
-"Per comentar una linea gcc per comentar gc per fer moviments
-
-"Autoformat
-noremap <F3> :Autoformat<CR>
 
 " PLUGINS
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -664,9 +670,6 @@ let NERDTreeShowHidden=0
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 let g:NERDTreeWinSize=35
 
-"Toggle nerd Tree ctrl-spacebar
-nmap <C-Space> :NERDTreeToggle <CR>
-
 """"""""""""""""""""""""""""""
 " => bufExplorer plugin
 """"""""""""""""""""""""""""""
@@ -674,28 +677,14 @@ let g:bufExplorerDefaultHelp=0
 let g:bufExplorerShowRelativePath=1
 let g:bufExplorerFindActive=1
 let g:bufExplorerSortBy='name'
-"Open bufexplorer to see and manage the current buffers (<leader>o):
-map <leader>o :BufExplorer<cr>
-
 
 """"""""""""""""""""""""""""""
 " => CTRL-P
 """"""""""""""""""""""""""""""
 let g:ctrlp_working_path_mode = 0
-
 let g:ctrlp_show_hidden = 1
-
-" Quickly find and open a file in the current working directory
-let g:ctrlp_map = '<C-f>'
-
 let g:ctrlp_max_height = 20
 let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
-
-""""""""""""""""""""""""""""""
-" => FZF
-""""""""""""""""""""""""""""""
-map <leader>f :Files ~/<cr>
-"map <C-f> :Files <cr>
 
 """"""""""""""""""""""""""""""
 " => ZenCoding
@@ -709,18 +698,13 @@ let g:user_zen_mode='a'
 let g:goyo_width=100
 let g:goyo_margin_top = 2
 let g:goyo_margin_bottom = 2
-nnoremap <silent> <leader>z :Goyo<cr>
 
 """"""""""""""""""""""""""""""
 " => YankStack
 """"""""""""""""""""""""""""""
 let g:yankstack_yank_keys = ['y', 'd']
 
-nmap <C-p> <Plug>yankstack_substitute_older_paste
-nmap <C-n> <Plug>yankstack_substitute_newer_paste
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Git gutter (Git diff)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_enabled=1
-nnoremap <silent> <leader>d :GitGutterToggle<cr>

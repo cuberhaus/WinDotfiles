@@ -8,6 +8,10 @@ function update {
     choco upgrade all
     Get-WindowsUpdate
     Install-WindowsUpdate
+    vim +PlugUpgrade +PlugUpdate +qall
+}
+function cleanup {
+    vim +PlugClean +qall
 }
 function o {
     explorer .
