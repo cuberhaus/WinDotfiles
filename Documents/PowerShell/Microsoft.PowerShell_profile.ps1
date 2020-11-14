@@ -1,10 +1,5 @@
 ﻿$dotfiles = "C:\Users\polcg\WinDotfiles\dotfiles\"
 
-# Set UNIX-like aliases for the admin command, so sudo <command> will run the command
-# with elevated rights. 
-Set-Alias -Name su -Value admin
-Set-Alias -Name sudo -Value admin
-
 function vimrc {
     vim $dotfiles\_vimrc
 }
