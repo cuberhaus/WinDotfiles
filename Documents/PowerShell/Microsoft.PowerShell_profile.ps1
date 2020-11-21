@@ -24,9 +24,11 @@ function update {
     Install-WindowsUpdate
     vim +PlugUpgrade +PlugUpdate +qall
 }
+
 function cleanup {
     vim +PlugClean +qall
 }
+
 function o {
     explorer .
 }
@@ -76,4 +78,9 @@ function gs {
 function gsu {
     git submodule update --remote --recursive $args
 }
+function gitsync {
+    git submodule sync
+    git submodule update --init --recursive
+}
+
 Import-Module 'C:\tools\poshgit\dahlbyk-posh-git-9bda399\src\posh-git.psd1'
