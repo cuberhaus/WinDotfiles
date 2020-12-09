@@ -60,6 +60,7 @@ endif
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 call plug#begin()
+Plug 'pechorin/any-jump.vim'
 Plug 'Chiel92/vim-autoformat'
 Plug 'airblade/vim-gitgutter'
 Plug 'ap/vim-css-color'
