@@ -1,6 +1,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Launch without anything: vim --clean
-
+" :messages per veure els errors per pantalla
 " Per comentar una linea gcc per comentar gc per fer moviments
 
 " vim repeat cs'" to change surround from ' to "
@@ -60,10 +60,10 @@ endif
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 call plug#begin()
-Plug 'pechorin/any-jump.vim'
 Plug 'Chiel92/vim-autoformat'
 Plug 'airblade/vim-gitgutter'
 Plug 'ap/vim-css-color'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'godlygeek/tabular'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'jiangmiao/auto-pairs'
@@ -178,7 +178,7 @@ set magic
 set showmatch
 
 " How many tenths of a second to blink when matching brackets
-set mat=2
+"set mat=2
 
 "This one is the one that works
 set belloff=all
@@ -218,10 +218,10 @@ if (empty($TMUX))
 endif
 
 " Enable syntax highlighting
-"syntax enable
+syntax enable
 
 "Activar sintàxis de programació
-"syntax on
+syntax on
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
@@ -283,8 +283,15 @@ set breakindent "Indent after line wrapped
 " => Keybindings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+nnoremap <leader>r :YcmCompleter RefactorRename<Space>
+nnoremap <leader>d :YcmCompleter GoToDefinition<cr>
+nnoremap <leader>T :YcmCompleter GetType<cr>
+
+"ctrlp
+let g:ctrlp_map = '<c-f>'
+
 " Toggle paste mode on and off
-map <leader>pp :setlocal paste!<cr>
+nnoremap <leader>pp :setlocal paste!<cr>
 
 " Press ctrl+m to toggle markdown preview
 nmap <C-m> <Plug>MarkdownPreviewToggle
@@ -304,7 +311,7 @@ else
 endif
 
 "Open bufexplorer to see and manage the current buffers (<leader>o):
-map <leader>o :BufExplorer<cr>
+nnoremap <leader>o :BufExplorer<cr>
 
 " Vimroom
 nnoremap <silent> <leader>z :Goyo<cr>
@@ -317,7 +324,7 @@ nmap <C-n> <Plug>yankstack_substitute_newer_paste
 nnoremap <silent> <leader>g :GitGutterToggle<cr>
 
 " Fast saving
-nmap <leader>w :w!<cr>
+nnoremap <leader>w :w!<cr>
 
 " :W sudo saves the file (useful for handling the permission-denied error)
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
