@@ -49,7 +49,6 @@ choco install calibre -y        Rem Books manager
 choco install ccleaner -y 	    Rem Cleanup
 choco install curl -y 		    Rem cUrL is a command line tool and library for transferring data with URLs
 choco install discord -y        Rem Discord
-choco install eclipse -y        Rem java/SQL IDE
 choco install fzf -y            Rem Fuzzy finder
 choco install gimp -y           Rem Photoshop
 choco install git.install -y    Rem Git
@@ -60,6 +59,7 @@ choco install linkshellextension -y Rem Make links from explorer
 choco install malwarebytes -y   Rem Anti-virus
 choco install microsoft-windows-terminal -y	Rem Windows terminal
 choco install obs-studio -y     Rem Record screen in windows, works with internal audio better than mac
+choco install openjdk           Rem open source java development kit
 choco install openssh -y	    Rem SSH client
 choco install poshgit -y        Rem git bar
 choco install powershell-core -y Rem Updated powershell
@@ -84,8 +84,10 @@ choco install yarn -y           Rem Packages
 Rem choco install autoruns -y		Rem What programs are configured to startup automatically
 Rem choco install chocolateygui -y  Rem A gui for chocolatey package manager
 Rem choco install chromium -y 	    Rem Open source Web browser
+Rem choco install eclipse -y        Rem java/SQL IDE // doesnt quite work properly??
 Rem choco install firefox -y        Rem Open source web browser
 Rem choco install git-lfs -y
+Rem choco install jdk8              Rem java v8
 Rem choco install jre8 -y
 Rem choco install python2 -y // THIS BREAKS NEOVIM PYTHON
 Rem choco install slack -y        Rem Slack
