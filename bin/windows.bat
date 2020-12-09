@@ -49,10 +49,13 @@ choco install calibre -y        Rem Books manager
 choco install ccleaner -y 	    Rem Cleanup
 choco install curl -y 		    Rem cUrL is a command line tool and library for transferring data with URLs
 choco install discord -y        Rem Discord
+choco install eclipse -y        Rem java/SQL IDE
 choco install fzf -y            Rem Fuzzy finder
 choco install gimp -y           Rem Photoshop
 choco install git.install -y    Rem Git
 choco install googlechrome -y	Rem Web browser
+choco install intellijidea-community Rem Free version java IDE
+choco install intellijidea-ultimate Rem Paid version with sql IDE
 choco install linkshellextension -y Rem Make links from explorer
 choco install malwarebytes -y   Rem Anti-virus
 choco install microsoft-windows-terminal -y	Rem Windows terminal
@@ -77,6 +80,7 @@ choco install wget -y		    Rem A command-line utility for retrieving files using
 choco install windirstat -y
 choco install wsl2 -y           Rem Windows subsystem for linux 2
 choco install yarn -y           Rem Packages
+
 Rem choco install autoruns -y		Rem What programs are configured to startup automatically
 Rem choco install chocolateygui -y  Rem A gui for chocolatey package manager
 Rem choco install chromium -y 	    Rem Open source Web browser
