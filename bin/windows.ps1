@@ -106,5 +106,5 @@ function games_install {
 windows_install
 vim_install
 cd "~/WinDotfiles/bin/"
-ycm.bat
+.\ycm.bat
 #swap
