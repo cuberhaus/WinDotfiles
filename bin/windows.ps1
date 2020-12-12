@@ -27,7 +27,7 @@ function swap {
     #Swap caps with escape https://github.com/susam/uncap#readme
 }
 
-function windows_install{
+function full_install {
     # Chocolatey packages
     choco install adobereader -y 	# Pdf viewer
     choco install audacity -y          # Audio editor
@@ -109,7 +109,7 @@ function games_install {
 
 ## Start Installation
 base_install
-windows_install
+full_install
 vim_install
 # Run ycm.ps1 script
 cd "$dotfiles/bin/"
