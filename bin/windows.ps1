@@ -1,32 +1,32 @@
-#Rem uncap location
+## uncap location
 #set uncap=~\WinDotfiles\dotfiles\uncap.exe
 
 function vim_install {
     choco install vim -y
     choco install neovim -y
-    Rem vim plug neovim
+    #vim plug neovim
     iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
     ni "$env:LOCALAPPDATA/nvim-data/site/autoload/plug.vim" -Force
 
-    Rem vim plug for PowerShell
+    #vim plug for PowerShell
     iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
     ni $HOME/vimfiles/autoload/plug.vim -Force
 
-    npm install -g neovim Rem npm
+    npm install -g neovim #npm
 
-    gem install neovim Rem gem environments
+    gem install neovim # gem environments
 
-    pip install --upgrade neovim Rem Python3
+    pip install --upgrade neovim # Python3
 }
 
 function swap {
     mv %uncap% C:\Windows\
-    Rem Swap caps with escape https://github.com/susam/uncap#readme
+    #Swap caps with escape https://github.com/susam/uncap#readme
 }
 
 function windows_install{
     Install-Module git-aliases -Scope CurrentUser -AllowClobber
-    Rem https://github.com/gluons/powershell-git-aliases
+    # https://github.com/gluons/powershell-git-aliases
     Install-Module PSWindowsUpdate
     Get-WindowsUpdate
     Install-WindowsUpdate
@@ -43,7 +43,7 @@ function windows_install{
     choco install gimp -y
     choco install git.install -y
     choco install googlechrome -y
-    Rem choco install intellijidea-community -y
+    # choco install intellijidea-community -y
     choco install intellijidea-ultimate-y
     choco install linkshellextension -y
     choco install malwarebytes -y
@@ -71,22 +71,22 @@ function windows_install{
     choco install wsl2 -y
     choco install yarn -y
 
-    Rem choco install autoruns -y       Rem What programs are configured to startup automatically
-    Rem choco install chocolateygui -y  Rem A gui for chocolatey package manager
-    Rem choco install chromium -y       Rem Open source Web browser
-    Rem choco install eclipse -y        Rem java/SQL IDE // doesnt quite work properly??
-    Rem choco install firefox -y        Rem Open source web browser
-    Rem choco install git-lfs -y
-    Rem choco install jdk8              Rem java v8
-    Rem choco install jre8 -y
-    Rem choco install python2 -y // THIS BREAKS NEOVIM PYTHON
-    Rem choco install slack -y        Rem Slack
-    Rem choco install teamviewer -y
-    Rem choco install virtualbox -y
+    # choco install autoruns -y       # What programs are configured to startup automatically
+    # choco install chocolateygui -y  # A gui for chocolatey package manager
+    # choco install chromium -y       # Open source Web browser
+    # choco install eclipse -y        # java/SQL IDE // doesnt quite work properly??
+    # choco install firefox -y        # Open source web browser
+    # choco install git-lfs -y
+    # choco install jdk8              # java v8
+    # choco install jre8 -y
+    # choco install python2 -y // THIS BREAKS NEOVIM PYTHON
+    # choco install slack -y        # Slack
+    # choco install teamviewer -y
+    # choco install virtualbox -y
 
 }
 # office?
-#Deezloader Remix?
+#Deezloader #ix?
 #Maple
 
 function games_install {
