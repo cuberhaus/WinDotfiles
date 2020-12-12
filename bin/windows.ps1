@@ -2,7 +2,7 @@
 # Set-ExecutionPolicy #oteSigned 
 
 # uncap location
-#set uncap=~\WinDotfiles\dotfiles\uncap.exe
+$uncap=~\WinDotfiles\dotfiles\uncap.exe
 
 function vim_install {
     choco install vim -y
@@ -23,7 +23,7 @@ function vim_install {
 }
 
 function swap {
-    mv %uncap% C:\Windows\
+    mv $uncap C:\Windows\
     #Swap caps with escape https://github.com/susam/uncap#readme
 }
 
@@ -105,7 +105,7 @@ function games_install {
 ## Start Installation
 windows_install
 vim_install
-cd "~/WinDotfiles/bin/"
+cd "$dotfiles/bin/"
 # Run ycm.ps1 script
 .\ycm.ps1
 #swap
