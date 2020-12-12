@@ -34,6 +34,9 @@ function windows_install{
     Get-WindowsUpdate
     Install-WindowsUpdate
 
+    # Chocolatey install
+    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
     # Chocolatey packages
     choco install 7zip.install -y   # Archiver
     choco install adobereader -y 	# Pdf viewer
