@@ -106,5 +106,6 @@ function games_install {
 windows_install
 vim_install
 cd "~/WinDotfiles/bin/"
+# Run ycm.ps1 script
 .\ycm.ps1
 #swap
