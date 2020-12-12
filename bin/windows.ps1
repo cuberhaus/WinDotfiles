@@ -1,5 +1,5 @@
 ### DO THIS FIRST
-# Set-ExecutionPolicy RemoteSigned 
+# Set-ExecutionPolicy #oteSigned 
 
 # uncap location
 #set uncap=~\WinDotfiles\dotfiles\uncap.exe
@@ -33,46 +33,47 @@ function windows_install{
     Install-Module PSWindowsUpdate
     Get-WindowsUpdate
     Install-WindowsUpdate
-    choco install 7zip.install -y
-    choco install adobereader -y
-    choco install atom -y
-    choco install audacity
-    choco install autohotkey.portable -y
-    choco install calibre -y
-    choco install ccleaner -y
-    choco install curl -y
-    choco install discord -y
-    choco install fzf -y
-    choco install gimp -y
-    choco install git.install -y
-    choco install googlechrome -y
-    # choco install intellijidea-community -y
-    choco install intellijidea-ultimate-y
-    choco install linkshellextension -y
-    choco install malwarebytes -y
-    choco install microsoft-windows-terminal -y
-    choco install obs-studio -y
-    choco install openjdk -y
-    choco install openssh -y
-    choco install poshgit -y
-    choco install powershell-core -y
-    choco install python -y
-    choco install r.project -y
-    choco install r.studio -y
-    choco install rufus -y
-    choco install skype -y
-    choco install spotify -y
+
+    # Chocolatey packages
+    choco install 7zip.install -y   # Archiver
+    choco install adobereader -y 	# Pdf viewer
+    choco install audacity          # Audio editor
+    choco install autohotkey.portable -y # Automation software
+    choco install calibre -y        # Books manager
+    choco install ccleaner -y 	    # Cleanup
+    choco install curl -y 		    # cUrL is a command line tool and library for transferring data with URLs
+    choco install discord -y        # Discord
+    choco install fzf -y            # Fuzzy finder
+    choco install gimp -y           # Photoshop
+    choco install git.install -y    # Git
+    choco install googlechrome -y	# Web browser
+    #choco install intellijidea-community # Free version java IDE
+    choco install intellijidea-ultimate # Paid version with sql IDE
+    choco install linkshellextension -y # Make links from explorer
+    choco install malwarebytes -y   # Anti-virus
+    choco install microsoft-windows-terminal -y	# Windows terminal
+    choco install obs-studio -y     # Record screen in windows, works with internal audio better than mac
+    choco install openjdk -y           # open source java development kit
+    choco install openssh -y	    # SSH client
+    choco install poshgit -y        # git bar
+    choco install powershell-core -y # Updated powershell
+    choco install python -y         
+    choco install r.project -y      # Probabilitat i estadística
+    choco install r.studio -y       # Probabilitat i estadística IDE
+    choco install rufus -y          # burn iso's on usb
+    choco install skype -y		    # Skype
+    choco install spotify -y        # Spotify
     choco install strawberryperl -y
-    choco install telegram -y
-    choco install thunderbird -y
-    choco install toastify -y
-    choco install transmission -y
-    choco install vlc -y
-    choco install vscode -y
-    choco install wget -y
+    choco install telegram -y       # Telegram
+    choco install thunderbird -y    # Email client
+    choco install toastify -y 		# Toastify adds some missing functionallity to the Spotify client.
+    choco install transmission -y   # Simple torrent client
+    choco install vlc -y		    # Media player
+    choco install vscode -y         # GUI Editor
+    choco install wget -y		    # A command-line utility for retrieving files using HTTP protocols
     choco install windirstat -y
-    choco install wsl2 -y
-    choco install yarn -y
+    choco install wsl2 -y           # Windows subsystem for linux 2
+    choco install yarn -y           # Packages
 
     # choco install autoruns -y       # What programs are configured to startup automatically
     # choco install chocolateygui -y  # A gui for chocolatey package manager
@@ -87,16 +88,18 @@ function windows_install{
     # choco install teamviewer -y
     # choco install virtualbox -y
 
+    # office?
+    #Deezloader #ix?
+    #Maple
 }
-# office?
-#Deezloader #ix?
-#Maple
 
 function games_install {
     choco install goggalaxy -y
     choco install leagueoflegends -y
     choco install steam -y
 }
+
+## Start Installation
 windows_install
 vim_install
 cd "~/WinDotfiles/bin/"
