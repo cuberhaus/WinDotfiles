@@ -1,12 +1,6 @@
 #Rem uncap location
 #set uncap=~\WinDotfiles\dotfiles\uncap.exe
 
-windows_install
-vim_install
-cd "~\dotfiles\.local\bin\"
-ycm.bat
-swap
-
 function vim_install {
     choco install vim -y
     choco install neovim -y
@@ -100,3 +94,10 @@ function games_install {
     choco install leagueoflegends -y
     choco install steam -y
 }
+
+windows_install
+#vim_install
+#cd "~\dotfiles\.local\bin\"
+#ycm.bat
+#swap
+
