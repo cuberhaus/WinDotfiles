@@ -1,4 +1,7 @@
-## uncap location
+### DO THIS FIRST
+# Set-ExecutionPolicy RemoteSigned 
+
+# uncap location
 #set uncap=~\WinDotfiles\dotfiles\uncap.exe
 
 function vim_install {
@@ -94,10 +97,8 @@ function games_install {
     choco install leagueoflegends -y
     choco install steam -y
 }
-
 windows_install
-#vim_install
-#cd "~\dotfiles\.local\bin\"
-#ycm.bat
+vim_install
+cd "~/WinDotfiles/bin/"
+ycm.bat
 #swap
-
