@@ -30,7 +30,7 @@ function swap {
 function full_install {
     # Chocolatey packages
     choco install adobereader -y 	# Pdf viewer
-    choco install audacity -y          # Audio editor
+    choco install audacity -y       # Audio editor
     choco install autohotkey.portable -y # Automation software
     choco install calibre -y        # Books manager
     choco install ccleaner -y 	    # Cleanup
@@ -62,7 +62,7 @@ function full_install {
     # choco install jdk8              # java v8
     # choco install jre8 -y
     # choco install python2 -y // THIS BREAKS NEOVIM PYTHON
-    # choco install slack -y        # Slack
+    # choco install slack -y          # Slack
     # choco install teamviewer -y
     # choco install virtualbox -y
     # choco install wsl2 -y           # Windows subsystem for linux 2
