@@ -2,7 +2,7 @@
 # Set-ExecutionPolicy #oteSigned 
 
 # uncap location
-$uncap = "~\WinDotfiles\dotfiles\uncap.exe"
+$uncap = "$dotfiles\uncap.exe"
 
 function vim_install {
     choco install vim -y
@@ -23,7 +23,7 @@ function vim_install {
 }
 
 function swap {
-    mv $uncap C:\Windows\
+    cp $uncap C:\Windows\
     #Swap caps with escape https://github.com/susam/uncap#readme
 }
 
