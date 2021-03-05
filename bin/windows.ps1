@@ -28,7 +28,7 @@ function base_install {
     choco install powershell-core -y # Updated powershell
     choco install python -y         
     choco install rclone -y         # Git but without version control
-    choco install strawberryperl -y
+    choco install strawberryperl -y # Pearl
     choco install wget -y		    # A command-line utility for retrieving files using HTTP protocols
     choco install yarn -y           # Packages
 }
@@ -57,7 +57,7 @@ function full_install {
     choco install transmission -y   # Simple torrent client
     choco install vlc -y		    # Media player
     choco install vscode -y         # GUI Editor
-    choco install windirstat -y
+    choco install windirstat -y     # View file sizes in system to clean up space
 
     # choco install autoruns -y       # What programs are configured to startup automatically
     # choco install chocolateygui -y  # A gui for chocolatey package manager
@@ -70,7 +70,7 @@ function full_install {
     # choco install python2 -y // THIS BREAKS NEOVIM PYTHON
     # choco install slack -y          # Slack
     # choco install teamviewer -y
-    # choco install virtualbox -y
+    # choco install virtualbox -y     # Virtualization tool
     # choco install wsl2 -y           # Windows subsystem for linux 2
     # choco install intellijidea-community # Free version java IDE
 
