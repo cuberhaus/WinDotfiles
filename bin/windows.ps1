@@ -4,27 +4,32 @@
 # uncap location
 $uncap = "$dotfiles\uncap.exe"
 
-function vim_install {
-    choco install vim -y
-    choco install neovim -y
-    #vim plug neovim
-    iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
-    ni "$env:LOCALAPPDATA/nvim-data/site/autoload/plug.vim" -Force
+function base_install {
+    Install-Module git-aliases -Scope CurrentUser -AllowClobber
+    # https://github.com/gluons/powershell-git-aliases
 
-    #vim plug for PowerShell
-    iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
-    ni $HOME/vimfiles/autoload/plug.vim -Force
+    # Command-line windows update
+    Install-Module PSWindowsUpdate
+    Get-WindowsUpdate
+    Install-WindowsUpdate
 
-    npm install -g neovim #npm
+    # Chocolatey install
+    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
-    gem install neovim # gem environments
-
-    pip install --upgrade neovim # Python3
-}
-
-function swap {
-    cp $uncap C:\Windows\
-    #Swap caps with escape https://github.com/susam/uncap#readme
+    choco install 7zip.install -y   # Archiver
+    choco install curl -y 		    # cUrL is a command line tool and library for transferring data with URLs
+    choco install fzf -y            # Fuzzy finder
+    choco install git.install -y    # Git
+    choco install googlechrome -y	# Web browser
+    choco install linkshellextension -y # Make links from explorer
+    choco install openjdk -y           # open source java development kit
+    choco install openssh -y	    # SSH client
+    choco install poshgit -y        # git bar
+    choco install powershell-core -y # Updated powershell
+    choco install python -y         
+    choco install strawberryperl -y
+    choco install wget -y		    # A command-line utility for retrieving files using HTTP protocols
+    choco install yarn -y           # Packages
 }
 
 function full_install {
@@ -73,32 +78,27 @@ function full_install {
     #Maple
 }
 
-function base_install {
-    Install-Module git-aliases -Scope CurrentUser -AllowClobber
-    # https://github.com/gluons/powershell-git-aliases
+function vim_install {
+    choco install vim -y
+    choco install neovim -y
+    #vim plug neovim
+    iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
+    ni "$env:LOCALAPPDATA/nvim-data/site/autoload/plug.vim" -Force
 
-    # Command-line windows update
-    Install-Module PSWindowsUpdate
-    Get-WindowsUpdate
-    Install-WindowsUpdate
+    #vim plug for PowerShell
+    iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
+    ni $HOME/vimfiles/autoload/plug.vim -Force
 
-    # Chocolatey install
-    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+    npm install -g neovim #npm
 
-    choco install 7zip.install -y   # Archiver
-    choco install curl -y 		    # cUrL is a command line tool and library for transferring data with URLs
-    choco install fzf -y            # Fuzzy finder
-    choco install git.install -y    # Git
-    choco install googlechrome -y	# Web browser
-    choco install linkshellextension -y # Make links from explorer
-    choco install openjdk -y           # open source java development kit
-    choco install openssh -y	    # SSH client
-    choco install poshgit -y        # git bar
-    choco install powershell-core -y # Updated powershell
-    choco install python -y         
-    choco install strawberryperl -y
-    choco install wget -y		    # A command-line utility for retrieving files using HTTP protocols
-    choco install yarn -y           # Packages
+    gem install neovim # gem environments
+
+    pip install --upgrade neovim # Python3
+}
+
+function swap {
+    cp $uncap C:\Windows\
+    #Swap caps with escape https://github.com/susam/uncap#readme
 }
 
 function games_install {
