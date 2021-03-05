@@ -17,7 +17,7 @@ function base_install {
     Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
     choco install 7zip.install -y   # Archiver
-    choco install curl -y 		    # cUrL is a command line tool and library for transferring data with URLs
+    choco install curl -y 		    # Curl is a command line tool and library for transferring data with URLs
     choco install fzf -y            # Fuzzy finder
     choco install git.install -y    # Git
     choco install googlechrome -y	# Web browser
@@ -27,6 +27,7 @@ function base_install {
     choco install poshgit -y        # git bar
     choco install powershell-core -y # Updated powershell
     choco install python -y         
+    choco install rclone -y         # Git but without version control
     choco install strawberryperl -y
     choco install wget -y		    # A command-line utility for retrieving files using HTTP protocols
     choco install yarn -y           # Packages
