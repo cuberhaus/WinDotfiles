@@ -41,7 +41,7 @@ function full_install {
     choco install ccleaner -y 	    # Cleanup
     choco install discord -y        # Discord
     choco install gimp -y           # Photoshop
-    choco install intellijidea-ultimate # Paid version with sql IDE
+    choco install intellijidea-ultimate -y # Paid version with sql IDE
     choco install malwarebytes -y   # Anti-virus
     choco install microsoft-windows-terminal -y	# Windows terminal
     choco install obs-studio -y     # Record screen in windows, works with internal audio better than mac
