@@ -42,13 +42,10 @@ function full_install {
     choco install ccleaner -y 	    # Cleanup
     choco install discord -y        # Discord
     choco install gimp -y           # Photoshop
-    choco install intellijidea-ultimate -y # Paid version with sql IDE
     choco install libreoffice-fresh -y # Office suite
     choco install malwarebytes -y   # Anti-virus
     choco install microsoft-windows-terminal -y	# Windows terminal
     choco install obs-studio -y     # Record screen in windows, works with internal audio better than mac
-    choco install r.project -y      # Probabilitat i estadística
-    choco install r.studio -y       # Probabilitat i estadística IDE
     choco install rufus -y          # burn iso's on usb
     choco install skype -y		    # Skype
     choco install spotify -y        # Spotify
@@ -59,6 +56,14 @@ function full_install {
     choco install vlc -y		    # Media player
     choco install vscode -y         # GUI Editor
     choco install windirstat -y     # View file sizes in system to clean up space
+}
+# office?
+#Deezloader #ix?
+#Maple
+function optional {
+    choco install r.project -y      # Probabilitat i estadística
+    choco install r.studio -y       # Probabilitat i estadística IDE
+    choco install intellijidea-ultimate -y # Paid version with sql IDE
 
     # choco install autoruns -y       # What programs are configured to startup automatically
     # choco install chocolateygui -y  # A gui for chocolatey package manager
@@ -74,10 +79,6 @@ function full_install {
     # choco install virtualbox -y     # Virtualization tool
     # choco install wsl2 -y           # Windows subsystem for linux 2
     # choco install intellijidea-community # Free version java IDE
-
-    # office?
-    #Deezloader #ix?
-    #Maple
 }
 
 function vim_install {
@@ -113,7 +114,7 @@ function games_install {
 base_install
 full_install
 vim_install
-# Run ycm.ps1 script
+#optional
 cd "$dotfiles/bin/"
 .\ycm.ps1
 #swap
