@@ -56,6 +56,7 @@ function full_install {
     choco install vlc -y		    # Media player
     choco install vscode -y         # GUI Editor
     choco install windirstat -y     # View file sizes in system to clean up space
+    choco install reflect-free -y   # backups
 }
 # office?
 #Deezloader #ix?
