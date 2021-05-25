@@ -42,7 +42,8 @@ function full_install {
     choco install ccleaner -y 	    # Cleanup
     choco install discord -y        # Discord
     choco install gimp -y           # Photoshop
-    choco install libreoffice-fresh -y # Office suite
+    # choco install libreoffice-fresh -y # Office suite
+    choco install libreoffice-still -y # Office suite 
     choco install malwarebytes -y   # Anti-virus
     choco install microsoft-windows-terminal -y	# Windows terminal
     choco install obs-studio -y     # Record screen in windows, works with internal audio better than mac
