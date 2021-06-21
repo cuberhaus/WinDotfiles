@@ -1,6 +1,5 @@
-### DO THIS FIRST
-# Set-ExecutionPolicy #oteSigned 
-
+### DO THIS FIRST 
+# Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 # uncap location
 $uncap = "$dotfiles\uncap.exe"
 
@@ -37,7 +36,6 @@ function full_install {
     # Chocolatey packages
     choco install adobereader -y 	# Pdf viewer
     choco install audacity -y       # Audio editor
-    choco install autohotkey.portable -y # Automation software
     choco install calibre -y        # Books manager
     choco install ccleaner -y 	    # Cleanup
     choco install discord -y        # Discord
@@ -57,7 +55,7 @@ function full_install {
     choco install vlc -y		    # Media player
     choco install vscode -y         # GUI Editor
     choco install windirstat -y     # View file sizes in system to clean up space
-    choco install reflect-free -y   # backups
+    
 }
 # office?
 #Deezloader #ix?
@@ -66,7 +64,8 @@ function optional {
     choco install r.project -y      # Probabilitat i estadística
     choco install r.studio -y       # Probabilitat i estadística IDE
     choco install intellijidea-ultimate -y # Paid version with sql IDE
-
+    choco install reflect-free -y   # backups
+    choco install autohotkey.portable -y # Automation software
     # choco install autoruns -y       # What programs are configured to startup automatically
     # choco install chocolateygui -y  # A gui for chocolatey package manager
     # choco install chromium -y       # Open source Web browser
