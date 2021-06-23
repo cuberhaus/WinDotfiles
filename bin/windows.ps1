@@ -40,7 +40,6 @@ function full_install {
     choco install ccleaner -y 	    # Cleanup
     choco install discord -y        # Discord
     choco install gimp -y           # Photoshop
-    # choco install libreoffice-fresh -y # Office suite
     choco install libreoffice-still -y # Office suite 
     choco install malwarebytes -y   # Anti-virus
     choco install microsoft-windows-terminal -y	# Windows terminal
@@ -50,36 +49,37 @@ function full_install {
     choco install spotify -y        # Spotify
     choco install telegram -y       # Telegram
     choco install thunderbird -y    # Email client
-    choco install toastify -y 		# Toastify adds some missing functionallity to the Spotify client.
     choco install transmission -y   # Simple torrent client
     choco install vlc -y		    # Media player
     choco install vscode -y         # GUI Editor
     choco install windirstat -y     # View file sizes in system to clean up space
-    
+
+    # choco install toastify -y 		# Toastify adds some missing functionallity to the Spotify client.
+    # choco install libreoffice-fresh -y # Office suite
 }
 # office?
 #Deezloader #ix?
 #Maple
 function optional {
+    choco install autohotkey.portable -y # Automation software
+    choco install autoruns -y       # What programs are configured to startup automatically
+    choco install chocolateygui -y  # A gui for chocolatey package manager
+    choco install chromium -y       # Open source Web browser
+    choco install eclipse -y        # java/SQL IDE // doesnt quite work properly??
+    choco install firefox -y        # Open source web browser
+    choco install git-lfs -y
+    choco install intellijidea-community # Free version java IDE
+    choco install intellijidea-ultimate -y # Paid version with sql IDE
+    choco install jdk8              # java v8
+    choco install jre8 -y
+    choco install python2 -y // THIS BREAKS NEOVIM PYTHON
     choco install r.project -y      # Probabilitat i estadística
     choco install r.studio -y       # Probabilitat i estadística IDE
-    choco install intellijidea-ultimate -y # Paid version with sql IDE
     choco install reflect-free -y   # backups
-    choco install autohotkey.portable -y # Automation software
-    # choco install autoruns -y       # What programs are configured to startup automatically
-    # choco install chocolateygui -y  # A gui for chocolatey package manager
-    # choco install chromium -y       # Open source Web browser
-    # choco install eclipse -y        # java/SQL IDE // doesnt quite work properly??
-    # choco install firefox -y        # Open source web browser
-    # choco install git-lfs -y
-    # choco install jdk8              # java v8
-    # choco install jre8 -y
-    # choco install python2 -y // THIS BREAKS NEOVIM PYTHON
-    # choco install slack -y          # Slack
-    # choco install teamviewer -y
-    # choco install virtualbox -y     # Virtualization tool
-    # choco install wsl2 -y           # Windows subsystem for linux 2
-    # choco install intellijidea-community # Free version java IDE
+    choco install slack -y          # Slack
+    choco install teamviewer -y
+    choco install virtualbox -y     # Virtualization tool
+    choco install wsl2 -y           # Windows subsystem for linux 2
 }
 
 function vim_install {
@@ -98,6 +98,7 @@ function vim_install {
     gem install neovim # gem environments
 
     pip install --upgrade neovim # Python3
+    # NEED TO ADD COMMAND TO INSTALL PLUGINS ONCE VIM IS INSTALLED
 }
 
 function swap {
