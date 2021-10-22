@@ -75,7 +75,7 @@ function optional {
     choco install python2 -y // THIS BREAKS NEOVIM PYTHON
     choco install r.project -y      # Probabilitat i estadística
     choco install r.studio -y       # Probabilitat i estadística IDE
-    choco install reflect-free -y   # backups
+    #choco install reflect-free -y   # backups
     choco install slack -y          # Slack
     choco install teamviewer -y
     choco install virtualbox -y     # Virtualization tool
