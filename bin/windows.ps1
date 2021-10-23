@@ -49,30 +49,29 @@ function full_install {
     choco install vlc -y		    # Media player
     choco install vscode -y         # GUI Editor
     choco install windirstat -y     # View file sizes in system to clean up space
-
-    # choco install toastify -y 		# Toastify adds some missing functionallity to the Spotify client.
 }
 # office?
 #Deezloader #ix?
 #Maple
 function optional {
     # Probably
-    #choco install adobereader -y 	# Pdf viewer
-    #choco install audacity -y       # Audio editor
-    #choco install autohotkey.portable -y # Automation software
-    #choco install autoruns -y       # What programs are configured to startup automatically
-    #choco install gimp -y           # Photoshop
-    #choco install git-lfs -y
-    #choco install intellijidea-ultimate -y # Paid version with sql IDE
-    #choco install jdk8              # java v8
-    #choco install jre8 -y
-    #choco install obs-studio -y     # Record screen in windows, works with internal audio better than mac
-    #choco install r.project -y      # Probabilitat i estadística
-    #choco install r.studio -y       # Probabilitat i estadística IDE
-    #choco install slack -y          # Slack
-    #choco install teamviewer -y
-    #choco install virtualbox -y     # Virtualization tool
-    #choco install wsl2 -y           # Windows subsystem for linux 2
+    # choco install adobereader -y 	# Pdf viewer
+    # choco install audacity -y       # Audio editor
+    # choco install autohotkey.portable -y # Automation software
+    # choco install autoruns -y       # What programs are configured to startup automatically
+    # choco install gimp -y           # Photoshop
+    # choco install git-lfs -y
+    # choco install intellijidea-ultimate -y # Paid version with sql IDE
+    # choco install jdk8              # java v8
+    # choco install jre8 -y
+    # choco install obs-studio -y     # Record screen in windows, works with internal audio better than mac
+    # choco install r.project -y      # Probabilitat i estadística
+    # choco install r.studio -y       # Probabilitat i estadística IDE
+    # choco install slack -y          # Slack
+    # choco install teamviewer -y
+    # choco install toastify -y 		# Toastify adds some missing functionallity to the Spotify client.
+    # choco install virtualbox -y     # Virtualization tool
+    # choco install wsl2 -y           # Windows subsystem for linux 2
 
     #Garbage
     #choco install chocolateygui -y  # A gui for chocolatey package manager
@@ -105,13 +104,13 @@ function vim_install {
 
 function swap {
     cp $uncap C:\Windows\
-    #Swap caps with escape https://github.com/susam/uncap#readme
+    # Swap caps with escape https://github.com/susam/uncap#readme
 }
 
 function games_install {
-    choco install goggalaxy -y
-    choco install leagueoflegends -y
-    choco install steam -y
+    # choco install goggalaxy -y
+    # choco install leagueoflegends -y
+    # choco install steam -y
 }
 
 ## Start Installation
