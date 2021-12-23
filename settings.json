@@ -66,6 +66,11 @@
                 "name": "Ubuntu-20.04",
                 "source": "Windows.Terminal.Wsl",
                 "fontFace": "MesloLGM NF"
+            },
+            {
+                "guid": "{34a13805-9b56-5e89-9234-f02de44bd971}",
+                "name": "PowerShell 7 (x86)",
+                "source": "Windows.Terminal.PowershellCore"
             }
           
         ]
