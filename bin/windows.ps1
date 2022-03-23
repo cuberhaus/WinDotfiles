@@ -39,9 +39,7 @@ function full_install {
     choco install discord -y        # Discord
     choco install malwarebytes -y   # Anti-virus
     choco install rufus -y          # burn iso's on usb
-    # choco install skype -y		    # Skype
     choco install spotify -y        # Spotify
-    # choco install telegram -y       # Telegram
     choco install thunderbird -y    # Email client
     choco install transmission -y   # Simple torrent client
     choco install vlc -y		    # Media player
@@ -53,25 +51,27 @@ function full_install {
 #Maple
 function optional {
     # Probably
+    # choco install adobereader -y 	# Pdf viewer
+    # choco install audacity -y       # Audio editor
+    # choco install autohotkey.portable -y # Automation software
+    # choco install autoruns -y       # What programs are configured to startup automatically
+    # choco install gimp -y           # Photoshop
+    # choco install git-lfs -y
+    # choco install intellijidea-ultimate -y # Paid version with sql IDE
+    # choco install jdk8              # java v8
+    # choco install jre8 -y
     # choco install libreoffice-still -y # Office suite 
-    choco install adobereader -y 	# Pdf viewer
-    choco install audacity -y       # Audio editor
-    choco install autohotkey.portable -y # Automation software
-    choco install autoruns -y       # What programs are configured to startup automatically
-    choco install gimp -y           # Photoshop
-    choco install git-lfs -y
-    choco install intellijidea-ultimate -y # Paid version with sql IDE
-    choco install jdk8              # java v8
-    choco install jre8 -y
-    choco install obs-studio -y     # Record screen in windows, works with internal audio better than mac
-    choco install r.project -y      # Probabilitat i estadística
-    choco install r.studio -y       # Probabilitat i estadística IDE
-    choco install slack -y          # Slack
-    choco install teamviewer -y
-    choco install toastify -y 		# Toastify adds some missing functionallity to the Spotify client.
-    choco install virtualbox -y     # Virtualization tool
-    choco install wireshark -y
-    choco install wsl2 -y           # Windows subsystem for linux 2 
+    # choco install obs-studio -y     # Record screen in windows, works with internal audio better than mac
+    # choco install r.project -y      # Probabilitat i estadística
+    # choco install r.studio -y       # Probabilitat i estadística IDE
+    # choco install skype -y		    # Skype
+    # choco install slack -y          # Slack
+    # choco install teamviewer -y
+    # choco install telegram -y       # Telegram
+    # choco install toastify -y 		# Toastify adds some missing functionallity to the Spotify client.
+    # choco install virtualbox -y     # Virtualization tool
+    # choco install wireshark -y
+    # choco install wsl2 -y           # Windows subsystem for linux 2 
     #Garbage
     # choco install chocolateygui -y  # A gui for chocolatey package manager
     # choco install chromium -y       # Open source Web browser
