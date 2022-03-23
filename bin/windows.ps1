@@ -37,12 +37,11 @@ function full_install {
     choco install calibre -y        # Books manager
     choco install ccleaner -y 	    # Cleanup
     choco install discord -y        # Discord
-    choco install libreoffice-still -y # Office suite 
     choco install malwarebytes -y   # Anti-virus
     choco install rufus -y          # burn iso's on usb
-    choco install skype -y		    # Skype
+    # choco install skype -y		    # Skype
     choco install spotify -y        # Spotify
-    choco install telegram -y       # Telegram
+    # choco install telegram -y       # Telegram
     choco install thunderbird -y    # Email client
     choco install transmission -y   # Simple torrent client
     choco install vlc -y		    # Media player
@@ -54,6 +53,7 @@ function full_install {
 #Maple
 function optional {
     # Probably
+    # choco install libreoffice-still -y # Office suite 
     choco install adobereader -y 	# Pdf viewer
     choco install audacity -y       # Audio editor
     choco install autohotkey.portable -y # Automation software
@@ -70,15 +70,15 @@ function optional {
     choco install teamviewer -y
     choco install toastify -y 		# Toastify adds some missing functionallity to the Spotify client.
     choco install virtualbox -y     # Virtualization tool
-    choco install wsl2 -y           # Windows subsystem for linux 2
-
+    choco install wireshark -y
+    choco install wsl2 -y           # Windows subsystem for linux 2 
     #Garbage
-    choco install chocolateygui -y  # A gui for chocolatey package manager
-    choco install chromium -y       # Open source Web browser
-    choco install eclipse -y        # java/SQL IDE // doesnt quite work properly??
-    choco install firefox -y        # Open source web browser
-    choco install intellijidea-community -y# Free version java IDE
-    choco install reflect-free -y   # backups
+    # choco install chocolateygui -y  # A gui for chocolatey package manager
+    # choco install chromium -y       # Open source Web browser
+    # choco install eclipse -y        # java/SQL IDE // doesnt quite work properly??
+    # choco install firefox -y        # Open source web browser
+    # choco install intellijidea-community -y# Free version java IDE
+    # choco install reflect-free -y   # backups
     # choco install python2 -y // THIS BREAKS NEOVIM PYTHON
 }
 
