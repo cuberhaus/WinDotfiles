@@ -1,4 +1,4 @@
-### DO THIS FIRST 
+### DO THIS FIRST
 # Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 # uncap location
 $uncap = "$dotfiles\uncap.exe"
@@ -22,10 +22,11 @@ function base_install {
     choco install googlechrome -y	# Web browser
     choco install linkshellextension -y # Make links from explorer
     choco install openjdk -y           # open source java development kit
+    choco install putty -y
     choco install openssh -y	    # SSH client
     choco install poshgit -y        # git bar
     choco install powershell-core -y # Updated powershell
-    choco install python -y         
+    choco install python -y
     choco install rclone -y         # Git but without version control
     choco install strawberryperl -y # Pearl
     choco install wget -y		    # A command-line utility for retrieving files using HTTP protocols
@@ -60,7 +61,7 @@ function optional {
     # choco install intellijidea-ultimate -y # Paid version with sql IDE
     # choco install jdk8              # java v8
     # choco install jre8 -y
-    # choco install libreoffice-still -y # Office suite 
+    # choco install libreoffice-still -y # Office suite
     # choco install obs-studio -y     # Record screen in windows, works with internal audio better than mac
     # choco install r.project -y      # Probabilitat i estadística
     # choco install r.studio -y       # Probabilitat i estadística IDE
@@ -71,7 +72,7 @@ function optional {
     # choco install toastify -y 		# Toastify adds some missing functionallity to the Spotify client.
     # choco install virtualbox -y     # Virtualization tool
     # choco install wireshark -y
-    # choco install wsl2 -y           # Windows subsystem for linux 2 
+    # choco install wsl2 -y           # Windows subsystem for linux 2
     #Garbage
     # choco install chocolateygui -y  # A gui for chocolatey package manager
     # choco install chromium -y       # Open source Web browser
