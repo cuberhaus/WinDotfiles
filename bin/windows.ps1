@@ -33,9 +33,13 @@ function base_install {
     choco install yarn -y           # Packages
 }
 
+function emacs {
+    choco install emacs -y          # Editor
+    choco install git ripgrep llvm fd hunspell.portable -y
+}
+
 function full_install {
     # Chocolatey packages
-    choco install emacs -y          # Editor
     choco install calibre -y        # Books manager
     choco install ccleaner -y 	    # Cleanup
     choco install discord -y        # Discord

@@ -1,0 +1,2 @@
+ls | findstr "foo"
+ls | Select-String foo
