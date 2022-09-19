@@ -34,6 +34,8 @@ function base_install {
 }
 
 function emacs {
+    # Add environment variable HOME to C:\Users\polcg\
+    # Add $HOME\.emacs.d\bin\doom to path
     choco install emacs -y          # Editor
     choco install git ripgrep llvm fd hunspell.portable -y
 }
