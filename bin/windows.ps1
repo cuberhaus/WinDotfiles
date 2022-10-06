@@ -41,6 +41,7 @@ function emacs {
 }
 
 function full_install {
+    choco install mobaxterm         # PAR (makes wxparaver WORK)
     # Chocolatey packages
     choco install calibre -y        # Books manager
     choco install ccleaner -y 	    # Cleanup
