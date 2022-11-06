@@ -19,7 +19,7 @@ function Test-Elevated {
 }
 
 function update {
-    choco upgrade all
+    choco upgrade all -y
     Get-WindowsUpdate
     Install-WindowsUpdate
     vim +PlugUpgrade +PlugUpdate +qall
