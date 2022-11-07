@@ -57,6 +57,11 @@ function vim {
 # GIT
 Import-Module git-aliases -DisableNameChecking
 
+function yolo {
+    git add -A
+    git commit -m "This is a placeholder"
+    git push
+}
 function g {
     git $args
 }
