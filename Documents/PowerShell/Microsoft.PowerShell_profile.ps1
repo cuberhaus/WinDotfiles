@@ -1,5 +1,14 @@
 ﻿$dotfiles = "C:\Users\polcg\WinDotfiles\dotfiles\"
 
+function aliases {
+    # code $dotfiles\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+    code $dotfiles\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
+}
+
+# function ycminstall {
+#     $dotfiles\bin\ycm.ps1
+# }
+
 function vimrc {
     vim $dotfiles\_vimrc
 }

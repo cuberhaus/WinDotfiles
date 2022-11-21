@@ -1,7 +1,6 @@
-### DO THIS FIRST
+### EXECUTE THIS COMMAND FIRST
 # Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
-# uncap location
-$uncap = "$dotfiles\uncap.exe"
+$uncap = "$dotfiles\uncap.exe" # uncap location
 
 function base_install {
     Install-Module git-aliases -Scope CurrentUser -AllowClobber
@@ -22,10 +21,10 @@ function base_install {
     choco install googlechrome -y	# Web browser
     choco install linkshellextension -y # Make links from explorer
     choco install openjdk -y           # open source java development kit
-    choco install putty -y
     choco install openssh -y	    # SSH client
     choco install poshgit -y        # git bar
     choco install powershell-core -y # Updated powershell
+    choco install putty -y
     choco install python -y
     choco install rclone -y         # Git but without version control
     choco install strawberryperl -y # Pearl
@@ -42,12 +41,12 @@ function emacs {
 }
 
 function full_install {
-    choco install mobaxterm         # PAR (makes wxparaver WORK)
-    # Chocolatey packages
     choco install calibre -y        # Books manager
     choco install ccleaner -y 	    # Cleanup
+    choco install choco-cleaner -y
     choco install discord -y        # Discord
     choco install malwarebytes -y   # Anti-virus
+    choco install mobaxterm         # PAR (makes wxparaver WORK)
     choco install rufus -y          # burn iso's on usb
     choco install spotify -y        # Spotify
     choco install thunderbird -y    # Email client
@@ -55,26 +54,30 @@ function full_install {
     choco install vlc -y		    # Media player
     choco install vscode -y         # GUI Editor
     choco install windirstat -y     # View file sizes in system to clean up space
-    choco install choco-cleaner -y
 }
-# office?
-#Deezloader #ix?
-#Maple
+
 function optional {
     # Probably
     # choco install adobereader -y 	# Pdf viewer
     # choco install audacity -y       # Audio editor
     # choco install autohotkey.portable -y # Automation software
     # choco install autoruns -y       # What programs are configured to startup automatically
+    # choco install chocolateygui -y  # A gui for chocolatey package manager
+    # choco install chromium -y       # Open source Web browser
+    # choco install eclipse -y        # java/SQL IDE // doesnt quite work properly??
+    # choco install firefox -y        # Open source web browser
     # choco install gimp -y           # Photoshop
     # choco install git-lfs -y
+    # choco install intellijidea-community -y# Free version java IDE
     # choco install intellijidea-ultimate -y # Paid version with sql IDE
     # choco install jdk8              # java v8
     # choco install jre8 -y
     # choco install libreoffice-still -y # Office suite
     # choco install obs-studio -y     # Record screen in windows, works with internal audio better than mac
+    # choco install python2 -y // THIS BREAKS NEOVIM PYTHON
     # choco install r.project -y      # Probabilitat i estadística
     # choco install r.studio -y       # Probabilitat i estadística IDE
+    # choco install reflect-free -y   # backups
     # choco install skype -y		    # Skype
     # choco install slack -y          # Slack
     # choco install teamviewer -y
@@ -84,13 +87,6 @@ function optional {
     # choco install wireshark -y
     # choco install wsl2 -y           # Windows subsystem for linux 2
     #Garbage
-    # choco install chocolateygui -y  # A gui for chocolatey package manager
-    # choco install chromium -y       # Open source Web browser
-    # choco install eclipse -y        # java/SQL IDE // doesnt quite work properly??
-    # choco install firefox -y        # Open source web browser
-    # choco install intellijidea-community -y# Free version java IDE
-    # choco install reflect-free -y   # backups
-    # choco install python2 -y // THIS BREAKS NEOVIM PYTHON
 }
 
 function vim_install {
