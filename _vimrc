@@ -1,29 +1,9 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Launch without anything: vim --clean
-" :messages per veure els errors per pantalla
-" Per comentar una linea gcc per comentar gc per fer moviments
+" General {{{
 
-" vim repeat cs'" to change surround from ' to "
-" " ysiw" to add " to a word
-" " ds" to remove surround
-
-"Jump to category under the cursor<C-]>
-"Jump back <C-T>
-
-" gv (re-select last visual select)
-
-" g ctrl A (increase i+1)
-
-" Visual select then press S (and whatever you want to surround with)
-
-" :Obsess to start recording vim session
-" vim -S to source the session
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => General
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " With a map leader it's possible to do extra key combinations
 let mapleader=" "
+" Activate folds
+set foldmethod=marker
 
 if has('unix') || has('macunix')
     " Clean-up
@@ -36,7 +16,7 @@ if has('unix') || has('macunix')
     endif
     if !has('nvim')
         set nocompatible
-        " if (cannot open viminfo file for reading) create a cache folder and viminfo
+        " if cannot open viminfo file for reading create a cache folder and viminfo
         set viminfo=%,<800,'10,/50,:100,h,f0,n~/.vim/cache/viminfo
 "                   | |    |   |   |    | |  + viminfo file path
 "                   | |    |   |   |    | + file marks 0-9,A-Z 0=NOT stored
@@ -60,19 +40,30 @@ endif
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 call plug#begin()
+" Plug 'godlygeek/tabular'
+" Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+" Plug 'lervag/vimtex'
+" Track the engine.
+" Plug 'github/copilot.vim'
+Plug 'SirVer/ultisnips'
+" Snippets are separated from the engine. Add this if you want them:
+Plug 'honza/vim-snippets'
+" On-demand lazy load
+Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] } " on demand loading
+" Plug 'liuchengxu/vim-which-key'  " makes learning vim keys easier
+Plug 'preservim/tagbar'
+" Plug 'ctrlpvim/ctrlp.vim' " its pretty useless out of the box ngl
+" Plug 'jiangmiao/auto-pairs' " it acts fucking weird sometimes, better off
+Plug 'tikhomirov/vim-glsl'
 Plug 'Chiel92/vim-autoformat'
 Plug 'airblade/vim-gitgutter'
 Plug 'ap/vim-css-color'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'godlygeek/tabular'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
-Plug 'jiangmiao/auto-pairs'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'joshdick/onedark.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'maxbrunsfeld/vim-yankstack'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'preservim/nerdtree'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'ryanoasis/vim-devicons'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
@@ -82,8 +73,16 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-scripts/bufexplorer.zip'
 Plug 'ycm-core/YouCompleteMe'
+" COLORS
+" Plug 'chriskempson/base16-vim'
+" Plug 'NLKNguyen/papercolor-theme'
+" Plug 'lifepillar/vim-solarized8'
 call plug#end()
 "Acaben els plugins
+autocmd! User vim-which-key call which_key#register('<Space>', 'g:which_key_map')
+let g:UltiSnipsExpandTrigger="<S-e>" " insert snippet !!
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 "Configuracions del plugin YouCompleteMe
 let g:ycm_confirm_extra_conf = 0 "Disables prompting for script every time
@@ -98,10 +97,12 @@ endif
 let g:ycm_autoclose_preview_window_after_insertion = 1
 "let g:ycm_add_preview_to_completeopt = 1
 
+" Pop up windows in neovim
 if !has('nvim')
     set completeopt+=popup
 endif
 
+" Showcommands
 set showcmd
 
 " Sets how many lines of history VIM has to remember
@@ -125,7 +126,8 @@ filetype plugin indent on
 set timeoutlen=1000 ttimeoutlen=0
 
 " Número relatiu a la teva posició en la barra de l'esquerra
-set number relativenumber
+" set number relativenumber
+set number 
 
 "activa suport de mouse
 set mouse=a
@@ -134,7 +136,7 @@ set mouse=a
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " Set 4 lines to the cursor - when moving vertically using j/k
-set so=4
+set so=4 " margin
 
 " Turn on the Wild menu, better autocompletion
 set wildmenu
@@ -150,9 +152,6 @@ endif
 "Always show current position
 set ruler
 
-" Height of the command bar
-set cmdheight=1
-
 " Configure backspace so it acts as it should act
 "set backspace=eol,start,indent
 
@@ -167,6 +166,8 @@ set hlsearch
 
 " Makes search act like search in modern browsers
 set incsearch
+" Same but for neovim
+set is hls
 
 " Don't redraw while executing macros (good performance config)
 set lazyredraw
@@ -177,14 +178,10 @@ set magic
 " Show matching brackets when text indicator is over them
 set showmatch
 
-" How many tenths of a second to blink when matching brackets
-"set mat=2
-
 "This one is the one that works
 set belloff=all
 
 " Change cursor to a vertical thin line while in insert mode and underscore while replacing
-
 if system('uname -s') == "Darwin\n"
     "Mode Settings
     let &t_SI.="\e[5 q" "SI = INSERT mode
@@ -202,12 +199,19 @@ set autochdir
 " Return to last edit position when opening files (You want this!)
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
+nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
+" Define prefix dictionary
+let g:which_key_map =  {}
+let g:which_key_map.f = { 'name' : '+file' }
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Colors and Fonts
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" call which_key#register('<Space>', "g:which_key_map") " when using on demand loading not used
 
-" Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
+
+": }}}
+
+" Colors and Fonts {{{
+
+" Use 24-bit (true-color) mode in Vim/Neovim when outside tmux IN LINUX, ( do not remove. )
 if (empty($TMUX))
   if (has("nvim"))
     let $NVIM_TUI_ENABLE_TRUE_COLOR=1
@@ -216,6 +220,19 @@ if (empty($TMUX))
     set termguicolors
   endif
 endif
+
+" set t_Co=256
+
+if exists('$TMUX')
+    if (has("nvim")) 
+        set termguicolors " Nvim colors look good on tmux with this
+    else
+    endif
+endif
+
+"Theme
+" source $HOME/.vim/theme
+colorscheme onedark
 
 " Enable syntax highlighting
 syntax enable
@@ -227,11 +244,6 @@ syntax on
 set encoding=utf8
 set fileencoding=utf-8
 
-set t_Co=256
-
-" Dark truecolor
-set background=dark
-colorscheme onedark
 " Configuració per a vim-airline
 let g:airline#extensions#tabline#enabled = 1 "fica automaticament els buffers a la barreta
 
@@ -243,19 +255,21 @@ set updatetime=1500
 
 " Set font for gvim
 if has("gui_running")
-    set guifont=SauceCodePro\ Nerd\ Font\ 13
+    set guifont=SauceCodePro\ Nerd\ Font\ 11
 endif
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Files, backups and undo
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" }}}
+
+" Files, backups and undo {{{
+
 " Turn backup off, since most stuff is in SVN, git etc. anyway...
 "set nobackup
 "set nowb
 "set noswapfile
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Text, tab and indent related
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"}}}
+
+" Text, tab and indent related {{{
+
 "Indent Guides
 let g:indent_guides_guide_size = 1
 let g:indent_guides_enable_on_vim_startup = 1
@@ -278,11 +292,28 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 set breakindent "Indent after line wrapped
+"}}}
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Keybindings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Keybindings {{{
+nmap <leader>tt :TagbarToggle<CR>
+function! GotoJump()
+  jumps
+  let j = input("Please select your jump: ")
+  if j != ''
+    let pattern = '\v\c^\+'
+    if j =~ pattern
+      let j = substitute(j, pattern, '', 'g')
+      execute "normal " . j . "\<c-i>"
+    else
+      execute "normal " . j . "\<c-o>"
+    endif
+  endif
+endfunction
 
+nmap <Leader>j :call GotoJump()<CR>
+
+" ctrl-p autocompletes stuff
+" YouCompleteMe
 nnoremap <leader>r :YcmCompleter RefactorRename<Space>
 nnoremap <leader>d :YcmCompleter GoToDefinition<cr>
 nnoremap <leader>T :YcmCompleter GetType<cr>
@@ -291,17 +322,28 @@ nnoremap <leader>T :YcmCompleter GetType<cr>
 let g:ctrlp_map = '<c-f>'
 
 " Toggle paste mode on and off
-nnoremap <leader>pp :setlocal paste!<cr>
+nnoremap <leader>tp :setlocal paste!<cr>
 
 " Press ctrl+m to toggle markdown preview
-nmap <C-m> <Plug>MarkdownPreviewToggle
+nmap <leader>tm <Plug>MarkdownPreviewToggle
+" nmap <C-s> <Plug>MarkdownPreview
+" nmap <M-s> <Plug>MarkdownPreviewStop
+" nmap <C-p> <Plug>MarkdownPreviewToggle
 
 "Autoformat
 noremap <F3> :Autoformat<CR>
 
 if system('uname -s') == "Darwin\n"
     "Toggle nerd Tree ctrl-spacebar
-    nmap <C-@> :NERDTreeToggle <CR>
+    if has('gui_running')
+        nmap <C-Space> :NERDTreeToggle <CR>
+    else 
+        if has('nvim')
+            nmap <C-Space> :NERDTreeToggle <CR>
+        else
+            nmap <C-@> :NERDTreeToggle <CR>
+        endif
+    endif
 else
     if has('nvim')
         nmap <C-Space> :NERDTreeToggle <CR>
@@ -324,13 +366,13 @@ nmap <C-n> <Plug>yankstack_substitute_newer_paste
 nnoremap <silent> <leader>g :GitGutterToggle<cr>
 
 " Fast saving
-nnoremap <leader>w :w!<cr>
+nnoremap <leader>fs :w!<cr>
 
 " :W sudo saves the file (useful for handling the permission-denied error)
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
-map <C-down> <C-E>
-map <C-up> <C-Y>
+" map <C-down> <C-E>
+" map <C-up> <C-Y>
 
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><cr> :noh<cr>
@@ -340,28 +382,28 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
-" Close a window
-map <leader>c <C-W>c
-" Vertical split
-map <leader>v <C-W>v
-" Horizontal split
-map <leader>s <C-W>s
+" " Close a window
+" map <leader>c <C-W>c
+" " Vertical split
+" map <leader>v <C-W>v
+" " Horizontal split
+" map <leader>s <C-W>s
 
 " Close the current buffer :bd will close a buffer
-map <leader>bd :bd<cr>
+map <leader>bc :bc<cr>
 " Close all the buffers
-map <leader>ba :bufdo bd<cr>
+map <leader>ba :bufdo bc<cr>
 " Previous buffer
 map <leader>bp :bp <cr>
 " Next buffer
 map <leader>bn :bn <cr>
 " Opens a new tab with the current buffer's path
 " Super useful when editing files in the same directory
-map <leader>te :tabedit <C-r>=expand("%:p:h")<cr>/
 " Useful mappings for managing tabs
-map <leader>tn :tabnew<cr>
-map <leader>tc :tabclose<cr>
-map <leader>t<leader> :tabnext <cr>
+" map <leader>te :tabedit <C-r>=expand("%:p:h")<cr>/
+" map <leader>tn :tabnew<cr>
+" map <leader>tc :tabclose<cr>
+" map <leader>t<leader> :tabnext <cr>
 
 " Git Gutter
 nmap <leader>hn <Plug>(GitGutterNextHunk)
@@ -370,40 +412,9 @@ nmap <leader>hv <Plug>(GitGutterPreviewHunk)
 nmap <leader>hs <Plug>(GitGutterStageHunk)
 nmap <leader>hu <Plug>(GitGutterUndoHunk)
 
-"Press Enter to jump to the subject (topic) under the cursor.
-"Press Backspace to return from the last jump.
-"This breaks some stuff
-"map <buffer> <CR> <C-]>
-"map <buffer> <BS> <C-T>
+"}}}
 
-""""""""""""""""""""""""""""""
-" => Status line
-""""""""""""""""""""""""""""""
-" Always show the status line
-set laststatus=2
-
-" barra, amaga la barra antiga, set laststatus=2 ensenya la barra sempre
-set noshowmode
-
-""""""""""""""""""""""""""""""
-" => Spelling
-""""""""""""""""""""""""""""""
-" Demana per descarregar el fixter corresponent
-let g:spellfile_URL = 'http://ftp.vim.org/vim/runtime/spell'
-"setlocal spell spelllang=en
-map <leader>ss :setlocal spell! spelllang=en<cr>
-map <leader>se :setlocal spell! spelllang=es<cr>
-map <leader>sc :setlocal spell! spelllang=ca<cr>
-
-map <leader>sn ]s
-map <leader>sp [s
-" zg accepts a word, zug undoes
-"map <leader>sa zg
-map <leader>? z=
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"" => Editing mappings
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Editing mappings {{{
 
 " Press F5 to eliminate trailing whitespaces
 :nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
@@ -418,8 +429,25 @@ try
     set undofile
 catch
 endtry
+"}}}
 
-" PLUGINS
+" Spelling {{{
+
+" Demana per descarregar el fitxer corresponent
+let g:spellfile_URL = 'http://ftp.vim.org/vim/runtime/spell'
+"setlocal spell spelllang=en
+map <leader>ss :setlocal spell! spelllang=en<cr>
+map <leader>se :setlocal spell! spelllang=es<cr>
+map <leader>sc :setlocal spell! spelllang=ca<cr>
+
+map <leader>sn ]s
+map <leader>sp [s
+" zg accepts a word, zug undoes
+"map <leader>sa zg
+map <leader>? z=
+"}}}
+
+" PLUGINS / Need to be at the bottom {{{
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Nerd Tree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -449,3 +477,4 @@ let g:gitgutter_enabled=0
 
 " Enable italics
 highlight Comment cterm=italic gui=italic
+"}}}
