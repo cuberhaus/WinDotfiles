@@ -8,7 +8,7 @@ function rclonepull_calibre {
     rclone sync -P --create-empty-src-dirs "drive:Calibre/Calibre Library" "C:\Users\polcg\Calibre Library"
 }
 function rclonepush_calibre {
-    rclone  sync -P --create-empty-src-dirs "C:\Users\polcg\Calibre Library" "drive:Calibre/Calibre Library"
+    rclone sync -P --create-empty-src-dirs "C:\Users\polcg\Calibre Library" "drive:Calibre/Calibre Library"
 }
 function rclonepull_thunderbird {
     rclone sync -P --create-empty-src-dirs drive:Thunderbird/ C:\Users\polcg\AppData\Roaming\Thunderbird\
