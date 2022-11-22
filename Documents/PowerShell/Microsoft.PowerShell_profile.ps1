@@ -56,21 +56,22 @@ function o {
     explorer .
 }
 
-# Navegation
+# Navegation "cd"
 function .. {
-    cd ..
+    Set-Location ..
 }
 function ... {
-    cd ../..
+    Set-Location ../..
 }
 function .... {
-    cd ../../..
+    Set-Location ../../..
 }
 function ..... {
-    cd ../../../..
+    Set-Location ../../../..
 }
+# clear
 function c {
-    clear
+    Clear-Host
 }
 function vim {
     nvim $args
