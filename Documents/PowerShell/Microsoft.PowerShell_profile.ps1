@@ -1,5 +1,20 @@
-﻿$dotfiles = "C:\Users\polcg\WinDotfiles\dotfiles\"
+﻿# This profile is only used by Microsoft PowerShell.
+$dotfiles = "C:\Users\polcg\WinDotfiles\dotfiles\"
+# https://github.com/ralish/PSDotFiles
+$DotFilesPath = $dotfiles
 
+function rclonepull_calibre {
+    rclone sync -P --create-empty-src-dirs "drive:Calibre/Calibre Library" "C:\Users\polcg\Calibre Library"
+}
+function rclonepush_calibre {
+    rclone  sync -P --create-empty-src-dirs "C:\Users\polcg\Calibre Library" "drive:Calibre/Calibre Library"
+}
+function rclonepull_thunderbird {
+    rclone sync -P --create-empty-src-dirs drive:Thunderbird/ C:\Users\polcg\AppData\Roaming\Thunderbird\
+}
+function rclonepush_thunderbird {
+    rclone sync -P --create-empty-src-dirs C:\Users\polcg\AppData\Roaming\Thunderbird\ drive:Thunderbird/
+}
 function aliases {
     # code $dotfiles\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
     code $dotfiles\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
@@ -12,32 +27,30 @@ function aliases {
 function vimrc {
     vim $dotfiles\_vimrc
 }
-
 function windows {
     vim $dotfiles\bin\windows.bat
 }
-
+function win {
+    vim $dotfiles\bin\windows.bat
+}
 # Quick shortcut to start notepad
 function n { notepad $args }
-
 function Test-Elevated {
     $wid = [System.Security.Principal.WindowsIdentity]::GetCurrent()
     $prp = New-Object System.Security.Principal.WindowsPrincipal($wid)
     $adm = [System.Security.Principal.WindowsBuiltInRole]::Administrator
     $prp.IsInRole($adm)
 }
-
 function update {
     choco upgrade all -y
     Get-WindowsUpdate
     Install-WindowsUpdate
     vim +PlugUpgrade +PlugUpdate +qall
 }
-
 function cleanup {
+    choco-cleaner
     vim +PlugClean +qall
 }
-
 function o {
     explorer .
 }
@@ -55,7 +68,6 @@ function .... {
 function ..... {
     cd ../../../..
 }
-
 function c {
     clear
 }
