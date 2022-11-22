@@ -3,6 +3,7 @@ $dotfiles = "C:\Users\polcg\WinDotfiles\dotfiles\"
 # https://github.com/ralish/PSDotFiles
 $DotFilesPath = $dotfiles
 
+# Rclone token might need to be refreshed (rclone config and reconfigure the remote)
 function rclonepull_calibre {
     rclone sync -P --create-empty-src-dirs "drive:Calibre/Calibre Library" "C:\Users\polcg\Calibre Library"
 }
