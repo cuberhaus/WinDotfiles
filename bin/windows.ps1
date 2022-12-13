@@ -20,7 +20,6 @@ function base_install {
     choco install git.install -y    # Git
     choco install googlechrome -y	# Web browser
     choco install linkshellextension -y # Make links from explorer
-    choco install openjdk -y           # open source java development kit
     choco install openssh -y	    # SSH client
     choco install poshgit -y        # git bar
     choco install powershell-core -y # Updated powershell
@@ -58,6 +57,7 @@ function full_install {
 
 function optional {
     # Probably
+    # choco install openjdk -y           # open source java development kit
     # choco install adobereader -y 	# Pdf viewer
     # choco install audacity -y       # Audio editor
     # choco install autohotkey.portable -y # Automation software
