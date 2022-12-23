@@ -45,7 +45,8 @@ call plug#begin()
 " Plug 'lervag/vimtex'
 " Track the engine.
 " Plug 'github/copilot.vim'
-Plug 'SirVer/ultisnips'
+" Plug 'SirVer/ultisnips'
+Plug 'kshenoy/vim-signature'
 " Snippets are separated from the engine. Add this if you want them:
 Plug 'honza/vim-snippets'
 " On-demand lazy load
@@ -72,7 +73,7 @@ Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-scripts/bufexplorer.zip'
-Plug 'ycm-core/YouCompleteMe'
+" Plug 'ycm-core/YouCompleteMe'
 " COLORS
 " Plug 'chriskempson/base16-vim'
 " Plug 'NLKNguyen/papercolor-theme'
