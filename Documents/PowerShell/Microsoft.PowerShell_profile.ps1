@@ -3,6 +3,18 @@ $dotfiles = "C:\Users\polcg\WinDotfiles\dotfiles\"
 # https://github.com/ralish/PSDotFiles
 $DotFilesPath = $dotfiles
 
+function syncTime {
+    # Check if the Windows Time service is running
+    $service = Get-Service -Name w32time
+    if ($service.Status -ne 'Running') {
+        # If the service is not running, start it
+        Start-Service -Name w32time
+    }
+
+    # Synchronize the time
+    w32tm /resync
+}
+
 # Rclone token might need to be refreshed (rclone config and reconfigure the remote)
 function rclonepull_calibre {
     rclone sync -P --create-empty-src-dirs "drive:Calibre/Calibre Library" "C:\Users\polcg\Calibre Library"
