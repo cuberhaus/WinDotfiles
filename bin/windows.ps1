@@ -29,6 +29,8 @@ function base_install {
     choco install strawberryperl -y # Pearl
     choco install wget -y		    # A command-line utility for retrieving files using HTTP protocols
     choco install yarn -y           # Packages
+    choco install make -y           # makefiles
+    choco install zip -y            # zip from terminal
 }
 
 function emacs {
