@@ -17,16 +17,16 @@ function syncTime {
 
 # Rclone token might need to be refreshed (rclone config and reconfigure the remote)
 function rclonepull_calibre {
-    rclone sync -P --create-empty-src-dirs "drive:Calibre/Calibre Library" "C:\Users\polcg\Calibre Library"
+    rclone copy -P --create-empty-src-dirs "drive:Calibre/Calibre Library" "C:\Users\polcg\Calibre Library"
 }
 function rclonepush_calibre {
-    rclone sync -P --create-empty-src-dirs "C:\Users\polcg\Calibre Library" "drive:Calibre/Calibre Library"
+    rclone copy -P --create-empty-src-dirs "C:\Users\polcg\Calibre Library" "drive:Calibre/Calibre Library"
 }
 function rclonepull_thunderbird {
-    rclone sync -P --create-empty-src-dirs drive:Thunderbird/ C:\Users\polcg\AppData\Roaming\Thunderbird\
+    rclone copy -P --create-empty-src-dirs drive:Thunderbird/ C:\Users\polcg\AppData\Roaming\Thunderbird\
 }
 function rclonepush_thunderbird {
-    rclone sync -P --create-empty-src-dirs C:\Users\polcg\AppData\Roaming\Thunderbird\ drive:Thunderbird/
+    rclone copy -P --create-empty-src-dirs C:\Users\polcg\AppData\Roaming\Thunderbird\ drive:Thunderbird/
 }
 function aliases {
     # code $dotfiles\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
