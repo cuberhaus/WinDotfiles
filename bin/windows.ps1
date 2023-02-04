@@ -23,12 +23,11 @@ function base_install {
     choco install openssh -y	    # SSH client
     choco install poshgit -y        # git bar
     choco install powershell-core -y # Updated powershell
-    choco install putty -y
-    choco install python -y
+    choco install python -y         # python
     choco install rclone -y         # Git but without version control
     choco install strawberryperl -y # Pearl
     choco install wget -y		    # A command-line utility for retrieving files using HTTP protocols
-    choco install yarn -y           # Packages
+    choco install yarn -y           # Packages, need it for vim
     choco install make -y           # makefiles
     choco install zip -y            # zip from terminal
 }
@@ -88,6 +87,7 @@ function optional {
     # choco install virtualbox -y     # Virtualization tool
     # choco install wireshark -y
     # choco install wsl2 -y           # Windows subsystem for linux 2
+    # choco install putty -y
     #Garbage
 }
 
