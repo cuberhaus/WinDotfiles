@@ -19,7 +19,8 @@ function linking {
         New-Item -Path $sourceLinks[$i] -ItemType SymbolicLink -Value $link -Name $sourceLinks[$i]
     }
 }
-
+# https://stackoverflow.com/questions/73485958/how-to-correct-git-reporting-detected-dubious-ownership-in-repository-withou
+# git config --global safe.directory '*'
 function base_install {
     Install-Module git-aliases -Scope CurrentUser -AllowClobber
     # https://github.com/gluons/powershell-git-aliases
@@ -48,6 +49,10 @@ function base_install {
     choco install yarn -y           # Packages, need it for vim
     choco install make -y           # makefiles
     choco install zip -y            # zip from terminal
+}
+function linux {
+    wsl --install
+    #wsl --set-default-version 2
 }
 
 function emacs {
@@ -106,7 +111,7 @@ function optional {
     choco install toastify -y 		# Toastify adds some missing functionallity to the Spotify client.
     choco install virtualbox -y     # Virtualization tool
     choco install wireshark -y
-    choco install wsl2 -y           # Windows subsystem for linux 2
+    # choco install wsl2 -y           # Windows subsystem for linux 2
     #Garbage
 }
 
