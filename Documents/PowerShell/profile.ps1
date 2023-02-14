@@ -1,4 +1,4 @@
-﻿# This profile is only used by Microsoft PowerShell.
+# This profile is only used by Microsoft PowerShell.
 $dotfiles = "C:\Users\polcg\WinDotfiles\dotfiles\"
 # https://github.com/ralish/PSDotFiles
 $DotFilesPath = $dotfiles

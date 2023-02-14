@@ -1,6 +1,24 @@
 ### EXECUTE THIS COMMAND FIRST
 # Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+$dotfiles = "C:\Users\polcg\WinDotfiles\"
 $uncap = "$dotfiles\uncap.exe" # uncap location
+$documents = "Documents"
+
+$sourceLinks = "$HOME\_vimrc", "$HOME\$documents\PowerShell\profile"
+$links = "$dotfiles\_vimrc", "$dotfiles\$documents\PowerShell\profile"
+
+function linking {
+    mkdir $HOME\$documents\PowerShell
+    mkdir $HOME\$documents\WindowsPowerShell
+    # $sym = ".symlink"
+    For($i=0; $i -lt $sourceLinks.Length; $i++) {
+        # if (Test-Path $sourceLinks[$i]) {
+        #     Remove-Item $sourceLinks[$i]
+        # }
+        $link = $links[$i]
+        New-Item -Path $sourceLinks[$i] -ItemType SymbolicLink -Value $link -Name $sourceLinks[$i]
+    }
+}
 
 function base_install {
     Install-Module git-aliases -Scope CurrentUser -AllowClobber
@@ -59,36 +77,36 @@ function full_install {
 
 function optional {
     # Probably
-    # choco install openjdk -y           # open source java development kit
-    # choco install adobereader -y 	# Pdf viewer
-    # choco install audacity -y       # Audio editor
-    # choco install autohotkey.portable -y # Automation software
-    # choco install autoruns -y       # What programs are configured to startup automatically
-    # choco install chocolateygui -y  # A gui for chocolatey package manager
-    # choco install chromium -y       # Open source Web browser
-    # choco install eclipse -y        # java/SQL IDE // doesnt quite work properly??
-    # choco install firefox -y        # Open source web browser
-    # choco install gimp -y           # Photoshop
-    # choco install git-lfs -y
-    # choco install intellijidea-community -y# Free version java IDE
-    # choco install intellijidea-ultimate -y # Paid version with sql IDE
-    # choco install jdk8              # java v8
-    # choco install jre8 -y
-    # choco install libreoffice-still -y # Office suite
-    # choco install obs-studio -y     # Record screen in windows, works with internal audio better than mac
-    # choco install python2 -y // THIS BREAKS NEOVIM PYTHON
-    # choco install r.project -y      # Probabilitat i estadística
-    # choco install r.studio -y       # Probabilitat i estadística IDE
-    # choco install reflect-free -y   # backups
-    # choco install skype -y		    # Skype
-    # choco install slack -y          # Slack
-    # choco install teamviewer -y
-    # choco install telegram -y       # Telegram
-    # choco install toastify -y 		# Toastify adds some missing functionallity to the Spotify client.
-    # choco install virtualbox -y     # Virtualization tool
-    # choco install wireshark -y
-    # choco install wsl2 -y           # Windows subsystem for linux 2
-    # choco install putty -y
+    choco install adobereader -y 	# Pdf viewer
+    choco install audacity -y       # Audio editor
+    choco install autohotkey.portable -y # Automation software
+    choco install autoruns -y       # What programs are configured to startup automatically
+    choco install chocolateygui -y  # A gui for chocolatey package manager
+    choco install chromium -y       # Open source Web browser
+    choco install eclipse -y        # java/SQL IDE // doesnt quite work properly??
+    choco install firefox -y        # Open source web browser
+    choco install gimp -y           # Photoshop
+    choco install git-lfs -y
+    choco install intellijidea-community -y# Free version java IDE
+    choco install intellijidea-ultimate -y # Paid version with sql IDE
+    choco install jdk8              # java v8
+    choco install jre8 -y
+    choco install libreoffice-still -y # Office suite
+    choco install obs-studio -y     # Record screen in windows, works with internal audio better than mac
+    choco install openjdk -y           # open source java development kit
+    choco install putty -y
+    choco install python2 -y // THIS BREAKS NEOVIM PYTHON
+    choco install r.project -y      # Probabilitat i estadística
+    choco install r.studio -y       # Probabilitat i estadística IDE
+    choco install reflect-free -y   # backups
+    choco install skype -y		    # Skype
+    choco install slack -y          # Slack
+    choco install teamviewer -y
+    choco install telegram -y       # Telegram
+    choco install toastify -y 		# Toastify adds some missing functionallity to the Spotify client.
+    choco install virtualbox -y     # Virtualization tool
+    choco install wireshark -y
+    choco install wsl2 -y           # Windows subsystem for linux 2
     #Garbage
 }
 
@@ -123,9 +141,11 @@ function games_install {
 }
 
 ## Start Installation
-base_install
-full_install
-vim_install
-cd "$dotfiles/bin/"
-.\ycm.ps1
+linking
+#base_install
+#full_install
+#vim_install
+#cd "$dotfiles/bin/"
+#.\ycm.ps1
+
 #swap
