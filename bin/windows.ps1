@@ -64,6 +64,7 @@ function emacs {
 }
 
 function full_install {
+    choco install veeam-agent -y    # backups!
     choco install powertoys -y      # Powertoys!
     choco install calibre -y        # Books manager
     choco install ccleaner -y 	    # Cleanup
