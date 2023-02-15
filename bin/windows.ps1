@@ -7,6 +7,8 @@ $documents = "Documents"
 $sourceLinks = "$HOME\_vimrc", "$HOME\$documents\PowerShell\profile"
 $links = "$dotfiles\_vimrc", "$dotfiles\$documents\PowerShell\profile"
 
+# Think about adding winget
+
 function linking {
     mkdir $HOME\$documents\PowerShell
     mkdir $HOME\$documents\WindowsPowerShell
@@ -39,6 +41,8 @@ function base_install {
     choco install git.install -y    # Git
     choco install googlechrome -y	# Web browser
     choco install linkshellextension -y # Make links from explorer
+    choco install make -y           # makefiles
+    choco install nirlauncher -y    # have gui for sysinternals
     choco install openssh -y	    # SSH client
     choco install poshgit -y        # git bar
     choco install powershell-core -y # Updated powershell
@@ -47,7 +51,6 @@ function base_install {
     choco install strawberryperl -y # Pearl
     choco install wget -y		    # A command-line utility for retrieving files using HTTP protocols
     choco install yarn -y           # Packages, need it for vim
-    choco install make -y           # makefiles
     choco install zip -y            # zip from terminal
 }
 
@@ -79,7 +82,7 @@ function full_install {
     choco install powertoys -y      # Powertoys!
     choco install rufus -y          # burn iso's on usb
     choco install spotify -y        # Spotify
-    choco install sysinternals -y   # tools for windows
+    choco install sysinternals --params "/Sysinternals" -y # tools for windows
     choco install thunderbird -y    # Email client
     choco install transmission -y   # Simple torrent client
     choco install treesizefree      # view file sizes in system that clog memory
@@ -87,19 +90,19 @@ function full_install {
     choco install vlc -y		    # Media player
     choco install vscode -y         # GUI Editor
     choco install greenshot -y      # better screenshots
+    choco install procexp -y          # process explorer
 }
 
 function optional {
     # Probably
     # choco install pswindowsupdate
     # choco install windirstat -y     # View file sizes in system to clean up space
-    choco install doxygen.install   # c++ documentation
-    choco install sublimetext3      # fast editor
-    choco install pandoc -y         # universal document converter
+    choco install cpu-z.install     # list pc infor
     choco install adobereader -y 	# Pdf viewer
     choco install audacity -y       # Audio editor
     choco install chocolateygui -y  # A gui for chocolatey package manager
     choco install chromium -y       # Open source Web browser
+    choco install doxygen.install -y  # c++ documentation
     choco install eclipse -y        # java/SQL IDE // doesnt quite work properly??
     choco install firefox -y        # Open source web browser
     choco install git-lfs -y
@@ -110,6 +113,7 @@ function optional {
     choco install libreoffice-still -y # Office suite
     choco install obs-studio -y     # Record screen in windows, works with internal audio better than mac
     choco install openjdk -y           # open source java development kit
+    choco install pandoc -y         # universal document converter
     choco install putty -y
     choco install python2 -y // THIS BREAKS NEOVIM PYTHON
     choco install r.project -y      # Probabilitat i estadística
@@ -117,6 +121,7 @@ function optional {
     choco install reflect-free -y   # backups
     choco install skype -y		    # Skype
     choco install slack -y          # Slack
+    choco install sublimetext3 -y     # fast editor
     choco install teamviewer -y
     choco install telegram -y       # Telegram
     choco install toastify -y 		# Toastify adds some missing functionallity to the Spotify client.
