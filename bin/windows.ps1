@@ -42,7 +42,7 @@ function base_install {
     choco install googlechrome -y	# Web browser
     choco install linkshellextension -y # Make links from explorer
     choco install make -y           # makefiles
-    choco install nirlauncher -y    # have gui for sysinternals
+    choco install nirlauncher -y    # have gui for sysinternals (MUST GO FIRST)
     choco install openssh -y	    # SSH client
     choco install poshgit -y        # git bar
     choco install powershell-core -y # Updated powershell
@@ -97,7 +97,7 @@ function optional {
     # Probably
     # choco install pswindowsupdate
     # choco install windirstat -y     # View file sizes in system to clean up space
-    choco install cpu-z.install     # list pc infor
+    choco install cpu-z.install -y  # list pc infor
     choco install adobereader -y 	# Pdf viewer
     choco install audacity -y       # Audio editor
     choco install chocolateygui -y  # A gui for chocolatey package manager
@@ -108,11 +108,11 @@ function optional {
     choco install git-lfs -y
     choco install intellijidea-community -y# Free version java IDE
     choco install intellijidea-ultimate -y # Paid version with sql IDE
-    choco install jdk8              # java v8
+    choco install jdk8 -y           # java v8
     choco install jre8 -y
     choco install libreoffice-still -y # Office suite
     choco install obs-studio -y     # Record screen in windows, works with internal audio better than mac
-    choco install openjdk -y           # open source java development kit
+    choco install openjdk -y        # open source java development kit
     choco install pandoc -y         # universal document converter
     choco install putty -y
     choco install python2 -y // THIS BREAKS NEOVIM PYTHON
@@ -121,11 +121,11 @@ function optional {
     choco install reflect-free -y   # backups
     choco install skype -y		    # Skype
     choco install slack -y          # Slack
-    choco install sublimetext3 -y     # fast editor
+    choco install sublimetext3 -y   # fast editor
     choco install teamviewer -y
     choco install telegram -y       # Telegram
     choco install toastify -y 		# Toastify adds some missing functionallity to the Spotify client.
-    choco install tor-browser       # browse the web without restrictions and without being traced
+    choco install tor-browser -y    # browse the web without restrictions and without being traced
     choco install virtualbox -y     # Virtualization tool
     choco install wireshark -y
     # choco install wsl2 -y           # Windows subsystem for linux 2
