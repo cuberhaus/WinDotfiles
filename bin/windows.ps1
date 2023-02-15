@@ -50,6 +50,7 @@ function base_install {
     choco install make -y           # makefiles
     choco install zip -y            # zip from terminal
 }
+
 function linux {
     wsl --install
     #wsl --set-default-version 2
@@ -64,30 +65,30 @@ function emacs {
 }
 
 function full_install {
-    choco install veeam-agent -y    # backups!
-    choco install powertoys -y      # Powertoys!
+    choco install autohotkey.portable -y # Automation software
+    choco install autoruns -y       # What programs are configured to startup automatically
     choco install calibre -y        # Books manager
     choco install ccleaner -y 	    # Cleanup
     choco install choco-cleaner -y
     choco install discord -y        # Discord
+    choco install geforce-experience -y 
     choco install malwarebytes -y   # Anti-virus
     choco install mobaxterm         # PAR (makes wxparaver WORK)
+    choco install powertoys -y      # Powertoys!
     choco install rufus -y          # burn iso's on usb
     choco install spotify -y        # Spotify
     choco install thunderbird -y    # Email client
     choco install transmission -y   # Simple torrent client
+    choco install veeam-agent -y    # backups!
     choco install vlc -y		    # Media player
     choco install vscode -y         # GUI Editor
     choco install windirstat -y     # View file sizes in system to clean up space
-    choco install geforce-experience -y 
 }
 
 function optional {
     # Probably
     choco install adobereader -y 	# Pdf viewer
     choco install audacity -y       # Audio editor
-    choco install autohotkey.portable -y # Automation software
-    choco install autoruns -y       # What programs are configured to startup automatically
     choco install chocolateygui -y  # A gui for chocolatey package manager
     choco install chromium -y       # Open source Web browser
     choco install eclipse -y        # java/SQL IDE // doesnt quite work properly??
@@ -154,5 +155,6 @@ linking
 #vim_install
 #cd "$dotfiles/bin/"
 #.\ycm.ps1
+linux
 
 #swap
