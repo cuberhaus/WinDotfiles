@@ -91,6 +91,7 @@ function full_install {
 function optional {
     # Probably
     # choco install pswindowsupdate
+    choco install treesizefree      # view file sizes in system that clog memory
     choco install adobereader -y 	# Pdf viewer
     choco install audacity -y       # Audio editor
     choco install chocolateygui -y  # A gui for chocolatey package manager
