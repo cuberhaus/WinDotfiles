@@ -67,6 +67,7 @@ function emacs {
 function full_install {
     choco install autohotkey.portable -y # Automation software
     choco install autoruns -y       # What programs are configured to startup automatically
+    choco install sysinternals -y   # tools for windows
     choco install calibre -y        # Books manager
     choco install ccleaner -y 	    # Cleanup
     choco install choco-cleaner -y
@@ -83,17 +84,19 @@ function full_install {
     choco install vlc -y		    # Media player
     choco install vscode -y         # GUI Editor
     choco install windirstat -y     # View file sizes in system to clean up space
+    choco install gimp -y           # Photoshop
+    choco install openjdk -y           # open source java development kit
 }
 
 function optional {
     # Probably
+    # choco install pswindowsupdate
     choco install adobereader -y 	# Pdf viewer
     choco install audacity -y       # Audio editor
     choco install chocolateygui -y  # A gui for chocolatey package manager
     choco install chromium -y       # Open source Web browser
     choco install eclipse -y        # java/SQL IDE // doesnt quite work properly??
     choco install firefox -y        # Open source web browser
-    choco install gimp -y           # Photoshop
     choco install git-lfs -y
     choco install intellijidea-community -y# Free version java IDE
     choco install intellijidea-ultimate -y # Paid version with sql IDE
