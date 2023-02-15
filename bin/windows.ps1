@@ -93,6 +93,7 @@ function optional {
     # Probably
     # choco install pswindowsupdate
     # choco install windirstat -y     # View file sizes in system to clean up space
+    choco install sublimetext3      # fast editor
     choco install pandoc -y         # universal document converter
     choco install adobereader -y 	# Pdf viewer
     choco install audacity -y       # Audio editor
