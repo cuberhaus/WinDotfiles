@@ -31,9 +31,11 @@ uncap 0x1b:0x14
 ## Tasks
 
 To add a task at login, use task scheduler
-
-#### Import
+### Import
 
 Import XML files from previously created tasks
+
+#### User
+If user and computer name are different you will have to change that in the task
 
 [windows 10 icon]: https://i.imgur.com/b3co2Zl.png
