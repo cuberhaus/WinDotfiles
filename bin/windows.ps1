@@ -60,38 +60,40 @@ function emacs {
     # Add environment variable HOME to C:\Users\polcg\
     # Add $HOME\.emacs.d\bin\doom to path
     # personal config not working yet on windows
-    # choco install emacs -y          # Editor 
+    # choco install emacs -y          # Editor
     # choco install git ripgrep llvm fd hunspell.portable -y
 }
 
 function full_install {
     choco install autohotkey.portable -y # Automation software
     choco install autoruns -y       # What programs are configured to startup automatically
-    choco install sysinternals -y   # tools for windows
     choco install calibre -y        # Books manager
     choco install ccleaner -y 	    # Cleanup
-    choco install choco-cleaner -y
+    choco install choco-cleaner -y  # Delete caches from chocolatey
     choco install discord -y        # Discord
-    choco install geforce-experience -y 
+    choco install geforce-experience -y # Nvidia card updates
+    choco install gimp -y           # Photoshop
     choco install malwarebytes -y   # Anti-virus
     choco install mobaxterm         # PAR (makes wxparaver WORK)
+    choco install openjdk -y        # open source java development kit
     choco install powertoys -y      # Powertoys!
     choco install rufus -y          # burn iso's on usb
     choco install spotify -y        # Spotify
+    choco install sysinternals -y   # tools for windows
     choco install thunderbird -y    # Email client
     choco install transmission -y   # Simple torrent client
+    choco install treesizefree      # view file sizes in system that clog memory
     choco install veeam-agent -y    # backups!
     choco install vlc -y		    # Media player
     choco install vscode -y         # GUI Editor
-    choco install windirstat -y     # View file sizes in system to clean up space
-    choco install gimp -y           # Photoshop
-    choco install openjdk -y           # open source java development kit
+    choco install greenshot -y      # better screenshots
 }
 
 function optional {
     # Probably
     # choco install pswindowsupdate
-    choco install treesizefree      # view file sizes in system that clog memory
+    # choco install windirstat -y     # View file sizes in system to clean up space
+    choco install pandoc -y         # universal document converter
     choco install adobereader -y 	# Pdf viewer
     choco install audacity -y       # Audio editor
     choco install chocolateygui -y  # A gui for chocolatey package manager
@@ -116,6 +118,7 @@ function optional {
     choco install teamviewer -y
     choco install telegram -y       # Telegram
     choco install toastify -y 		# Toastify adds some missing functionallity to the Spotify client.
+    choco install tor-browser       # browse the web without restrictions and without being traced
     choco install virtualbox -y     # Virtualization tool
     choco install wireshark -y
     # choco install wsl2 -y           # Windows subsystem for linux 2
