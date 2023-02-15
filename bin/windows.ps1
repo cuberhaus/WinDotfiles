@@ -69,7 +69,6 @@ function emacs {
 
 function full_install {
     choco install autohotkey.portable -y # Automation software
-    choco install autoruns -y       # What programs are configured to startup automatically
     choco install calibre -y        # Books manager
     choco install ccleaner -y 	    # Cleanup
     choco install choco-cleaner -y  # Delete caches from chocolatey
@@ -90,18 +89,18 @@ function full_install {
     choco install vlc -y		    # Media player
     choco install vscode -y         # GUI Editor
     choco install greenshot -y      # better screenshots
-    choco install procexp -y          # process explorer
+    # choco install autoruns -y       # What programs are configured to startup automatically
 }
 
 function optional {
     # Probably
     # choco install pswindowsupdate
     # choco install windirstat -y     # View file sizes in system to clean up space
-    choco install cpu-z.install -y  # list pc infor
     choco install adobereader -y 	# Pdf viewer
     choco install audacity -y       # Audio editor
     choco install chocolateygui -y  # A gui for chocolatey package manager
     choco install chromium -y       # Open source Web browser
+    choco install cpu-z.install -y  # list pc infor
     choco install doxygen.install -y  # c++ documentation
     choco install eclipse -y        # java/SQL IDE // doesnt quite work properly??
     choco install firefox -y        # Open source web browser
@@ -114,6 +113,7 @@ function optional {
     choco install obs-studio -y     # Record screen in windows, works with internal audio better than mac
     choco install openjdk -y        # open source java development kit
     choco install pandoc -y         # universal document converter
+    choco install procexp -y        # process explorer
     choco install putty -y
     choco install python2 -y // THIS BREAKS NEOVIM PYTHON
     choco install r.project -y      # Probabilitat i estadística
@@ -163,12 +163,9 @@ function games_install {
 }
 
 ## Start Installation
-linking
-#base_install
-#full_install
-#vim_install
-#cd "$dotfiles/bin/"
-#.\ycm.ps1
+# linking
+base_install
+full_install
+vim_install
 linux
-
-#swap
+swap
