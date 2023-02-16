@@ -161,7 +161,10 @@ function vim_install {
 }
 
 function swap {
-    cp $uncap C:\Windows\
+    choco install sharpkeys # allows to take a look at this registry entries and add more keybindings easily
+    # better to just use register
+    reg add "HKLM\SYSTEM\CurrentControlSet\Control\Keyboard Layout" /v "Scancode Map" /t REG_BINARY /d 00000000000000000200000001003a0000000000
+    # cp $uncap C:\Windows\
     # Swap caps with escape https://github.com/susam/uncap#readme
 }
 
@@ -171,13 +174,15 @@ function games_install {
     # choco install steam -y
 }
 function tasks {
-    schtasks /create /tn "uncap" /tr "'C:\Windows\uncap' 0x1b:0x14" /sc onstart
+    # schtasks /create /tn "uncap" /tr "'C:\Windows\uncap' 0x1b:0x14" /sc onstart
+    schtasks /create /tn "uncap" /tr "'C:\Windows\uncap' 0x1b:0x14" /sc onlogon
     # We first have to activate the service
     w32tm /register
     net start w32time
     w32tm /resync
-    schtasks /create /tn "time sync" /tr "'w32tm' /resync" /sc onstart
-    schtasks /create /tn "time sync" /tr "'wt' update" /sc onstart
+    # schtasks /create /tn "time sync" /tr "'w32tm' /resync" /sc onstart
+    schtasks /create /tn "time sync" /tr "'w32tm' /resync" /sc onlogon
+    # schtasks /create /tn "time sync" /tr "'wt' update" /sc onlogon
 }
 
 function bootloader {
