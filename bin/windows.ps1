@@ -4,8 +4,8 @@ $dotfiles = "C:\Users\polcg\WinDotfiles\"
 $uncap = "$dotfiles\uncap.exe" # uncap location
 $documents = "Documents"
 
-$sourceLinks = "$HOME\_vimrc", "$HOME\$documents\PowerShell\profile.ps1
-$links = "$dotfiles\_vimrc", "$dotfiles\$documents\PowerShell\profile.ps1
+$sourceLinks = "$HOME\_vimrc", "$HOME\$documents\PowerShell\profile.ps1"
+$links = "$dotfiles\_vimrc", "$dotfiles\$documents\PowerShell\profile.ps1"
 
 # Think about adding winget
 
