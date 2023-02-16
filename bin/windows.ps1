@@ -170,11 +170,16 @@ function games_install {
     # choco install leagueoflegends -y
     # choco install steam -y
 }
+function tasks {
+    schtasks /create /tn "uncap" /tr "'C:\Windows\uncap' 0x1b:0x14" /sc onstart
+}
 
 ## Start Installation
 base_install
 linking
+swap
+tasks
 full_install
 vim_install
 linux
-swap
+
