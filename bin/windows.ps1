@@ -100,7 +100,6 @@ function full_install {
     choco install vscode -y         # GUI Editor
     choco install greenshot -y      # better screenshots
     # choco install autoruns -y       # What programs are configured to startup automatically
-    choco install reflect-free -y   # backups
 }
 
 function optional {
@@ -140,6 +139,7 @@ function optional {
     choco install wireshark -y
     
     # Garbage
+    # choco install reflect-free -y   # backups (EOL) just use windows (crear una imagen de sistema)
     # choco install veeam-agent -y    # backups This DESTROYED MY PC
     # choco install wsl2 -y           # Windows subsystem for linux 2
 }
