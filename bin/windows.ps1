@@ -31,7 +31,6 @@ function linking {
 function base_install {
     #https://lilinguas.com/es/error-de-powershell-el-archivo-no-est%C3%A1-firmado-digitalmente/
     Set-ExecutionPolicy unrestricted
-    Install-Module git-aliases -Scope CurrentUser -AllowClobber
     # https://github.com/gluons/powershell-git-aliases
 
     # Command-line windows update
@@ -60,6 +59,7 @@ function base_install {
     choco install wget -y		    # A command-line utility for retrieving files using HTTP protocols
     choco install yarn -y           # Packages, need it for vim
     choco install zip -y            # zip from terminal
+    Install-Module git-aliases -Scope CurrentUser -AllowClobber
 }
 
 function linux {
