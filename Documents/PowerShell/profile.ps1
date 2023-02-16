@@ -2,7 +2,9 @@
 $dotfiles = "C:\Users\polcg\WinDotfiles\"
 # https://github.com/ralish/PSDotFiles
 $DotFilesPath = $dotfiles
-
+function storeUpdate{
+    Get-CimInstance -Namespace "Root\cimv2\mdm\dmmap" -ClassName "MDM_EnterpriseModernAppManagement_AppManagement01" | Invoke-CimMethod -MethodName UpdateScanMethod
+}
 function syncTime {
     # Check if the Windows Time service is running
     $service = Get-Service -Name w32time
