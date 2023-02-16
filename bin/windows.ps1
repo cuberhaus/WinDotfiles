@@ -4,15 +4,16 @@ $dotfiles = "C:\Users\polcg\WinDotfiles\"
 $uncap = "$dotfiles\uncap.exe" # uncap location
 $documents = "Documents"
 
-$sourceLinks = "$HOME\_vimrc", "$HOME\$documents\PowerShell\profile"
-$links = "$dotfiles\_vimrc", "$dotfiles\$documents\PowerShell\profile"
+$sourceLinks = "$HOME\_vimrc", "$HOME\$documents\PowerShell\profile.ps1
+$links = "$dotfiles\_vimrc", "$dotfiles\$documents\PowerShell\profile.ps1
 
 # Think about adding winget
 
 function linking {
-    mkdir $HOME\$documents\PowerShell
-    mkdir $HOME\$documents\WindowsPowerShell
-    # $sym = ".symlink"
+    mkdir $HOME\Documents\PowerShell
+    mkdir $HOME\Documents\WindowsPowerShell
+    Remove-Item $HOME\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+    mkdir $HOME\AppData\Local\nvim
     For($i=0; $i -lt $sourceLinks.Length; $i++) {
         # if (Test-Path $sourceLinks[$i]) {
         #     Remove-Item $sourceLinks[$i]
@@ -20,6 +21,10 @@ function linking {
         $link = $links[$i]
         New-Item -Path $sourceLinks[$i] -ItemType SymbolicLink -Value $link -Name $sourceLinks[$i]
     }
+    cmd /c mklink C:\Users\polcg\Documents\PowerShell\profile.ps1 C:\Users\polcg\WinDotfiles\Documents\PowerShell\profile.ps1
+    cmd /c mklink C:\Users\polcg\Documents\WindowsPowerShell\profile.ps1 C:\Users\polcg\WinDotfiles\Documents\PowerShell\profile.ps1
+    cmd /c mklink C:\Users\polcg\AppData\Local\nvim\init.vim C:\Users\polcg\WinDotfiles\AppData\Local\nvim\init.vim
+    cmd /c mklink C:\Users\polcg\_vimrc C:\Users\polcg\WinDotfiles\_vimrc
 }
 # https://stackoverflow.com/questions/73485958/how-to-correct-git-reporting-detected-dubious-ownership-in-repository-withou
 # git config --global safe.directory '*'
@@ -33,7 +38,8 @@ function base_install {
     Install-Module PSWindowsUpdate
     Get-WindowsUpdate
     Install-WindowsUpdate
-
+    # Enable developer mode https://www.ntweekly.com/2022/04/05/how-to-enable-developer-mode-on-windows-11-using-powershell/
+    reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" /t REG_DWORD /f /v "AllowDevelopmentWithoutDevLicense" /d "1"
     # Chocolatey install
     Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
