@@ -63,7 +63,10 @@ function base_install {
 }
 
 function linux {
+    # enable windows subsystem for linux control panel -> programs and characteristics -> enable features
+    Dism /Online /Enable-Feature /FeatureName:Microsoft-Windows-Subsystem-Linux /All
     wsl --install
+    # wsl -l -v
     #wsl --set-default-version 2
 }
 
