@@ -100,6 +100,7 @@ function full_install {
     choco install vscode -y         # GUI Editor
     choco install greenshot -y      # better screenshots
     # choco install autoruns -y       # What programs are configured to startup automatically
+    choco install reflect-free -y   # backups
 }
 
 function optional {
@@ -128,7 +129,6 @@ function optional {
     choco install python2 -y // THIS BREAKS NEOVIM PYTHON
     choco install r.project -y      # Probabilitat i estadística
     choco install r.studio -y       # Probabilitat i estadística IDE
-    choco install reflect-free -y   # backups
     choco install skype -y		    # Skype
     choco install slack -y          # Slack
     choco install sublimetext3 -y   # fast editor
