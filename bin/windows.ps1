@@ -92,7 +92,7 @@ function full_install {
     choco install sysinternals --params "/Sysinternals" -y # tools for windows
     choco install thunderbird -y    # Email client
     choco install transmission -y   # Simple torrent client
-    choco install treesizefree      # view file sizes in system that clog memory
+    choco install treesizefree -y     # view file sizes in system that clog memory
     choco install veeam-agent -y    # backups!
     choco install vlc -y		    # Media player
     choco install vscode -y         # GUI Editor
