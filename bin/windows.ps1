@@ -93,7 +93,6 @@ function full_install {
     choco install thunderbird -y    # Email client
     choco install transmission -y   # Simple torrent client
     choco install treesizefree -y     # view file sizes in system that clog memory
-    choco install veeam-agent -y    # backups!
     choco install vlc -y		    # Media player
     choco install vscode -y         # GUI Editor
     choco install greenshot -y      # better screenshots
@@ -136,8 +135,10 @@ function optional {
     choco install tor-browser -y    # browse the web without restrictions and without being traced
     choco install virtualbox -y     # Virtualization tool
     choco install wireshark -y
+    
+    # Garbage
+    # choco install veeam-agent -y    # backups This DESTROYED MY PC
     # choco install wsl2 -y           # Windows subsystem for linux 2
-    #Garbage
 }
 
 function vim_install {
