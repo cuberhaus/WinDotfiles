@@ -174,14 +174,12 @@ function games_install {
     # choco install steam -y
 }
 function tasks {
-    # schtasks /create /tn "uncap" /tr "'C:\Windows\uncap' 0x1b:0x14" /sc onstart
-    schtasks /create /tn "uncap" /tr "'C:\Windows\uncap' 0x1b:0x14" /sc onlogon
     # We first have to activate the service
     w32tm /register
     net start w32time
     w32tm /resync
-    # schtasks /create /tn "time sync" /tr "'w32tm' /resync" /sc onstart
     schtasks /create /tn "time sync" /tr "'w32tm' /resync" /sc onlogon
+    # schtasks /create /tn "uncap" /tr "'C:\Windows\uncap' 0x1b:0x14" /sc onlogon 
     # schtasks /create /tn "time sync" /tr "'wt' update" /sc onlogon
 }
 
