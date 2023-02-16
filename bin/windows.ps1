@@ -24,6 +24,8 @@ function linking {
 # https://stackoverflow.com/questions/73485958/how-to-correct-git-reporting-detected-dubious-ownership-in-repository-withou
 # git config --global safe.directory '*'
 function base_install {
+    #https://lilinguas.com/es/error-de-powershell-el-archivo-no-est%C3%A1-firmado-digitalmente/
+    Set-ExecutionPolicy unrestricted
     Install-Module git-aliases -Scope CurrentUser -AllowClobber
     # https://github.com/gluons/powershell-git-aliases
 
