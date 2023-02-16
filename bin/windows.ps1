@@ -177,6 +177,12 @@ function tasks {
     net start w32time
     w32tm /resync
     schtasks /create /tn "time sync" /tr "'w32tm' /resync" /sc onstart
+    schtasks /create /tn "time sync" /tr "'wt' update" /sc onstart
+}
+
+function bootloader {
+    # check that there is only one booting instance in arranque
+    msconfig
 }
 
 ## Start Installation
@@ -187,4 +193,5 @@ tasks
 full_install
 vim_install
 linux
+msconfig
 

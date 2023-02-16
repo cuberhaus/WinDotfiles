@@ -30,7 +30,7 @@ function rclonepush_thunderbird {
 }
 function aliases {
     # code $dotfiles\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
-    code $dotfiles\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
+    code $dotfiles\Documents\PowerShell\profile.ps1
 }
 
 # function ycminstall {
@@ -59,6 +59,7 @@ function update {
     Get-WindowsUpdate
     Install-WindowsUpdate
     vim +PlugUpgrade +PlugUpdate +qall
+    winget upgrade --all
 }
 function cleanup {
     choco-cleaner
