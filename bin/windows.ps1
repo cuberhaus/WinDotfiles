@@ -84,7 +84,7 @@ function full_install {
     choco install geforce-experience -y # Nvidia card updates
     choco install gimp -y           # Photoshop
     choco install malwarebytes -y   # Anti-virus
-    choco install mobaxterm         # PAR (makes wxparaver WORK)
+    choco install mobaxterm -y      # PAR (makes wxparaver WORK)
     choco install openjdk -y        # open source java development kit
     choco install powertoys -y      # Powertoys!
     choco install rufus -y          # burn iso's on usb
@@ -171,8 +171,8 @@ function games_install {
 }
 
 ## Start Installation
-# linking
 base_install
+linking
 full_install
 vim_install
 linux
