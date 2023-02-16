@@ -1,5 +1,5 @@
 # This profile is only used by Microsoft PowerShell.
-$dotfiles = "C:\Users\polcg\WinDotfiles\dotfiles\"
+$dotfiles = "C:\Users\polcg\WinDotfiles\"
 # https://github.com/ralish/PSDotFiles
 $DotFilesPath = $dotfiles
 
