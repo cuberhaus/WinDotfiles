@@ -172,10 +172,12 @@ function swap {
 }
 
 function games_install {
-    # choco install goggalaxy -y
-    # choco install leagueoflegends -y
-    # choco install steam -y
+    choco install goggalaxy -y
+    choco install leagueoflegends -y
+    choco install steam -y
+    choco install epicgameslauncher -y
 }
+
 function tasks {
     # We first have to activate the service
     w32tm /register
