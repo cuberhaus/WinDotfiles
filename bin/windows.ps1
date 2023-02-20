@@ -79,6 +79,7 @@ function emacs {
 }
 
 function full_install {
+    choco install obsidian -y       # Readme editor
     choco install autohotkey.portable -y # Automation software
     choco install calibre -y        # Books manager
     choco install ccleaner -y 	    # Cleanup
