@@ -35,10 +35,6 @@ function aliases {
     code $dotfiles\Documents\PowerShell\profile.ps1
 }
 
-# function ycminstall {
-#     $dotfiles\bin\ycm.ps1
-# }
-
 function vimrc {
     vim $dotfiles\_vimrc
 }
