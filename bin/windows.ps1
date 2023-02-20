@@ -156,11 +156,9 @@ function vim_install {
     ni $HOME/vimfiles/autoload/plug.vim -Force
 
     npm install -g neovim #npm
-
     gem install neovim # gem environments
-
     pip install --upgrade neovim # Python3
-    # NEED TO ADD COMMAND TO INSTALL PLUGINS ONCE VIM IS INSTALLED
+    vim +PlugInstall +qall # Install plugins
 }
 
 function swap {
