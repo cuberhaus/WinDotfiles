@@ -1,5 +1,11 @@
 # ![Windows][windows 10 icon] Windows 10 dotfiles
 
+## Installation
+```
+git clone https://github.com/cuberhaus/WinDotfiles.git
+.\WinDotfiles\bin\windows.ps1
+```
+
 ## Chocolatey
 
 ### Upgrade packages
