@@ -1,8 +1,8 @@
 # This profile is only used by Microsoft PowerShell.
 $dotfiles = "C:\Users\polcg\WinDotfiles\"
 # https://github.com/ralish/PSDotFiles
-$DotFilesPath = $dotfiles
-function storeUpdate{
+$DotFilesPath = $dotfiles # This is needed
+function storeUpdate {
     Get-CimInstance -Namespace "Root\cimv2\mdm\dmmap" -ClassName "MDM_EnterpriseModernAppManagement_AppManagement01" | Invoke-CimMethod -MethodName UpdateScanMethod
 }
 function syncTime {
@@ -12,7 +12,6 @@ function syncTime {
         # If the service is not running, start it
         Start-Service -Name w32time
     }
-
     # Synchronize the time
     w32tm /resync
 }
@@ -125,11 +124,28 @@ function gitsync {
     git submodule update --init --recursive
 }
 # Perform a git pull on all git repositories in the current directory
-function pull{
-    # Loop over all items in the current directory
-    Get-ChildItem -Force | ForEach-Object {
-        # Check if the item is a directory
-        if ($_.PSIsContainer) {
+function pull {
+    param(
+        [switch]$Recurse
+    )
+
+    # If the -Recurse switch is specified, use the -Recurse parameter of Get-ChildItem
+    if ($Recurse) {
+        # Loop over all non-hidden directories in the current directory and its subdirectories
+        Get-ChildItem -Directory -Recurse -Force | Where-Object { !$_.Name.StartsWith('.') } | ForEach-Object {
+            # Check if the directory is a git repository
+            if (Test-Path "$($_.FullName)\.git" -PathType Container) {
+                # Change into the directory and perform a git pull
+                Set-Location $_.FullName
+                Write-Host "Pulling from $($_.FullName)" -ForegroundColor Green
+                git pull
+                Set-Location ..
+            } 
+        }
+    }
+    else {
+        # Loop over all non-hidden directories in the current directory
+        Get-ChildItem -Directory -Force | Where-Object { !$_.Name.StartsWith('.') } | ForEach-Object {
             # Check if the directory is a git repository
             if (Test-Path "$($_.FullName)\.git" -PathType Container) {
                 # Change into the directory and perform a git pull
@@ -142,15 +158,57 @@ function pull{
     }
 }
 
+# This status does NOT work, it appears to break on recursion
+# function status {
+#     [CmdletBinding()]
+#     param(
+#         [switch]$Recurse
+#     )
+
+#     # Loop over all items in the current directory
+#     Get-ChildItem -Directory -Force -Exclude .git | Where-Object { !$_.Name.StartsWith('.') } | ForEach-Object {
+#         # Check if the directory is a git repository
+#         if (Test-Path "$($_.FullName)\.git" -PathType Container) {
+#             # Change into the directory and perform a git status
+#             Set-Location $_.FullName
+#             Write-Host "Entering $($_.FullName)" -ForegroundColor Green
+#             git status
+#             Set-Location ..
+#         } 
+#         # Recursively check subdirectories if $Recurse is specified
+#         elseif ($Recurse) {
+#             status -Recurse
+#         }
+#     }
+# }
+
+# Status -Recurse
 # Perform a git status on all git repositories in the current directory
-function status{
-    # Loop over all items in the current directory
-    Get-ChildItem -Force | ForEach-Object {
-        # Check if the item is a directory
-        if ($_.PSIsContainer) {
+function status {
+    param(
+        [switch]$Recurse
+    )
+
+    # If the -Recurse switch is specified, use the -Recurse parameter of Get-ChildItem
+    if ($Recurse) {
+        # Loop over all non-hidden directories in the current directory and its subdirectories
+        Get-ChildItem -Directory -Recurse -Force | Where-Object { !$_.Name.StartsWith('.') } | ForEach-Object {
             # Check if the directory is a git repository
             if (Test-Path "$($_.FullName)\.git" -PathType Container) {
-                # Change into the directory and perform a git pull
+                # Change into the directory and perform a git status
+                Set-Location $_.FullName
+                Write-Host "Entering $($_.FullName)" -ForegroundColor Green
+                git status
+                Set-Location ..
+            } 
+        }
+    }
+    else {
+        # Loop over all non-hidden directories in the current directory
+        Get-ChildItem -Directory -Force | Where-Object { !$_.Name.StartsWith('.') } | ForEach-Object {
+            # Check if the directory is a git repository
+            if (Test-Path "$($_.FullName)\.git" -PathType Container) {
+                # Change into the directory and perform a git status
                 Set-Location $_.FullName
                 Write-Host "Entering $($_.FullName)" -ForegroundColor Green
                 git status
@@ -169,5 +227,5 @@ Import-Module 'C:\tools\poshgit\dahlbyk-posh-git-9bda399\src\posh-git.psd1'
 # See https://ch0.co/tab-completion for details.
 $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 if (Test-Path($ChocolateyProfile)) {
-  Import-Module "$ChocolateyProfile"
+    Import-Module "$ChocolateyProfile"
 }
