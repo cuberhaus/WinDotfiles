@@ -99,6 +99,9 @@ function yolo {
 function g {
     git $args
 }
+function gc() {
+    git commit -m "$args"
+}
 function ga {
     git add $args
 }
