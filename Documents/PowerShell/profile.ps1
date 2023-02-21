@@ -125,9 +125,37 @@ function gitsync {
 }
 # Perform a git pull on all git repositories in the current directory
 function pull {
+    <#
+    .SYNOPSIS
+    Pulls the latest changes from all Git repositories within the current directory and its subdirectories.
+
+    .DESCRIPTION
+    This function searches the current directory and its subdirectories for Git repositories and performs a "git pull" command to retrieve the latest changes from the remote repository.
+
+    .PARAMETER Recurse
+    If this switch is specified, the function will search for Git repositories in all subdirectories of the current directory.
+
+    .EXAMPLE
+    To pull the latest changes from Git repositories in the current directory, run the following command:
+    pull
+
+    .EXAMPLE
+    To pull the latest changes from Git repositories in the current directory and its subdirectories, run the following command:
+    pull -Recurse
+
+    .NOTES
+    Author: Pol Casacuberta
+    Date: 21/02/2023
+    #>
     param(
-        [switch]$Recurse
+        [switch]$Recurse,
+        [switch]$Help
     )
+
+    if ($Help) {
+        Get-Help pull -Full
+        return
+    }
 
     # Store the starting directory
     $startDirectory = (Get-Item -Path ".\").FullName
@@ -190,9 +218,44 @@ function pull {
 # Status -Recurse
 # Perform a git status on all git repositories in the current directory
 function status {
+    <#
+    .SYNOPSIS
+    Displays the git status of all repositories in the current directory (and its subdirectories, if -Recurse is specified).
+
+    .DESCRIPTION
+    This function finds all git repositories in the current directory (and its subdirectories, if -Recurse is specified), and then displays the git status of each repository.
+
+    .PARAMETER Recurse
+    If specified, the function will also search for git repositories in subdirectories of the current directory.
+
+    .EXAMPLE
+    PS C:\Projects> status -Recurse
+    Entering C:\Projects\Project1
+    On branch main
+    Your branch is up to date with 'origin/main'.
+
+    nothing to commit, working tree clean
+    Entering C:\Projects\Project2
+    On branch feature/some-feature
+    Your branch is up to date with 'origin/feature/some-feature'.
+
+    nothing to commit, working tree clean
+    ...
+
+    .NOTES
+    Author: Pol Casacuberta
+    Date: 21/02/2023
+
+    #>
     param(
-        [switch]$Recurse
+        [switch]$Recurse,
+        [switch]$Help
     )
+
+    if ($Help) {
+        Get-Help status -Full
+        return
+    }
     # Store the starting directory
     $startDirectory = (Get-Item -Path ".\").FullName
 
