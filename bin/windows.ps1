@@ -25,6 +25,8 @@ function linking {
     cmd /c mklink C:\Users\polcg\Documents\WindowsPowerShell\profile.ps1 C:\Users\polcg\WinDotfiles\Documents\PowerShell\profile.ps1
     cmd /c mklink C:\Users\polcg\AppData\Local\nvim\init.vim C:\Users\polcg\WinDotfiles\AppData\Local\nvim\init.vim
     cmd /c mklink C:\Users\polcg\_vimrc C:\Users\polcg\WinDotfiles\_vimrc
+
+    cmd /c mklink C:\Users\polcg\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json C:\Users\polcg\WinDotfiles\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
 }
 # https://stackoverflow.com/questions/73485958/how-to-correct-git-reporting-detected-dubious-ownership-in-repository-withou
 # git config --global safe.directory '*'
