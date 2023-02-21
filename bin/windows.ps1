@@ -126,7 +126,8 @@ function optional {
     choco install pandoc -y         # universal document converter
     choco install procexp -y        # process explorer
     choco install putty -y
-    choco install python2 -y // THIS BREAKS NEOVIM PYTHON
+    choco install pycharm -y        # Best Python IDE
+    choco install pycharm-community -y # Community version
     choco install r.project -y      # Probabilitat i estadística
     choco install r.studio -y       # Probabilitat i estadística IDE
     choco install skype -y		    # Skype
@@ -140,6 +141,7 @@ function optional {
     choco install wireshark -y
     
     # Garbage
+    # choco install python2 -y // THIS BREAKS NEOVIM PYTHON
     # choco install reflect-free -y   # backups (EOL) just use windows (crear una imagen de sistema)
     # choco install veeam-agent -y    # backups This DESTROYED MY PC
     # choco install wsl2 -y           # Windows subsystem for linux 2
