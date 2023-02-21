@@ -6,6 +6,12 @@ git clone https://github.com/cuberhaus/WinDotfiles.git
 .\WinDotfiles\bin\windows.ps1
 ```
 
+## Commands
+To check available commands type:
+```
+aliases
+```
+
 ## Chocolatey
 
 ### Upgrade packages
