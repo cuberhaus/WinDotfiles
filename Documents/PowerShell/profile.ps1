@@ -129,6 +129,9 @@ function pull {
         [switch]$Recurse
     )
 
+    # Store the starting directory
+    $startDirectory = (Get-Item -Path ".\").FullName
+
     # If the -Recurse switch is specified, use the -Recurse parameter of Get-ChildItem
     if ($Recurse) {
         # Loop over all non-hidden directories in the current directory and its subdirectories
@@ -156,6 +159,8 @@ function pull {
             } 
         }
     }
+    # Return to the starting directory
+    Set-Location $startDirectory
 }
 
 # This status does NOT work, it appears to break on recursion
@@ -188,6 +193,8 @@ function status {
     param(
         [switch]$Recurse
     )
+    # Store the starting directory
+    $startDirectory = (Get-Item -Path ".\").FullName
 
     # If the -Recurse switch is specified, use the -Recurse parameter of Get-ChildItem
     if ($Recurse) {
@@ -216,6 +223,8 @@ function status {
             } 
         }
     }
+    # Return to the starting directory
+    Set-Location $startDirectory
 }
 
 Import-Module 'C:\tools\poshgit\dahlbyk-posh-git-9bda399\src\posh-git.psd1'
