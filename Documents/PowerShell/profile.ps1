@@ -124,7 +124,7 @@ function gitsync {
     git submodule sync
     git submodule update --init --recursive
 }
-# Define a function to recursively search for git repositories
+# Perform a git pull on all git repositories in the current directory
 function pull{
     # Loop over all items in the current directory
     Get-ChildItem -Force | ForEach-Object {
@@ -142,7 +142,7 @@ function pull{
     }
 }
 
-# Define a function to recursively search for git repositories
+# Perform a git status on all git repositories in the current directory
 function status{
     # Loop over all items in the current directory
     Get-ChildItem -Force | ForEach-Object {
