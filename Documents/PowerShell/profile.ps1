@@ -124,6 +124,41 @@ function gitsync {
     git submodule sync
     git submodule update --init --recursive
 }
+# Define a function to recursively search for git repositories
+function pull{
+    # Loop over all items in the current directory
+    Get-ChildItem -Force | ForEach-Object {
+        # Check if the item is a directory
+        if ($_.PSIsContainer) {
+            # Check if the directory is a git repository
+            if (Test-Path "$($_.FullName)\.git" -PathType Container) {
+                # Change into the directory and perform a git pull
+                Set-Location $_.FullName
+                Write-Host "Pulling from $($_.FullName)" -ForegroundColor Green
+                git pull
+                Set-Location ..
+            } 
+        }
+    }
+}
+
+# Define a function to recursively search for git repositories
+function status{
+    # Loop over all items in the current directory
+    Get-ChildItem -Force | ForEach-Object {
+        # Check if the item is a directory
+        if ($_.PSIsContainer) {
+            # Check if the directory is a git repository
+            if (Test-Path "$($_.FullName)\.git" -PathType Container) {
+                # Change into the directory and perform a git pull
+                Set-Location $_.FullName
+                Write-Host "Entering $($_.FullName)" -ForegroundColor Green
+                git status
+                Set-Location ..
+            } 
+        }
+    }
+}
 
 Import-Module 'C:\tools\poshgit\dahlbyk-posh-git-9bda399\src\posh-git.psd1'
 
