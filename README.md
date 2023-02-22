@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Dotfiles are configuration files that are used to customize the behavior of various command-line tools and applications. They are commonly used by developers and power users to streamline their workflow and make their environment more efficient. This guide provides instructions for installing and using dotfiles on Windows 10.
+Dotfiles are configuration files that are used to customize the behavior of various command-line tools and applications. They are commonly used by developers and power users to streamline their workflow and make their environment more efficient. This guide provides instructions for installing and using dotfiles on Windows 11.
 
 ## Table of Contents
 
@@ -20,7 +20,7 @@ Dotfiles are configuration files that are used to customize the behavior of vari
 [Set execution policy](https://superuser.com/questions/106360/how-to-enable-execution-of-powershell-scripts) <br>
 [Dubious ownership](https://stackoverflow.com/questions/73485958/how-to-correct-git-reporting-detected-dubious-ownership-in-repository-withou)
 
-To install the dotfiles on Windows 10, follow these steps:
+To install the dotfiles on Windows 11, follow these steps:
 
 1. Set the execution policy in PowerShell by running the following command:
 
