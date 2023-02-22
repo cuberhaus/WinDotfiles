@@ -1,46 +1,68 @@
-### EXECUTE THIS COMMAND FIRST
-# Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 $dotfiles = "C:\Users\polcg\WinDotfiles\"
 $uncap = "$dotfiles\uncap.exe" # uncap location
 $documents = "Documents"
 
-$sourceLinks = "$HOME\_vimrc", "$HOME\$documents\PowerShell\profile.ps1"
-$links = "$dotfiles\_vimrc", "$dotfiles\$documents\PowerShell\profile.ps1"
-
 # Think about adding winget
 
-function linking {
-    mkdir $HOME\Documents\PowerShell
-    mkdir $HOME\Documents\WindowsPowerShell
-    Remove-Item $HOME\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
-    mkdir $HOME\AppData\Local\nvim
-    For($i=0; $i -lt $sourceLinks.Length; $i++) {
-        # if (Test-Path $sourceLinks[$i]) {
-        #     Remove-Item $sourceLinks[$i]
-        # }
-        $link = $links[$i]
-        New-Item -Path $sourceLinks[$i] -ItemType SymbolicLink -Value $link -Name $sourceLinks[$i]
-    }
-    cmd /c mklink C:\Users\polcg\Documents\PowerShell\profile.ps1 C:\Users\polcg\WinDotfiles\Documents\PowerShell\profile.ps1
-    cmd /c mklink C:\Users\polcg\Documents\WindowsPowerShell\profile.ps1 C:\Users\polcg\WinDotfiles\Documents\PowerShell\profile.ps1
-    cmd /c mklink C:\Users\polcg\AppData\Local\nvim\init.vim C:\Users\polcg\WinDotfiles\AppData\Local\nvim\init.vim
-    cmd /c mklink C:\Users\polcg\_vimrc C:\Users\polcg\WinDotfiles\_vimrc
+function Link-Dotfiles {
+    # Set up directory paths
+    $directories = @(
+        "$HOME\Documents\PowerShell",
+        "$HOME\Documents\WindowsPowerShell",
+        "$HOME\AppData\Local\nvim"
+    )
 
-    Remove-Item $HOME\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
-    cmd /c mklink C:\Users\polcg\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json C:\Users\polcg\WinDotfiles\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
+    # Set up symlink paths
+    $symlinkSources = @(
+        "$HOME\WinDotfiles\Documents\PowerShell\profile.ps1",
+        "$HOME\WinDotfiles\Documents\PowerShell\profile.ps1",
+        "$HOME\WinDotfiles\AppData\Local\nvim\init.vim",
+        "$HOME\WinDotfiles\_vimrc",
+        "$HOME\WinDotfiles\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
+    )
+
+    $symlinkDestinations = @(
+        "$HOME\Documents\WindowsPowerShell\profile.ps1",
+        "$HOME\Documents\PowerShell\profile.ps1",
+        "$HOME\AppData\Local\nvim\init.vim",
+        "$HOME\_vimrc",
+        "$HOME\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
+    )
+
+    # Create necessary directories
+    foreach ($directory in $directories) {
+        if (-not (Test-Path $directory -PathType Container)) {
+            New-Item -ItemType Directory -Force $directory
+        }
+    }
+
+    # Symlink files
+    for ($i = 0; $i -lt $symlinkSources.Count; $i++) {
+        $source = $symlinkSources[$i]
+        $destination = $symlinkDestinations[$i]
+        if (Test-Path $destination) {
+            Remove-Item $destination -Force # Remove file if already exists on destination
+        }
+        cmd /c mklink $destination $source
+    }
 }
+
 function base_install {
     # https://github.com/gluons/powershell-git-aliases
 
-    # Command-line windows update
-    Install-Module PSWindowsUpdate
-    Get-WindowsUpdate
-    Install-WindowsUpdate
-    # Enable developer mode https://www.ntweekly.com/2022/04/05/how-to-enable-developer-mode-on-windows-11-using-powershell/
-    reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" /t REG_DWORD /f /v "AllowDevelopmentWithoutDevLicense" /d "1"
-    # Chocolatey install
-    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+    # Install PSWindowsUpdate and update Windows
+    Install-Module PSWindowsUpdate -Force
+    Get-WindowsUpdate -Install -Verbose
 
+    # Enable developer mode
+    Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock' -Name 'AllowDevelopmentWithoutDevLicense' -Value 1 -Force # better than regadd (it's the powershell version of the legacy command)
+
+    # Install Chocolatey
+    Set-ExecutionPolicy Bypass -Scope Process -Force
+    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
+    iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+    # Install packages using Chocolatey
     choco install -y 7zip.install           # Archiver
     choco install -y curl  		            # Curl is a command line tool for transferring data with URLs
     choco install -y fzf                    # Fuzzy finder
@@ -58,12 +80,18 @@ function base_install {
     choco install -y wget 		            # A command-line utility for retrieving files using HTTP protocols
     choco install -y yarn                   # Packages, need it for vim
     choco install -y zip                    # Zip from terminal
+
+    # Install git-aliases module
     Install-Module git-aliases -Scope CurrentUser -AllowClobber
 }
 
 function linux {
-    # enable windows subsystem for linux control panel -> programs and characteristics -> enable features
-    Dism /Online /Enable-Feature /FeatureName:Microsoft-Windows-Subsystem-Linux /All
+     # Enable Windows Subsystem for Linux
+    Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+
+    # # enable windows subsystem for linux control panel -> programs and characteristics -> enable features
+    # Dism /Online /Enable-Feature /FeatureName:Microsoft-Windows-Subsystem-Linux /All
+
     wsl --install
     # wsl -l -v
     #wsl --set-default-version 2
@@ -150,21 +178,27 @@ function optional {
 }
 
 function vim_install {
-    choco install -y vim 
-    choco install -y neovim 
-    #vim plug neovim
-    iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
-    ni "$env:LOCALAPPDATA/nvim-data/site/autoload/plug.vim" -Force
+choco install -y vim, neovim
 
-    #vim plug for PowerShell
-    iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
-    ni $HOME/vimfiles/autoload/plug.vim -Force
+    # Install vim-plug for Neovim
+    $plugPath = "$env:LOCALAPPDATA/nvim-data/site/autoload/plug.vim"
+    iwr -useb "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim" -OutFile $plugPath
+    if (!(Test-Path $plugPath)) { throw "Failed to install vim-plug for Neovim" }
 
-    npm install -g neovim #npm
-    gem install neovim # gem environments
-    pip install --upgrade neovim # Python3
-    vim +PlugInstall +qall # Install plugins
-}
+    # Install vim-plug for PowerShell
+    $vimfilesPath = "$HOME/vimfiles"
+    if (!(Test-Path $vimfilesPath)) { mkdir $vimfilesPath | Out-Null }
+    $plugPath = "$vimfilesPath/autoload/plug.vim"
+    iwr -useb "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim" -OutFile $plugPath
+    if (!(Test-Path $plugPath)) { throw "Failed to install vim-plug for PowerShell" }
+
+    # Install Neovim support for npm, gem and Python3
+    npm install -g neovim
+    gem install neovim
+    pip install --upgrade neovim
+
+    # Install plugins
+    vim +PlugInstall +qall}
 
 function swap {
     choco install -y sharpkeys # allows to take a look at this registry entries and add more keybindings easily
@@ -172,6 +206,13 @@ function swap {
     reg add "HKLM\SYSTEM\CurrentControlSet\Control\Keyboard Layout" /v "Scancode Map" /t REG_BINARY /d 00000000000000000200000001003a0000000000
     # cp $uncap C:\Windows\
     # Swap caps with escape https://github.com/susam/uncap#readme
+
+    $hex = "00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,3a,00,1d,00,00,00,00,00"
+    $key = "HKLM:\SYSTEM\CurrentControlSet\Control\Keyboard Layout"
+    $valueName = "Scancode Map"
+    $valueType = [Microsoft.Win32.RegistryValueKind]::Binary
+    $valueData = ([byte[]]([convert]::ToByte($hex.Split(',')) * $hex.Split(',').Length))
+    New-ItemProperty -Path $key -Name $valueName -Value $valueData -PropertyType $valueType -Force | Out-Null
 }
 
 function games_install {
