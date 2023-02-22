@@ -207,7 +207,7 @@ function swap {
     # Swap caps with escape https://github.com/susam/uncap#readme
     reg add "HKLM\SYSTEM\CurrentControlSet\Control\Keyboard Layout" /v "Scancode Map" /t REG_BINARY /d   "00000000000000000300000001003A003A00010000000000" 
     # To get the current binary value from sharpkeys and change it forever without having to re configurate sharpkeys just replace the binary on the registry entry above
-    reg query "HKLM\SYSTEM\CurrentControlSet\Control\Keyboard Layout" /v "Scancode Map"
+    # reg query "HKLM\SYSTEM\CurrentControlSet\Control\Keyboard Layout" /v "Scancode Map"
 }
 
 function games_install {
@@ -218,13 +218,15 @@ function games_install {
 }
 
 function tasks {
-    # We first have to activate the service
+    # Activate the Windows Time service
     w32tm /register
     net start w32time
     w32tm /resync
-    schtasks /create /tn "time sync" /tr "'w32tm' /resync" /sc onlogon
+
+    # Create a task to automatically resync the time on logon
+    schtasks /create /tn "Time Sync" /tr "w32tm /resync" /sc onlogon
     # schtasks /create /tn "uncap" /tr "'C:\Windows\uncap' 0x1b:0x14" /sc onlogon 
-    # schtasks /create /tn "time sync" /tr "'wt' update" /sc onlogon
+    # schtasks /create /tn "Update" /tr "powershell.exe -command Start-Process wt -ArgumentList 'new-tab -d . -p PowerShell -c update' -Verb RunAs" /sc onlogon
 }
 
 function bootloader {
@@ -233,12 +235,12 @@ function bootloader {
 }
 
 ## Start Installation
-# base_install
-# linking
+base_install
+linking
 swap
-# tasks
-# full_install
-# vim_install
-# linux
-# msconfig
+tasks
+full_install
+vim_install
+linux
+msconfig
 

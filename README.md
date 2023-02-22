@@ -1,9 +1,63 @@
 # ![Windows][windows 10 icon] Windows 10 dotfiles
 
+## Introduction
+
+Dotfiles are configuration files that are used to customize the behavior of various command-line tools and applications. They are commonly used by developers and power users to streamline their workflow and make their environment more efficient. This guide provides instructions for installing and using dotfiles on Windows 10.
+
+## Table of Contents
+
+- Installation
+- Commands
+- Chocolatey
+- PowerShell
+- Customization
+- Troubleshooting
+- Resources
+
 ## Installation
-> Tip: You are advised to execute this from windows powershell app and not from windows Terminal app
+
+> Tip: You are advised to execute this from windows powershell app and not from windows Terminal app <br>
 [Set execution policy](https://superuser.com/questions/106360/how-to-enable-execution-of-powershell-scripts) <br>
 [Dubious ownership](https://stackoverflow.com/questions/73485958/how-to-correct-git-reporting-detected-dubious-ownership-in-repository-withou)
+
+To install the dotfiles on Windows 10, follow these steps:
+
+1. Set the execution policy in PowerShell by running the following command:
+
+```powershell
+Set-ExecutionPolicy unrestricted
+```
+This allows you to run scripts on your system.
+
+2. Clone the dotfiles repository by running the following command:
+
+```powershell
+git clone https://github.com/cuberhaus/WinDotfiles.git
+```
+This downloads the dotfiles to your local machine.
+
+3. Change into the dotfiles directory by running the following command:
+
+```powershell
+cd WinDotfiles
+```
+This navigates you to the root of the dotfiles directory.
+
+4. Configure Git to ignore file ownership by running the following command:
+
+```powershell
+git config --global safe.directory '*'
+```
+This prevents Git from detecting "dubious ownership" issues when you commit changes to the repository.
+
+5. Run the installation script by running the following command:
+```powershell
+.\bin\windows.ps1
+```
+This installs the dotfiles and their associated dependencies on your system.
+
+### Installation (One-liner)
+
 ```
 Set-ExecutionPolicy unrestricted
 git clone https://github.com/cuberhaus/WinDotfiles.git
@@ -13,38 +67,54 @@ git config --global safe.directory '*'
 ```
 
 ## Commands
-To check available commands type:
+
+To view a list of available commands, run the following command:
+
 ```
 aliases
 ```
 
 ## Chocolatey
 
+Chocolatey is a package manager for Windows that is used to install and manage software packages. To use Chocolatey with the dotfiles, follow these steps:
+
 ### Upgrade packages
+
+To upgrade all installed packages, run the following command:
 
 ```
 choco upgrade all
 ```
 
+This updates all packages to their latest versions.
+
 ### List packages
+
+To list all locally installed packages, run the following command:
 
 ```
 choco list --local-only
 ```
 
+This displays a list of all packages that are currently installed on your system.
+
 ## PowerShell
 
-PowerShell profile location:
--   Powershell 5
-    **Location:** C:\Users\polcg\Documents\WindowsPowerShell
--   Powershell 7
-    **Location:** C:\Users\polcg\Documents\PowerShell
+PowerShell is a command-line shell and scripting language that is used to automate tasks and manage system configurations. To customize your PowerShell environment with the dotfiles, follow these steps:
+
+1. Locate your PowerShell profile directory by running the following command:
+
+```powershell
+$PROFILE | Format-List -Force
+```
+This displays the location of your PowerShell profile directory.
 
 ## Tasks
 
 To add a task at login, use task scheduler
 
 ### User
+
 If user and computer name are different you will have to change that in the task scheduler through the GUI
 > tip: do not use the GUI
 
