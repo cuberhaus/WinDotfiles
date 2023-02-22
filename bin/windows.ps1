@@ -44,23 +44,23 @@ function base_install {
     # Chocolatey install
     Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
-    choco install -y 7zip.install    # Archiver
-    choco install -y curl  		    # Curl is a command line tool and library for transferring data with URLs
-    choco install -y fzf             # Fuzzy finder
-    choco install -y git.install     # Git
-    choco install -y googlechrome 	# Web browser
-    choco install -y linkshellextension  # Make links from explorer
-    choco install -y make            # makefiles
-    choco install -y nirlauncher     # have gui for sysinternals (MUST GO FIRST)
-    choco install -y openssh 	    # SSH client
-    choco install -y poshgit         # git bar
-    choco install -y powershell-core  # Updated powershell
-    choco install -y python          # python
-    choco install -y rclone          # Git but without version control
-    choco install -y strawberryperl  # Pearl
-    choco install -y wget 		    # A command-line utility for retrieving files using HTTP protocols
-    choco install -y yarn            # Packages, need it for vim
-    choco install -y zip             # zip from terminal
+    choco install -y 7zip.install           # Archiver
+    choco install -y curl  		            # Curl is a command line tool for transferring data with URLs
+    choco install -y fzf                    # Fuzzy finder
+    choco install -y git.install            # Git
+    choco install -y googlechrome 	        # Web browser
+    choco install -y linkshellextension     # Make links from explorer
+    choco install -y make                   # Makefiles
+    choco install -y nirlauncher            # Have gui for sysinternals (MUST GO FIRST)
+    choco install -y openssh 	            # SSH client
+    choco install -y poshgit                # Git bar
+    choco install -y powershell-core        # Updated powershell
+    choco install -y python                 # Python
+    choco install -y rclone                 # Git but without version control
+    choco install -y strawberryperl         # Pearl
+    choco install -y wget 		            # A command-line utility for retrieving files using HTTP protocols
+    choco install -y yarn                   # Packages, need it for vim
+    choco install -y zip                    # Zip from terminal
     Install-Module git-aliases -Scope CurrentUser -AllowClobber
 }
 
@@ -82,66 +82,66 @@ function emacs {
 
 function full_install {
     pip3 install pipenv
-    choco install -y obsidian        # Readme editor
-    choco install -y autohotkey.portable  # Automation software
-    choco install -y calibre         # Books manager
-    choco install -y ccleaner  	    # Cleanup
-    choco install -y choco-cleaner   # Delete caches from chocolatey
-    choco install -y discord         # Discord
-    choco install -y geforce-experience  # Nvidia card updates
-    choco install -y gimp            # Photoshop
-    choco install -y malwarebytes    # Anti-virus
-    choco install -y mobaxterm         # PAR (makes wxparaver WORK)
-    choco install -y openjdk         # open source java development kit
-    choco install -y powertoys       # Powertoys!
-    choco install -y rufus           # burn iso's on usb
-    choco install -y spotify         # Spotify
+    choco install -y obsidian               # Readme editor
+    choco install -y autohotkey.portable    # Automation software
+    choco install -y calibre                # Books manager
+    choco install -y ccleaner  	            # Cleanup
+    choco install -y choco-cleaner          # Delete caches from chocolatey
+    choco install -y discord                # Discord
+    choco install -y geforce-experience     # Nvidia card updates
+    choco install -y gimp                   # Photoshop
+    choco install -y malwarebytes           # Anti-virus
+    choco install -y mobaxterm              # PAR (makes wxparaver WORK)
+    choco install -y openjdk                # Open source java development kit
+    choco install -y powertoys              # Powertoys!
+    choco install -y rufus                  # Burn iso's on usb
+    choco install -y spotify                # Spotify
     choco install -y sysinternals --params "/Sysinternals"  # tools for windows
-    choco install -y thunderbird     # Email client
-    choco install -y transmission    # Simple torrent client
-    choco install -y treesizefree      # view file sizes in system that clog memory
-    choco install -y vlc 		    # Media player
-    choco install -y vscode          # GUI Editor
-    choco install -y greenshot       # better screenshots
-    # choco install -y autoruns        # What programs are configured to startup automatically
+    choco install -y thunderbird            # Email client
+    choco install -y transmission           # Simple torrent client
+    choco install -y treesizefree           # View file sizes in system that clog memory
+    choco install -y vlc 		            # Media player
+    choco install -y vscode                 # GUI Editor
+    choco install -y greenshot              # Better screenshots
+    # choco install -y autoruns         # What programs are configured to startup automatically
 }
 
 function optional {
     # Probably
     # choco install -y pswindowsupdate 
     # choco install -y windirstat      # View file sizes in system to clean up space
-    choco install -y adobereader  	# Pdf viewer
-    choco install -y audacity        # Audio editor
-    choco install -y chocolateygui   # A gui for chocolatey package manager
-    choco install -y chromium        # Open source Web browser
-    choco install -y cpu-z.install   # list pc infor
-    choco install -y doxygen.install   # c++ documentation
-    choco install -y eclipse         # java/SQL IDE // doesnt quite work properly??
-    choco install -y firefox         # Open source web browser
-    choco install -y git-lfs 
+    choco install -y adobereader  	        # Pdf viewer
+    choco install -y audacity               # Audio editor
+    choco install -y chocolateygui          # A gui for chocolatey package manager
+    choco install -y chromium               # Open source Web browser
+    choco install -y cpu-z.install          # List pc infor
+    choco install -y doxygen.install        # c++ documentation
+    choco install -y eclipse                # java/SQL IDE // doesnt quite work properly??
+    choco install -y firefox                # Open source web browser
+    choco install -y git-lfs                # Git large file storage
     choco install -y intellijidea-community # Free version java IDE
     choco install -y intellijidea-ultimate  # Paid version with sql IDE
-    choco install -y jdk8            # java v8
+    choco install -y jdk8                   # java v8
     choco install -y jre8 
-    choco install -y libreoffice-still  # Office suite
-    choco install -y obs-studio      # Record screen in windows, works with internal audio better than mac
-    choco install -y openjdk         # open source java development kit
-    choco install -y pandoc          # universal document converter
-    choco install -y procexp         # process explorer
-    choco install -y putty 
-    choco install -y pycharm         # Best Python IDE
-    choco install -y pycharm-community  # Community version
-    choco install -y r.project       # Probabilitat i estadística
-    choco install -y r.studio        # Probabilitat i estadística IDE
-    choco install -y skype 		    # Skype
-    choco install -y slack           # Slack
-    choco install -y sublimetext3    # fast editor
-    choco install -y teamviewer 
-    choco install -y telegram        # Telegram
-    choco install -y toastify  		# Toastify adds some missing functionallity to the Spotify client.
-    choco install -y tor-browser     # browse the web without restrictions and without being traced
-    choco install -y virtualbox      # Virtualization tool
-    choco install -y wireshark 
+    choco install -y libreoffice-still      # Office suite
+    choco install -y obs-studio             # Record screen in windows, works with internal audio better than mac
+    choco install -y openjdk                # Open source java development kit
+    choco install -y pandoc                 # Universal document converter
+    choco install -y procexp                # Process explorer
+    choco install -y putty                  # SSH telnet
+    choco install -y pycharm                # Best Python IDE
+    choco install -y pycharm-community      # Community version
+    choco install -y r.project              # Probabilitat i estadística
+    choco install -y r.studio               # Probabilitat i estadística IDE
+    choco install -y skype 		            # Skype
+    choco install -y slack                  # Slack
+    choco install -y sublimetext3           # fast editor
+    choco install -y teamviewer             # Control other pc remotely
+    choco install -y telegram               # Telegram
+    choco install -y toastify  		        # Toastify adds some missing functionallity to the Spotify client.
+    choco install -y tor-browser            # Browse the web without restrictions and without being traced
+    choco install -y virtualbox             # Virtualization tool
+    choco install -y wireshark              # Network protocol analyzer
     
     # Garbage
     # choco install -y python2  // THIS BREAKS NEOVIM PYTHON
