@@ -26,6 +26,7 @@ function linking {
     cmd /c mklink C:\Users\polcg\AppData\Local\nvim\init.vim C:\Users\polcg\WinDotfiles\AppData\Local\nvim\init.vim
     cmd /c mklink C:\Users\polcg\_vimrc C:\Users\polcg\WinDotfiles\_vimrc
 
+    Remove-Item $HOME\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
     cmd /c mklink C:\Users\polcg\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json C:\Users\polcg\WinDotfiles\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
 }
 function base_install {
