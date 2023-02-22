@@ -1,4 +1,4 @@
-# ![Windows][windows 10 icon] Windows 10 dotfiles
+# ![Windows][windows 10 icon] Windows 11 dotfiles
 
 ## Introduction
 
