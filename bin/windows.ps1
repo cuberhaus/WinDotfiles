@@ -100,6 +100,7 @@ function full_install {
     choco install -y vlc 		            # Media player
     choco install -y vscode                 # GUI Editor
     choco install -y greenshot              # Better screenshots
+    choco install -y unifying               # Logitech unifying devices add and remove
     # choco install -y autoruns         # What programs are configured to startup automatically
 }
 
@@ -141,6 +142,7 @@ function optional {
     choco install -y wireshark              # Network protocol analyzer
     
     # Garbage
+    # choco install -y logitech-options       # Old logitech options
     # choco install -y python2  // THIS BREAKS NEOVIM PYTHON
     # choco install -y reflect-free    # backups (EOL) just use windows (crear una imagen de sistema)
     # choco install -y veeam-agent     # backups This DESTROYED MY PC
