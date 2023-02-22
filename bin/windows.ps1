@@ -28,11 +28,7 @@ function linking {
 
     cmd /c mklink C:\Users\polcg\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json C:\Users\polcg\WinDotfiles\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
 }
-# https://stackoverflow.com/questions/73485958/how-to-correct-git-reporting-detected-dubious-ownership-in-repository-withou
-# git config --global safe.directory '*'
 function base_install {
-    #https://lilinguas.com/es/error-de-powershell-el-archivo-no-est%C3%A1-firmado-digitalmente/
-    Set-ExecutionPolicy unrestricted
     # https://github.com/gluons/powershell-git-aliases
 
     # Command-line windows update
