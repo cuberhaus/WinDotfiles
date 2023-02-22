@@ -203,16 +203,11 @@ choco install -y vim, neovim
 function swap {
     choco install -y sharpkeys # allows to take a look at this registry entries and add more keybindings easily
     # better to just use register
-    reg add "HKLM\SYSTEM\CurrentControlSet\Control\Keyboard Layout" /v "Scancode Map" /t REG_BINARY /d 00000000000000000200000001003a0000000000
     # cp $uncap C:\Windows\
     # Swap caps with escape https://github.com/susam/uncap#readme
-
-    $hex = "00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,3a,00,1d,00,00,00,00,00"
-    $key = "HKLM:\SYSTEM\CurrentControlSet\Control\Keyboard Layout"
-    $valueName = "Scancode Map"
-    $valueType = [Microsoft.Win32.RegistryValueKind]::Binary
-    $valueData = ([byte[]]([convert]::ToByte($hex.Split(',')) * $hex.Split(',').Length))
-    New-ItemProperty -Path $key -Name $valueName -Value $valueData -PropertyType $valueType -Force | Out-Null
+    reg add "HKLM\SYSTEM\CurrentControlSet\Control\Keyboard Layout" /v "Scancode Map" /t REG_BINARY /d   "00000000000000000300000001003A003A00010000000000" 
+    # To get the current binary value from sharpkeys and change it forever without having to re configurate sharpkeys just replace the binary on the registry entry above
+    reg query "HKLM\SYSTEM\CurrentControlSet\Control\Keyboard Layout" /v "Scancode Map"
 }
 
 function games_install {
@@ -238,12 +233,12 @@ function bootloader {
 }
 
 ## Start Installation
-base_install
-linking
+# base_install
+# linking
 swap
-tasks
-full_install
-vim_install
-linux
-msconfig
+# tasks
+# full_install
+# vim_install
+# linux
+# msconfig
 
