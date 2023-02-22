@@ -6,6 +6,16 @@ function storeUpdate {
     Get-CimInstance -Namespace "Root\cimv2\mdm\dmmap" -ClassName "MDM_EnterpriseModernAppManagement_AppManagement01" | Invoke-CimMethod -MethodName UpdateScanMethod
 }
 function syncTime {
+    <#
+    .SYNOPSIS
+    Synchronizes the system time with the time server.
+
+    .DESCRIPTION
+    This function checks if the Windows Time service is running and starts it if necessary. It then synchronizes the system time with the time server.
+
+    .EXAMPLE
+    syncTime
+    #>
     # Check if the Windows Time service is running
     $service = Get-Service -Name w32time
     if ($service.Status -ne 'Running') {
@@ -18,15 +28,55 @@ function syncTime {
 
 # Rclone token might need to be refreshed (rclone config and reconfigure the remote)
 function rclonepull_calibre {
+    <#
+    .SYNOPSIS
+    Copies the Calibre library from Google Drive to the local machine.
+
+    .DESCRIPTION
+    This function uses rclone to copy the Calibre library from a remote Google Drive to the local machine. It creates empty source directories if necessary and shows progress during the copy.
+
+    .EXAMPLE
+    rclonepull_calibre
+    #>
     rclone copy -P --create-empty-src-dirs "drive:Calibre/Calibre Library" "C:\Users\polcg\Calibre Library"
 }
 function rclonepush_calibre {
+    <#
+    .SYNOPSIS
+    Copies the Calibre library from the local machine to Google Drive.
+
+    .DESCRIPTION
+    This function uses rclone to copy the Calibre library from the local machine to a remote Google Drive. It creates empty source directories if necessary and shows progress during the copy.
+
+    .EXAMPLE
+    rclonepush_calibre
+    #>
     rclone copy -P --create-empty-src-dirs "C:\Users\polcg\Calibre Library" "drive:Calibre/Calibre Library"
 }
 function rclonepull_thunderbird {
+    <#
+    .SYNOPSIS
+    Copies Thunderbird data from Google Drive to the local machine.
+
+    .DESCRIPTION
+    This function uses rclone to copy Thunderbird data (profiles, settings, etc.) from a remote Google Drive to the local machine. It creates empty source directories if necessary and shows progress during the copy.
+
+    .EXAMPLE
+    rclonepull_thunderbird
+    #>
     rclone copy -P --create-empty-src-dirs drive:Thunderbird/ C:\Users\polcg\AppData\Roaming\Thunderbird\
 }
 function rclonepush_thunderbird {
+    <#
+    .SYNOPSIS
+    Copies Thunderbird data from the local machine to Google Drive.
+
+    .DESCRIPTION
+    This function uses rclone to copy Thunderbird data (profiles, settings, etc.) from the local machine to a remote Google Drive. It creates empty source directories if necessary and shows progress during the copy.
+
+    .EXAMPLE
+    rclonepush_thunderbird
+    #>
     rclone copy -P --create-empty-src-dirs C:\Users\polcg\AppData\Roaming\Thunderbird\ drive:Thunderbird/
 }
 function aliases {
@@ -91,6 +141,16 @@ function vim {
 Import-Module git-aliases -DisableNameChecking
 
 function yolo {
+    <#
+    .SYNOPSIS
+    Commits and pushes changes to a Git repository.
+
+    .DESCRIPTION
+    This function stages all changes, commits them with a placeholder message, and pushes them to the remote repository.
+
+    .EXAMPLE
+    yolo
+    #>
     git add -A
     git commit -m "This is a placeholder"
     git push
@@ -120,6 +180,16 @@ function gsu {
     git submodule update --remote --recursive $args
 }
 function gitsync {
+    <#
+    .SYNOPSIS
+    Synchronizes Git submodules.
+
+    .DESCRIPTION
+    This function synchronizes Git submodules by syncing and updating them recursively.
+
+    .EXAMPLE
+    gitsync
+    #>
     git submodule sync
     git submodule update --init --recursive
 }
@@ -190,30 +260,6 @@ function pull {
     # Return to the starting directory
     Set-Location $startDirectory
 }
-
-# This status does NOT work, it appears to break on recursion
-# function status {
-#     [CmdletBinding()]
-#     param(
-#         [switch]$Recurse
-#     )
-
-#     # Loop over all items in the current directory
-#     Get-ChildItem -Directory -Force -Exclude .git | Where-Object { !$_.Name.StartsWith('.') } | ForEach-Object {
-#         # Check if the directory is a git repository
-#         if (Test-Path "$($_.FullName)\.git" -PathType Container) {
-#             # Change into the directory and perform a git status
-#             Set-Location $_.FullName
-#             Write-Host "Entering $($_.FullName)" -ForegroundColor Green
-#             git status
-#             Set-Location ..
-#         } 
-#         # Recursively check subdirectories if $Recurse is specified
-#         elseif ($Recurse) {
-#             status -Recurse
-#         }
-#     }
-# }
 
 # Status -Recurse
 # Perform a git status on all git repositories in the current directory
