@@ -1,8 +1,8 @@
 # ![Windows][windows 10 icon] Windows 10 dotfiles
 
 ## Installation
-[Set execution policy ][https://superuser.com/questions/106360/how-to-enable-execution-of-powershell-scripts]
-[Dubious ownership][https://stackoverflow.com/questions/73485958/how-to-correct-git-reporting-detected-dubious-ownership-in-repository-withou]
+![Set execution policy ][https://superuser.com/questions/106360/how-to-enable-execution-of-powershell-scripts]
+![Dubious ownership][https://stackoverflow.com/questions/73485958/how-to-correct-git-reporting-detected-dubious-ownership-in-repository-withou]
 ```
 Set-ExecutionPolicy unrestricted
 git clone https://github.com/cuberhaus/WinDotfiles.git
