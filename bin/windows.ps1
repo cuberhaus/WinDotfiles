@@ -218,13 +218,14 @@ function games_install {
 }
 
 function tasks {
-    # Activate the Windows Time service
-    w32tm /register
-    net start w32time
-    w32tm /resync
+    # Activate the Windows Time service # not working yet
+    # w32tm /register
+    # net start w32time
+    # w32tm /resync
 
     # Create a task to automatically resync the time on logon
-    schtasks /create /tn "Time Sync" /tr "w32tm /resync" /sc onlogon
+    # schtasks /create /tn "Time Sync" /tr "w32tm /resync" /sc onlogon /ru System # does not quite work
+    
     # schtasks /create /tn "uncap" /tr "'C:\Windows\uncap' 0x1b:0x14" /sc onlogon 
     # schtasks /create /tn "Update" /tr "powershell.exe -command Start-Process wt -ArgumentList 'new-tab -d . -p PowerShell -c update' -Verb RunAs" /sc onlogon
 }
