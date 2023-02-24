@@ -138,6 +138,8 @@ function full_install {
 
 function optional {
     # Probably
+    choco install -y notepadplusplus.install # Editor
+    choco install -y ganttproject           # Gantt 
     choco install -y adobereader  	        # Pdf viewer
     choco install -y audacity               # Audio editor
     choco install -y chocolateygui          # A gui for chocolatey package manager
