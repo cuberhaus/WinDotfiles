@@ -107,7 +107,6 @@ function emacs {
 
 function full_install {
     pip3 install pipenv
-    choco install -y obsidian               # Readme editor
     choco install -y autohotkey.portable    # Automation software
     choco install -y calibre                # Books manager
     choco install -y ccleaner  	            # Cleanup
@@ -115,27 +114,30 @@ function full_install {
     choco install -y discord                # Discord
     choco install -y geforce-experience     # Nvidia card updates
     choco install -y gimp                   # Photoshop
+    choco install -y git-lfs                # Git large file storage
+    choco install -y greenshot              # Better screenshots
     choco install -y malwarebytes           # Anti-virus
     choco install -y mobaxterm              # PAR (makes wxparaver WORK)
+    choco install -y obsidian               # Readme editor
     choco install -y openjdk                # Open source java development kit
     choco install -y powertoys              # Powertoys!
+    choco install -y pycharm                # Best Python IDE
     choco install -y rufus                  # Burn iso's on usb
     choco install -y spotify                # Spotify
+    choco install -y sublimetext3           # fast editor
     choco install -y sysinternals --params "/Sysinternals"  # tools for windows
     choco install -y thunderbird            # Email client
+    choco install -y tor-browser            # Browse the web without restrictions and without being traced
     choco install -y transmission           # Simple torrent client
     choco install -y treesizefree           # View file sizes in system that clog memory
+    choco install -y unifying               # Logitech unifying devices add and remove
     choco install -y vlc 		            # Media player
     choco install -y vscode                 # GUI Editor
-    choco install -y greenshot              # Better screenshots
-    choco install -y unifying               # Logitech unifying devices add and remove
     # choco install -y autoruns         # What programs are configured to startup automatically
 }
 
 function optional {
     # Probably
-    # choco install -y pswindowsupdate 
-    # choco install -y windirstat      # View file sizes in system to clean up space
     choco install -y adobereader  	        # Pdf viewer
     choco install -y audacity               # Audio editor
     choco install -y chocolateygui          # A gui for chocolatey package manager
@@ -144,7 +146,6 @@ function optional {
     choco install -y doxygen.install        # c++ documentation
     choco install -y eclipse                # java/SQL IDE // doesnt quite work properly??
     choco install -y firefox                # Open source web browser
-    choco install -y git-lfs                # Git large file storage
     choco install -y intellijidea-community # Free version java IDE
     choco install -y intellijidea-ultimate  # Paid version with sql IDE
     choco install -y jdk8                   # java v8
@@ -155,21 +156,20 @@ function optional {
     choco install -y pandoc                 # Universal document converter
     choco install -y procexp                # Process explorer
     choco install -y putty                  # SSH telnet
-    choco install -y pycharm                # Best Python IDE
     choco install -y pycharm-community      # Community version
     choco install -y r.project              # Probabilitat i estadística
     choco install -y r.studio               # Probabilitat i estadística IDE
     choco install -y skype 		            # Skype
     choco install -y slack                  # Slack
-    choco install -y sublimetext3           # fast editor
     choco install -y teamviewer             # Control other pc remotely
     choco install -y telegram               # Telegram
     choco install -y toastify  		        # Toastify adds some missing functionallity to the Spotify client.
-    choco install -y tor-browser            # Browse the web without restrictions and without being traced
     choco install -y virtualbox             # Virtualization tool
     choco install -y wireshark              # Network protocol analyzer
     
     # Garbage
+    # choco install -y pswindowsupdate 
+    # choco install -y windirstat      # View file sizes in system to clean up space
     # choco install -y logitech-options       # Old logitech options
     # choco install -y python2  // THIS BREAKS NEOVIM PYTHON
     # choco install -y reflect-free    # backups (EOL) just use windows (crear una imagen de sistema)
