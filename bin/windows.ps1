@@ -11,10 +11,13 @@ function Link-Dotfiles {
         "$HOME\Documents\WindowsPowerShell",
         "$HOME\AppData\Local\nvim"
         "$HOME\Documents\Rainmeter\Skins"
+        "$HOME\AppData\Roaming\Rainmeter"
     )
 
     # Set up symlink paths
     $symlinkSources = @(
+        "$HOME\WinDotfiles\AppData\Roaming\Rainmeter\Layouts"
+        "$HOME\WinDotfiles\Documents\Rainmeter\Skins\RSS Feed",
         "$HOME\WinDotfiles\Documents\PowerShell\profile.ps1",
         "$HOME\WinDotfiles\Documents\PowerShell\profile.ps1",
         "$HOME\WinDotfiles\AppData\Local\nvim\init.vim",
@@ -23,6 +26,8 @@ function Link-Dotfiles {
     )
 
     $symlinkDestinations = @(
+        "$HOME\AppData\Roaming\Rainmeter\Layouts"
+        "$HOME\Documents\Rainmeter\Skins\RSS Feed",
         "$HOME\Documents\WindowsPowerShell\profile.ps1",
         "$HOME\Documents\PowerShell\profile.ps1",
         "$HOME\AppData\Local\nvim\init.vim",
@@ -32,19 +37,27 @@ function Link-Dotfiles {
 
     # Create necessary directories
     foreach ($directory in $directories) {
+        # Write-Host "hi"
         if (-not (Test-Path $directory -PathType Container)) {
+            # Write-Host "Im in"
             New-Item -ItemType Directory -Force $directory
         }
     }
 
-    # Symlink files
+    # Symlink files and directories
     for ($i = 0; $i -lt $symlinkSources.Count; $i++) {
         $source = $symlinkSources[$i]
         $destination = $symlinkDestinations[$i]
         if (Test-Path $destination) {
-            Remove-Item $destination -Force # Remove file if already exists on destination
+            Remove-Item $destination -Recurse -Force # Remove file or directory if already exists on destination
         }
-        cmd /c mklink $destination $source
+
+        if (Test-Path $source -PathType Container) { # check if source is a directory
+            cmd /c mklink /d $destination $source
+        }
+        elseif (Test-Path $source){
+            cmd /c mklink $destination $source
+        }
     }
 }
 
@@ -240,12 +253,12 @@ function bootloader {
 }
 
 ## Start Installation
-base_install
-linking
-swap
-tasks
-full_install
-vim_install
-linux
-msconfig
+# base_install
+Link-Dotfiles
+# swap
+# tasks
+# full_install
+# vim_install
+# linux
+# msconfig
 
