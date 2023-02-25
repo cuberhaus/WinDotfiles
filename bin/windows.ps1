@@ -10,6 +10,7 @@ function Link-Dotfiles {
         "$HOME\Documents\PowerShell",
         "$HOME\Documents\WindowsPowerShell",
         "$HOME\AppData\Local\nvim"
+        "$HOME\Documents\Rainmeter\Skins"
     )
 
     # Set up symlink paths
@@ -122,6 +123,7 @@ function full_install {
     choco install -y openjdk                # Open source java development kit
     choco install -y powertoys              # Powertoys!
     choco install -y pycharm                # Best Python IDE
+    choco install -y rainmeter              # "Conky" Rss feed on windows with clickable links
     choco install -y rufus                  # Burn iso's on usb
     choco install -y spotify                # Spotify
     choco install -y sublimetext3           # fast editor
@@ -138,8 +140,6 @@ function full_install {
 
 function optional {
     # Probably
-    choco install -y notepadplusplus.install # Editor
-    choco install -y ganttproject           # Gantt 
     choco install -y adobereader  	        # Pdf viewer
     choco install -y audacity               # Audio editor
     choco install -y chocolateygui          # A gui for chocolatey package manager
@@ -148,11 +148,13 @@ function optional {
     choco install -y doxygen.install        # c++ documentation
     choco install -y eclipse                # java/SQL IDE // doesnt quite work properly??
     choco install -y firefox                # Open source web browser
+    choco install -y ganttproject           # Gantt 
     choco install -y intellijidea-community # Free version java IDE
     choco install -y intellijidea-ultimate  # Paid version with sql IDE
     choco install -y jdk8                   # java v8
     choco install -y jre8 
     choco install -y libreoffice-still      # Office suite
+    choco install -y notepadplusplus.install # Editor
     choco install -y obs-studio             # Record screen in windows, works with internal audio better than mac
     choco install -y openjdk                # Open source java development kit
     choco install -y pandoc                 # Universal document converter
