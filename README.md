@@ -114,6 +114,14 @@ To upgrade Chezmoi to the latest version, run the following command:
 chezmoi upgrade
 ```
 
+7. **Make changes to repo from home**
+
+All changes made to the files in home will be updated in the repo with the following command:
+
+```powershell
+chezmoi re-add
+```
+
 This downloads and installs the latest version of Chezmoi on your system.
 
 ## Commands
