@@ -23,12 +23,12 @@ Dotfiles are configuration files that are used to customize the behavior of vari
 ### Installation (One-liner)
 
 ```
-Set-ExecutionPolicy unrestricted
 sh -c "$(curl -fsLS get.chezmoi.io)"
 chezmoi init https://github.com/cuberhaus/WinDotfiles.git
 chezmoi apply
 cd .local\share\chezmoi
 git config --global safe.directory '*'
+Set-ExecutionPolicy unrestricted
 .\bin\windows.ps1
 ```
 
