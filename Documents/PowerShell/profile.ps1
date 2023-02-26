@@ -1,6 +1,7 @@
 # This profile is only used by Microsoft PowerShell.
 # $dotfiles = "C:\Users\polcg\WinDotfiles"
 $dotfiles = "C:\Users\polcg\.local\share\chezmoi"
+$scripts = "$dotfiles\.local\scripts"
 # https://github.com/ralish/PSDotFiles
 $DotFilesPath = $dotfiles # This is needed
 function storeUpdate {
@@ -89,10 +90,10 @@ function vimrc {
     vim $HOME\_vimrc
 }
 function windows {
-    vim $HOME\bin\windows.ps1
+    vim $scripts\windows.ps1
 }
 function win {
-    vim $HOME\bin\windows.ps1
+    vim $scripts\windows.ps1
 }
 # Quick shortcut to start notepad
 function n { notepad $args }
