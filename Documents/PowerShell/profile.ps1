@@ -1,5 +1,6 @@
 # This profile is only used by Microsoft PowerShell.
-$dotfiles = "C:\Users\polcg\WinDotfiles"
+# $dotfiles = "C:\Users\polcg\WinDotfiles"
+$dotfiles = "C:\Users\polcg\.local\share\chezmoi"
 # https://github.com/ralish/PSDotFiles
 $DotFilesPath = $dotfiles # This is needed
 function storeUpdate {
