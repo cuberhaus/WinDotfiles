@@ -115,6 +115,15 @@ chezmoi git push
 
 This commits and pushes your changes to the WinDotfiles repository.
 
+6. **Upgrade Chezmoi**
+
+To upgrade Chezmoi to the latest version, run the following command:
+
+```powershell
+chezmoi upgrade
+```
+
+This downloads and installs the latest version of Chezmoi on your system.
 
 ## Commands
 
