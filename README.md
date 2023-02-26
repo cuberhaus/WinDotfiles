@@ -65,6 +65,54 @@ cd WinDotfiles
 git config --global safe.directory '*'
 .\bin\windows.ps1
 ```
+## Manage WinDotfiles repository with Chezmoi
+
+1. **Install Chezmoi**
+
+You can install Chezmoi by running the following command in PowerShell:
+
+```powershell
+choco install chezmoi
+```
+
+This downloads and installs Chezmoi on your system.
+
+2. **Initialize Chezmoi**
+
+Run the following command to initialize Chezmoi:
+
+```powershell
+chezmoi init https://github.com/cuberhaus/WinDotfiles.git
+```
+
+This initializes Chezmoi with the WinDotfiles repository.
+
+3. **Apply dotfiles**
+
+To apply the dotfiles, run the following command:
+```powershell
+chezmoi apply
+```
+
+
+This applies the dotfiles to your system.
+
+4. **Customize dotfiles**
+
+You can customize the dotfiles by editing the files in the `~/.local/share/chezmoi` directory. Changes you make will be tracked by Chezmoi and can be pushed to the WinDotfiles repository.
+
+5. **Commit and push changes**
+
+When you have made changes to the dotfiles, you can commit and push them to the WinDotfiles repository using the following commands:
+
+```powershell
+chezmoi git add <file>
+chezmoi git commit -m "Updated dotfile"
+chezmoi git push
+```
+
+This commits and pushes your changes to the WinDotfiles repository.
+
 
 ## Commands
 
