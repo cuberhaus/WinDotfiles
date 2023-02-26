@@ -186,6 +186,7 @@ function optional {
     choco install -y wireshark              # Network protocol analyzer
     
     # Garbage
+    # choco install -y doublecmd              # ranger?
     # choco install -y pswindowsupdate 
     # choco install -y windirstat      # View file sizes in system to clean up space
     # choco install -y logitech-options       # Old logitech options
