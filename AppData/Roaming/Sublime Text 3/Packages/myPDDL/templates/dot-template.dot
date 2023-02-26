@@ -1,7 +1,0 @@
-digraph hierarchy {
-node[shape=Mrecord,style=filled,fillcolor=gray92]
-edge[dir=back, arrowtail=empty]
-   
-GENERATED
-   
-}

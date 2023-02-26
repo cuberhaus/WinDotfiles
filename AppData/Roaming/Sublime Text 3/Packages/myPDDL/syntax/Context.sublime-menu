@@ -1,3 +1,0 @@
-[
-   { "caption": "List files in current dir", "command": "exec", "args": {"cmd": ["dir"]} }
-]
