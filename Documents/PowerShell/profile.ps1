@@ -1,7 +1,7 @@
 # This profile is only used by Microsoft PowerShell.
 # $dotfiles = "C:\Users\polcg\WinDotfiles"
 $dotfiles = "C:\Users\polcg\.local\share\chezmoi"
-$scripts = "$dotfiles\.local\scripts"
+$scripts = "$dotfiles\dot_local\scripts"
 # https://github.com/ralish/PSDotFiles
 $DotFilesPath = $dotfiles # This is needed
 function storeUpdate {
@@ -83,11 +83,11 @@ function rclonepush_thunderbird {
 }
 function aliases {
     # code $dotfiles\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
-    code $HOME\Documents\PowerShell\profile.ps1
+    code $dotfiles\Documents\PowerShell\profile.ps1
 }
 
 function vimrc {
-    vim $HOME\_vimrc
+    vim $dotfiles\_vimrc
 }
 function windows {
     vim $scripts\windows.ps1
