@@ -180,6 +180,7 @@ function optional {
     choco install -y slack                  # Slack
     choco install -y teamviewer             # Control other pc remotely
     choco install -y telegram               # Telegram
+    choco install -y texstudio              # Latex
     choco install -y toastify  		        # Toastify adds some missing functionallity to the Spotify client.
     choco install -y virtualbox             # Virtualization tool
     choco install -y wireshark              # Network protocol analyzer
