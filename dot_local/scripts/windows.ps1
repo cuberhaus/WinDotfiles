@@ -182,6 +182,7 @@ function optional {
     choco install -y telegram               # Telegram
     choco install -y texstudio              # Latex
     choco install -y toastify  		        # Toastify adds some missing functionallity to the Spotify client.
+    choco install -y tomighty               # Pomodoro timer
     choco install -y virtualbox             # Virtualization tool
     choco install -y wireshark              # Network protocol analyzer
     
