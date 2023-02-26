@@ -123,13 +123,7 @@ To upgrade Chezmoi to the latest version, run the following command:
 chezmoi upgrade
 ```
 
-7. **Update Chezmoi repository with changes to home**
-
-Only already files existing in the chezmoi repository will be "added"
-
-```
-chezmoi re-add
-```
+This downloads and installs the latest version of Chezmoi on your system.
 
 ## Commands
 

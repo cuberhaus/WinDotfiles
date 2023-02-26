@@ -81,17 +81,17 @@ function rclonepush_thunderbird {
 }
 function aliases {
     # code $dotfiles\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
-    code $dotfiles\Documents\PowerShell\profile.ps1
+    code $HOME\Documents\PowerShell\profile.ps1
 }
 
 function vimrc {
-    vim $dotfiles\_vimrc
+    vim $HOME\_vimrc
 }
 function windows {
-    vim $dotfiles\bin\windows.ps1
+    vim $HOME\bin\windows.ps1
 }
 function win {
-    vim $dotfiles\bin\windows.ps1
+    vim $HOME\bin\windows.ps1
 }
 # Quick shortcut to start notepad
 function n { notepad $args }
