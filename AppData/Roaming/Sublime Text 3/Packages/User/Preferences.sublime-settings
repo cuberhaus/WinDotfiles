@@ -7,6 +7,7 @@
 /*"SideBarEnhancements",*/
 /*"CLIPS Rules",*/
 /*"myPDDL",*/
+/*"CLIPS Rules",*/
 	],
 	"theme": "Default.sublime-theme",
 	"color_scheme": "Mariana.sublime-color-scheme",
@@ -42,6 +43,6 @@
 	"open_files_in_new_window": "never",
 
 	"dictionary": "Packages/Language - English/en_GB.dic",
-	"font_size": 17,
+	"font_size": 13,
   	"translate_tabs_to_spaces": true,
 }

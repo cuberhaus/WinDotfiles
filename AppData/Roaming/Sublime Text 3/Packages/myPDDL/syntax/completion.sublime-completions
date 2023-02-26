@@ -1,0 +1,22 @@
+{
+	"scope": "source.pddl - meta.type.requirement.pddl",
+
+	"completions":
+	[
+	"define",
+	"domain",
+	":requirements",
+	":types",
+	":constants",
+	":predicates",
+	":functions",
+	":constraints",
+	"either",
+	":action",
+	":parameters",
+	":precondition",
+	":effect"
+
+
+	]
+}
