@@ -20,6 +20,18 @@ Dotfiles are configuration files that are used to customize the behavior of vari
 [Set execution policy](https://superuser.com/questions/106360/how-to-enable-execution-of-powershell-scripts) <br>
 [Dubious ownership](https://stackoverflow.com/questions/73485958/how-to-correct-git-reporting-detected-dubious-ownership-in-repository-withou)
 
+### Installation (One-liner)
+
+```
+Set-ExecutionPolicy unrestricted
+sh -c "$(curl -fsLS get.chezmoi.io)"
+chezmoi init https://github.com/cuberhaus/WinDotfiles.git
+chezmoi apply
+cd .local\share\chezmoi
+git config --global safe.directory '*'
+.\bin\windows.ps1
+```
+
 To install the dotfiles on Windows 11, follow these steps:
 
 1. Set the execution policy in PowerShell by running the following command:
@@ -29,42 +41,21 @@ Set-ExecutionPolicy unrestricted
 ```
 This allows you to run scripts on your system.
 
-2. Clone the dotfiles repository by running the following command:
+2. Clone the dotfiles repository by following chezmoi installation
 
-```powershell
-git clone https://github.com/cuberhaus/WinDotfiles.git
-```
-This downloads the dotfiles to your local machine.
-
-3. Change into the dotfiles directory by running the following command:
-
-```powershell
-cd WinDotfiles
-```
-This navigates you to the root of the dotfiles directory.
-
-4. Configure Git to ignore file ownership by running the following command:
+3. Configure Git to ignore file ownership by running the following command:
 
 ```powershell
 git config --global safe.directory '*'
 ```
 This prevents Git from detecting "dubious ownership" issues when you commit changes to the repository.
 
-5. Run the installation script by running the following command:
+4. Run the installation script by running the following command:
 ```powershell
 .\bin\windows.ps1
 ```
 This installs the dotfiles and their associated dependencies on your system.
 
-### Installation (One-liner)
-
-```
-Set-ExecutionPolicy unrestricted
-git clone https://github.com/cuberhaus/WinDotfiles.git
-cd WinDotfiles
-git config --global safe.directory '*'
-.\bin\windows.ps1
-```
 ## Manage WinDotfiles repository with Chezmoi
 
 1. **Install Chezmoi**
@@ -72,7 +63,7 @@ git config --global safe.directory '*'
 You can install Chezmoi by running the following command in PowerShell:
 
 ```powershell
-choco install chezmoi
+sh -c "$(curl -fsLS get.chezmoi.io)"
 ```
 
 This downloads and installs Chezmoi on your system.
