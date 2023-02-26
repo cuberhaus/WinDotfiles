@@ -1,1 +1,80 @@
+# Caches
+*.swp
 *~
+*.tmp
+# .cache
+
+# Emacs
+*.elc
+*~
+.\#*
+\#*\#
+auto-save-list
+tramp
+
+# Org-mode
+.org-id-locations
+*_archive
+# flymake-mode
+*_flymake.*
+# eshell files
+/eshell/history
+/eshell/lastdir
+# elpa packages
+/elpa/
+# reftex files
+*.rel
+# AUCTeX auto folder
+/auto/
+# Flycheck
+flycheck_*.el
+
+# Fonts
+*.uuid
+
+# Git
+.gitconfig
+
+# Compiled Python files
+*.pyc
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# Git merge files
+*orig
+
+# Windows reserved names
+con
+prn
+aux
+nul
+com1
+com2
+com3
+com4
+com5
+com6
+com7
+com8
+com9
+lpt1
+lpt2
+lpt3
+lpt4
+lpt5
+lpt6
+lpt7
+lpt8
+lpt9
+aux
+.config/wslu/
