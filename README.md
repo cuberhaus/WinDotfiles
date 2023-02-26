@@ -101,6 +101,8 @@ This applies the dotfiles to your system.
 
 You can customize the dotfiles by editing the files in the `~/.local/share/chezmoi` directory. Changes you make will be tracked by Chezmoi and can be pushed to the WinDotfiles repository.
 
+Chezmoi supports several source state attributes that can be used to customize how files are managed. You can learn more about these attributes in the [Chezmoi reference](https://www.chezmoi.io/reference/source-state-attributes/).
+
 5. **Commit and push changes**
 
 When you have made changes to the dotfiles, you can commit and push them to the WinDotfiles repository using the following commands:
