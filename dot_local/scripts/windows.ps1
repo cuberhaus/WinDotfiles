@@ -140,6 +140,7 @@ function full_install {
     choco install -y rufus                  # Burn iso's on usb
     choco install -y spotify                # Spotify
     choco install -y sublimetext3           # fast editor
+    choco install -y sublimemerge           # Editor merge
     choco install -y sysinternals --params "/Sysinternals"  # tools for windows
     choco install -y thunderbird            # Email client
     choco install -y tor-browser            # Browse the web without restrictions and without being traced
@@ -255,7 +256,8 @@ function bootloader {
     msconfig
 }
 function path {
-    [Environment]::SetEnvironmentVariable("PATH", $Env:PATH + ";C:\Program Files\Sublime Text\", [EnvironmentVariableTarget]::Machine)
+    # [Environment]::SetEnvironmentVariable("PATH", $Env:PATH + ";C:\Program Files\Sublime Text\", [EnvironmentVariableTarget]::Machine)
+    [Environment]::SetEnvironmentVariable("PATH", $Env:PATH + ";C:\Program Files\Sublime Text 3\", [EnvironmentVariableTarget]::Machine)
 }
 
 ## Start Installation
