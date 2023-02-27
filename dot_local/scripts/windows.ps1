@@ -254,6 +254,9 @@ function bootloader {
     # check that there is only one booting instance in arranque
     msconfig
 }
+function path {
+    [Environment]::SetEnvironmentVariable("PATH", $Env:PATH + ";C:\Program Files\Sublime Text\", [EnvironmentVariableTarget]::Machine)
+}
 
 ## Start Installation
 # base_install
