@@ -256,7 +256,6 @@ function bootloader {
     msconfig
 }
 function path {
-    # [Environment]::SetEnvironmentVariable("PATH", $Env:PATH + ";C:\Program Files\Sublime Text\", [EnvironmentVariableTarget]::Machine)
     [Environment]::SetEnvironmentVariable("PATH", $Env:PATH + ";C:\Program Files\Sublime Text 3\", [EnvironmentVariableTarget]::Machine)
 }
 
