@@ -130,6 +130,7 @@ function full_install {
     choco install -y gimp                   # Photoshop
     choco install -y git-lfs                # Git large file storage
     choco install -y greenshot              # Better screenshots
+    choco install -y libreoffice-still      # Office suite
     choco install -y malwarebytes           # Anti-virus
     choco install -y mobaxterm              # PAR (makes wxparaver WORK)
     choco install -y obsidian               # Readme editor
@@ -139,8 +140,8 @@ function full_install {
     choco install -y rainmeter              # "Conky" Rss feed on windows with clickable links
     choco install -y rufus                  # Burn iso's on usb
     choco install -y spotify                # Spotify
-    choco install -y sublimetext3           # fast editor
     choco install -y sublimemerge           # Editor merge
+    choco install -y sublimetext3           # fast editor
     choco install -y sysinternals --params "/Sysinternals"  # tools for windows
     choco install -y thunderbird            # Email client
     choco install -y tor-browser            # Browse the web without restrictions and without being traced
@@ -167,7 +168,6 @@ function optional {
     choco install -y intellijidea-ultimate  # Paid version with sql IDE
     choco install -y jdk8                   # java v8
     choco install -y jre8 
-    choco install -y libreoffice-still      # Office suite
     choco install -y notepadplusplus.install # Editor
     choco install -y obs-studio             # Record screen in windows, works with internal audio better than mac
     choco install -y openjdk                # Open source java development kit
