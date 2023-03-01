@@ -52,10 +52,11 @@ function Link-Dotfiles {
             Remove-Item $destination -Recurse -Force # Remove file or directory if already exists on destination
         }
 
-        if (Test-Path $source -PathType Container) { # check if source is a directory
+        if (Test-Path $source -PathType Container) {
+            # check if source is a directory
             cmd /c mklink /d $destination $source
         }
-        elseif (Test-Path $source){
+        elseif (Test-Path $source) {
             cmd /c mklink $destination $source
         }
     }
@@ -101,7 +102,7 @@ function base_install {
 }
 
 function linux {
-     # Enable Windows Subsystem for Linux
+    # Enable Windows Subsystem for Linux
     Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 
     # # enable windows subsystem for linux control panel -> programs and characteristics -> enable features
@@ -200,7 +201,7 @@ function optional {
 }
 
 function vim_install {
-choco install -y vim, neovim
+    choco install -y vim, neovim
 
     # Install vim-plug for Neovim
     $plugPath = "$env:LOCALAPPDATA/nvim-data/site/autoload/plug.vim"
@@ -220,7 +221,8 @@ choco install -y vim, neovim
     pip install --upgrade neovim
 
     # Install plugins
-    vim +PlugInstall +qall}
+    vim +PlugInstall +qall
+}
 
 function registry {
     # better to just use register
@@ -243,7 +245,7 @@ function games_install {
     choco install -y epicgameslauncher 
 }
 
-function tasks {
+function schedule_tasks {
     # Activate the Windows Time service # not working yet
     # w32tm /register
     # net start w32time
@@ -262,15 +264,51 @@ function bootloader {
 }
 function path {
     [Environment]::SetEnvironmentVariable("PATH", $Env:PATH + ";C:\Program Files\Sublime Text 3\", [EnvironmentVariableTarget]::Machine)
+    [Environment]::SetEnvironmentVariable("VISUAL", "code --wait", [EnvironmentVariableTarget]::Machine)
+    [Environment]::SetEnvironmentVariable("EDITOR", "code --wait", [EnvironmentVariableTarget]::Machine)
 }
-
+function remove_bloat {
+    Get-AppxPackage -AllUsers Microsoft.549981C3F5F10 | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.BingWeather | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.Getstarted | Remove-AppPackage
+    Get-AppxPackage -AllUsers Microsoft.Getstarted | Remove-AppPackage
+    Get-AppxPackage -AllUsers Microsoft.MSPaint | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.Microsoft3DViewer | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.MicrosoftOfficeHub | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.MicrosoftSolitaireCollection | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.MicrosoftStickyNotes | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.MixedReality.Portal | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.ScreenSketch | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.SkypeApp | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.StorePurchaseApp | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.Windows.Photos | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.WindowsAlarms | Remove-AppxPackage
+    # Get-AppxPackage -AllUsers Microsoft.WindowsCalculator | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.WindowsCamera | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.WindowsCommunicationsApps | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.WindowsFeedbackHub | Remove-AppPackage
+    Get-AppxPackage -AllUsers Microsoft.WindowsMaps | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.WindowsSoundRecorder | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.WindowsStore | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.Xbox.TCUI | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.XboxApp | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.XboxGameOverlay | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.XboxGamingOverlay | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.XboxIdentityProvider | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.XboxSpeechToTextOverlay | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.YourPhone | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.ZuneMusic | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.ZuneVideo | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.People | Remove-AppxPackage
+    Get-AppxPackage -AllUsers Microsoft.GetHelp | Remove-AppxPackage
+}
 ## Start Installation
-# base_install
-Link-Dotfiles
-# swap
-# tasks
-# full_install
-# vim_install
-# linux
-# msconfig
+base_install
+registry
+# schedule_tasks
+full_install
+vim_install
+linux
+remove_bloat
+bootloader
 

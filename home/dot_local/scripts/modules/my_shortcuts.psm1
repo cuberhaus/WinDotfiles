@@ -8,13 +8,13 @@ function aliases {
     code $modules\my_shortcuts.psm1
 }
 function vimrc {
-    vim $dotfiles\_vimrc
+    cvim $dotfiles\_vimrc
 }
 function windows {
-    vim $scripts\windows.ps1
+    cvim $scripts\windows.ps1
 }
 function win {
-    vim $scripts\windows.ps1
+    cvim $scripts\windows.ps1
 }
 # Quick shortcut to start notepad
 function n { notepad $args }
@@ -34,12 +34,16 @@ function .... {
 function ..... {
     Set-Location ../../../..
 }
-# clear
+
 function c {
-    Clear-Host
+    chezmoi $args
 }
 function vim {
     nvim $args
+}
+# This will open the file in vim and apply the changes to the home directory as well as the source file
+function cvim {
+    chezmoi edit --apply $args
 }
 
 Export-ModuleMember -Function *
