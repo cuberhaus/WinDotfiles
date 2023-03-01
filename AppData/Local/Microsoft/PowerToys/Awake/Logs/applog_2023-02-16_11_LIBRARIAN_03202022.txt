@@ -1,0 +1,32 @@
+[2023-02-16 11:42:38.8572 INFO Awake.Program] Launching Awake...
+[2023-02-16 11:42:38.8620 INFO Awake.Program] 0.67.1.0
+[2023-02-16 11:42:38.8620 INFO Awake.Program] Build: ARBITER_01312022
+[2023-02-16 11:42:38.8620 INFO Awake.Program] OS: Microsoft Windows NT 10.0.22621.0
+[2023-02-16 11:42:38.8620 INFO Awake.Program] OS Build: Windows 10 Home 22H2 22621.1.amd64fre.ni_release.220506-1250
+[2023-02-16 11:42:39.0316 INFO Awake.Program] {}
+[2023-02-16 11:42:39.0316 INFO Awake.Program] Parsing parameters...
+[2023-02-16 11:42:39.0711 INFO Awake.Program] Parameter setup complete. Proceeding to the rest of the app initiation...
+[2023-02-16 11:42:39.9437 INFO Awake.Program] The value for --use-pt-config is: True
+[2023-02-16 11:42:39.9437 INFO Awake.Program] The value for --display-on is: False
+[2023-02-16 11:42:39.9437 INFO Awake.Program] The value for --time-limit is: 0
+[2023-02-16 11:42:39.9437 INFO Awake.Program] The value for --pid is: 7748
+[2023-02-16 11:42:40.7492 INFO Awake.Program] Reading configuration file: C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Awake\settings.json
+[2023-02-16 11:42:40.7492 INFO Awake.Core.TrayHelper] Setting up the tray.
+[2023-02-16 11:42:40.7945 INFO Awake.Program] There was a problem reading the configuration file. Error: System.IO.FileNotFoundException Unable to find the specified file.
+[2023-02-16 11:42:40.7945 DEBUG Awake.Program] There was a problem reading the configuration file. Error: System.IO.FileNotFoundException Unable to find the specified file.
+[2023-02-16 11:54:16.0296 INFO Awake.Program] Launching Awake...
+[2023-02-16 11:54:16.0296 INFO Awake.Program] 0.67.1.0
+[2023-02-16 11:54:16.0296 INFO Awake.Program] Build: ARBITER_01312022
+[2023-02-16 11:54:16.0296 INFO Awake.Program] OS: Microsoft Windows NT 10.0.22621.0
+[2023-02-16 11:54:16.0296 INFO Awake.Program] OS Build: Windows 10 Home 22H2 22621.1.amd64fre.ni_release.220506-1250
+[2023-02-16 11:54:16.4759 INFO Awake.Program] {}
+[2023-02-16 11:54:16.4759 INFO Awake.Program] Parsing parameters...
+[2023-02-16 11:54:16.5049 INFO Awake.Program] Parameter setup complete. Proceeding to the rest of the app initiation...
+[2023-02-16 11:54:17.7666 INFO Awake.Program] The value for --use-pt-config is: True
+[2023-02-16 11:54:17.7666 INFO Awake.Program] The value for --display-on is: False
+[2023-02-16 11:54:17.7666 INFO Awake.Program] The value for --time-limit is: 0
+[2023-02-16 11:54:17.7666 INFO Awake.Program] The value for --pid is: 9172
+[2023-02-16 11:54:18.5784 INFO Awake.Core.TrayHelper] Setting up the tray.
+[2023-02-16 11:54:18.5784 INFO Awake.Program] Reading configuration file: C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Awake\settings.json
+[2023-02-16 11:54:18.6133 INFO Awake.Program] There was a problem reading the configuration file. Error: System.IO.FileNotFoundException Unable to find the specified file.
+[2023-02-16 11:54:18.6133 DEBUG Awake.Program] There was a problem reading the configuration file. Error: System.IO.FileNotFoundException Unable to find the specified file.

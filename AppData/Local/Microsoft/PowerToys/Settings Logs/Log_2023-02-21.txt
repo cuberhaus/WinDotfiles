@@ -1,0 +1,9 @@
+INFO: 10:22:19.9647072
+    [Method]: SendSettingsTelemetry [Class]: UserSettings
+    Sending settings telemetry
+INFO: 11:11:50.5890605
+    [Method]: ChangeCursor [Class]: CursorManager
+    Cursor file path was null
+INFO: 11:11:50.5914701
+    [Method]: ChangeCursor [Class]: CursorManager
+    Cursor file path was null

@@ -1,0 +1,12 @@
+{
+  "Items": [
+    {
+      "Query": "google",
+      "ExecutedDateTime": "2023-02-28T22:26:42.3115886+01:00"
+    },
+    {
+      "Query": "chrome",
+      "ExecutedDateTime": "2023-02-28T22:26:57.6075185+01:00"
+    }
+  ]
+}

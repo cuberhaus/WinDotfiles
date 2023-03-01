@@ -1,0 +1,11 @@
+[2023-02-17 11:38:00.379009] [p-9092] [t-12340] [info] Detecting double left control click with 1000 ms interval.
+[2023-02-17 11:47:56.059259] [p-9092] [t-12340] [info] Detecting double left control click with 265 ms interval.
+[2023-02-17 16:11:45.399788] [p-9092] [t-12340] [info] Detecting double left control click with 31 ms interval.
+[2023-02-17 17:56:45.287501] [p-9092] [t-12340] [info] Detecting double left control click with 656 ms interval.
+[2023-02-17 17:56:45.601558] [p-9092] [t-12340] [info] Focusing the sonar on the mouse cursor.
+[2023-02-17 17:56:45.667805] [p-9092] [t-12340] [info] Detecting double left control click with 328 ms interval.
+[2023-02-17 19:38:37.615116] [p-9092] [t-12340] [info] Focusing the sonar on the mouse cursor.
+[2023-02-17 19:38:37.642440] [p-9092] [t-12340] [info] Detecting double left control click with 344 ms interval.
+[2023-02-17 19:38:48.644814] [p-9092] [t-12340] [info] Detecting double left control click with 765 ms interval.
+[2023-02-17 19:46:52.724757] [p-9092] [t-12340] [info] Focusing the sonar on the mouse cursor.
+[2023-02-17 19:46:52.738729] [p-9092] [t-12340] [info] Detecting double left control click with 406 ms interval.

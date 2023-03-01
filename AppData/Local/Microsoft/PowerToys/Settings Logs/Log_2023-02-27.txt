@@ -1,0 +1,1599 @@
+INFO: 12:27:09.2371831
+    [Method]: SendSettingsTelemetry [Class]: UserSettings
+    Sending settings telemetry
+INFO: 12:51:29.5654975
+    [Method]: ChangeCursor [Class]: CursorManager
+    Cursor file path was null
+INFO: 12:51:29.5666931
+    [Method]: ChangeCursor [Class]: CursorManager
+    Cursor file path was null
+INFO: 16:28:40.9005475
+    [Method]: GetSettingsOrDefault [Class]: SettingsUtils
+    Settings file settings.json for FancyZones was not found.
+INFO: 16:28:40.9664878
+    [Method]: GetSettingsOrDefault [Class]: SettingsUtils
+    Settings file settings.json for Measure Tool was not found.
+INFO: 16:28:40.9721610
+    [Method]: GetSettingsOrDefault [Class]: SettingsUtils
+    Settings file settings.json for Shortcut Guide was not found.
+INFO: 22:21:36.6429429
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\settings.json does not exists.
+INFO: 22:21:36.6465777
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220928966010702\settings.json, dryRun:True.
+INFO: 22:21:36.6579524
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\ColorPicker\settings.json does not exists.
+INFO: 22:21:36.6591170
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220928966010702\ColorPicker\settings.json, dryRun:True.
+INFO: 22:21:36.6713667
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\settings.json does not exists.
+INFO: 22:21:36.6727368
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220928966010702\FancyZones\settings.json, dryRun:True.
+INFO: 22:21:36.6734228
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\File Locksmith\file-locksmith-settings.json does not exists.
+INFO: 22:21:36.6746907
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220928966010702\File Locksmith\file-locksmith-settings.json, dryRun:True.
+INFO: 22:21:36.6756316
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Image Resizer\image-resizer-settings.json does not exists.
+INFO: 22:21:36.6770598
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220928966010702\Image Resizer\image-resizer-settings.json, dryRun:True.
+INFO: 22:21:36.6869263
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Measure Tool\settings.json does not exists.
+INFO: 22:21:36.6882680
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220928966010702\Measure Tool\settings.json, dryRun:True.
+INFO: 22:21:36.6888997
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerRename\power-rename-settings.json does not exists.
+INFO: 22:21:36.6897551
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220928966010702\PowerRename\power-rename-settings.json, dryRun:True.
+INFO: 22:21:36.7102825
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerToys Run\settings.json does not exists.
+INFO: 22:21:36.7367463
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220928966010702\PowerToys Run\settings.json, dryRun:True.
+INFO: 22:21:36.7467655
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Shortcut Guide\settings.json does not exists.
+INFO: 22:21:36.7478002
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220928966010702\Shortcut Guide\settings.json, dryRun:True.
+INFO: 22:21:36.7572502
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\TextExtractor\settings.json does not exists.
+INFO: 22:21:36.7584277
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220928966010702\TextExtractor\settings.json, dryRun:True.
+INFO: 22:21:36.7686195
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings took 323
+INFO: 22:21:40.5159401
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\settings.json does not exists.
+INFO: 22:21:40.5174387
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005149628\settings.json, dryRun:True.
+INFO: 22:21:40.5182253
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\ColorPicker\settings.json does not exists.
+INFO: 22:21:40.5190094
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005149628\ColorPicker\settings.json, dryRun:True.
+INFO: 22:21:40.5197264
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\settings.json does not exists.
+INFO: 22:21:40.5215722
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005149628\FancyZones\settings.json, dryRun:True.
+INFO: 22:21:40.5221888
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\File Locksmith\file-locksmith-settings.json does not exists.
+INFO: 22:21:40.5236916
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005149628\File Locksmith\file-locksmith-settings.json, dryRun:True.
+INFO: 22:21:40.5244551
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Image Resizer\image-resizer-settings.json does not exists.
+INFO: 22:21:40.5256176
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005149628\Image Resizer\image-resizer-settings.json, dryRun:True.
+INFO: 22:21:40.5264167
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Measure Tool\settings.json does not exists.
+INFO: 22:21:40.5274229
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005149628\Measure Tool\settings.json, dryRun:True.
+INFO: 22:21:40.5280628
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerRename\power-rename-settings.json does not exists.
+INFO: 22:21:40.5293712
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005149628\PowerRename\power-rename-settings.json, dryRun:True.
+INFO: 22:21:40.5318335
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerToys Run\settings.json does not exists.
+INFO: 22:21:40.5332814
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005149628\PowerToys Run\settings.json, dryRun:True.
+INFO: 22:21:40.5338754
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Shortcut Guide\settings.json does not exists.
+INFO: 22:21:40.5346459
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005149628\Shortcut Guide\settings.json, dryRun:True.
+INFO: 22:21:40.5351178
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\TextExtractor\settings.json does not exists.
+INFO: 22:21:40.5358971
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005149628\TextExtractor\settings.json, dryRun:True.
+INFO: 22:21:40.5364940
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings took 35
+INFO: 22:21:40.5521023
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\settings.json does not exists.
+INFO: 22:21:40.5532966
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005512593\settings.json, dryRun:True.
+INFO: 22:21:40.5539657
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\ColorPicker\settings.json does not exists.
+INFO: 22:21:40.5547255
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005512593\ColorPicker\settings.json, dryRun:True.
+INFO: 22:21:40.5554528
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\settings.json does not exists.
+INFO: 22:21:40.5562724
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005512593\FancyZones\settings.json, dryRun:True.
+INFO: 22:21:40.5567899
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\File Locksmith\file-locksmith-settings.json does not exists.
+INFO: 22:21:40.5589619
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005512593\File Locksmith\file-locksmith-settings.json, dryRun:True.
+INFO: 22:21:40.5597849
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Image Resizer\image-resizer-settings.json does not exists.
+INFO: 22:21:40.5609400
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005512593\Image Resizer\image-resizer-settings.json, dryRun:True.
+INFO: 22:21:40.5616716
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Measure Tool\settings.json does not exists.
+INFO: 22:21:40.5627498
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005512593\Measure Tool\settings.json, dryRun:True.
+INFO: 22:21:40.5633397
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerRename\power-rename-settings.json does not exists.
+INFO: 22:21:40.5641772
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005512593\PowerRename\power-rename-settings.json, dryRun:True.
+INFO: 22:21:40.5664806
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerToys Run\settings.json does not exists.
+INFO: 22:21:40.5674232
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005512593\PowerToys Run\settings.json, dryRun:True.
+INFO: 22:21:40.5679679
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Shortcut Guide\settings.json does not exists.
+INFO: 22:21:40.5687975
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005512593\Shortcut Guide\settings.json, dryRun:True.
+INFO: 22:21:40.5692791
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\TextExtractor\settings.json does not exists.
+INFO: 22:21:40.5700394
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005512593\TextExtractor\settings.json, dryRun:True.
+INFO: 22:21:40.5705786
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings took 69
+INFO: 22:21:40.5851776
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\settings.json does not exists.
+INFO: 22:21:40.5861857
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005844035\settings.json, dryRun:True.
+INFO: 22:21:40.5868632
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\ColorPicker\settings.json does not exists.
+INFO: 22:21:40.5876024
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005844035\ColorPicker\settings.json, dryRun:True.
+INFO: 22:21:40.5883054
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\settings.json does not exists.
+INFO: 22:21:40.5891073
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005844035\FancyZones\settings.json, dryRun:True.
+INFO: 22:21:40.5895592
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\File Locksmith\file-locksmith-settings.json does not exists.
+INFO: 22:21:40.5908280
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005844035\File Locksmith\file-locksmith-settings.json, dryRun:True.
+INFO: 22:21:40.5917895
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Image Resizer\image-resizer-settings.json does not exists.
+INFO: 22:21:40.5928434
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005844035\Image Resizer\image-resizer-settings.json, dryRun:True.
+INFO: 22:21:40.5937261
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Measure Tool\settings.json does not exists.
+INFO: 22:21:40.5946666
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005844035\Measure Tool\settings.json, dryRun:True.
+INFO: 22:21:40.5953682
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerRename\power-rename-settings.json does not exists.
+INFO: 22:21:40.5969393
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005844035\PowerRename\power-rename-settings.json, dryRun:True.
+INFO: 22:21:40.6057709
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerToys Run\settings.json does not exists.
+INFO: 22:21:40.6068834
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005844035\PowerToys Run\settings.json, dryRun:True.
+INFO: 22:21:40.6080143
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Shortcut Guide\settings.json does not exists.
+INFO: 22:21:40.6095001
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005844035\Shortcut Guide\settings.json, dryRun:True.
+INFO: 22:21:40.6104105
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\TextExtractor\settings.json does not exists.
+INFO: 22:21:40.6116312
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929005844035\TextExtractor\settings.json, dryRun:True.
+INFO: 22:21:40.6157558
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings took 114
+INFO: 22:21:40.6324325
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\settings.json does not exists.
+INFO: 22:21:40.6334845
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929006315704\settings.json, dryRun:True.
+INFO: 22:21:40.6341534
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\ColorPicker\settings.json does not exists.
+INFO: 22:21:40.6348725
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929006315704\ColorPicker\settings.json, dryRun:True.
+INFO: 22:21:40.6355513
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\settings.json does not exists.
+INFO: 22:21:40.6363481
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929006315704\FancyZones\settings.json, dryRun:True.
+INFO: 22:21:40.6367792
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\File Locksmith\file-locksmith-settings.json does not exists.
+INFO: 22:21:40.6379775
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929006315704\File Locksmith\file-locksmith-settings.json, dryRun:True.
+INFO: 22:21:40.6385274
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Image Resizer\image-resizer-settings.json does not exists.
+INFO: 22:21:40.6393136
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929006315704\Image Resizer\image-resizer-settings.json, dryRun:True.
+INFO: 22:21:40.6398581
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Measure Tool\settings.json does not exists.
+INFO: 22:21:40.6407240
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929006315704\Measure Tool\settings.json, dryRun:True.
+INFO: 22:21:40.6414969
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerRename\power-rename-settings.json does not exists.
+INFO: 22:21:40.6426274
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929006315704\PowerRename\power-rename-settings.json, dryRun:True.
+INFO: 22:21:40.6453095
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerToys Run\settings.json does not exists.
+INFO: 22:21:40.6464247
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929006315704\PowerToys Run\settings.json, dryRun:True.
+INFO: 22:21:40.6470451
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Shortcut Guide\settings.json does not exists.
+INFO: 22:21:40.6478306
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929006315704\Shortcut Guide\settings.json, dryRun:True.
+INFO: 22:21:40.6483398
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\TextExtractor\settings.json does not exists.
+INFO: 22:21:40.6491249
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929006315704\TextExtractor\settings.json, dryRun:True.
+INFO: 22:21:40.6494695
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings took 148
+INFO: 22:21:40.6645481
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\settings.json does not exists.
+INFO: 22:21:40.6657036
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929006636222\settings.json, dryRun:True.
+INFO: 22:21:40.6663759
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\ColorPicker\settings.json does not exists.
+INFO: 22:21:40.6671606
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929006636222\ColorPicker\settings.json, dryRun:True.
+INFO: 22:21:40.6678969
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\settings.json does not exists.
+INFO: 22:21:40.6687023
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929006636222\FancyZones\settings.json, dryRun:True.
+INFO: 22:21:40.6691430
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\File Locksmith\file-locksmith-settings.json does not exists.
+INFO: 22:21:40.6703790
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929006636222\File Locksmith\file-locksmith-settings.json, dryRun:True.
+INFO: 22:21:40.6708883
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Image Resizer\image-resizer-settings.json does not exists.
+INFO: 22:21:40.6717403
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929006636222\Image Resizer\image-resizer-settings.json, dryRun:True.
+INFO: 22:21:40.6722593
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Measure Tool\settings.json does not exists.
+INFO: 22:21:40.6730391
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929006636222\Measure Tool\settings.json, dryRun:True.
+INFO: 22:21:40.6735538
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerRename\power-rename-settings.json does not exists.
+INFO: 22:21:40.6746744
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929006636222\PowerRename\power-rename-settings.json, dryRun:True.
+INFO: 22:21:40.6775255
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerToys Run\settings.json does not exists.
+INFO: 22:21:40.6786181
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929006636222\PowerToys Run\settings.json, dryRun:True.
+INFO: 22:21:40.6794074
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Shortcut Guide\settings.json does not exists.
+INFO: 22:21:40.6803260
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929006636222\Shortcut Guide\settings.json, dryRun:True.
+INFO: 22:21:40.6808550
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\TextExtractor\settings.json does not exists.
+INFO: 22:21:40.6817092
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929006636222\TextExtractor\settings.json, dryRun:True.
+INFO: 22:21:40.6820553
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings took 180
+INFO: 22:21:41.2731347
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\settings.json does not exists.
+INFO: 22:21:41.2752084
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929012724157\settings.json, dryRun:True.
+INFO: 22:21:41.2764851
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\ColorPicker\settings.json does not exists.
+INFO: 22:21:41.2778832
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929012724157\ColorPicker\settings.json, dryRun:True.
+INFO: 22:21:41.2787969
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\settings.json does not exists.
+INFO: 22:21:41.2798025
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929012724157\FancyZones\settings.json, dryRun:True.
+INFO: 22:21:41.2802965
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\File Locksmith\file-locksmith-settings.json does not exists.
+INFO: 22:21:41.2815596
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929012724157\File Locksmith\file-locksmith-settings.json, dryRun:True.
+INFO: 22:21:41.2821070
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Image Resizer\image-resizer-settings.json does not exists.
+INFO: 22:21:41.2828599
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929012724157\Image Resizer\image-resizer-settings.json, dryRun:True.
+INFO: 22:21:41.2833229
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Measure Tool\settings.json does not exists.
+INFO: 22:21:41.2841064
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929012724157\Measure Tool\settings.json, dryRun:True.
+INFO: 22:21:41.2845372
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerRename\power-rename-settings.json does not exists.
+INFO: 22:21:41.2853067
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929012724157\PowerRename\power-rename-settings.json, dryRun:True.
+INFO: 22:21:41.2869398
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerToys Run\settings.json does not exists.
+INFO: 22:21:41.2877171
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929012724157\PowerToys Run\settings.json, dryRun:True.
+INFO: 22:21:41.2881784
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Shortcut Guide\settings.json does not exists.
+INFO: 22:21:41.2889749
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929012724157\Shortcut Guide\settings.json, dryRun:True.
+INFO: 22:21:41.2895692
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\TextExtractor\settings.json does not exists.
+INFO: 22:21:41.2906642
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929012724157\TextExtractor\settings.json, dryRun:True.
+INFO: 22:21:41.2934983
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings took 33
+INFO: 22:21:41.3096210
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\settings.json does not exists.
+INFO: 22:21:41.3112414
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013082191\settings.json, dryRun:True.
+INFO: 22:21:41.3121558
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\ColorPicker\settings.json does not exists.
+INFO: 22:21:41.3130755
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013082191\ColorPicker\settings.json, dryRun:True.
+INFO: 22:21:41.3138484
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\settings.json does not exists.
+INFO: 22:21:41.3146406
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013082191\FancyZones\settings.json, dryRun:True.
+INFO: 22:21:41.3150804
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\File Locksmith\file-locksmith-settings.json does not exists.
+INFO: 22:21:41.3162167
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013082191\File Locksmith\file-locksmith-settings.json, dryRun:True.
+INFO: 22:21:41.3168762
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Image Resizer\image-resizer-settings.json does not exists.
+INFO: 22:21:41.3177104
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013082191\Image Resizer\image-resizer-settings.json, dryRun:True.
+INFO: 22:21:41.3182205
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Measure Tool\settings.json does not exists.
+INFO: 22:21:41.3190096
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013082191\Measure Tool\settings.json, dryRun:True.
+INFO: 22:21:41.3194604
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerRename\power-rename-settings.json does not exists.
+INFO: 22:21:41.3203359
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013082191\PowerRename\power-rename-settings.json, dryRun:True.
+INFO: 22:21:41.3228163
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerToys Run\settings.json does not exists.
+INFO: 22:21:41.3243971
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013082191\PowerToys Run\settings.json, dryRun:True.
+INFO: 22:21:41.3259613
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Shortcut Guide\settings.json does not exists.
+INFO: 22:21:41.3271247
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013082191\Shortcut Guide\settings.json, dryRun:True.
+INFO: 22:21:41.3278813
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\TextExtractor\settings.json does not exists.
+INFO: 22:21:41.3292877
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013082191\TextExtractor\settings.json, dryRun:True.
+INFO: 22:21:41.3298165
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings took 69
+INFO: 22:21:41.3451521
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\settings.json does not exists.
+INFO: 22:21:41.3465025
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013440582\settings.json, dryRun:True.
+INFO: 22:21:41.3471538
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\ColorPicker\settings.json does not exists.
+INFO: 22:21:41.3478825
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013440582\ColorPicker\settings.json, dryRun:True.
+INFO: 22:21:41.3485172
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\settings.json does not exists.
+INFO: 22:21:41.3493325
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013440582\FancyZones\settings.json, dryRun:True.
+INFO: 22:21:41.3497850
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\File Locksmith\file-locksmith-settings.json does not exists.
+INFO: 22:21:41.3508226
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013440582\File Locksmith\file-locksmith-settings.json, dryRun:True.
+INFO: 22:21:41.3513257
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Image Resizer\image-resizer-settings.json does not exists.
+INFO: 22:21:41.3520765
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013440582\Image Resizer\image-resizer-settings.json, dryRun:True.
+INFO: 22:21:41.3525721
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Measure Tool\settings.json does not exists.
+INFO: 22:21:41.3533008
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013440582\Measure Tool\settings.json, dryRun:True.
+INFO: 22:21:41.3537148
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerRename\power-rename-settings.json does not exists.
+INFO: 22:21:41.3545894
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013440582\PowerRename\power-rename-settings.json, dryRun:True.
+INFO: 22:21:41.3562451
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerToys Run\settings.json does not exists.
+INFO: 22:21:41.3572412
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013440582\PowerToys Run\settings.json, dryRun:True.
+INFO: 22:21:41.3584056
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Shortcut Guide\settings.json does not exists.
+INFO: 22:21:41.3598433
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013440582\Shortcut Guide\settings.json, dryRun:True.
+INFO: 22:21:41.3607363
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\TextExtractor\settings.json does not exists.
+INFO: 22:21:41.3619127
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013440582\TextExtractor\settings.json, dryRun:True.
+INFO: 22:21:41.3623962
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings took 87
+INFO: 22:21:41.3777620
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\settings.json does not exists.
+INFO: 22:21:41.3788540
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013768780\settings.json, dryRun:True.
+INFO: 22:21:41.3798417
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\ColorPicker\settings.json does not exists.
+INFO: 22:21:41.3806720
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013768780\ColorPicker\settings.json, dryRun:True.
+INFO: 22:21:41.3812897
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\settings.json does not exists.
+INFO: 22:21:41.3820425
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013768780\FancyZones\settings.json, dryRun:True.
+INFO: 22:21:41.3824520
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\File Locksmith\file-locksmith-settings.json does not exists.
+INFO: 22:21:41.3837177
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013768780\File Locksmith\file-locksmith-settings.json, dryRun:True.
+INFO: 22:21:41.3843597
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Image Resizer\image-resizer-settings.json does not exists.
+INFO: 22:21:41.3856146
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013768780\Image Resizer\image-resizer-settings.json, dryRun:True.
+INFO: 22:21:41.3863316
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Measure Tool\settings.json does not exists.
+INFO: 22:21:41.3872489
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013768780\Measure Tool\settings.json, dryRun:True.
+INFO: 22:21:41.3877184
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerRename\power-rename-settings.json does not exists.
+INFO: 22:21:41.3884710
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013768780\PowerRename\power-rename-settings.json, dryRun:True.
+INFO: 22:21:41.3902091
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerToys Run\settings.json does not exists.
+INFO: 22:21:41.3917160
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013768780\PowerToys Run\settings.json, dryRun:True.
+INFO: 22:21:41.3926340
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Shortcut Guide\settings.json does not exists.
+INFO: 22:21:41.3939528
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013768780\Shortcut Guide\settings.json, dryRun:True.
+INFO: 22:21:41.3948067
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\TextExtractor\settings.json does not exists.
+INFO: 22:21:41.3961380
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929013768780\TextExtractor\settings.json, dryRun:True.
+INFO: 22:21:41.3966297
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings took 120
+ERROR: 22:21:41.4411675
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    There was an error: The process cannot access the file 'C:\Users\polcg\AppData\Local\Microsoft\PowerToys\settings.json' because it is being used by another process.
+The process cannot access the file 'C:\Users\polcg\AppData\Local\Microsoft\PowerToys\settings.json' because it is being used by another process.
+Inner exception: 
+
+Stack trace: 
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.ReadAllText(String path, Encoding encoding)
+   at Microsoft.PowerToys.Settings.UI.Library.SettingsBackupAndRestoreUtils.GetExportVersion(JsonNode backupRetoreSettings, String settingFileKey, String settingsFileName)
+   at Microsoft.PowerToys.Settings.UI.Library.SettingsBackupAndRestoreUtils.BackupSettingsInternal(String appBasePath, String settingsBackupAndRestoreDir, Boolean dryRun)
+INFO: 22:21:41.4419773
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings took 166
+INFO: 22:21:41.4608201
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\settings.json does not exists.
+INFO: 22:21:41.4625729
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929014596549\settings.json, dryRun:True.
+INFO: 22:21:41.4634751
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\ColorPicker\settings.json does not exists.
+INFO: 22:21:41.4643100
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929014596549\ColorPicker\settings.json, dryRun:True.
+INFO: 22:21:41.4651588
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\settings.json does not exists.
+INFO: 22:21:41.4659755
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929014596549\FancyZones\settings.json, dryRun:True.
+INFO: 22:21:41.4664527
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\File Locksmith\file-locksmith-settings.json does not exists.
+INFO: 22:21:41.4675547
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929014596549\File Locksmith\file-locksmith-settings.json, dryRun:True.
+INFO: 22:21:41.4681367
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Image Resizer\image-resizer-settings.json does not exists.
+INFO: 22:21:41.4689344
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929014596549\Image Resizer\image-resizer-settings.json, dryRun:True.
+INFO: 22:21:41.4696387
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Measure Tool\settings.json does not exists.
+INFO: 22:21:41.4704431
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929014596549\Measure Tool\settings.json, dryRun:True.
+INFO: 22:21:41.4709477
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerRename\power-rename-settings.json does not exists.
+INFO: 22:21:41.4717094
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929014596549\PowerRename\power-rename-settings.json, dryRun:True.
+INFO: 22:21:41.4744012
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerToys Run\settings.json does not exists.
+INFO: 22:21:41.4761299
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929014596549\PowerToys Run\settings.json, dryRun:True.
+INFO: 22:21:41.4773992
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Shortcut Guide\settings.json does not exists.
+INFO: 22:21:41.4791510
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929014596549\Shortcut Guide\settings.json, dryRun:True.
+INFO: 22:21:41.4800373
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\TextExtractor\settings.json does not exists.
+INFO: 22:21:41.4812815
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929014596549\TextExtractor\settings.json, dryRun:True.
+INFO: 22:21:41.4818078
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings took 205
+INFO: 22:21:44.7546310
+    [Method]: get_SettingsConfig [Class]: SettingsRepository`1
+    Settings file settings.json for FindMyMouse was not found.
+INFO: 22:21:44.7698557
+    [Method]: get_SettingsConfig [Class]: SettingsRepository`1
+    Settings file settings.json for MouseHighlighter was not found.
+INFO: 22:21:44.7798855
+    [Method]: get_SettingsConfig [Class]: SettingsRepository`1
+    Settings file settings.json for MousePointerCrosshairs was not found.
+INFO: 22:22:43.1476120
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\settings.json does not exists.
+INFO: 22:22:43.1487818
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929631354653\settings.json, dryRun:True.
+INFO: 22:22:43.1495031
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\ColorPicker\settings.json does not exists.
+INFO: 22:22:43.1502953
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929631354653\ColorPicker\settings.json, dryRun:True.
+INFO: 22:22:43.1510936
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\settings.json does not exists.
+INFO: 22:22:43.1522316
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929631354653\FancyZones\settings.json, dryRun:True.
+INFO: 22:22:43.1527142
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\File Locksmith\file-locksmith-settings.json does not exists.
+INFO: 22:22:43.1540911
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929631354653\File Locksmith\file-locksmith-settings.json, dryRun:True.
+INFO: 22:22:43.1545868
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FindMyMouse\settings.json does not exists.
+INFO: 22:22:43.1554528
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929631354653\FindMyMouse\settings.json, dryRun:True.
+INFO: 22:22:43.1560119
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Image Resizer\image-resizer-settings.json does not exists.
+INFO: 22:22:43.1567511
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929631354653\Image Resizer\image-resizer-settings.json, dryRun:True.
+INFO: 22:22:43.1571703
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Keyboard Manager\settings.json does not exists.
+INFO: 22:22:43.1578948
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929631354653\Keyboard Manager\settings.json, dryRun:True.
+INFO: 22:22:43.1584128
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Measure Tool\settings.json does not exists.
+INFO: 22:22:43.1593148
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929631354653\Measure Tool\settings.json, dryRun:True.
+INFO: 22:22:43.1597513
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\MouseHighlighter\settings.json does not exists.
+INFO: 22:22:43.1605108
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929631354653\MouseHighlighter\settings.json, dryRun:True.
+INFO: 22:22:43.1609586
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\MousePointerCrosshairs\settings.json does not exists.
+INFO: 22:22:43.1616718
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929631354653\MousePointerCrosshairs\settings.json, dryRun:True.
+INFO: 22:22:43.1620584
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerRename\power-rename-settings.json does not exists.
+INFO: 22:22:43.1627575
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929631354653\PowerRename\power-rename-settings.json, dryRun:True.
+INFO: 22:22:43.1642584
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerToys Run\settings.json does not exists.
+INFO: 22:22:43.1650805
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929631354653\PowerToys Run\settings.json, dryRun:True.
+INFO: 22:22:43.1655055
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Shortcut Guide\settings.json does not exists.
+INFO: 22:22:43.1662949
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929631354653\Shortcut Guide\settings.json, dryRun:True.
+INFO: 22:22:43.1667345
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\TextExtractor\settings.json does not exists.
+INFO: 22:22:43.1674709
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929631354653\TextExtractor\settings.json, dryRun:True.
+INFO: 22:22:43.1697973
+    [Method]: DryRunBackup [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings took 45
+INFO: 22:22:57.9608337
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\settings.json does not exists.
+INFO: 22:22:57.9619044
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929779601525\settings.json, dryRun:False.
+INFO: 22:22:57.9633692
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\ColorPicker\settings.json does not exists.
+INFO: 22:22:57.9646270
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929779601525\ColorPicker\settings.json, dryRun:False.
+INFO: 22:22:57.9669097
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\settings.json does not exists.
+INFO: 22:22:57.9689308
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929779601525\FancyZones\settings.json, dryRun:False.
+INFO: 22:22:57.9705867
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\File Locksmith\file-locksmith-settings.json does not exists.
+INFO: 22:22:57.9715987
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929779601525\File Locksmith\file-locksmith-settings.json, dryRun:False.
+INFO: 22:22:57.9727098
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FindMyMouse\settings.json does not exists.
+INFO: 22:22:57.9735381
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929779601525\FindMyMouse\settings.json, dryRun:False.
+INFO: 22:22:57.9747191
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Image Resizer\image-resizer-settings.json does not exists.
+INFO: 22:22:57.9755241
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929779601525\Image Resizer\image-resizer-settings.json, dryRun:False.
+INFO: 22:22:57.9766197
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Keyboard Manager\settings.json does not exists.
+INFO: 22:22:57.9774830
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929779601525\Keyboard Manager\settings.json, dryRun:False.
+INFO: 22:22:57.9792112
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Measure Tool\settings.json does not exists.
+INFO: 22:22:57.9804978
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929779601525\Measure Tool\settings.json, dryRun:False.
+INFO: 22:22:57.9823191
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\MouseHighlighter\settings.json does not exists.
+INFO: 22:22:57.9837097
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929779601525\MouseHighlighter\settings.json, dryRun:False.
+INFO: 22:22:57.9861791
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\MousePointerCrosshairs\settings.json does not exists.
+INFO: 22:22:57.9874362
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929779601525\MousePointerCrosshairs\settings.json, dryRun:False.
+INFO: 22:22:57.9889674
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerRename\power-rename-settings.json does not exists.
+INFO: 22:22:57.9899798
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929779601525\PowerRename\power-rename-settings.json, dryRun:False.
+INFO: 22:22:57.9922059
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerToys Run\settings.json does not exists.
+INFO: 22:22:57.9931427
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929779601525\PowerToys Run\settings.json, dryRun:False.
+INFO: 22:22:57.9948116
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Shortcut Guide\settings.json does not exists.
+INFO: 22:22:57.9956873
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929779601525\Shortcut Guide\settings.json, dryRun:False.
+INFO: 22:22:57.9969084
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\TextExtractor\settings.json does not exists.
+INFO: 22:22:57.9979472
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220929779601525\TextExtractor\settings.json, dryRun:False.
+INFO: 22:22:58.2247424
+    [Method]: BackupSettings [Class]: SettingsUtils
+    BackupSettings took 276
+INFO: 22:22:58.2915304
+    [Method]: <GetLatestSettingsFolder>b__3 [Class]: <>c__DisplayClass19_0
+    RemoveOldBackups killing C:\Users\polcg\AppData\Local\Temp\settings_133210242884196373
+INFO: 22:22:58.2964285
+    [Method]: <GetLatestSettingsFolder>b__3 [Class]: <>c__DisplayClass19_0
+    RemoveOldBackups killing C:\Users\polcg\AppData\Local\Temp\settings_133210249745372365
+INFO: 22:22:58.3009642
+    [Method]: <GetLatestSettingsFolder>b__3 [Class]: <>c__DisplayClass19_0
+    RemoveOldBackups killing C:\Users\polcg\AppData\Local\Temp\settings_133210249745523127
+INFO: 22:22:58.3048575
+    [Method]: <GetLatestSettingsFolder>b__3 [Class]: <>c__DisplayClass19_0
+    RemoveOldBackups killing C:\Users\polcg\AppData\Local\Temp\settings_133210249745805950
+INFO: 22:22:58.3064400
+    [Method]: BackupConfigsClick [Class]: GeneralViewModel
+    BackupSettings took 79
+INFO: 22:22:58.3100970
+    [Method]: <GetLatestSettingsFolder>b__3 [Class]: <>c__DisplayClass19_0
+    RemoveOldBackups killing C:\Users\polcg\AppData\Local\Temp\settings_133210249745946736
+INFO: 22:22:58.3155359
+    [Method]: <GetLatestSettingsFolder>b__3 [Class]: <>c__DisplayClass19_0
+    RemoveOldBackups killing C:\Users\polcg\AppData\Local\Temp\settings_133210249746108546
+INFO: 22:22:58.3196178
+    [Method]: <GetLatestSettingsFolder>b__3 [Class]: <>c__DisplayClass19_0
+    RemoveOldBackups killing C:\Users\polcg\AppData\Local\Temp\settings_133210249749957576
+INFO: 22:22:58.3244327
+    [Method]: <GetLatestSettingsFolder>b__3 [Class]: <>c__DisplayClass19_0
+    RemoveOldBackups killing C:\Users\polcg\AppData\Local\Temp\settings_133210249750080270
+INFO: 22:22:58.3308630
+    [Method]: <GetLatestSettingsFolder>b__3 [Class]: <>c__DisplayClass19_0
+    RemoveOldBackups killing C:\Users\polcg\AppData\Local\Temp\settings_133210249750193135
+INFO: 22:22:58.3368268
+    [Method]: <GetLatestSettingsFolder>b__3 [Class]: <>c__DisplayClass19_0
+    RemoveOldBackups killing C:\Users\polcg\AppData\Local\Temp\settings_133210249750605952
+INFO: 22:22:58.3420925
+    [Method]: <GetLatestSettingsFolder>b__3 [Class]: <>c__DisplayClass19_0
+    RemoveOldBackups killing C:\Users\polcg\AppData\Local\Temp\settings_133210249750923982
+INFO: 22:22:58.3478215
+    [Method]: <GetLatestSettingsFolder>b__3 [Class]: <>c__DisplayClass19_0
+    RemoveOldBackups killing C:\Users\polcg\AppData\Local\Temp\settings_133210249751069440
+INFO: 22:23:14.8373347
+    [Method]: DryRunBackup [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings took 44
+INFO: 22:23:19.0433921
+    [Method]: BackupSettings [Class]: SettingsUtils
+    BackupSettings took 46
+INFO: 22:23:19.0704761
+    [Method]: BackupConfigsClick [Class]: GeneralViewModel
+    BackupSettings took 26
+INFO: 22:25:12.3074375
+    [Method]: BackupSettings [Class]: SettingsUtils
+    BackupSettings took 40
+INFO: 22:25:12.3421633
+    [Method]: BackupConfigsClick [Class]: GeneralViewModel
+    BackupSettings took 34
+INFO: 22:30:26.8963238
+    [Method]: .ctor [Class]: KeyboardManagerViewModel
+    Couldn't load Keyboard Manager profile because it doesn't exist
+INFO: 22:30:29.9952991
+    [Method]: OnRemapKeyboard [Class]: KeyboardManagerViewModel
+    Starting Keyboard Manager editor from C:\Program Files\PowerToys\modules\KeyboardManager\KeyboardManagerEditor\PowerToys.KeyboardManagerEditor.exe
+ERROR: 22:31:22.2636433
+    [Method]: .ctor [Class]: ImageResizerViewModel
+    Exception encountered while reading Image Resizer settings.
+Unable to find the specified file.
+Inner exception: 
+
+Stack trace: 
+   at Microsoft.PowerToys.Settings.UI.Library.SettingsUtils.GetSettings[T](String powertoy, String fileName)
+   at Microsoft.PowerToys.Settings.UI.ViewModels.ImageResizerViewModel..ctor(ISettingsUtils settingsUtils, ISettingsRepository`1 settingsRepository, Func`2 ipcMSGCallBackFunc, Func`2 resourceLoader)
+INFO: 22:32:33.5052150
+    [Method]: get_SettingsConfig [Class]: SettingsRepository`1
+    Settings file settings.json for Hosts was not found.
+INFO: 22:33:20.6033627
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Hosts\settings.json does not exists.
+INFO: 22:33:20.6054264
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220936005876229\Hosts\settings.json, dryRun:True.
+INFO: 22:33:20.6074297
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Image Resizer\settings.json does not exists.
+INFO: 22:33:20.6087208
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220936005876229\Image Resizer\settings.json, dryRun:True.
+INFO: 22:33:20.6300474
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerToys Run\settings.json content is different.
+INFO: 22:33:20.6315714
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220936005876229\PowerToys Run\settings.json, dryRun:True.
+INFO: 22:33:20.6351160
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220936005876229\settings.json, dryRun:True
+INFO: 22:33:20.6355191
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220936005876229\ColorPicker\settings.json, dryRun:True
+INFO: 22:33:20.6357793
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220936005876229\FancyZones\settings.json, dryRun:True
+INFO: 22:33:20.6360291
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220936005876229\File Locksmith\file-locksmith-settings.json, dryRun:True
+INFO: 22:33:20.6362939
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220936005876229\FindMyMouse\settings.json, dryRun:True
+INFO: 22:33:20.6365638
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220936005876229\Image Resizer\image-resizer-settings.json, dryRun:True
+INFO: 22:33:20.6369403
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220936005876229\Keyboard Manager\settings.json, dryRun:True
+INFO: 22:33:20.6372345
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220936005876229\Measure Tool\settings.json, dryRun:True
+INFO: 22:33:20.6374915
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220936005876229\MouseHighlighter\settings.json, dryRun:True
+INFO: 22:33:20.6377409
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220936005876229\MousePointerCrosshairs\settings.json, dryRun:True
+INFO: 22:33:20.6380055
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220936005876229\PowerRename\power-rename-settings.json, dryRun:True
+INFO: 22:33:20.6382861
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220936005876229\Shortcut Guide\settings.json, dryRun:True
+INFO: 22:33:20.6385192
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133220936005876229\TextExtractor\settings.json, dryRun:True
+INFO: 22:33:20.6425971
+    [Method]: DryRunBackup [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings took 74
+INFO: 22:33:25.2090618
+    [Method]: get_SettingsConfig [Class]: SettingsRepository`1
+    Settings file settings.json for File Explorer was not found.
+INFO: 11:44:19.4194122
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\custom-layouts.json does not exists.
+INFO: 11:44:19.4242594
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410594056344\FancyZones\custom-layouts.json, dryRun:True.
+INFO: 11:44:19.4249989
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\layout-hotkeys.json does not exists.
+INFO: 11:44:19.4256099
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410594056344\FancyZones\layout-hotkeys.json, dryRun:True.
+INFO: 11:44:19.4263356
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\layout-templates.json does not exists.
+INFO: 11:44:19.4268694
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410594056344\FancyZones\layout-templates.json, dryRun:True.
+INFO: 11:44:19.4314987
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\File Explorer\settings.json does not exists.
+INFO: 11:44:19.4328140
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410594056344\File Explorer\settings.json, dryRun:True.
+INFO: 11:44:19.4362726
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Hosts\settings.json does not exists.
+INFO: 11:44:19.4376415
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410594056344\Hosts\settings.json, dryRun:True.
+INFO: 11:44:19.4396606
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Image Resizer\settings.json does not exists.
+INFO: 11:44:19.4412996
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410594056344\Image Resizer\settings.json, dryRun:True.
+INFO: 11:44:19.4823958
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerToys Run\settings.json content is different.
+INFO: 11:44:19.4837424
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410594056344\PowerToys Run\settings.json, dryRun:True.
+INFO: 11:44:19.4862392
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410594056344\settings.json, dryRun:True
+INFO: 11:44:19.4865380
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410594056344\ColorPicker\settings.json, dryRun:True
+INFO: 11:44:19.4867026
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410594056344\FancyZones\settings.json, dryRun:True
+INFO: 11:44:19.4868725
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410594056344\File Locksmith\file-locksmith-settings.json, dryRun:True
+INFO: 11:44:19.4870333
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410594056344\FindMyMouse\settings.json, dryRun:True
+INFO: 11:44:19.4871847
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410594056344\Image Resizer\image-resizer-settings.json, dryRun:True
+INFO: 11:44:19.4873348
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410594056344\Keyboard Manager\settings.json, dryRun:True
+INFO: 11:44:19.4874857
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410594056344\Measure Tool\settings.json, dryRun:True
+INFO: 11:44:19.4876807
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410594056344\MouseHighlighter\settings.json, dryRun:True
+INFO: 11:44:19.4879311
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410594056344\MousePointerCrosshairs\settings.json, dryRun:True
+INFO: 11:44:19.4882002
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410594056344\PowerRename\power-rename-settings.json, dryRun:True
+INFO: 11:44:19.4883767
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410594056344\Shortcut Guide\settings.json, dryRun:True
+INFO: 11:44:19.4885623
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410594056344\TextExtractor\settings.json, dryRun:True
+INFO: 11:44:19.4925344
+    [Method]: DryRunBackup [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings took 132
+INFO: 11:44:27.4801453
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\custom-layouts.json does not exists.
+INFO: 11:44:27.5126162
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410674650040\FancyZones\custom-layouts.json, dryRun:False.
+INFO: 11:44:27.5170114
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\layout-hotkeys.json does not exists.
+INFO: 11:44:27.5186302
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410674650040\FancyZones\layout-hotkeys.json, dryRun:False.
+INFO: 11:44:27.5219554
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\layout-templates.json does not exists.
+INFO: 11:44:27.5232776
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410674650040\FancyZones\layout-templates.json, dryRun:False.
+INFO: 11:44:27.5337030
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\File Explorer\settings.json does not exists.
+INFO: 11:44:27.5360404
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410674650040\File Explorer\settings.json, dryRun:False.
+INFO: 11:44:27.5432554
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Hosts\settings.json does not exists.
+INFO: 11:44:27.5463381
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410674650040\Hosts\settings.json, dryRun:False.
+INFO: 11:44:27.5517102
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Image Resizer\settings.json does not exists.
+INFO: 11:44:27.5547375
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410674650040\Image Resizer\settings.json, dryRun:False.
+INFO: 11:44:27.5851859
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerToys Run\settings.json content is different.
+INFO: 11:44:27.5869117
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410674650040\PowerToys Run\settings.json, dryRun:False.
+INFO: 11:44:27.5907110
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410674650040\settings.json, dryRun:False
+INFO: 11:44:27.5924208
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410674650040\ColorPicker\settings.json, dryRun:False
+INFO: 11:44:27.5945808
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410674650040\FancyZones\settings.json, dryRun:False
+INFO: 11:44:27.5962043
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410674650040\File Locksmith\file-locksmith-settings.json, dryRun:False
+INFO: 11:44:27.5988154
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410674650040\FindMyMouse\settings.json, dryRun:False
+INFO: 11:44:27.6012153
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410674650040\Image Resizer\image-resizer-settings.json, dryRun:False
+INFO: 11:44:27.6031921
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410674650040\Keyboard Manager\settings.json, dryRun:False
+INFO: 11:44:27.6048793
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410674650040\Measure Tool\settings.json, dryRun:False
+INFO: 11:44:27.6064782
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410674650040\MouseHighlighter\settings.json, dryRun:False
+INFO: 11:44:27.6086359
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410674650040\MousePointerCrosshairs\settings.json, dryRun:False
+INFO: 11:44:27.6101112
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410674650040\PowerRename\power-rename-settings.json, dryRun:False
+INFO: 11:44:27.6115414
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410674650040\Shortcut Guide\settings.json, dryRun:False
+INFO: 11:44:27.6134958
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221410674650040\TextExtractor\settings.json, dryRun:False
+INFO: 11:44:27.6592544
+    [Method]: BackupSettings [Class]: SettingsUtils
+    BackupSettings took 221
+INFO: 11:44:27.7417404
+    [Method]: BackupConfigsClick [Class]: GeneralViewModel
+    BackupSettings took 81
+INFO: 11:44:32.6562079
+    [Method]: BackupSettings [Class]: SettingsUtils
+    BackupSettings took 86
+INFO: 11:44:32.6846986
+    [Method]: BackupConfigsClick [Class]: GeneralViewModel
+    BackupSettings took 28
+INFO: 11:46:30.4780448
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\settings.json does not exists.
+INFO: 11:46:30.4805259
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221411904767888\settings.json, dryRun:True.
+INFO: 11:46:30.4836027
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\ColorPicker\settings.json does not exists.
+INFO: 11:46:30.4858359
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221411904767888\ColorPicker\settings.json, dryRun:True.
+INFO: 11:46:30.4872152
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\custom-layouts.json does not exists.
+INFO: 11:46:30.4894502
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221411904767888\FancyZones\custom-layouts.json, dryRun:True.
+INFO: 11:46:30.4916351
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\layout-hotkeys.json does not exists.
+INFO: 11:46:30.4929063
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221411904767888\FancyZones\layout-hotkeys.json, dryRun:True.
+INFO: 11:46:30.4937099
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\layout-templates.json does not exists.
+INFO: 11:46:30.4943575
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221411904767888\FancyZones\layout-templates.json, dryRun:True.
+INFO: 11:46:30.4952584
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\settings.json does not exists.
+INFO: 11:46:30.4958624
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221411904767888\FancyZones\settings.json, dryRun:True.
+INFO: 11:46:30.4971243
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\File Explorer\settings.json does not exists.
+INFO: 11:46:30.4998200
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221411904767888\File Explorer\settings.json, dryRun:True.
+INFO: 11:46:30.5007865
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\File Locksmith\file-locksmith-settings.json does not exists.
+INFO: 11:46:30.5024138
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221411904767888\File Locksmith\file-locksmith-settings.json, dryRun:True.
+INFO: 11:46:30.5037346
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FindMyMouse\settings.json does not exists.
+INFO: 11:46:30.5060238
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221411904767888\FindMyMouse\settings.json, dryRun:True.
+INFO: 11:46:30.5073770
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Hosts\settings.json does not exists.
+INFO: 11:46:30.5097881
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221411904767888\Hosts\settings.json, dryRun:True.
+INFO: 11:46:30.5110471
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Image Resizer\image-resizer-settings.json does not exists.
+INFO: 11:46:30.5136873
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221411904767888\Image Resizer\image-resizer-settings.json, dryRun:True.
+INFO: 11:46:30.5156225
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Image Resizer\settings.json does not exists.
+INFO: 11:46:30.5169509
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221411904767888\Image Resizer\settings.json, dryRun:True.
+INFO: 11:46:30.5182712
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Keyboard Manager\settings.json does not exists.
+INFO: 11:46:30.5204132
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221411904767888\Keyboard Manager\settings.json, dryRun:True.
+INFO: 11:46:30.5223609
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Measure Tool\settings.json does not exists.
+INFO: 11:46:30.5245077
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221411904767888\Measure Tool\settings.json, dryRun:True.
+INFO: 11:46:30.5257730
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\MouseHighlighter\settings.json does not exists.
+INFO: 11:46:30.5281144
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221411904767888\MouseHighlighter\settings.json, dryRun:True.
+INFO: 11:46:30.5298613
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\MousePointerCrosshairs\settings.json does not exists.
+INFO: 11:46:30.5322257
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221411904767888\MousePointerCrosshairs\settings.json, dryRun:True.
+INFO: 11:46:30.5334613
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerRename\power-rename-settings.json does not exists.
+INFO: 11:46:30.5357930
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221411904767888\PowerRename\power-rename-settings.json, dryRun:True.
+INFO: 11:46:30.5404499
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerToys Run\settings.json does not exists.
+INFO: 11:46:30.5428239
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221411904767888\PowerToys Run\settings.json, dryRun:True.
+INFO: 11:46:30.5438530
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Shortcut Guide\settings.json does not exists.
+INFO: 11:46:30.5452769
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221411904767888\Shortcut Guide\settings.json, dryRun:True.
+INFO: 11:46:30.5462373
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\TextExtractor\settings.json does not exists.
+INFO: 11:46:30.5493976
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221411904767888\TextExtractor\settings.json, dryRun:True.
+INFO: 11:46:30.5566855
+    [Method]: DryRunBackup [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings took 105
+INFO: 11:47:23.1496356
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\settings.json does not exists.
+INFO: 11:47:23.1510598
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412431487012\settings.json, dryRun:True.
+INFO: 11:47:23.1518757
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\ColorPicker\settings.json does not exists.
+INFO: 11:47:23.1531519
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412431487012\ColorPicker\settings.json, dryRun:True.
+INFO: 11:47:23.1539438
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\custom-layouts.json does not exists.
+INFO: 11:47:23.1551443
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412431487012\FancyZones\custom-layouts.json, dryRun:True.
+INFO: 11:47:23.1557025
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\layout-hotkeys.json does not exists.
+INFO: 11:47:23.1562712
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412431487012\FancyZones\layout-hotkeys.json, dryRun:True.
+INFO: 11:47:23.1568395
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\layout-templates.json does not exists.
+INFO: 11:47:23.1573020
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412431487012\FancyZones\layout-templates.json, dryRun:True.
+INFO: 11:47:23.1580233
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\settings.json does not exists.
+INFO: 11:47:23.1585150
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412431487012\FancyZones\settings.json, dryRun:True.
+INFO: 11:47:23.1594007
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\File Explorer\settings.json does not exists.
+INFO: 11:47:23.1611050
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412431487012\File Explorer\settings.json, dryRun:True.
+INFO: 11:47:23.1619476
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\File Locksmith\file-locksmith-settings.json does not exists.
+INFO: 11:47:23.1632245
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412431487012\File Locksmith\file-locksmith-settings.json, dryRun:True.
+INFO: 11:47:23.1640268
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FindMyMouse\settings.json does not exists.
+INFO: 11:47:23.1651509
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412431487012\FindMyMouse\settings.json, dryRun:True.
+INFO: 11:47:23.1658043
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Hosts\settings.json does not exists.
+INFO: 11:47:23.1670131
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412431487012\Hosts\settings.json, dryRun:True.
+INFO: 11:47:23.1677105
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Image Resizer\image-resizer-settings.json does not exists.
+INFO: 11:47:23.1690465
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412431487012\Image Resizer\image-resizer-settings.json, dryRun:True.
+INFO: 11:47:23.1699097
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Image Resizer\settings.json does not exists.
+INFO: 11:47:23.1705251
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412431487012\Image Resizer\settings.json, dryRun:True.
+INFO: 11:47:23.1710852
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Keyboard Manager\settings.json does not exists.
+INFO: 11:47:23.1721518
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412431487012\Keyboard Manager\settings.json, dryRun:True.
+INFO: 11:47:23.1728866
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Measure Tool\settings.json does not exists.
+INFO: 11:47:23.1741780
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412431487012\Measure Tool\settings.json, dryRun:True.
+INFO: 11:47:23.1750180
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\MouseHighlighter\settings.json does not exists.
+INFO: 11:47:23.1764286
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412431487012\MouseHighlighter\settings.json, dryRun:True.
+INFO: 11:47:23.1771456
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\MousePointerCrosshairs\settings.json does not exists.
+INFO: 11:47:23.1782437
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412431487012\MousePointerCrosshairs\settings.json, dryRun:True.
+INFO: 11:47:23.1790558
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerRename\power-rename-settings.json does not exists.
+INFO: 11:47:23.1802793
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412431487012\PowerRename\power-rename-settings.json, dryRun:True.
+INFO: 11:47:23.1817582
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerToys Run\settings.json does not exists.
+INFO: 11:47:23.1827148
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412431487012\PowerToys Run\settings.json, dryRun:True.
+INFO: 11:47:23.1834014
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Shortcut Guide\settings.json does not exists.
+INFO: 11:47:23.1842394
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412431487012\Shortcut Guide\settings.json, dryRun:True.
+INFO: 11:47:23.1846921
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\TextExtractor\settings.json does not exists.
+INFO: 11:47:23.1856763
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412431487012\TextExtractor\settings.json, dryRun:True.
+INFO: 11:47:23.1861823
+    [Method]: DryRunBackup [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings took 55
+INFO: 11:47:24.3351565
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\settings.json does not exists.
+INFO: 11:47:24.3372813
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412443340234\settings.json, dryRun:True.
+INFO: 11:47:24.3382009
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\ColorPicker\settings.json does not exists.
+INFO: 11:47:24.3394419
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412443340234\ColorPicker\settings.json, dryRun:True.
+INFO: 11:47:24.3402249
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\custom-layouts.json does not exists.
+INFO: 11:47:24.3420723
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412443340234\FancyZones\custom-layouts.json, dryRun:True.
+INFO: 11:47:24.3431682
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\layout-hotkeys.json does not exists.
+INFO: 11:47:24.3438917
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412443340234\FancyZones\layout-hotkeys.json, dryRun:True.
+INFO: 11:47:24.3445925
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\layout-templates.json does not exists.
+INFO: 11:47:24.3451922
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412443340234\FancyZones\layout-templates.json, dryRun:True.
+INFO: 11:47:24.3460120
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FancyZones\settings.json does not exists.
+INFO: 11:47:24.3465615
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412443340234\FancyZones\settings.json, dryRun:True.
+INFO: 11:47:24.3472012
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\File Explorer\settings.json does not exists.
+INFO: 11:47:24.3492613
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412443340234\File Explorer\settings.json, dryRun:True.
+INFO: 11:47:24.3508887
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\File Locksmith\file-locksmith-settings.json does not exists.
+INFO: 11:47:24.3526364
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412443340234\File Locksmith\file-locksmith-settings.json, dryRun:True.
+INFO: 11:47:24.3544190
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\FindMyMouse\settings.json does not exists.
+INFO: 11:47:24.3559901
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412443340234\FindMyMouse\settings.json, dryRun:True.
+INFO: 11:47:24.3567832
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Hosts\settings.json does not exists.
+INFO: 11:47:24.3581602
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412443340234\Hosts\settings.json, dryRun:True.
+INFO: 11:47:24.3589933
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Image Resizer\image-resizer-settings.json does not exists.
+INFO: 11:47:24.3603423
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412443340234\Image Resizer\image-resizer-settings.json, dryRun:True.
+INFO: 11:47:24.3612580
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Image Resizer\settings.json does not exists.
+INFO: 11:47:24.3619250
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412443340234\Image Resizer\settings.json, dryRun:True.
+INFO: 11:47:24.3627478
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Keyboard Manager\settings.json does not exists.
+INFO: 11:47:24.3642418
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412443340234\Keyboard Manager\settings.json, dryRun:True.
+INFO: 11:47:24.3649430
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Measure Tool\settings.json does not exists.
+INFO: 11:47:24.3663764
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412443340234\Measure Tool\settings.json, dryRun:True.
+INFO: 11:47:24.3674467
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\MouseHighlighter\settings.json does not exists.
+INFO: 11:47:24.3688137
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412443340234\MouseHighlighter\settings.json, dryRun:True.
+INFO: 11:47:24.3697966
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\MousePointerCrosshairs\settings.json does not exists.
+INFO: 11:47:24.3712410
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412443340234\MousePointerCrosshairs\settings.json, dryRun:True.
+INFO: 11:47:24.3721120
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerRename\power-rename-settings.json does not exists.
+INFO: 11:47:24.3735465
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412443340234\PowerRename\power-rename-settings.json, dryRun:True.
+INFO: 11:47:24.3756863
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\PowerToys Run\settings.json does not exists.
+INFO: 11:47:24.3773593
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412443340234\PowerToys Run\settings.json, dryRun:True.
+INFO: 11:47:24.3781540
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Shortcut Guide\settings.json does not exists.
+INFO: 11:47:24.3794928
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412443340234\Shortcut Guide\settings.json, dryRun:True.
+INFO: 11:47:24.3802498
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\TextExtractor\settings.json does not exists.
+INFO: 11:47:24.3817915
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221412443340234\TextExtractor\settings.json, dryRun:True.
+INFO: 11:47:24.3871274
+    [Method]: DryRunBackup [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings took 78
+INFO: 11:48:07.4807437
+    [Method]: get_SettingsConfig [Class]: SettingsRepository`1
+    Settings file settings.json for AlwaysOnTop was not found.
+INFO: 11:49:40.9461395
+    [Method]: get_SettingsConfig [Class]: SettingsRepository`1
+    Settings file settings.json for Video Conference was not found.

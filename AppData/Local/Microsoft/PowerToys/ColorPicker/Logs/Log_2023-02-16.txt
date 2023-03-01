@@ -1,0 +1,173 @@
+INFO: 11:42:37.8877195
+    [Method]: Main [Class]: Program
+    Color Picker started with pid=140
+INFO: 11:42:42.0367205
+    [Method]: OnStartup [Class]: App
+    Color Picker started from the PowerToys Runner. Runner pid=7748
+INFO: 11:42:42.6618848
+    [Method]: LoadSettingsFromJson [Class]: UserSettings
+    ColorPicker settings.json was missing, creating a new one
+INFO: 11:42:43.3516782
+    [Method]: SendSettingsTelemetry [Class]: UserSettings
+    Sending settings telemetry
+INFO: 11:54:14.9605758
+    [Method]: Main [Class]: Program
+    Color Picker started with pid=8800
+INFO: 11:54:18.7114428
+    [Method]: OnStartup [Class]: App
+    Color Picker started from the PowerToys Runner. Runner pid=9172
+ERROR: 11:54:19.9454058
+    [Method]: Main [Class]: Program
+    Unhandled exception
+The invocation of the constructor on type 'ColorPicker.MainWindow' that matches the specified binding constraints threw an exception.
+Inner exception: 
+The composition produced a single composition error. The root cause is provided below. Review the CompositionException.Errors property for more detailed information.
+
+1) Controlador no válido.
+
+Resulting in: An exception occurred while trying to create an instance of type 'ColorPicker.Mouse.MouseInfoProvider'.
+
+Resulting in: Cannot activate part 'ColorPicker.Mouse.MouseInfoProvider'.
+Element: ColorPicker.Mouse.MouseInfoProvider -->  ColorPicker.Mouse.MouseInfoProvider -->  AssemblyCatalog (Assembly="PowerToys.ColorPickerUI, Version=0.67.1.0, Culture=neutral, PublicKeyToken=null")
+
+Resulting in: Cannot get export 'ColorPicker.Mouse.MouseInfoProvider (ContractName="ColorPicker.Mouse.IMouseInfoProvider")' from part 'ColorPicker.Mouse.MouseInfoProvider'.
+Element: ColorPicker.Mouse.MouseInfoProvider (ContractName="ColorPicker.Mouse.IMouseInfoProvider") -->  ColorPicker.Mouse.MouseInfoProvider -->  AssemblyCatalog (Assembly="PowerToys.ColorPickerUI, Version=0.67.1.0, Culture=neutral, PublicKeyToken=null")
+
+Resulting in: Cannot set import 'ColorPicker.ViewModels.MainViewModel..ctor (Parameter="mouseInfoProvider", ContractName="ColorPicker.Mouse.IMouseInfoProvider")' on part 'ColorPicker.ViewModels.MainViewModel'.
+Element: ColorPicker.ViewModels.MainViewModel..ctor (Parameter="mouseInfoProvider", ContractName="ColorPicker.Mouse.IMouseInfoProvider") -->  ColorPicker.ViewModels.MainViewModel -->  AssemblyCatalog (Assembly="PowerToys.ColorPickerUI, Version=0.67.1.0, Culture=neutral, PublicKeyToken=null")
+
+Resulting in: Cannot get export 'ColorPicker.ViewModels.MainViewModel (ContractName="ColorPicker.ViewModelContracts.IMainViewModel")' from part 'ColorPicker.ViewModels.MainViewModel'.
+Element: ColorPicker.ViewModels.MainViewModel (ContractName="ColorPicker.ViewModelContracts.IMainViewModel") -->  ColorPicker.ViewModels.MainViewModel -->  AssemblyCatalog (Assembly="PowerToys.ColorPickerUI, Version=0.67.1.0, Culture=neutral, PublicKeyToken=null")
+
+Resulting in: Cannot set import 'ColorPicker.MainWindow.MainViewModel (ContractName="ColorPicker.ViewModelContracts.IMainViewModel")' on part 'ColorPicker.MainWindow'.
+Element: ColorPicker.MainWindow.MainViewModel (ContractName="ColorPicker.ViewModelContracts.IMainViewModel") -->  ColorPicker.MainWindow
+
+Stack trace: 
+   at System.Windows.Markup.XamlReader.RewrapException(Exception e, IXamlLineInfo lineInfo, Uri baseUri)
+   at System.Windows.Markup.WpfXamlLoader.Load(XamlReader xamlReader, IXamlObjectWriterFactory writerFactory, Boolean skipJournaledProperties, Object rootObject, XamlObjectWriterSettings settings, Uri baseUri)
+   at System.Windows.Markup.WpfXamlLoader.LoadBaml(XamlReader xamlReader, Boolean skipJournaledProperties, Object rootObject, XamlAccessLevel accessLevel, Uri baseUri)
+   at System.Windows.Markup.XamlReader.LoadBaml(Stream stream, ParserContext parserContext, Object parent, Boolean closeStream)
+   at System.Windows.Application.LoadBamlStreamWithSyncInfo(Stream stream, ParserContext pc)
+   at System.Windows.Application.DoStartup()
+   at System.Windows.Application.<.ctor>b__1_0(Object unused)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   at System.Windows.Threading.DispatcherOperation.InvokeImpl()
+   at MS.Internal.CulturePreservingExecutionContext.CallbackWrapper(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at MS.Internal.CulturePreservingExecutionContext.Run(CulturePreservingExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Windows.Threading.DispatcherOperation.Invoke()
+   at System.Windows.Threading.Dispatcher.ProcessQueue()
+   at System.Windows.Threading.Dispatcher.WndProcHook(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   at System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   at MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   at MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   at System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   at System.Windows.Application.RunDispatcher(Object ignore)
+   at System.Windows.Application.RunInternal(Window window)
+   at ColorPicker.Program.Main(String[] args)
+INFO: 11:54:19.9465603
+    [Method]: ChangeCursor [Class]: CursorManager
+    Cursor file path was null
+INFO: 11:54:19.9470050
+    [Method]: ChangeCursor [Class]: CursorManager
+    Cursor file path was null
+INFO: 12:55:59.3071960
+    [Method]: Main [Class]: Program
+    Color Picker started with pid=9964
+INFO: 12:56:01.1757903
+    [Method]: OnStartup [Class]: App
+    Color Picker started from the PowerToys Runner. Runner pid=15620
+INFO: 13:00:20.5154077
+    [Method]: ChangeCursor [Class]: CursorManager
+    Cursor file path was null
+INFO: 13:00:20.5167142
+    [Method]: ChangeCursor [Class]: CursorManager
+    Cursor file path was null
+INFO: 13:00:55.1812612
+    [Method]: Main [Class]: Program
+    Color Picker started with pid=8028
+INFO: 13:00:56.8890762
+    [Method]: OnStartup [Class]: App
+    Color Picker started from the PowerToys Runner. Runner pid=11496
+INFO: 13:17:19.7760755
+    [Method]: ChangeCursor [Class]: CursorManager
+    Cursor file path was null
+INFO: 13:17:19.7771352
+    [Method]: ChangeCursor [Class]: CursorManager
+    Cursor file path was null
+INFO: 13:17:52.0911688
+    [Method]: Main [Class]: Program
+    Color Picker started with pid=15400
+INFO: 13:17:54.1220851
+    [Method]: OnStartup [Class]: App
+    Color Picker started from the PowerToys Runner. Runner pid=17732
+INFO: 13:25:57.2813851
+    [Method]: ChangeCursor [Class]: CursorManager
+    Cursor file path was null
+INFO: 13:25:57.2825692
+    [Method]: ChangeCursor [Class]: CursorManager
+    Cursor file path was null
+INFO: 13:26:47.4983364
+    [Method]: Main [Class]: Program
+    Color Picker started with pid=10440
+INFO: 13:26:49.4490665
+    [Method]: OnStartup [Class]: App
+    Color Picker started from the PowerToys Runner. Runner pid=9484
+INFO: 14:41:17.4686932
+    [Method]: ChangeCursor [Class]: CursorManager
+    Cursor file path was null
+INFO: 14:41:17.4700948
+    [Method]: ChangeCursor [Class]: CursorManager
+    Cursor file path was null
+INFO: 14:41:17.4963235
+    [Method]: <OnStartup>b__13_0 [Class]: App
+    PowerToys Runner exited. Exiting ColorPicker
+INFO: 14:42:04.4279433
+    [Method]: Main [Class]: Program
+    Color Picker started with pid=12040
+INFO: 14:42:07.3673674
+    [Method]: OnStartup [Class]: App
+    Color Picker started from the PowerToys Runner. Runner pid=8912
+INFO: 15:05:19.1970706
+    [Method]: ChangeCursor [Class]: CursorManager
+    Cursor file path was null
+INFO: 15:05:19.1982498
+    [Method]: ChangeCursor [Class]: CursorManager
+    Cursor file path was null
+INFO: 15:05:19.3493840
+    [Method]: <OnStartup>b__13_0 [Class]: App
+    PowerToys Runner exited. Exiting ColorPicker
+INFO: 15:07:13.8558563
+    [Method]: Main [Class]: Program
+    Color Picker started with pid=9876
+INFO: 15:07:16.0334887
+    [Method]: OnStartup [Class]: App
+    Color Picker started from the PowerToys Runner. Runner pid=9420
+INFO: 15:07:54.6130766
+    [Method]: ChangeCursor [Class]: CursorManager
+    Cursor file path was null
+INFO: 15:07:54.6199635
+    [Method]: ChangeCursor [Class]: CursorManager
+    Cursor file path was null
+INFO: 15:09:26.1057810
+    [Method]: Main [Class]: Program
+    Color Picker started with pid=12296
+INFO: 15:09:29.0347028
+    [Method]: OnStartup [Class]: App
+    Color Picker started from the PowerToys Runner. Runner pid=9092
+INFO: 21:54:46.7316751
+    [Method]: <OnStartup>b__13_0 [Class]: App
+    PowerToys Runner exited. Exiting ColorPicker
+INFO: 21:54:48.2434276
+    [Method]: ChangeCursor [Class]: CursorManager
+    Cursor file path was null
+INFO: 21:54:48.2457465
+    [Method]: ChangeCursor [Class]: CursorManager
+    Cursor file path was null

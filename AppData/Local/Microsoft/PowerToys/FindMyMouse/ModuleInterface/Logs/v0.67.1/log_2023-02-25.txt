@@ -1,0 +1,4 @@
+[2023-02-25 11:25:22.947052] [p-9048] [t-10216] [info] Detecting double left control click with 937 ms interval.
+[2023-02-25 11:52:34.968047] [p-9048] [t-10216] [info] Detecting double left control click with 7125 ms interval.
+[2023-02-25 19:58:54.128095] [p-9048] [t-10216] [info] Detecting double left control click with 2266 ms interval.
+[2023-02-25 19:59:20.202858] [p-9048] [t-10216] [info] Detecting double left control click with 26078 ms interval.

@@ -1,0 +1,15 @@
+[2023-02-21 09:59:22.527629] [p-6336] [t-5220] [info] mouse-highlighter logger is initialized
+[2023-02-21 09:59:22.529224] [p-6336] [t-5220] [info] Mouse Highlighter settings are empty
+[2023-02-21 09:59:22.529776] [p-6336] [t-5220] [info] Mouse Highlighter is going to use default shortcut
+[2023-02-21 09:59:25.752368] [p-6336] [t-7888] [info] Starting a highlighter instance.
+[2023-02-21 09:59:25.784813] [p-6336] [t-7888] [info] Initialized the highlighter instance.
+[2023-02-21 12:10:01.707751] [p-10532] [t-7792] [info] mouse-highlighter logger is initialized
+[2023-02-21 12:10:01.708586] [p-10532] [t-7792] [info] Mouse Highlighter settings are empty
+[2023-02-21 12:10:01.710061] [p-10532] [t-7792] [info] Mouse Highlighter is going to use default shortcut
+[2023-02-21 12:10:03.397917] [p-10532] [t-10600] [info] Starting a highlighter instance.
+[2023-02-21 12:10:03.403662] [p-10532] [t-10600] [info] Initialized the highlighter instance.
+[2023-02-21 16:03:50.161096] [p-9000] [t-3700] [info] mouse-highlighter logger is initialized
+[2023-02-21 16:03:50.175417] [p-9000] [t-3700] [info] Mouse Highlighter settings are empty
+[2023-02-21 16:03:50.175853] [p-9000] [t-3700] [info] Mouse Highlighter is going to use default shortcut
+[2023-02-21 16:03:54.750260] [p-9000] [t-13272] [info] Starting a highlighter instance.
+[2023-02-21 16:03:54.780880] [p-9000] [t-13272] [info] Initialized the highlighter instance.

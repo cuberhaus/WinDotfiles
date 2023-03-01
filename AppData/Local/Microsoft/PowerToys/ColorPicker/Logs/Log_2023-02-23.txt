@@ -1,0 +1,36 @@
+INFO: 09:56:12.2388607
+    [Method]: Main [Class]: Program
+    Color Picker started with pid=12296
+INFO: 09:56:14.5449490
+    [Method]: OnStartup [Class]: App
+    Color Picker started from the PowerToys Runner. Runner pid=8304
+INFO: 11:08:20.7162980
+    [Method]: ChangeCursor [Class]: CursorManager
+    Cursor file path was null
+INFO: 11:08:20.7179535
+    [Method]: ChangeCursor [Class]: CursorManager
+    Cursor file path was null
+INFO: 10:10:30.6017586
+    [Method]: Main [Class]: Program
+    Color Picker started with pid=8908
+INFO: 10:10:32.6223951
+    [Method]: OnStartup [Class]: App
+    Color Picker started from the PowerToys Runner. Runner pid=9152
+INFO: 10:16:49.3120091
+    [Method]: ChangeCursor [Class]: CursorManager
+    Cursor file path was null
+INFO: 10:16:49.3133919
+    [Method]: ChangeCursor [Class]: CursorManager
+    Cursor file path was null
+INFO: 10:17:39.4870978
+    [Method]: Main [Class]: Program
+    Color Picker started with pid=9512
+INFO: 10:17:42.5003807
+    [Method]: OnStartup [Class]: App
+    Color Picker started from the PowerToys Runner. Runner pid=9048
+INFO: 13:04:40.4864201
+    [Method]: SendSettingsTelemetry [Class]: UserSettings
+    Sending settings telemetry
+INFO: 11:19:02.8145557
+    [Method]: <OnStartup>b__13_0 [Class]: App
+    PowerToys Runner exited. Exiting ColorPicker

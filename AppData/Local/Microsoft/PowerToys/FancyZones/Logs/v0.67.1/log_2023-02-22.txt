@@ -1,0 +1,575 @@
+[2023-02-22 00:06:02.863414] [p-1076] [t-14216] [info] Display changed, type: 2
+[2023-02-22 00:06:02.868287] [p-1076] [t-14216] [info] Freeing ZonesOverlay window into pool, hWnd = 0x10356
+[2023-02-22 00:06:02.891571] [p-1076] [t-14216] [info] Identifying monitors
+[2023-02-22 00:06:02.892560] [p-1076] [t-14216] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 00:06:02.961216] [p-1076] [t-14216] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 00:06:02.961388] [p-1076] [t-14216] [info] Serial number: 0
+[2023-02-22 00:06:02.963799] [p-1076] [t-14216] [info] Reusing ZonesOverlay window from pool, hWnd = 0x10356
+[2023-02-22 00:06:02.970122] [p-1076] [t-14216] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, work area rect = 1920x1020
+[2023-02-22 00:06:02.970266] [p-1076] [t-14216] [info] Init work area windows
+[2023-02-22 00:06:11.748517] [p-1076] [t-14216] [info] Display changed, type: 2
+[2023-02-22 00:06:11.748680] [p-1076] [t-14216] [info] Freeing ZonesOverlay window into pool, hWnd = 0x10356
+[2023-02-22 00:06:11.760295] [p-1076] [t-14216] [info] Identifying monitors
+[2023-02-22 00:06:11.761018] [p-1076] [t-14216] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 00:06:11.775111] [p-1076] [t-14216] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 00:06:11.775251] [p-1076] [t-14216] [info] Serial number: 0
+[2023-02-22 00:06:11.777181] [p-1076] [t-14216] [info] Reusing ZonesOverlay window from pool, hWnd = 0x10356
+[2023-02-22 00:06:11.782745] [p-1076] [t-14216] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, work area rect = 1920x1020
+[2023-02-22 00:06:11.782846] [p-1076] [t-14216] [info] Init work area windows
+[2023-02-22 00:08:37.862999] [p-1076] [t-14216] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 00:10:48.859005] [p-1076] [t-14216] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 00:10:56.413069] [p-1076] [t-14216] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 11:05:11.097839] [p-14500] [t-15328] [info] fancyzones logger is initialized
+[2023-02-22 11:05:11.330201] [p-14500] [t-15328] [trace] FancyZonesSettings::LoadSettings Enter
+[2023-02-22 11:05:11.330263] [p-14500] [t-9040] [trace] OnThreadExecutor::worker_thread(loop) Enter
+[2023-02-22 11:05:11.332247] [p-14500] [t-15328] [warning] Failed to read from settings file
+[2023-02-22 11:05:11.335451] [p-14500] [t-15328] [trace] FancyZonesSettings::LoadSettings Exit
+[2023-02-22 11:05:11.356874] [p-14500] [t-15328] [info] layout-templates.json file is missing or malformed
+[2023-02-22 11:05:11.361232] [p-14500] [t-15328] [info] custom-layouts.json file is missing or malformed
+[2023-02-22 11:05:11.375219] [p-14500] [t-15328] [info] layout-hotkeys.json file is missing or malformed
+[2023-02-22 11:05:11.386227] [p-14500] [t-15328] [error] app-zone-history.json file is missing or malformed
+[2023-02-22 11:05:11.404474] [p-14500] [t-15328] [info] default-layouts.json file is missing or malformed
+[2023-02-22 11:05:11.410534] [p-14500] [t-9040] [trace] OnThreadExecutor::worker_thread(loop) Exit
+[2023-02-22 11:05:11.412361] [p-14500] [t-9040] [trace] OnThreadExecutor::worker_thread(loop) Enter
+[2023-02-22 11:05:11.412556] [p-14500] [t-15328] [info] Display changed, type: 3
+[2023-02-22 11:05:11.420499] [p-14500] [t-15328] [info] AppZoneHistory Sync virtual desktops: current {6F7F3F83-A349-48F8-95A2-62B23F9D33C2}
+[2023-02-22 11:05:11.435438] [p-14500] [t-15328] [info] AppliedLayouts Sync virtual desktops: current {6F7F3F83-A349-48F8-95A2-62B23F9D33C2}
+[2023-02-22 11:05:11.436467] [p-14500] [t-15328] [info] Identifying monitors
+[2023-02-22 11:05:11.437279] [p-14500] [t-15328] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 11:05:11.478512] [p-14500] [t-15328] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 11:05:11.482538] [p-14500] [t-15328] [info] Serial number: 0
+[2023-02-22 11:05:11.497659] [p-14500] [t-15328] [info] Identifying monitors
+[2023-02-22 11:05:11.499188] [p-14500] [t-15328] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 11:05:11.504160] [p-14500] [t-15328] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 11:05:11.513019] [p-14500] [t-15328] [info] Serial number: 0
+[2023-02-22 11:05:11.515595] [p-14500] [t-15328] [info] Creating new ZonesOverlay window, hWnd = 0x202fc
+[2023-02-22 11:05:11.660414] [p-14500] [t-15328] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, work area rect = 1920x1020
+[2023-02-22 11:05:11.661516] [p-14500] [t-15328] [info] Init work area windows
+[2023-02-22 11:06:24.814852] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 11:06:26.078183] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 11:15:59.340796] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 11:17:53.638655] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 11:17:55.202146] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 11:17:55.830445] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 11:18:50.656717] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 11:18:51.228984] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 11:34:07.955576] [p-14500] [t-15328] [info] Display changed, type: 2
+[2023-02-22 11:34:07.955796] [p-14500] [t-15328] [info] Freeing ZonesOverlay window into pool, hWnd = 0x202fc
+[2023-02-22 11:34:07.956849] [p-14500] [t-15328] [info] Identifying monitors
+[2023-02-22 11:34:07.957172] [p-14500] [t-15328] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 11:34:07.980456] [p-14500] [t-15328] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 11:34:07.980541] [p-14500] [t-15328] [info] Serial number: 0
+[2023-02-22 11:34:07.981942] [p-14500] [t-15328] [info] Reusing ZonesOverlay window from pool, hWnd = 0x202fc
+[2023-02-22 11:34:07.986163] [p-14500] [t-15328] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, work area rect = 1920x1020
+[2023-02-22 11:34:07.986261] [p-14500] [t-15328] [info] Init work area windows
+[2023-02-22 11:34:57.454705] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 11:35:01.424019] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 11:35:05.173607] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 11:35:17.768362] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 11:35:19.662558] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 11:35:40.769352] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 11:36:58.052463] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 11:36:58.829861] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 11:38:31.809762] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 11:38:32.466709] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 11:43:09.883232] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 11:43:12.946657] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 12:14:34.742852] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 12:14:36.386893] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 12:15:09.349605] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 12:15:24.431060] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 12:16:16.343512] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 12:16:17.075555] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 12:20:26.418131] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 12:21:09.450678] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 12:29:37.605847] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 12:29:38.492698] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 12:29:40.990701] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 12:37:02.185577] [p-14500] [t-15328] [info] Display changed, type: 2
+[2023-02-22 12:37:02.188457] [p-14500] [t-15328] [info] Freeing ZonesOverlay window into pool, hWnd = 0x202fc
+[2023-02-22 12:37:02.195148] [p-14500] [t-15328] [info] Identifying monitors
+[2023-02-22 12:37:02.195853] [p-14500] [t-15328] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 12:37:02.237886] [p-14500] [t-15328] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 12:37:02.237954] [p-14500] [t-15328] [info] Serial number: 0
+[2023-02-22 12:37:02.238876] [p-14500] [t-15328] [info] Reusing ZonesOverlay window from pool, hWnd = 0x202fc
+[2023-02-22 12:37:02.249246] [p-14500] [t-15328] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, work area rect = 1920x1020
+[2023-02-22 12:37:02.249670] [p-14500] [t-15328] [info] Init work area windows
+[2023-02-22 12:39:31.833742] [p-14500] [t-15328] [info] Display changed, type: 2
+[2023-02-22 12:39:31.833820] [p-14500] [t-15328] [info] Freeing ZonesOverlay window into pool, hWnd = 0x202fc
+[2023-02-22 12:39:31.840861] [p-14500] [t-15328] [info] Identifying monitors
+[2023-02-22 12:39:31.842188] [p-14500] [t-15328] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 12:39:31.907735] [p-14500] [t-15328] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 12:39:31.907879] [p-14500] [t-15328] [info] Serial number: 0
+[2023-02-22 12:39:31.910309] [p-14500] [t-15328] [info] Reusing ZonesOverlay window from pool, hWnd = 0x202fc
+[2023-02-22 12:39:31.920308] [p-14500] [t-15328] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, work area rect = 1920x1020
+[2023-02-22 12:39:31.920395] [p-14500] [t-15328] [info] Init work area windows
+[2023-02-22 12:39:32.391007] [p-14500] [t-15328] [info] Display changed, type: 2
+[2023-02-22 12:39:32.391081] [p-14500] [t-15328] [info] Freeing ZonesOverlay window into pool, hWnd = 0x202fc
+[2023-02-22 12:39:32.393272] [p-14500] [t-15328] [info] Identifying monitors
+[2023-02-22 12:39:32.393777] [p-14500] [t-15328] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 12:39:32.405972] [p-14500] [t-15328] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 12:39:32.406020] [p-14500] [t-15328] [info] Serial number: 0
+[2023-02-22 12:39:32.407592] [p-14500] [t-15328] [info] Reusing ZonesOverlay window from pool, hWnd = 0x202fc
+[2023-02-22 12:39:32.412384] [p-14500] [t-15328] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, work area rect = 1920x1020
+[2023-02-22 12:39:32.412528] [p-14500] [t-15328] [info] Init work area windows
+[2023-02-22 12:39:50.706427] [p-14500] [t-15328] [info] Display changed, type: 2
+[2023-02-22 12:39:50.706532] [p-14500] [t-15328] [info] Freeing ZonesOverlay window into pool, hWnd = 0x202fc
+[2023-02-22 12:39:50.710662] [p-14500] [t-15328] [info] Identifying monitors
+[2023-02-22 12:39:50.711130] [p-14500] [t-15328] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 12:39:50.725242] [p-14500] [t-15328] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 12:39:50.725309] [p-14500] [t-15328] [info] Serial number: 0
+[2023-02-22 12:39:50.726443] [p-14500] [t-15328] [info] Reusing ZonesOverlay window from pool, hWnd = 0x202fc
+[2023-02-22 12:39:50.734635] [p-14500] [t-15328] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, work area rect = 1920x1020
+[2023-02-22 12:39:50.734728] [p-14500] [t-15328] [info] Init work area windows
+[2023-02-22 12:39:56.669656] [p-14500] [t-15328] [info] Display changed, type: 2
+[2023-02-22 12:39:56.669734] [p-14500] [t-15328] [info] Freeing ZonesOverlay window into pool, hWnd = 0x202fc
+[2023-02-22 12:39:56.671875] [p-14500] [t-15328] [info] Identifying monitors
+[2023-02-22 12:39:56.672234] [p-14500] [t-15328] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 12:39:56.678906] [p-14500] [t-15328] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 12:39:56.678949] [p-14500] [t-15328] [info] Serial number: 0
+[2023-02-22 12:39:56.680049] [p-14500] [t-15328] [info] Reusing ZonesOverlay window from pool, hWnd = 0x202fc
+[2023-02-22 12:39:56.683221] [p-14500] [t-15328] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, work area rect = 1920x1020
+[2023-02-22 12:39:56.683282] [p-14500] [t-15328] [info] Init work area windows
+[2023-02-22 12:39:58.188184] [p-14500] [t-15328] [info] Display changed, type: 2
+[2023-02-22 12:39:58.188329] [p-14500] [t-15328] [info] Freeing ZonesOverlay window into pool, hWnd = 0x202fc
+[2023-02-22 12:39:58.190489] [p-14500] [t-15328] [info] Identifying monitors
+[2023-02-22 12:39:58.190837] [p-14500] [t-15328] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 12:39:58.197988] [p-14500] [t-15328] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 12:39:58.198042] [p-14500] [t-15328] [info] Serial number: 0
+[2023-02-22 12:39:58.199089] [p-14500] [t-15328] [info] Reusing ZonesOverlay window from pool, hWnd = 0x202fc
+[2023-02-22 12:39:58.202242] [p-14500] [t-15328] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, work area rect = 1920x1020
+[2023-02-22 12:39:58.202415] [p-14500] [t-15328] [info] Init work area windows
+[2023-02-22 12:39:58.813967] [p-14500] [t-15328] [info] Display changed, type: 2
+[2023-02-22 12:39:58.814036] [p-14500] [t-15328] [info] Freeing ZonesOverlay window into pool, hWnd = 0x202fc
+[2023-02-22 12:39:58.817243] [p-14500] [t-15328] [info] Identifying monitors
+[2023-02-22 12:39:58.817620] [p-14500] [t-15328] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 12:39:58.824811] [p-14500] [t-15328] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 12:39:58.824874] [p-14500] [t-15328] [info] Serial number: 0
+[2023-02-22 12:39:58.825883] [p-14500] [t-15328] [info] Reusing ZonesOverlay window from pool, hWnd = 0x202fc
+[2023-02-22 12:39:58.833364] [p-14500] [t-15328] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, work area rect = 1920x1020
+[2023-02-22 12:39:58.833427] [p-14500] [t-15328] [info] Init work area windows
+[2023-02-22 12:39:59.512203] [p-14500] [t-15328] [info] Display changed, type: 2
+[2023-02-22 12:39:59.512302] [p-14500] [t-15328] [info] Freeing ZonesOverlay window into pool, hWnd = 0x202fc
+[2023-02-22 12:39:59.514810] [p-14500] [t-15328] [info] Identifying monitors
+[2023-02-22 12:39:59.515506] [p-14500] [t-15328] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 12:39:59.523189] [p-14500] [t-15328] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 12:39:59.523269] [p-14500] [t-15328] [info] Serial number: 0
+[2023-02-22 12:39:59.525347] [p-14500] [t-15328] [info] Reusing ZonesOverlay window from pool, hWnd = 0x202fc
+[2023-02-22 12:39:59.533917] [p-14500] [t-15328] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, work area rect = 1920x1020
+[2023-02-22 12:39:59.533981] [p-14500] [t-15328] [info] Init work area windows
+[2023-02-22 12:39:59.904733] [p-14500] [t-15328] [info] Display changed, type: 2
+[2023-02-22 12:39:59.904810] [p-14500] [t-15328] [info] Freeing ZonesOverlay window into pool, hWnd = 0x202fc
+[2023-02-22 12:39:59.907254] [p-14500] [t-15328] [info] Identifying monitors
+[2023-02-22 12:39:59.907622] [p-14500] [t-15328] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 12:39:59.913219] [p-14500] [t-15328] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 12:39:59.913273] [p-14500] [t-15328] [info] Serial number: 0
+[2023-02-22 12:39:59.914587] [p-14500] [t-15328] [info] Reusing ZonesOverlay window from pool, hWnd = 0x202fc
+[2023-02-22 12:39:59.918408] [p-14500] [t-15328] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, work area rect = 1920x1020
+[2023-02-22 12:39:59.918507] [p-14500] [t-15328] [info] Init work area windows
+[2023-02-22 12:40:31.555885] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 12:41:14.172193] [p-14500] [t-15328] [info] Display changed, type: 2
+[2023-02-22 12:41:14.172294] [p-14500] [t-15328] [info] Freeing ZonesOverlay window into pool, hWnd = 0x202fc
+[2023-02-22 12:41:14.177200] [p-14500] [t-15328] [info] Identifying monitors
+[2023-02-22 12:41:14.177634] [p-14500] [t-15328] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 12:41:14.192531] [p-14500] [t-15328] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 12:41:14.192643] [p-14500] [t-15328] [info] Serial number: 0
+[2023-02-22 12:41:14.194499] [p-14500] [t-15328] [info] Reusing ZonesOverlay window from pool, hWnd = 0x202fc
+[2023-02-22 12:41:14.200561] [p-14500] [t-15328] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, work area rect = 1920x1020
+[2023-02-22 12:41:14.200666] [p-14500] [t-15328] [info] Init work area windows
+[2023-02-22 12:41:14.644346] [p-14500] [t-15328] [info] Display changed, type: 2
+[2023-02-22 12:41:14.644426] [p-14500] [t-15328] [info] Freeing ZonesOverlay window into pool, hWnd = 0x202fc
+[2023-02-22 12:41:14.646929] [p-14500] [t-15328] [info] Identifying monitors
+[2023-02-22 12:41:14.647493] [p-14500] [t-15328] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 12:41:14.653186] [p-14500] [t-15328] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 12:41:14.653265] [p-14500] [t-15328] [info] Serial number: 0
+[2023-02-22 12:41:14.654401] [p-14500] [t-15328] [info] Reusing ZonesOverlay window from pool, hWnd = 0x202fc
+[2023-02-22 12:41:14.657526] [p-14500] [t-15328] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, work area rect = 1920x1020
+[2023-02-22 12:41:14.657657] [p-14500] [t-15328] [info] Init work area windows
+[2023-02-22 12:41:16.291779] [p-14500] [t-15328] [info] Display changed, type: 2
+[2023-02-22 12:41:16.291875] [p-14500] [t-15328] [info] Freeing ZonesOverlay window into pool, hWnd = 0x202fc
+[2023-02-22 12:41:16.294722] [p-14500] [t-15328] [info] Identifying monitors
+[2023-02-22 12:41:16.295420] [p-14500] [t-15328] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 12:41:16.302097] [p-14500] [t-15328] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 12:41:16.302143] [p-14500] [t-15328] [info] Serial number: 0
+[2023-02-22 12:41:16.302530] [p-14500] [t-15328] [info] Reusing ZonesOverlay window from pool, hWnd = 0x202fc
+[2023-02-22 12:41:16.303351] [p-14500] [t-15328] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, work area rect = 1920x1020
+[2023-02-22 12:41:16.303408] [p-14500] [t-15328] [info] Init work area windows
+[2023-02-22 12:42:08.913404] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 12:42:10.188450] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 12:45:17.934539] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 12:45:27.671861] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 12:45:28.519406] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 12:45:29.535969] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 12:45:37.236826] [p-14500] [t-15328] [info] Display changed, type: 2
+[2023-02-22 12:45:37.236935] [p-14500] [t-15328] [info] Freeing ZonesOverlay window into pool, hWnd = 0x202fc
+[2023-02-22 12:45:37.239541] [p-14500] [t-15328] [info] Identifying monitors
+[2023-02-22 12:45:37.240000] [p-14500] [t-15328] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 12:45:37.248968] [p-14500] [t-15328] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 12:45:37.249031] [p-14500] [t-15328] [info] Serial number: 0
+[2023-02-22 12:45:37.250381] [p-14500] [t-15328] [info] Reusing ZonesOverlay window from pool, hWnd = 0x202fc
+[2023-02-22 12:45:37.253786] [p-14500] [t-15328] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, work area rect = 1920x1020
+[2023-02-22 12:45:37.253883] [p-14500] [t-15328] [info] Init work area windows
+[2023-02-22 12:45:38.523114] [p-14500] [t-15328] [info] Display changed, type: 2
+[2023-02-22 12:45:38.523200] [p-14500] [t-15328] [info] Freeing ZonesOverlay window into pool, hWnd = 0x202fc
+[2023-02-22 12:45:38.526630] [p-14500] [t-15328] [info] Identifying monitors
+[2023-02-22 12:45:38.527019] [p-14500] [t-15328] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 12:45:38.534676] [p-14500] [t-15328] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 12:45:38.534732] [p-14500] [t-15328] [info] Serial number: 0
+[2023-02-22 12:45:38.536081] [p-14500] [t-15328] [info] Reusing ZonesOverlay window from pool, hWnd = 0x202fc
+[2023-02-22 12:45:38.539211] [p-14500] [t-15328] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, work area rect = 1920x1020
+[2023-02-22 12:45:38.539258] [p-14500] [t-15328] [info] Init work area windows
+[2023-02-22 12:45:39.228231] [p-14500] [t-15328] [info] Display changed, type: 2
+[2023-02-22 12:45:39.228316] [p-14500] [t-15328] [info] Freeing ZonesOverlay window into pool, hWnd = 0x202fc
+[2023-02-22 12:45:39.230769] [p-14500] [t-15328] [info] Identifying monitors
+[2023-02-22 12:45:39.231180] [p-14500] [t-15328] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 12:45:39.237244] [p-14500] [t-15328] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 12:45:39.237283] [p-14500] [t-15328] [info] Serial number: 0
+[2023-02-22 12:45:39.238262] [p-14500] [t-15328] [info] Reusing ZonesOverlay window from pool, hWnd = 0x202fc
+[2023-02-22 12:45:39.241357] [p-14500] [t-15328] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, work area rect = 1920x1020
+[2023-02-22 12:45:39.241413] [p-14500] [t-15328] [info] Init work area windows
+[2023-02-22 12:45:41.186721] [p-14500] [t-15328] [info] Display changed, type: 2
+[2023-02-22 12:45:41.186791] [p-14500] [t-15328] [info] Freeing ZonesOverlay window into pool, hWnd = 0x202fc
+[2023-02-22 12:45:41.190764] [p-14500] [t-15328] [info] Identifying monitors
+[2023-02-22 12:45:41.191140] [p-14500] [t-15328] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 12:45:41.198116] [p-14500] [t-15328] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 12:45:41.198161] [p-14500] [t-15328] [info] Serial number: 0
+[2023-02-22 12:45:41.199361] [p-14500] [t-15328] [info] Reusing ZonesOverlay window from pool, hWnd = 0x202fc
+[2023-02-22 12:45:41.202069] [p-14500] [t-15328] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, work area rect = 1920x1020
+[2023-02-22 12:45:41.202114] [p-14500] [t-15328] [info] Init work area windows
+[2023-02-22 13:33:08.255874] [p-14500] [t-15328] [info] Display changed, type: 2
+[2023-02-22 13:33:08.256016] [p-14500] [t-15328] [info] Freeing ZonesOverlay window into pool, hWnd = 0x202fc
+[2023-02-22 13:33:08.268612] [p-14500] [t-15328] [info] Identifying monitors
+[2023-02-22 13:33:08.270012] [p-14500] [t-15328] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 13:33:08.287917] [p-14500] [t-15328] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 13:33:08.288008] [p-14500] [t-15328] [info] Serial number: 0
+[2023-02-22 13:33:08.290265] [p-14500] [t-15328] [info] Reusing ZonesOverlay window from pool, hWnd = 0x202fc
+[2023-02-22 13:33:08.302094] [p-14500] [t-15328] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, work area rect = 1920x1020
+[2023-02-22 13:33:08.302211] [p-14500] [t-15328] [info] Init work area windows
+[2023-02-22 13:34:20.282415] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 13:35:57.172278] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 13:36:00.907339] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 13:36:10.397608] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 13:45:25.517467] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 13:53:39.556480] [p-14500] [t-15328] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 16:57:23.920716] [p-14396] [t-5012] [info] fancyzones logger is initialized
+[2023-02-22 16:57:24.145723] [p-14396] [t-5012] [trace] FancyZonesSettings::LoadSettings Enter
+[2023-02-22 16:57:24.146437] [p-14396] [t-5012] [warning] Failed to read from settings file
+[2023-02-22 16:57:24.146731] [p-14396] [t-5012] [trace] FancyZonesSettings::LoadSettings Exit
+[2023-02-22 16:57:24.147951] [p-14396] [t-5012] [info] layout-templates.json file is missing or malformed
+[2023-02-22 16:57:24.149046] [p-14396] [t-5012] [info] custom-layouts.json file is missing or malformed
+[2023-02-22 16:57:24.150233] [p-14396] [t-5012] [info] layout-hotkeys.json file is missing or malformed
+[2023-02-22 16:57:24.172730] [p-14396] [t-5012] [error] app-zone-history.json file is missing or malformed
+[2023-02-22 16:57:24.174011] [p-14396] [t-5012] [info] default-layouts.json file is missing or malformed
+[2023-02-22 16:57:24.175279] [p-14396] [t-8996] [trace] OnThreadExecutor::worker_thread(loop) Enter
+[2023-02-22 16:57:24.184633] [p-14396] [t-8996] [trace] OnThreadExecutor::worker_thread(loop) Exit
+[2023-02-22 16:57:24.185670] [p-14396] [t-8996] [trace] OnThreadExecutor::worker_thread(loop) Enter
+[2023-02-22 16:57:24.185986] [p-14396] [t-5012] [info] Display changed, type: 3
+[2023-02-22 16:57:24.193913] [p-14396] [t-5012] [info] AppZoneHistory Sync virtual desktops: current {B7014638-30D8-47A9-982C-44EA97416B14}
+[2023-02-22 16:57:24.194983] [p-14396] [t-5012] [info] AppliedLayouts Sync virtual desktops: current {B7014638-30D8-47A9-982C-44EA97416B14}
+[2023-02-22 16:57:24.195710] [p-14396] [t-5012] [info] Identifying monitors
+[2023-02-22 16:57:24.208095] [p-14396] [t-5012] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 16:57:24.272218] [p-14396] [t-5012] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 16:57:24.301794] [p-14396] [t-5012] [info] Serial number: 0
+[2023-02-22 16:57:24.318244] [p-14396] [t-5012] [info] Identifying monitors
+[2023-02-22 16:57:24.319521] [p-14396] [t-5012] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 16:57:24.341817] [p-14396] [t-5012] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 16:57:24.343154] [p-14396] [t-5012] [info] Serial number: 0
+[2023-02-22 16:57:24.346694] [p-14396] [t-5012] [info] Creating new ZonesOverlay window, hWnd = 0x103a0
+[2023-02-22 16:57:24.552810] [p-14396] [t-5012] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, work area rect = 1920x1020
+[2023-02-22 16:57:24.553795] [p-14396] [t-5012] [info] Init work area windows
+[2023-02-22 16:59:48.028597] [p-14396] [t-5012] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 16:59:59.129120] [p-14396] [t-5012] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 16:59:59.934280] [p-14396] [t-5012] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 17:05:45.817863] [p-8340] [t-8228] [info] fancyzones logger is initialized
+[2023-02-22 17:05:46.014686] [p-8340] [t-8228] [trace] FancyZonesSettings::LoadSettings Enter
+[2023-02-22 17:05:46.015887] [p-8340] [t-8228] [warning] Failed to read from settings file
+[2023-02-22 17:05:46.016268] [p-8340] [t-8228] [trace] FancyZonesSettings::LoadSettings Exit
+[2023-02-22 17:05:46.014784] [p-8340] [t-11880] [trace] OnThreadExecutor::worker_thread(loop) Enter
+[2023-02-22 17:05:46.017901] [p-8340] [t-8228] [info] layout-templates.json file is missing or malformed
+[2023-02-22 17:05:46.021425] [p-8340] [t-8228] [info] custom-layouts.json file is missing or malformed
+[2023-02-22 17:05:46.024024] [p-8340] [t-8228] [info] layout-hotkeys.json file is missing or malformed
+[2023-02-22 17:05:46.028574] [p-8340] [t-8228] [error] app-zone-history.json file is missing or malformed
+[2023-02-22 17:05:46.031029] [p-8340] [t-8228] [info] default-layouts.json file is missing or malformed
+[2023-02-22 17:05:46.040326] [p-8340] [t-11880] [trace] OnThreadExecutor::worker_thread(loop) Exit
+[2023-02-22 17:05:46.041713] [p-8340] [t-11880] [trace] OnThreadExecutor::worker_thread(loop) Enter
+[2023-02-22 17:05:46.042038] [p-8340] [t-8228] [info] Display changed, type: 3
+[2023-02-22 17:05:46.047855] [p-8340] [t-8228] [info] AppZoneHistory Sync virtual desktops: current {B7014638-30D8-47A9-982C-44EA97416B14}
+[2023-02-22 17:05:46.048449] [p-8340] [t-8228] [info] AppliedLayouts Sync virtual desktops: current {B7014638-30D8-47A9-982C-44EA97416B14}
+[2023-02-22 17:05:46.049229] [p-8340] [t-8228] [info] Identifying monitors
+[2023-02-22 17:05:46.050572] [p-8340] [t-8228] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 17:05:46.125245] [p-8340] [t-8228] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 17:05:46.134056] [p-8340] [t-8228] [info] Serial number: 0
+[2023-02-22 17:05:46.135936] [p-8340] [t-8228] [info] Identifying monitors
+[2023-02-22 17:05:46.149932] [p-8340] [t-8228] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 17:05:46.158889] [p-8340] [t-8228] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 17:05:46.211460] [p-8340] [t-8228] [info] Serial number: 0
+[2023-02-22 17:05:46.215547] [p-8340] [t-8228] [info] Creating new ZonesOverlay window, hWnd = 0x1039a
+[2023-02-22 17:05:46.435289] [p-8340] [t-8228] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, work area rect = 1920x1020
+[2023-02-22 17:05:46.435724] [p-8340] [t-8228] [info] Init work area windows
+[2023-02-22 17:31:02.137423] [p-12044] [t-12048] [info] fancyzones logger is initialized
+[2023-02-22 17:31:02.352167] [p-12044] [t-12048] [trace] FancyZonesSettings::LoadSettings Enter
+[2023-02-22 17:31:02.352410] [p-12044] [t-12216] [trace] OnThreadExecutor::worker_thread(loop) Enter
+[2023-02-22 17:31:02.352986] [p-12044] [t-12048] [warning] Failed to read from settings file
+[2023-02-22 17:31:02.354309] [p-12044] [t-12048] [trace] FancyZonesSettings::LoadSettings Exit
+[2023-02-22 17:31:02.356179] [p-12044] [t-12048] [info] layout-templates.json file is missing or malformed
+[2023-02-22 17:31:02.358407] [p-12044] [t-12048] [info] custom-layouts.json file is missing or malformed
+[2023-02-22 17:31:02.360620] [p-12044] [t-12048] [info] layout-hotkeys.json file is missing or malformed
+[2023-02-22 17:31:02.364981] [p-12044] [t-12048] [error] app-zone-history.json file is missing or malformed
+[2023-02-22 17:31:02.367628] [p-12044] [t-12048] [info] default-layouts.json file is missing or malformed
+[2023-02-22 17:31:02.376253] [p-12044] [t-12216] [trace] OnThreadExecutor::worker_thread(loop) Exit
+[2023-02-22 17:31:02.380288] [p-12044] [t-12216] [trace] OnThreadExecutor::worker_thread(loop) Enter
+[2023-02-22 17:31:02.380632] [p-12044] [t-12048] [info] Display changed, type: 3
+[2023-02-22 17:31:02.386739] [p-12044] [t-12048] [info] AppZoneHistory Sync virtual desktops: current {B7014638-30D8-47A9-982C-44EA97416B14}
+[2023-02-22 17:31:02.387622] [p-12044] [t-12048] [info] AppliedLayouts Sync virtual desktops: current {B7014638-30D8-47A9-982C-44EA97416B14}
+[2023-02-22 17:31:02.388424] [p-12044] [t-12048] [info] Identifying monitors
+[2023-02-22 17:31:02.389741] [p-12044] [t-12048] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 17:31:02.461528] [p-12044] [t-12048] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 17:31:02.472732] [p-12044] [t-12048] [info] Serial number: 0
+[2023-02-22 17:31:02.474168] [p-12044] [t-12048] [info] Identifying monitors
+[2023-02-22 17:31:02.475148] [p-12044] [t-12048] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 17:31:02.483741] [p-12044] [t-12048] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 17:31:02.520181] [p-12044] [t-12048] [info] Serial number: 0
+[2023-02-22 17:31:02.522899] [p-12044] [t-12048] [info] Creating new ZonesOverlay window, hWnd = 0x4006a
+[2023-02-22 17:31:02.885516] [p-12044] [t-12048] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, work area rect = 1920x1020
+[2023-02-22 17:31:02.886609] [p-12044] [t-12048] [info] Init work area windows
+[2023-02-22 17:35:02.561198] [p-12044] [t-12048] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 17:35:30.109145] [p-12044] [t-12048] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 17:51:36.233096] [p-12256] [t-6024] [info] fancyzones logger is initialized
+[2023-02-22 17:51:36.432521] [p-12256] [t-6024] [trace] FancyZonesSettings::LoadSettings Enter
+[2023-02-22 17:51:36.432942] [p-12256] [t-10832] [trace] OnThreadExecutor::worker_thread(loop) Enter
+[2023-02-22 17:51:36.433580] [p-12256] [t-6024] [warning] Failed to read from settings file
+[2023-02-22 17:51:36.434365] [p-12256] [t-6024] [trace] FancyZonesSettings::LoadSettings Exit
+[2023-02-22 17:51:36.436544] [p-12256] [t-6024] [info] layout-templates.json file is missing or malformed
+[2023-02-22 17:51:36.438225] [p-12256] [t-6024] [info] custom-layouts.json file is missing or malformed
+[2023-02-22 17:51:36.440245] [p-12256] [t-6024] [info] layout-hotkeys.json file is missing or malformed
+[2023-02-22 17:51:36.444909] [p-12256] [t-6024] [error] app-zone-history.json file is missing or malformed
+[2023-02-22 17:51:36.446702] [p-12256] [t-6024] [info] default-layouts.json file is missing or malformed
+[2023-02-22 17:51:36.456431] [p-12256] [t-10832] [trace] OnThreadExecutor::worker_thread(loop) Exit
+[2023-02-22 17:51:36.457683] [p-12256] [t-10832] [trace] OnThreadExecutor::worker_thread(loop) Enter
+[2023-02-22 17:51:36.458019] [p-12256] [t-6024] [info] Display changed, type: 3
+[2023-02-22 17:51:36.464173] [p-12256] [t-6024] [info] AppZoneHistory Sync virtual desktops: current {B7014638-30D8-47A9-982C-44EA97416B14}
+[2023-02-22 17:51:36.464949] [p-12256] [t-6024] [info] AppliedLayouts Sync virtual desktops: current {B7014638-30D8-47A9-982C-44EA97416B14}
+[2023-02-22 17:51:36.465782] [p-12256] [t-6024] [info] Identifying monitors
+[2023-02-22 17:51:36.467333] [p-12256] [t-6024] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 17:51:36.544640] [p-12256] [t-6024] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 17:51:36.553834] [p-12256] [t-6024] [info] Serial number: 0
+[2023-02-22 17:51:36.555650] [p-12256] [t-6024] [info] Identifying monitors
+[2023-02-22 17:51:36.568996] [p-12256] [t-6024] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 17:51:36.577920] [p-12256] [t-6024] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 17:51:36.578792] [p-12256] [t-6024] [info] Serial number: 0
+[2023-02-22 17:51:36.581893] [p-12256] [t-6024] [info] Creating new ZonesOverlay window, hWnd = 0x103b2
+[2023-02-22 17:51:36.811353] [p-12256] [t-6024] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, work area rect = 1920x1020
+[2023-02-22 17:51:36.812719] [p-12256] [t-6024] [info] Init work area windows
+[2023-02-22 17:51:51.204440] [p-12256] [t-6024] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 17:52:12.761302] [p-12256] [t-6024] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 17:52:15.780119] [p-12256] [t-6024] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 17:52:18.732319] [p-12256] [t-6024] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 17:58:36.865937] [p-8984] [t-5752] [info] fancyzones logger is initialized
+[2023-02-22 17:58:37.107135] [p-8984] [t-5752] [trace] FancyZonesSettings::LoadSettings Enter
+[2023-02-22 17:58:37.107253] [p-8984] [t-11360] [trace] OnThreadExecutor::worker_thread(loop) Enter
+[2023-02-22 17:58:37.108123] [p-8984] [t-5752] [warning] Failed to read from settings file
+[2023-02-22 17:58:37.108992] [p-8984] [t-5752] [trace] FancyZonesSettings::LoadSettings Exit
+[2023-02-22 17:58:37.118857] [p-8984] [t-5752] [info] layout-templates.json file is missing or malformed
+[2023-02-22 17:58:37.121133] [p-8984] [t-5752] [info] custom-layouts.json file is missing or malformed
+[2023-02-22 17:58:37.123790] [p-8984] [t-5752] [info] layout-hotkeys.json file is missing or malformed
+[2023-02-22 17:58:37.127569] [p-8984] [t-5752] [error] app-zone-history.json file is missing or malformed
+[2023-02-22 17:58:37.129757] [p-8984] [t-5752] [info] default-layouts.json file is missing or malformed
+[2023-02-22 17:58:37.139374] [p-8984] [t-11360] [trace] OnThreadExecutor::worker_thread(loop) Exit
+[2023-02-22 17:58:37.141195] [p-8984] [t-11360] [trace] OnThreadExecutor::worker_thread(loop) Enter
+[2023-02-22 17:58:37.141568] [p-8984] [t-5752] [info] Display changed, type: 3
+[2023-02-22 17:58:37.147701] [p-8984] [t-5752] [info] AppZoneHistory Sync virtual desktops: current {B7014638-30D8-47A9-982C-44EA97416B14}
+[2023-02-22 17:58:37.148689] [p-8984] [t-5752] [info] AppliedLayouts Sync virtual desktops: current {B7014638-30D8-47A9-982C-44EA97416B14}
+[2023-02-22 17:58:37.149482] [p-8984] [t-5752] [info] Identifying monitors
+[2023-02-22 17:58:37.150910] [p-8984] [t-5752] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 17:58:37.218969] [p-8984] [t-5752] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 17:58:37.228008] [p-8984] [t-5752] [info] Serial number: 0
+[2023-02-22 17:58:37.229785] [p-8984] [t-5752] [info] Identifying monitors
+[2023-02-22 17:58:37.230734] [p-8984] [t-5752] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 17:58:37.241368] [p-8984] [t-5752] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 17:58:37.241818] [p-8984] [t-5752] [info] Serial number: 0
+[2023-02-22 17:58:37.245300] [p-8984] [t-5752] [info] Creating new ZonesOverlay window, hWnd = 0x3032a
+[2023-02-22 17:58:37.403293] [p-8984] [t-5752] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, work area rect = 1920x1020
+[2023-02-22 17:58:37.403978] [p-8984] [t-5752] [info] Init work area windows
+[2023-02-22 18:11:52.573831] [p-3680] [t-3708] [info] fancyzones logger is initialized
+[2023-02-22 18:11:52.907398] [p-3680] [t-3708] [trace] FancyZonesSettings::LoadSettings Enter
+[2023-02-22 18:11:52.907498] [p-3680] [t-8748] [trace] OnThreadExecutor::worker_thread(loop) Enter
+[2023-02-22 18:11:52.908825] [p-3680] [t-3708] [warning] Failed to read from settings file
+[2023-02-22 18:11:52.910682] [p-3680] [t-3708] [trace] FancyZonesSettings::LoadSettings Exit
+[2023-02-22 18:11:52.912972] [p-3680] [t-3708] [info] layout-templates.json file is missing or malformed
+[2023-02-22 18:11:52.934226] [p-3680] [t-3708] [info] custom-layouts.json file is missing or malformed
+[2023-02-22 18:11:52.936071] [p-3680] [t-3708] [info] layout-hotkeys.json file is missing or malformed
+[2023-02-22 18:11:52.940920] [p-3680] [t-3708] [error] app-zone-history.json file is missing or malformed
+[2023-02-22 18:11:52.942802] [p-3680] [t-3708] [info] default-layouts.json file is missing or malformed
+[2023-02-22 18:11:52.954517] [p-3680] [t-8748] [trace] OnThreadExecutor::worker_thread(loop) Exit
+[2023-02-22 18:11:52.957206] [p-3680] [t-8748] [trace] OnThreadExecutor::worker_thread(loop) Enter
+[2023-02-22 18:11:52.957527] [p-3680] [t-3708] [info] Display changed, type: 3
+[2023-02-22 18:11:52.978725] [p-3680] [t-3708] [info] AppZoneHistory Sync virtual desktops: current {B7014638-30D8-47A9-982C-44EA97416B14}
+[2023-02-22 18:11:52.993898] [p-3680] [t-3708] [info] AppliedLayouts Sync virtual desktops: current {B7014638-30D8-47A9-982C-44EA97416B14}
+[2023-02-22 18:11:52.995682] [p-3680] [t-3708] [info] Identifying monitors
+[2023-02-22 18:11:52.997696] [p-3680] [t-3708] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 18:11:53.077544] [p-3680] [t-3708] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 18:11:53.088097] [p-3680] [t-3708] [info] Serial number: 0
+[2023-02-22 18:11:53.090645] [p-3680] [t-3708] [info] Identifying monitors
+[2023-02-22 18:11:53.092030] [p-3680] [t-3708] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 18:11:53.101984] [p-3680] [t-3708] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 18:11:53.102761] [p-3680] [t-3708] [info] Serial number: 0
+[2023-02-22 18:11:53.105896] [p-3680] [t-3708] [info] Creating new ZonesOverlay window, hWnd = 0x103c0
+[2023-02-22 18:11:53.291653] [p-3680] [t-3708] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, work area rect = 1920x1020
+[2023-02-22 18:11:53.292481] [p-3680] [t-3708] [info] Init work area windows
+[2023-02-22 18:34:56.910493] [p-3680] [t-3708] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 18:34:57.518377] [p-3680] [t-3708] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 18:35:30.663352] [p-3680] [t-3708] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 18:38:36.713775] [p-3680] [t-3708] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 18:38:38.646486] [p-3680] [t-3708] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 18:38:40.649388] [p-3680] [t-3708] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 18:40:55.804546] [p-3680] [t-3708] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 18:41:56.080422] [p-3680] [t-3708] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 18:47:10.619921] [p-3680] [t-3708] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 18:48:05.860598] [p-3680] [t-3708] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 18:59:08.375894] [p-3680] [t-3708] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 19:06:02.012785] [p-3680] [t-3708] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 19:08:53.142305] [p-3680] [t-3708] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 19:22:42.071624] [p-3680] [t-3708] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 19:27:23.641519] [p-3680] [t-3708] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 19:27:32.946723] [p-3680] [t-3708] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 19:27:43.691006] [p-3680] [t-3708] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 21:16:55.101041] [p-13956] [t-2808] [info] fancyzones logger is initialized
+[2023-02-22 21:16:55.299566] [p-13956] [t-2808] [trace] FancyZonesSettings::LoadSettings Enter
+[2023-02-22 21:16:55.299705] [p-13956] [t-5720] [trace] OnThreadExecutor::worker_thread(loop) Enter
+[2023-02-22 21:16:55.301845] [p-13956] [t-2808] [warning] Failed to read from settings file
+[2023-02-22 21:16:55.305125] [p-13956] [t-2808] [trace] FancyZonesSettings::LoadSettings Exit
+[2023-02-22 21:16:55.315976] [p-13956] [t-2808] [info] layout-templates.json file is missing or malformed
+[2023-02-22 21:16:55.321310] [p-13956] [t-2808] [info] custom-layouts.json file is missing or malformed
+[2023-02-22 21:16:55.325690] [p-13956] [t-2808] [info] layout-hotkeys.json file is missing or malformed
+[2023-02-22 21:16:55.347788] [p-13956] [t-2808] [error] app-zone-history.json file is missing or malformed
+[2023-02-22 21:16:55.349653] [p-13956] [t-2808] [info] default-layouts.json file is missing or malformed
+[2023-02-22 21:16:55.370438] [p-13956] [t-5720] [trace] OnThreadExecutor::worker_thread(loop) Exit
+[2023-02-22 21:16:55.373640] [p-13956] [t-5720] [trace] OnThreadExecutor::worker_thread(loop) Enter
+[2023-02-22 21:16:55.373982] [p-13956] [t-2808] [info] Display changed, type: 3
+[2023-02-22 21:16:55.394310] [p-13956] [t-2808] [info] AppZoneHistory Sync virtual desktops: current {B7014638-30D8-47A9-982C-44EA97416B14}
+[2023-02-22 21:16:55.396542] [p-13956] [t-2808] [info] AppliedLayouts Sync virtual desktops: current {B7014638-30D8-47A9-982C-44EA97416B14}
+[2023-02-22 21:16:55.398208] [p-13956] [t-2808] [info] Identifying monitors
+[2023-02-22 21:16:55.400097] [p-13956] [t-2808] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 21:16:55.474381] [p-13956] [t-2808] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 21:16:55.487315] [p-13956] [t-2808] [info] Serial number: 0
+[2023-02-22 21:16:55.489528] [p-13956] [t-2808] [info] Identifying monitors
+[2023-02-22 21:16:55.490581] [p-13956] [t-2808] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 21:16:55.501792] [p-13956] [t-2808] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 21:16:55.502071] [p-13956] [t-2808] [info] Serial number: 0
+[2023-02-22 21:16:55.504396] [p-13956] [t-2808] [info] Creating new ZonesOverlay window, hWnd = 0x2030e
+[2023-02-22 21:16:55.683372] [p-13956] [t-2808] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, work area rect = 1920x1020
+[2023-02-22 21:16:55.684257] [p-13956] [t-2808] [info] Init work area windows
+[2023-02-22 21:17:53.026667] [p-13956] [t-2808] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 21:17:59.188937] [p-13956] [t-2808] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 21:18:05.685753] [p-13956] [t-2808] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 21:18:48.538788] [p-13956] [t-2808] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 21:29:49.257614] [p-13956] [t-2808] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 21:34:11.167377] [p-13956] [t-2808] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 21:36:55.070324] [p-13956] [t-2808] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 21:42:42.823994] [p-13956] [t-2808] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 21:42:46.516845] [p-13956] [t-2808] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 21:49:11.221586] [p-13956] [t-2808] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 22:01:55.403401] [p-13956] [t-2808] [info] Display changed, type: 2
+[2023-02-22 22:01:55.403890] [p-13956] [t-2808] [info] Freeing ZonesOverlay window into pool, hWnd = 0x2030e
+[2023-02-22 22:01:55.415686] [p-13956] [t-2808] [info] Identifying monitors
+[2023-02-22 22:01:55.416841] [p-13956] [t-2808] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 22:01:55.476566] [p-13956] [t-2808] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 22:01:55.476640] [p-13956] [t-2808] [info] Serial number: 0
+[2023-02-22 22:01:55.478461] [p-13956] [t-2808] [info] Reusing ZonesOverlay window from pool, hWnd = 0x2030e
+[2023-02-22 22:01:55.487258] [p-13956] [t-2808] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, work area rect = 1920x1020
+[2023-02-22 22:01:55.487440] [p-13956] [t-2808] [info] Init work area windows
+[2023-02-22 22:02:17.877549] [p-13956] [t-2808] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 22:02:26.073968] [p-13956] [t-2808] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 22:02:27.202872] [p-13956] [t-2808] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 22:02:40.545573] [p-13956] [t-2808] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 22:03:04.793689] [p-13956] [t-2808] [info] Display changed, type: 2
+[2023-02-22 22:03:04.794743] [p-13956] [t-2808] [info] Freeing ZonesOverlay window into pool, hWnd = 0x2030e
+[2023-02-22 22:03:04.818453] [p-13956] [t-2808] [info] Identifying monitors
+[2023-02-22 22:03:04.827691] [p-13956] [t-2808] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 22:03:04.952860] [p-13956] [t-2808] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 22:03:04.952939] [p-13956] [t-2808] [info] Serial number: 0
+[2023-02-22 22:03:04.955384] [p-13956] [t-2808] [info] Reusing ZonesOverlay window from pool, hWnd = 0x2030e
+[2023-02-22 22:03:04.966281] [p-13956] [t-2808] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, work area rect = 1920x1020
+[2023-02-22 22:03:04.966388] [p-13956] [t-2808] [info] Init work area windows
+[2023-02-22 22:03:10.001676] [p-13956] [t-2808] [info] Display changed, type: 2
+[2023-02-22 22:03:10.001862] [p-13956] [t-2808] [info] Freeing ZonesOverlay window into pool, hWnd = 0x2030e
+[2023-02-22 22:03:10.016528] [p-13956] [t-2808] [info] Identifying monitors
+[2023-02-22 22:03:10.017450] [p-13956] [t-2808] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 22:03:10.031975] [p-13956] [t-2808] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 22:03:10.032160] [p-13956] [t-2808] [info] Serial number: 0
+[2023-02-22 22:03:10.036995] [p-13956] [t-2808] [info] Reusing ZonesOverlay window from pool, hWnd = 0x2030e
+[2023-02-22 22:03:10.047903] [p-13956] [t-2808] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, work area rect = 1920x1020
+[2023-02-22 22:03:10.048071] [p-13956] [t-2808] [info] Init work area windows
+[2023-02-22 22:03:42.163721] [p-13956] [t-2808] [info] Display changed, type: 2
+[2023-02-22 22:03:42.163906] [p-13956] [t-2808] [info] Freeing ZonesOverlay window into pool, hWnd = 0x2030e
+[2023-02-22 22:03:42.179409] [p-13956] [t-2808] [info] Identifying monitors
+[2023-02-22 22:03:42.180945] [p-13956] [t-2808] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 22:03:42.227429] [p-13956] [t-2808] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 22:03:42.227516] [p-13956] [t-2808] [info] Serial number: 0
+[2023-02-22 22:03:42.229619] [p-13956] [t-2808] [info] Reusing ZonesOverlay window from pool, hWnd = 0x2030e
+[2023-02-22 22:03:42.234092] [p-13956] [t-2808] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, work area rect = 1920x1020
+[2023-02-22 22:03:42.234182] [p-13956] [t-2808] [info] Init work area windows
+[2023-02-22 22:03:44.837496] [p-13956] [t-2808] [info] Display changed, type: 2
+[2023-02-22 22:03:44.837662] [p-13956] [t-2808] [info] Freeing ZonesOverlay window into pool, hWnd = 0x2030e
+[2023-02-22 22:03:44.850515] [p-13956] [t-2808] [info] Identifying monitors
+[2023-02-22 22:03:44.851558] [p-13956] [t-2808] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 22:03:44.865923] [p-13956] [t-2808] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 22:03:44.866053] [p-13956] [t-2808] [info] Serial number: 0
+[2023-02-22 22:03:44.867771] [p-13956] [t-2808] [info] Reusing ZonesOverlay window from pool, hWnd = 0x2030e
+[2023-02-22 22:03:44.873057] [p-13956] [t-2808] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, work area rect = 1920x1020
+[2023-02-22 22:03:44.873169] [p-13956] [t-2808] [info] Init work area windows
+[2023-02-22 22:05:04.181574] [p-13956] [t-2808] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 22:05:05.416953] [p-13956] [t-2808] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 22:05:10.167844] [p-13956] [t-2808] [info] Display changed, type: 2
+[2023-02-22 22:05:10.168163] [p-13956] [t-2808] [info] Freeing ZonesOverlay window into pool, hWnd = 0x2030e
+[2023-02-22 22:05:10.179853] [p-13956] [t-2808] [info] Identifying monitors
+[2023-02-22 22:05:10.180805] [p-13956] [t-2808] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 22:05:10.221234] [p-13956] [t-2808] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 22:05:10.221386] [p-13956] [t-2808] [info] Serial number: 0
+[2023-02-22 22:05:10.223623] [p-13956] [t-2808] [info] Reusing ZonesOverlay window from pool, hWnd = 0x2030e
+[2023-02-22 22:05:10.227923] [p-13956] [t-2808] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, work area rect = 1920x1020
+[2023-02-22 22:05:10.228017] [p-13956] [t-2808] [info] Init work area windows
+[2023-02-22 22:14:16.269359] [p-13956] [t-2808] [info] Display changed, type: 2
+[2023-02-22 22:14:16.269595] [p-13956] [t-2808] [info] Freeing ZonesOverlay window into pool, hWnd = 0x2030e
+[2023-02-22 22:14:16.276923] [p-13956] [t-2808] [info] Identifying monitors
+[2023-02-22 22:14:16.278046] [p-13956] [t-2808] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 22:14:16.347568] [p-13956] [t-2808] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 22:14:16.347635] [p-13956] [t-2808] [info] Serial number: 0
+[2023-02-22 22:14:16.348414] [p-13956] [t-2808] [info] Reusing ZonesOverlay window from pool, hWnd = 0x2030e
+[2023-02-22 22:14:16.349842] [p-13956] [t-2808] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, work area rect = 1920x1020
+[2023-02-22 22:14:16.349902] [p-13956] [t-2808] [info] Init work area windows
+[2023-02-22 22:14:17.807131] [p-13956] [t-2808] [info] Display changed, type: 2
+[2023-02-22 22:14:17.807324] [p-13956] [t-2808] [info] Freeing ZonesOverlay window into pool, hWnd = 0x2030e
+[2023-02-22 22:14:17.816588] [p-13956] [t-2808] [info] Identifying monitors
+[2023-02-22 22:14:17.818028] [p-13956] [t-2808] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 22:14:17.833336] [p-13956] [t-2808] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 22:14:17.833558] [p-13956] [t-2808] [info] Serial number: 0
+[2023-02-22 22:14:17.835442] [p-13956] [t-2808] [info] Reusing ZonesOverlay window from pool, hWnd = 0x2030e
+[2023-02-22 22:14:17.838495] [p-13956] [t-2808] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, work area rect = 1920x1020
+[2023-02-22 22:14:17.838753] [p-13956] [t-2808] [info] Init work area windows
+[2023-02-22 22:14:18.424586] [p-13956] [t-2808] [info] Display changed, type: 2
+[2023-02-22 22:14:18.424749] [p-13956] [t-2808] [info] Freeing ZonesOverlay window into pool, hWnd = 0x2030e
+[2023-02-22 22:14:18.433532] [p-13956] [t-2808] [info] Identifying monitors
+[2023-02-22 22:14:18.434265] [p-13956] [t-2808] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 22:14:18.443847] [p-13956] [t-2808] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 22:14:18.443917] [p-13956] [t-2808] [info] Serial number: 0
+[2023-02-22 22:14:18.446058] [p-13956] [t-2808] [info] Reusing ZonesOverlay window from pool, hWnd = 0x2030e
+[2023-02-22 22:14:18.451519] [p-13956] [t-2808] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, work area rect = 1920x1020
+[2023-02-22 22:14:18.451628] [p-13956] [t-2808] [info] Init work area windows
+[2023-02-22 22:16:15.565663] [p-13956] [t-2808] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 22:16:16.867572] [p-13956] [t-2808] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 22:16:18.438742] [p-13956] [t-2808] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 22:16:21.102236] [p-13956] [t-2808] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 22:16:31.205294] [p-13956] [t-2808] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 22:16:35.923450] [p-13956] [t-2808] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 22:18:23.420963] [p-13956] [t-2808] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{6F7F3F83-A349-48F8-95A2-62B23F9D33C2}, layout: {00000000-0000-0000-0000-000000000000}
+[2023-02-22 22:18:48.108957] [p-13956] [t-2808] [info] Display changed, type: 2
+[2023-02-22 22:18:48.109116] [p-13956] [t-2808] [info] Freeing ZonesOverlay window into pool, hWnd = 0x2030e
+[2023-02-22 22:18:48.124775] [p-13956] [t-2808] [info] Identifying monitors
+[2023-02-22 22:18:48.126047] [p-13956] [t-2808] [info] Get display device for display \\.\DISPLAY1 : \\?\DISPLAY#CMN15F5#4&35b532db&0&UID265988#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+[2023-02-22 22:18:48.204774] [p-13956] [t-2808] [info] InstanceName: DISPLAY\CMN15F5\4&35b532db&0&UID265988_0
+[2023-02-22 22:18:48.205342] [p-13956] [t-2808] [info] Serial number: 0
+[2023-02-22 22:18:48.207088] [p-13956] [t-2808] [info] Reusing ZonesOverlay window from pool, hWnd = 0x2030e
+[2023-02-22 22:18:48.214766] [p-13956] [t-2808] [info] Initialize layout on CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, work area rect = 1920x1020
+[2023-02-22 22:18:48.214868] [p-13956] [t-2808] [info] Init work area windows
+[2023-02-22 22:50:59.280319] [p-13956] [t-2808] [info] Add app zone history, device: CMN15F5_4&35b532db&0&UID265988_1_0_{B7014638-30D8-47A9-982C-44EA97416B14}, layout: {00000000-0000-0000-0000-000000000000}

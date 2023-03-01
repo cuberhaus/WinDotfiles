@@ -1,0 +1,11 @@
+[2023-02-19 12:32:55.351036] [p-14196] [t-13108] [info] find-my-mouse logger is initialized
+[2023-02-19 12:32:55.351621] [p-14196] [t-13108] [info] Find My Mouse settings are empty
+[2023-02-19 12:32:56.330462] [p-14196] [t-1628] [info] Starting a sonar instance.
+[2023-02-19 12:32:56.345284] [p-14196] [t-1628] [info] Initialized the sonar instance.
+[2023-02-19 19:51:49.954814] [p-14196] [t-1628] [info] Focusing the sonar on the mouse cursor.
+[2023-02-19 19:51:49.969408] [p-14196] [t-1628] [info] Detecting double left control click with 125 ms interval.
+[2023-02-19 19:54:00.860729] [p-14196] [t-1628] [info] Detecting double left control click with 609 ms interval.
+[2023-02-19 19:56:02.848833] [p-14196] [t-1628] [info] Detecting double left control click with 1593 ms interval.
+[2023-02-19 20:02:50.343259] [p-14196] [t-1628] [info] Detecting double left control click with 562 ms interval.
+[2023-02-19 20:02:51.222355] [p-14196] [t-1628] [info] Detecting double left control click with 875 ms interval.
+[2023-02-19 22:39:32.183937] [p-14196] [t-1628] [info] Detecting double left control click with 3421 ms interval.

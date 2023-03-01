@@ -1,0 +1,828 @@
+[2023-02-16 11:42:33.045202] [p-14944] [t-12092] [info] runner logger is initialized
+[2023-02-16 11:42:33.045294] [p-14944] [t-12092] [info] Running powertoys with cmd args: --dont-elevate
+[2023-02-16 11:42:33.045694] [p-14944] [t-12092] [info] apply_general_settings: {}
+[2023-02-16 11:42:33.045743] [p-14944] [t-12092] [info] Scheduling restart as non elevated
+[2023-02-16 11:42:33.045856] [p-14944] [t-12092] [info] run_non_elevated with params=
+[2023-02-16 11:42:33.071858] [p-7748] [t-13748] [info] runner logger is initialized
+[2023-02-16 11:42:33.071938] [p-7748] [t-13748] [info] Running powertoys with cmd args: 
+[2023-02-16 11:42:33.072538] [p-7748] [t-13748] [info] apply_general_settings: {}
+[2023-02-16 11:42:33.072578] [p-7748] [t-13748] [info] Runner is starting. Elevated=false
+[2023-02-16 11:42:33.197640] [p-7748] [t-13748] [trace] UnRegister hotkey action for FancyZones
+[2023-02-16 11:42:33.312731] [p-7748] [t-13748] [trace] UnRegister hotkey action for File Explorer
+[2023-02-16 11:42:33.467651] [p-7748] [t-13748] [trace] UnRegister hotkey action for Image Resizer
+[2023-02-16 11:42:33.547731] [p-7748] [t-13748] [trace] UnRegister hotkey action for Keyboard Manager
+[2023-02-16 11:42:33.628017] [p-7748] [t-13748] [trace] UnRegister hotkey action for PowerToys Run
+[2023-02-16 11:42:33.628038] [p-7748] [t-13748] [trace] Register hotkey action for PowerToys Run
+[2023-02-16 11:42:33.731736] [p-7748] [t-13748] [trace] UnRegister hotkey action for PowerRename
+[2023-02-16 11:42:33.809573] [p-7748] [t-13748] [trace] UnRegister hotkey action for Shortcut Guide
+[2023-02-16 11:42:33.885911] [p-7748] [t-13748] [trace] UnRegister hotkey action for ColorPicker
+[2023-02-16 11:42:33.885938] [p-7748] [t-13748] [trace] Register hotkey action for ColorPicker
+[2023-02-16 11:42:33.966975] [p-7748] [t-13748] [trace] UnRegister hotkey action for Awake
+[2023-02-16 11:42:34.048400] [p-7748] [t-13748] [trace] UnRegister hotkey action for FindMyMouse
+[2023-02-16 11:42:34.126521] [p-7748] [t-13748] [trace] UnRegister hotkey action for MouseHighlighter
+[2023-02-16 11:42:34.201629] [p-7748] [t-13748] [trace] UnRegister hotkey action for AlwaysOnTop
+[2023-02-16 11:42:34.201657] [p-7748] [t-13748] [trace] Register hotkey action for AlwaysOnTop
+[2023-02-16 11:42:34.279691] [p-7748] [t-13748] [trace] UnRegister hotkey action for MousePointerCrosshairs
+[2023-02-16 11:42:34.358388] [p-7748] [t-13748] [trace] UnRegister hotkey action for QuickAccent
+[2023-02-16 11:42:34.440929] [p-7748] [t-13748] [trace] UnRegister hotkey action for TextExtractor
+[2023-02-16 11:42:34.440951] [p-7748] [t-13748] [trace] Register hotkey action for TextExtractor
+[2023-02-16 11:42:34.525112] [p-7748] [t-13748] [trace] UnRegister hotkey action for File Locksmith
+[2023-02-16 11:42:34.602407] [p-7748] [t-13748] [trace] UnRegister hotkey action for Measure Tool
+[2023-02-16 11:42:34.602433] [p-7748] [t-13748] [trace] Register hotkey action for Measure Tool
+[2023-02-16 11:42:34.685111] [p-7748] [t-13748] [trace] UnRegister hotkey action for Hosts
+[2023-02-16 11:42:34.879449] [p-7748] [t-13748] [trace] UnRegister hotkey action for Video Conference
+[2023-02-16 11:42:34.879930] [p-7748] [t-13748] [info] start_enabled_powertoys: Enabling powertoy AlwaysOnTop
+[2023-02-16 11:42:35.085571] [p-7748] [t-13748] [info] start_enabled_powertoys: Enabling powertoy Awake
+[2023-02-16 11:42:35.145317] [p-7748] [t-13748] [info] start_enabled_powertoys: Enabling powertoy ColorPicker
+[2023-02-16 11:42:35.224418] [p-7748] [t-13748] [info] start_enabled_powertoys: Enabling powertoy FancyZones
+[2023-02-16 11:42:35.424541] [p-7748] [t-13748] [info] start_enabled_powertoys: Enabling powertoy File Explorer
+[2023-02-16 11:42:35.424576] [p-7748] [t-13748] [info] start_enabled_powertoys: Enabling powertoy File Locksmith
+[2023-02-16 11:42:35.425342] [p-7748] [t-13748] [info] start_enabled_powertoys: Enabling powertoy FindMyMouse
+[2023-02-16 11:42:35.425432] [p-7748] [t-13748] [info] start_enabled_powertoys: Enabling powertoy Hosts
+[2023-02-16 11:42:35.425503] [p-7748] [t-13748] [info] start_enabled_powertoys: Enabling powertoy Image Resizer
+[2023-02-16 11:42:36.415076] [p-7748] [t-13748] [info] start_enabled_powertoys: Enabling powertoy Keyboard Manager
+[2023-02-16 11:42:36.605191] [p-7748] [t-13748] [info] start_enabled_powertoys: Enabling powertoy Measure Tool
+[2023-02-16 11:42:36.605232] [p-7748] [t-13748] [info] start_enabled_powertoys: Enabling powertoy MouseHighlighter
+[2023-02-16 11:42:36.605417] [p-7748] [t-13748] [trace] shift+win+H shortcut registered
+[2023-02-16 11:42:36.605447] [p-7748] [t-13748] [info] start_enabled_powertoys: Enabling powertoy PowerRename
+[2023-02-16 11:42:37.400298] [p-7748] [t-13748] [info] start_enabled_powertoys: Enabling powertoy PowerToys Run
+[2023-02-16 11:42:37.534191] [p-7748] [t-13748] [info] start_enabled_powertoys: Enabling powertoy Shortcut Guide
+[2023-02-16 11:42:37.534326] [p-7748] [t-13748] [trace] shift+win+ç shortcut registered
+[2023-02-16 11:42:37.534346] [p-7748] [t-13748] [info] start_enabled_powertoys: Enabling powertoy TextExtractor
+[2023-02-16 11:54:07.492710] [p-9172] [t-9176] [info] runner logger is initialized
+[2023-02-16 11:54:07.493758] [p-9172] [t-9176] [info] Running powertoys with cmd args: 
+[2023-02-16 11:54:07.572390] [p-9172] [t-9176] [info] apply_general_settings: {"startup":true,"enabled":{"AlwaysOnTop":true,"Awake":true,"ColorPicker":true,"FancyZones":true,"File Explorer":true,"File Locksmith":true,"FindMyMouse":true,"Hosts":true,"Image Resizer":true,"Keyboard Manager":true,"Measure Tool":true,"MouseHighlighter":true,"MousePointerCrosshairs":false,"PowerRename":true,"PowerToys Run":true,"QuickAccent":false,"Shortcut Guide":true,"TextExtractor":true,"Video Conference":false},"is_elevated":false,"run_elevated":false,"download_updates_automatically":true,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1"}
+[2023-02-16 11:54:07.623890] [p-9172] [t-9176] [info] Runner is starting. Elevated=false
+[2023-02-16 11:54:07.814174] [p-9172] [t-9176] [trace] UnRegister hotkey action for FancyZones
+[2023-02-16 11:54:08.024675] [p-9172] [t-9176] [trace] UnRegister hotkey action for File Explorer
+[2023-02-16 11:54:08.178222] [p-9172] [t-9176] [trace] UnRegister hotkey action for Image Resizer
+[2023-02-16 11:54:08.321940] [p-9172] [t-9176] [trace] UnRegister hotkey action for Keyboard Manager
+[2023-02-16 11:54:08.505383] [p-9172] [t-9176] [trace] UnRegister hotkey action for PowerToys Run
+[2023-02-16 11:54:08.505635] [p-9172] [t-9176] [trace] Register hotkey action for PowerToys Run
+[2023-02-16 11:54:08.733446] [p-9172] [t-9176] [trace] UnRegister hotkey action for PowerRename
+[2023-02-16 11:54:08.880853] [p-9172] [t-9176] [trace] UnRegister hotkey action for Shortcut Guide
+[2023-02-16 11:54:09.116626] [p-9172] [t-9176] [trace] UnRegister hotkey action for ColorPicker
+[2023-02-16 11:54:09.116793] [p-9172] [t-9176] [trace] Register hotkey action for ColorPicker
+[2023-02-16 11:54:09.240554] [p-9172] [t-9176] [trace] UnRegister hotkey action for Awake
+[2023-02-16 11:54:09.375535] [p-9172] [t-9176] [trace] UnRegister hotkey action for FindMyMouse
+[2023-02-16 11:54:09.540610] [p-9172] [t-9176] [trace] UnRegister hotkey action for MouseHighlighter
+[2023-02-16 11:54:09.657911] [p-9172] [t-9176] [trace] UnRegister hotkey action for AlwaysOnTop
+[2023-02-16 11:54:09.659042] [p-9172] [t-9176] [trace] Register hotkey action for AlwaysOnTop
+[2023-02-16 11:54:09.779075] [p-9172] [t-9176] [trace] UnRegister hotkey action for MousePointerCrosshairs
+[2023-02-16 11:54:09.910636] [p-9172] [t-9176] [trace] UnRegister hotkey action for QuickAccent
+[2023-02-16 11:54:10.061461] [p-9172] [t-9176] [trace] UnRegister hotkey action for TextExtractor
+[2023-02-16 11:54:10.061706] [p-9172] [t-9176] [trace] Register hotkey action for TextExtractor
+[2023-02-16 11:54:10.171527] [p-9172] [t-9176] [trace] UnRegister hotkey action for File Locksmith
+[2023-02-16 11:54:10.328812] [p-9172] [t-9176] [trace] UnRegister hotkey action for Measure Tool
+[2023-02-16 11:54:10.328953] [p-9172] [t-9176] [trace] Register hotkey action for Measure Tool
+[2023-02-16 11:54:10.455192] [p-9172] [t-9176] [trace] UnRegister hotkey action for Hosts
+[2023-02-16 11:54:10.705581] [p-9172] [t-9176] [trace] UnRegister hotkey action for Video Conference
+[2023-02-16 11:54:10.706901] [p-9172] [t-9176] [info] start_enabled_powertoys: Powertoy QuickAccent explicitly disabled
+[2023-02-16 11:54:10.714170] [p-9172] [t-9176] [info] start_enabled_powertoys: Powertoy Video Conference explicitly disabled
+[2023-02-16 11:54:10.714618] [p-9172] [t-9176] [info] start_enabled_powertoys: Powertoy MousePointerCrosshairs explicitly disabled
+[2023-02-16 11:54:10.715997] [p-9172] [t-9176] [info] start_enabled_powertoys: Enabling powertoy AlwaysOnTop
+[2023-02-16 11:54:11.157965] [p-9172] [t-9176] [info] start_enabled_powertoys: Enabling powertoy Awake
+[2023-02-16 11:54:11.246584] [p-9172] [t-9176] [info] start_enabled_powertoys: Enabling powertoy ColorPicker
+[2023-02-16 11:54:11.412301] [p-9172] [t-9176] [info] start_enabled_powertoys: Enabling powertoy FancyZones
+[2023-02-16 11:54:11.714964] [p-9172] [t-9176] [info] start_enabled_powertoys: Enabling powertoy File Explorer
+[2023-02-16 11:54:11.760478] [p-9172] [t-9176] [info] start_enabled_powertoys: Enabling powertoy File Locksmith
+[2023-02-16 11:54:11.824121] [p-9172] [t-9176] [info] start_enabled_powertoys: Enabling powertoy FindMyMouse
+[2023-02-16 11:54:11.838619] [p-9172] [t-9176] [info] start_enabled_powertoys: Enabling powertoy Hosts
+[2023-02-16 11:54:11.839122] [p-9172] [t-9176] [info] start_enabled_powertoys: Enabling powertoy Image Resizer
+[2023-02-16 11:54:11.881482] [p-9172] [t-9176] [info] start_enabled_powertoys: Enabling powertoy Keyboard Manager
+[2023-02-16 11:54:12.125002] [p-9172] [t-9176] [info] start_enabled_powertoys: Enabling powertoy Measure Tool
+[2023-02-16 11:54:12.125300] [p-9172] [t-9176] [info] start_enabled_powertoys: Enabling powertoy MouseHighlighter
+[2023-02-16 11:54:12.125490] [p-9172] [t-9176] [trace] shift+win+H shortcut registered
+[2023-02-16 11:54:12.125598] [p-9172] [t-9176] [info] start_enabled_powertoys: Enabling powertoy PowerRename
+[2023-02-16 11:54:12.142477] [p-9172] [t-9176] [info] start_enabled_powertoys: Enabling powertoy PowerToys Run
+[2023-02-16 11:54:12.225685] [p-9172] [t-9176] [info] start_enabled_powertoys: Enabling powertoy Shortcut Guide
+[2023-02-16 11:54:12.226122] [p-9172] [t-9176] [trace] shift+win+ç shortcut registered
+[2023-02-16 11:54:12.226240] [p-9172] [t-9176] [info] start_enabled_powertoys: Enabling powertoy TextExtractor
+[2023-02-16 12:55:55.365263] [p-15620] [t-7896] [info] runner logger is initialized
+[2023-02-16 12:55:55.395456] [p-15620] [t-7896] [info] Running powertoys with cmd args: 
+[2023-02-16 12:55:55.438526] [p-15620] [t-7896] [info] apply_general_settings: {"startup":true,"enabled":{"AlwaysOnTop":true,"Awake":true,"ColorPicker":true,"FancyZones":true,"File Explorer":true,"File Locksmith":true,"FindMyMouse":true,"Hosts":true,"Image Resizer":true,"Keyboard Manager":true,"Measure Tool":true,"MouseHighlighter":true,"MousePointerCrosshairs":false,"PowerRename":true,"PowerToys Run":true,"QuickAccent":false,"Shortcut Guide":true,"TextExtractor":true,"Video Conference":false},"is_elevated":false,"run_elevated":false,"download_updates_automatically":true,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1"}
+[2023-02-16 12:55:55.695985] [p-15620] [t-7896] [info] Runner is starting. Elevated=false
+[2023-02-16 12:55:56.106759] [p-15620] [t-7896] [trace] UnRegister hotkey action for FancyZones
+[2023-02-16 12:55:56.222788] [p-15620] [t-7896] [trace] UnRegister hotkey action for File Explorer
+[2023-02-16 12:55:56.583514] [p-15620] [t-7896] [trace] UnRegister hotkey action for Image Resizer
+[2023-02-16 12:55:56.629560] [p-15620] [t-7896] [trace] UnRegister hotkey action for Keyboard Manager
+[2023-02-16 12:55:56.761405] [p-15620] [t-7896] [trace] UnRegister hotkey action for PowerToys Run
+[2023-02-16 12:55:56.768931] [p-15620] [t-7896] [trace] Register hotkey action for PowerToys Run
+[2023-02-16 12:55:56.817344] [p-15620] [t-7896] [trace] UnRegister hotkey action for PowerRename
+[2023-02-16 12:55:56.879704] [p-15620] [t-7896] [trace] UnRegister hotkey action for Shortcut Guide
+[2023-02-16 12:55:56.933035] [p-15620] [t-7896] [trace] UnRegister hotkey action for ColorPicker
+[2023-02-16 12:55:56.941989] [p-15620] [t-7896] [trace] Register hotkey action for ColorPicker
+[2023-02-16 12:55:56.989055] [p-15620] [t-7896] [trace] UnRegister hotkey action for Awake
+[2023-02-16 12:55:57.223675] [p-15620] [t-7896] [trace] UnRegister hotkey action for FindMyMouse
+[2023-02-16 12:55:57.258250] [p-15620] [t-7896] [trace] UnRegister hotkey action for MouseHighlighter
+[2023-02-16 12:55:57.285698] [p-15620] [t-7896] [trace] UnRegister hotkey action for AlwaysOnTop
+[2023-02-16 12:55:57.286157] [p-15620] [t-7896] [trace] Register hotkey action for AlwaysOnTop
+[2023-02-16 12:55:57.319901] [p-15620] [t-7896] [trace] UnRegister hotkey action for MousePointerCrosshairs
+[2023-02-16 12:55:57.369445] [p-15620] [t-7896] [trace] UnRegister hotkey action for QuickAccent
+[2023-02-16 12:55:57.433907] [p-15620] [t-7896] [trace] UnRegister hotkey action for TextExtractor
+[2023-02-16 12:55:57.444317] [p-15620] [t-7896] [trace] Register hotkey action for TextExtractor
+[2023-02-16 12:55:57.523363] [p-15620] [t-7896] [trace] UnRegister hotkey action for File Locksmith
+[2023-02-16 12:55:57.571090] [p-15620] [t-7896] [trace] UnRegister hotkey action for Measure Tool
+[2023-02-16 12:55:57.571334] [p-15620] [t-7896] [trace] Register hotkey action for Measure Tool
+[2023-02-16 12:55:57.592060] [p-15620] [t-7896] [trace] UnRegister hotkey action for Hosts
+[2023-02-16 12:55:57.700874] [p-15620] [t-7896] [trace] UnRegister hotkey action for Video Conference
+[2023-02-16 12:55:57.701683] [p-15620] [t-7896] [info] start_enabled_powertoys: Powertoy QuickAccent explicitly disabled
+[2023-02-16 12:55:57.701821] [p-15620] [t-7896] [info] start_enabled_powertoys: Powertoy Video Conference explicitly disabled
+[2023-02-16 12:55:57.702021] [p-15620] [t-7896] [info] start_enabled_powertoys: Powertoy MousePointerCrosshairs explicitly disabled
+[2023-02-16 12:55:57.702279] [p-15620] [t-7896] [info] start_enabled_powertoys: Enabling powertoy AlwaysOnTop
+[2023-02-16 12:55:57.993591] [p-15620] [t-7896] [info] start_enabled_powertoys: Enabling powertoy Awake
+[2023-02-16 12:55:58.002042] [p-15620] [t-7896] [info] start_enabled_powertoys: Enabling powertoy ColorPicker
+[2023-02-16 12:55:58.071230] [p-15620] [t-7896] [info] start_enabled_powertoys: Enabling powertoy FancyZones
+[2023-02-16 12:55:58.111138] [p-15620] [t-7896] [info] start_enabled_powertoys: Enabling powertoy File Explorer
+[2023-02-16 12:55:58.117948] [p-15620] [t-7896] [info] start_enabled_powertoys: Enabling powertoy File Locksmith
+[2023-02-16 12:55:58.119720] [p-15620] [t-7896] [info] start_enabled_powertoys: Enabling powertoy FindMyMouse
+[2023-02-16 12:55:58.120018] [p-15620] [t-7896] [info] start_enabled_powertoys: Enabling powertoy Hosts
+[2023-02-16 12:55:58.120354] [p-15620] [t-7896] [info] start_enabled_powertoys: Enabling powertoy Image Resizer
+[2023-02-16 12:55:58.141235] [p-15620] [t-7896] [info] start_enabled_powertoys: Enabling powertoy Keyboard Manager
+[2023-02-16 12:55:58.195052] [p-15620] [t-7896] [info] start_enabled_powertoys: Enabling powertoy Measure Tool
+[2023-02-16 12:55:58.196615] [p-15620] [t-7896] [info] start_enabled_powertoys: Enabling powertoy MouseHighlighter
+[2023-02-16 12:55:58.197230] [p-15620] [t-7896] [trace] shift+win+H shortcut registered
+[2023-02-16 12:55:58.211696] [p-15620] [t-7896] [info] start_enabled_powertoys: Enabling powertoy PowerRename
+[2023-02-16 12:55:58.237724] [p-15620] [t-7896] [info] start_enabled_powertoys: Enabling powertoy PowerToys Run
+[2023-02-16 12:55:58.338505] [p-15620] [t-7896] [info] start_enabled_powertoys: Enabling powertoy Shortcut Guide
+[2023-02-16 12:55:58.368727] [p-15620] [t-7896] [trace] shift+win+ç shortcut registered
+[2023-02-16 12:55:58.369448] [p-15620] [t-7896] [info] start_enabled_powertoys: Enabling powertoy TextExtractor
+[2023-02-16 13:00:51.299955] [p-11496] [t-9916] [info] runner logger is initialized
+[2023-02-16 13:00:51.375895] [p-11496] [t-9916] [info] Running powertoys with cmd args: 
+[2023-02-16 13:00:51.442881] [p-11496] [t-9916] [info] apply_general_settings: {"startup":true,"enabled":{"AlwaysOnTop":true,"Awake":true,"ColorPicker":true,"FancyZones":true,"File Explorer":true,"File Locksmith":true,"FindMyMouse":true,"Hosts":true,"Image Resizer":true,"Keyboard Manager":true,"Measure Tool":true,"MouseHighlighter":true,"MousePointerCrosshairs":false,"PowerRename":true,"PowerToys Run":true,"QuickAccent":false,"Shortcut Guide":true,"TextExtractor":true,"Video Conference":false},"is_elevated":false,"run_elevated":false,"download_updates_automatically":true,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1"}
+[2023-02-16 13:00:51.795602] [p-11496] [t-9916] [info] Runner is starting. Elevated=false
+[2023-02-16 13:00:51.987397] [p-11496] [t-9916] [trace] UnRegister hotkey action for FancyZones
+[2023-02-16 13:00:52.633954] [p-11496] [t-9916] [trace] UnRegister hotkey action for File Explorer
+[2023-02-16 13:00:52.852617] [p-11496] [t-9916] [trace] UnRegister hotkey action for Image Resizer
+[2023-02-16 13:00:52.880135] [p-11496] [t-9916] [trace] UnRegister hotkey action for Keyboard Manager
+[2023-02-16 13:00:52.935530] [p-11496] [t-9916] [trace] UnRegister hotkey action for PowerToys Run
+[2023-02-16 13:00:52.936052] [p-11496] [t-9916] [trace] Register hotkey action for PowerToys Run
+[2023-02-16 13:00:53.022511] [p-11496] [t-9916] [trace] UnRegister hotkey action for PowerRename
+[2023-02-16 13:00:53.118482] [p-11496] [t-9916] [trace] UnRegister hotkey action for Shortcut Guide
+[2023-02-16 13:00:53.548529] [p-11496] [t-9916] [trace] UnRegister hotkey action for ColorPicker
+[2023-02-16 13:00:53.548926] [p-11496] [t-9916] [trace] Register hotkey action for ColorPicker
+[2023-02-16 13:00:53.594395] [p-11496] [t-9916] [trace] UnRegister hotkey action for Awake
+[2023-02-16 13:00:53.641667] [p-11496] [t-9916] [trace] UnRegister hotkey action for FindMyMouse
+[2023-02-16 13:00:53.673223] [p-11496] [t-9916] [trace] UnRegister hotkey action for MouseHighlighter
+[2023-02-16 13:00:53.689986] [p-11496] [t-9916] [trace] UnRegister hotkey action for AlwaysOnTop
+[2023-02-16 13:00:53.690490] [p-11496] [t-9916] [trace] Register hotkey action for AlwaysOnTop
+[2023-02-16 13:00:53.735685] [p-11496] [t-9916] [trace] UnRegister hotkey action for MousePointerCrosshairs
+[2023-02-16 13:00:53.782862] [p-11496] [t-9916] [trace] UnRegister hotkey action for QuickAccent
+[2023-02-16 13:00:53.814510] [p-11496] [t-9916] [trace] UnRegister hotkey action for TextExtractor
+[2023-02-16 13:00:53.815114] [p-11496] [t-9916] [trace] Register hotkey action for TextExtractor
+[2023-02-16 13:00:54.065447] [p-11496] [t-9916] [trace] UnRegister hotkey action for File Locksmith
+[2023-02-16 13:00:54.097604] [p-11496] [t-9916] [trace] UnRegister hotkey action for Measure Tool
+[2023-02-16 13:00:54.098177] [p-11496] [t-9916] [trace] Register hotkey action for Measure Tool
+[2023-02-16 13:00:54.127262] [p-11496] [t-9916] [trace] UnRegister hotkey action for Hosts
+[2023-02-16 13:00:54.187559] [p-11496] [t-9916] [trace] UnRegister hotkey action for Video Conference
+[2023-02-16 13:00:54.188374] [p-11496] [t-9916] [info] start_enabled_powertoys: Powertoy QuickAccent explicitly disabled
+[2023-02-16 13:00:54.188600] [p-11496] [t-9916] [info] start_enabled_powertoys: Powertoy Video Conference explicitly disabled
+[2023-02-16 13:00:54.188895] [p-11496] [t-9916] [info] start_enabled_powertoys: Powertoy MousePointerCrosshairs explicitly disabled
+[2023-02-16 13:00:54.189158] [p-11496] [t-9916] [info] start_enabled_powertoys: Enabling powertoy AlwaysOnTop
+[2023-02-16 13:00:54.346810] [p-11496] [t-9916] [info] start_enabled_powertoys: Enabling powertoy Awake
+[2023-02-16 13:00:54.352639] [p-11496] [t-9916] [info] start_enabled_powertoys: Enabling powertoy ColorPicker
+[2023-02-16 13:00:54.417098] [p-11496] [t-9916] [info] start_enabled_powertoys: Enabling powertoy FancyZones
+[2023-02-16 13:00:54.467980] [p-11496] [t-9916] [info] start_enabled_powertoys: Enabling powertoy File Explorer
+[2023-02-16 13:00:54.487365] [p-11496] [t-9916] [info] start_enabled_powertoys: Enabling powertoy File Locksmith
+[2023-02-16 13:00:54.490733] [p-11496] [t-9916] [info] start_enabled_powertoys: Enabling powertoy FindMyMouse
+[2023-02-16 13:00:54.492023] [p-11496] [t-9916] [info] start_enabled_powertoys: Enabling powertoy Hosts
+[2023-02-16 13:00:54.503728] [p-11496] [t-9916] [info] start_enabled_powertoys: Enabling powertoy Image Resizer
+[2023-02-16 13:00:54.517219] [p-11496] [t-9916] [info] start_enabled_powertoys: Enabling powertoy Keyboard Manager
+[2023-02-16 13:00:54.542450] [p-11496] [t-9916] [info] start_enabled_powertoys: Enabling powertoy Measure Tool
+[2023-02-16 13:00:54.551243] [p-11496] [t-9916] [info] start_enabled_powertoys: Enabling powertoy MouseHighlighter
+[2023-02-16 13:00:54.552534] [p-11496] [t-9916] [trace] shift+win+H shortcut registered
+[2023-02-16 13:00:54.553359] [p-11496] [t-9916] [info] start_enabled_powertoys: Enabling powertoy PowerRename
+[2023-02-16 13:00:54.570262] [p-11496] [t-9916] [info] start_enabled_powertoys: Enabling powertoy PowerToys Run
+[2023-02-16 13:00:54.645283] [p-11496] [t-9916] [info] start_enabled_powertoys: Enabling powertoy Shortcut Guide
+[2023-02-16 13:00:54.659827] [p-11496] [t-9916] [trace] shift+win+ç shortcut registered
+[2023-02-16 13:00:54.660869] [p-11496] [t-9916] [info] start_enabled_powertoys: Enabling powertoy TextExtractor
+[2023-02-16 13:17:48.402892] [p-17732] [t-11464] [info] runner logger is initialized
+[2023-02-16 13:17:48.403451] [p-17732] [t-11464] [info] Running powertoys with cmd args: 
+[2023-02-16 13:17:48.405981] [p-17732] [t-11464] [info] apply_general_settings: {"startup":true,"enabled":{"AlwaysOnTop":true,"Awake":true,"ColorPicker":true,"FancyZones":true,"File Explorer":true,"File Locksmith":true,"FindMyMouse":true,"Hosts":true,"Image Resizer":true,"Keyboard Manager":true,"Measure Tool":true,"MouseHighlighter":true,"MousePointerCrosshairs":false,"PowerRename":true,"PowerToys Run":true,"QuickAccent":false,"Shortcut Guide":true,"TextExtractor":true,"Video Conference":false},"is_elevated":false,"run_elevated":false,"download_updates_automatically":true,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1"}
+[2023-02-16 13:17:48.490912] [p-17732] [t-11464] [info] Runner is starting. Elevated=false
+[2023-02-16 13:17:48.606259] [p-17732] [t-11464] [trace] UnRegister hotkey action for FancyZones
+[2023-02-16 13:17:49.005618] [p-17732] [t-11464] [trace] UnRegister hotkey action for File Explorer
+[2023-02-16 13:17:49.258433] [p-17732] [t-11464] [trace] UnRegister hotkey action for Image Resizer
+[2023-02-16 13:17:49.307395] [p-17732] [t-11464] [trace] UnRegister hotkey action for Keyboard Manager
+[2023-02-16 13:17:49.341089] [p-17732] [t-11464] [trace] UnRegister hotkey action for PowerToys Run
+[2023-02-16 13:17:49.341786] [p-17732] [t-11464] [trace] Register hotkey action for PowerToys Run
+[2023-02-16 13:17:49.399796] [p-17732] [t-11464] [trace] UnRegister hotkey action for PowerRename
+[2023-02-16 13:17:49.448403] [p-17732] [t-11464] [trace] UnRegister hotkey action for Shortcut Guide
+[2023-02-16 13:17:49.479952] [p-17732] [t-11464] [trace] UnRegister hotkey action for ColorPicker
+[2023-02-16 13:17:49.480175] [p-17732] [t-11464] [trace] Register hotkey action for ColorPicker
+[2023-02-16 13:17:49.525172] [p-17732] [t-11464] [trace] UnRegister hotkey action for Awake
+[2023-02-16 13:17:49.557172] [p-17732] [t-11464] [trace] UnRegister hotkey action for FindMyMouse
+[2023-02-16 13:17:49.588780] [p-17732] [t-11464] [trace] UnRegister hotkey action for MouseHighlighter
+[2023-02-16 13:17:49.606253] [p-17732] [t-11464] [trace] UnRegister hotkey action for AlwaysOnTop
+[2023-02-16 13:17:49.606733] [p-17732] [t-11464] [trace] Register hotkey action for AlwaysOnTop
+[2023-02-16 13:17:49.636127] [p-17732] [t-11464] [trace] UnRegister hotkey action for MousePointerCrosshairs
+[2023-02-16 13:17:49.666358] [p-17732] [t-11464] [trace] UnRegister hotkey action for QuickAccent
+[2023-02-16 13:17:49.728930] [p-17732] [t-11464] [trace] UnRegister hotkey action for TextExtractor
+[2023-02-16 13:17:49.729106] [p-17732] [t-11464] [trace] Register hotkey action for TextExtractor
+[2023-02-16 13:17:49.980756] [p-17732] [t-11464] [trace] UnRegister hotkey action for File Locksmith
+[2023-02-16 13:17:50.012332] [p-17732] [t-11464] [trace] UnRegister hotkey action for Measure Tool
+[2023-02-16 13:17:50.012995] [p-17732] [t-11464] [trace] Register hotkey action for Measure Tool
+[2023-02-16 13:17:50.042824] [p-17732] [t-11464] [trace] UnRegister hotkey action for Hosts
+[2023-02-16 13:17:50.135450] [p-17732] [t-11464] [trace] UnRegister hotkey action for Video Conference
+[2023-02-16 13:17:50.136340] [p-17732] [t-11464] [info] start_enabled_powertoys: Powertoy QuickAccent explicitly disabled
+[2023-02-16 13:17:50.136499] [p-17732] [t-11464] [info] start_enabled_powertoys: Powertoy Video Conference explicitly disabled
+[2023-02-16 13:17:50.136710] [p-17732] [t-11464] [info] start_enabled_powertoys: Powertoy MousePointerCrosshairs explicitly disabled
+[2023-02-16 13:17:50.136941] [p-17732] [t-11464] [info] start_enabled_powertoys: Enabling powertoy AlwaysOnTop
+[2023-02-16 13:17:50.461218] [p-17732] [t-11464] [info] start_enabled_powertoys: Enabling powertoy Awake
+[2023-02-16 13:17:50.496320] [p-17732] [t-11464] [info] start_enabled_powertoys: Enabling powertoy ColorPicker
+[2023-02-16 13:17:50.567032] [p-17732] [t-11464] [info] start_enabled_powertoys: Enabling powertoy FancyZones
+[2023-02-16 13:17:50.622827] [p-17732] [t-11464] [info] start_enabled_powertoys: Enabling powertoy File Explorer
+[2023-02-16 13:17:50.661424] [p-17732] [t-11464] [info] start_enabled_powertoys: Enabling powertoy File Locksmith
+[2023-02-16 13:17:50.663939] [p-17732] [t-11464] [info] start_enabled_powertoys: Enabling powertoy FindMyMouse
+[2023-02-16 13:17:50.664462] [p-17732] [t-11464] [info] start_enabled_powertoys: Enabling powertoy Hosts
+[2023-02-16 13:17:50.665939] [p-17732] [t-11464] [info] start_enabled_powertoys: Enabling powertoy Image Resizer
+[2023-02-16 13:17:50.696038] [p-17732] [t-11464] [info] start_enabled_powertoys: Enabling powertoy Keyboard Manager
+[2023-02-16 13:17:50.730393] [p-17732] [t-11464] [info] start_enabled_powertoys: Enabling powertoy Measure Tool
+[2023-02-16 13:17:50.730863] [p-17732] [t-11464] [info] start_enabled_powertoys: Enabling powertoy MouseHighlighter
+[2023-02-16 13:17:50.731524] [p-17732] [t-11464] [trace] shift+win+H shortcut registered
+[2023-02-16 13:17:50.732408] [p-17732] [t-11464] [info] start_enabled_powertoys: Enabling powertoy PowerRename
+[2023-02-16 13:17:50.743425] [p-17732] [t-11464] [info] start_enabled_powertoys: Enabling powertoy PowerToys Run
+[2023-02-16 13:17:50.819295] [p-17732] [t-11464] [info] start_enabled_powertoys: Enabling powertoy Shortcut Guide
+[2023-02-16 13:17:50.822039] [p-17732] [t-11464] [trace] shift+win+ç shortcut registered
+[2023-02-16 13:17:50.822893] [p-17732] [t-11464] [info] start_enabled_powertoys: Enabling powertoy TextExtractor
+[2023-02-16 13:26:42.295403] [p-9484] [t-9488] [info] runner logger is initialized
+[2023-02-16 13:26:42.296093] [p-9484] [t-9488] [info] Running powertoys with cmd args: 
+[2023-02-16 13:26:42.330932] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"enabled":{"AlwaysOnTop":true,"Awake":true,"ColorPicker":true,"FancyZones":true,"File Explorer":true,"File Locksmith":true,"FindMyMouse":true,"Hosts":true,"Image Resizer":true,"Keyboard Manager":true,"Measure Tool":true,"MouseHighlighter":true,"MousePointerCrosshairs":false,"PowerRename":true,"PowerToys Run":true,"QuickAccent":false,"Shortcut Guide":true,"TextExtractor":true,"Video Conference":false},"is_elevated":false,"run_elevated":false,"download_updates_automatically":true,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1"}
+[2023-02-16 13:26:42.392453] [p-9484] [t-9488] [info] Runner is starting. Elevated=false
+[2023-02-16 13:26:42.999744] [p-9484] [t-9488] [trace] UnRegister hotkey action for FancyZones
+[2023-02-16 13:26:43.813642] [p-9484] [t-9488] [trace] UnRegister hotkey action for File Explorer
+[2023-02-16 13:26:43.969158] [p-9484] [t-9488] [trace] UnRegister hotkey action for Image Resizer
+[2023-02-16 13:26:44.205511] [p-9484] [t-9488] [trace] UnRegister hotkey action for Keyboard Manager
+[2023-02-16 13:26:44.557582] [p-9484] [t-9488] [trace] UnRegister hotkey action for PowerToys Run
+[2023-02-16 13:26:44.562739] [p-9484] [t-9488] [trace] Register hotkey action for PowerToys Run
+[2023-02-16 13:26:44.944132] [p-9484] [t-9488] [trace] UnRegister hotkey action for PowerRename
+[2023-02-16 13:26:45.039941] [p-9484] [t-9488] [trace] UnRegister hotkey action for Shortcut Guide
+[2023-02-16 13:26:45.183778] [p-9484] [t-9488] [trace] UnRegister hotkey action for ColorPicker
+[2023-02-16 13:26:45.194036] [p-9484] [t-9488] [trace] Register hotkey action for ColorPicker
+[2023-02-16 13:26:45.290743] [p-9484] [t-9488] [trace] UnRegister hotkey action for Awake
+[2023-02-16 13:26:45.384440] [p-9484] [t-9488] [trace] UnRegister hotkey action for FindMyMouse
+[2023-02-16 13:26:45.463384] [p-9484] [t-9488] [trace] UnRegister hotkey action for MouseHighlighter
+[2023-02-16 13:26:45.504978] [p-9484] [t-9488] [trace] UnRegister hotkey action for AlwaysOnTop
+[2023-02-16 13:26:45.505276] [p-9484] [t-9488] [trace] Register hotkey action for AlwaysOnTop
+[2023-02-16 13:26:45.541129] [p-9484] [t-9488] [trace] UnRegister hotkey action for MousePointerCrosshairs
+[2023-02-16 13:26:45.664848] [p-9484] [t-9488] [trace] UnRegister hotkey action for QuickAccent
+[2023-02-16 13:26:45.749351] [p-9484] [t-9488] [trace] UnRegister hotkey action for TextExtractor
+[2023-02-16 13:26:45.749628] [p-9484] [t-9488] [trace] Register hotkey action for TextExtractor
+[2023-02-16 13:26:45.791741] [p-9484] [t-9488] [trace] UnRegister hotkey action for File Locksmith
+[2023-02-16 13:26:45.868014] [p-9484] [t-9488] [trace] UnRegister hotkey action for Measure Tool
+[2023-02-16 13:26:45.868387] [p-9484] [t-9488] [trace] Register hotkey action for Measure Tool
+[2023-02-16 13:26:45.898673] [p-9484] [t-9488] [trace] UnRegister hotkey action for Hosts
+[2023-02-16 13:26:46.012816] [p-9484] [t-9488] [trace] UnRegister hotkey action for Video Conference
+[2023-02-16 13:26:46.023827] [p-9484] [t-9488] [info] start_enabled_powertoys: Powertoy QuickAccent explicitly disabled
+[2023-02-16 13:26:46.024213] [p-9484] [t-9488] [info] start_enabled_powertoys: Powertoy Video Conference explicitly disabled
+[2023-02-16 13:26:46.024458] [p-9484] [t-9488] [info] start_enabled_powertoys: Powertoy MousePointerCrosshairs explicitly disabled
+[2023-02-16 13:26:46.025004] [p-9484] [t-9488] [info] start_enabled_powertoys: Enabling powertoy AlwaysOnTop
+[2023-02-16 13:26:46.185849] [p-9484] [t-9488] [info] start_enabled_powertoys: Enabling powertoy Awake
+[2023-02-16 13:26:46.191277] [p-9484] [t-9488] [info] start_enabled_powertoys: Enabling powertoy ColorPicker
+[2023-02-16 13:26:46.242446] [p-9484] [t-9488] [info] start_enabled_powertoys: Enabling powertoy FancyZones
+[2023-02-16 13:26:46.281027] [p-9484] [t-9488] [info] start_enabled_powertoys: Enabling powertoy File Explorer
+[2023-02-16 13:26:46.289028] [p-9484] [t-9488] [info] start_enabled_powertoys: Enabling powertoy File Locksmith
+[2023-02-16 13:26:46.291586] [p-9484] [t-9488] [info] start_enabled_powertoys: Enabling powertoy FindMyMouse
+[2023-02-16 13:26:46.291882] [p-9484] [t-9488] [info] start_enabled_powertoys: Enabling powertoy Hosts
+[2023-02-16 13:26:46.292578] [p-9484] [t-9488] [info] start_enabled_powertoys: Enabling powertoy Image Resizer
+[2023-02-16 13:26:46.308483] [p-9484] [t-9488] [info] start_enabled_powertoys: Enabling powertoy Keyboard Manager
+[2023-02-16 13:26:46.346905] [p-9484] [t-9488] [info] start_enabled_powertoys: Enabling powertoy Measure Tool
+[2023-02-16 13:26:46.347464] [p-9484] [t-9488] [info] start_enabled_powertoys: Enabling powertoy MouseHighlighter
+[2023-02-16 13:26:46.348108] [p-9484] [t-9488] [trace] shift+win+H shortcut registered
+[2023-02-16 13:26:46.350225] [p-9484] [t-9488] [info] start_enabled_powertoys: Enabling powertoy PowerRename
+[2023-02-16 13:26:46.360667] [p-9484] [t-9488] [info] start_enabled_powertoys: Enabling powertoy PowerToys Run
+[2023-02-16 13:26:46.527087] [p-9484] [t-9488] [info] start_enabled_powertoys: Enabling powertoy Shortcut Guide
+[2023-02-16 13:26:46.529691] [p-9484] [t-9488] [trace] shift+win+ç shortcut registered
+[2023-02-16 13:26:46.530453] [p-9484] [t-9488] [info] start_enabled_powertoys: Enabling powertoy TextExtractor
+[2023-02-16 13:31:20.431573] [p-2516] [t-12796] [info] runner logger is initialized
+[2023-02-16 13:31:20.431616] [p-2516] [t-12796] [info] Running powertoys with cmd args: 
+[2023-02-16 13:31:20.431664] [p-2516] [t-12796] [error] Can't convert string value= to ESettingsWindowNames
+[2023-02-16 13:31:28.993548] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:31:29.025629] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:31:29.039634] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:31:29.041487] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:31:29.041944] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:31:29.062117] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:31:29.071604] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:31:29.072430] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:31:29.072876] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:31:29.091981] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:31:29.101139] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:31:29.102042] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:31:29.102546] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:31:29.122373] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:31:29.130865] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:31:29.132179] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:31:29.133069] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:31:29.154385] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:31:29.166179] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:31:29.167532] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:31:29.168306] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:31:29.192659] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:31:29.204543] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:31:29.205379] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:31:29.205785] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:31:29.224812] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:31:29.234698] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:31:29.235591] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:54.021989] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:54.044033] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:54.056414] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:54.057503] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:54.057915] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:54.076481] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:54.086681] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:54.087480] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:54.087882] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:54.105635] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:54.116474] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:54.117295] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:54.117651] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:54.135617] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:54.145967] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:54.146786] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:54.147220] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:54.165608] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:54.175721] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:54.176922] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:54.177987] [p-9484] [t-9488] [trace] Check for updates callback invoked
+[2023-02-16 13:42:54.463828] [p-9484] [t-9488] [trace] Version is up to date
+[2023-02-16 13:42:54.476405] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:54.498674] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:54.510835] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:54.512105] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:54.513347] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:54.532791] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:54.545225] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:54.546411] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:54.547160] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:54.569762] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:54.584299] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:54.585582] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:54.585982] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:54.607819] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:54.619785] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:54.620716] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:54.621697] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:54.640263] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:54.651621] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:54.652507] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:54.652877] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:54.671306] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:54.682589] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:54.683503] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:54.683852] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:54.702237] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:54.713136] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:54.714007] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:54.714589] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:54.733942] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:54.744884] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:54.746593] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:54.747195] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:54.766234] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:54.776712] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:54.777873] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:54.778729] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:54.798548] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:54.811314] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:54.812600] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:54.813188] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:54.833762] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:54.847374] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:54.848704] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:54.849338] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:54.869629] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:54.881280] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:54.882337] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:54.882925] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:54.904254] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:54.916629] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:54.917550] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:54.918189] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:54.938873] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:54.951331] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:54.952240] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:54.952687] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:54.972063] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:54.982405] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:54.983311] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:54.983800] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.002275] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.014298] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.015844] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.016441] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.035554] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.047411] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.048231] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.048596] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.067183] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.078059] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.079095] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.079468] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.099462] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.111210] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.112826] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.113520] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.132852] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.143372] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.144339] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.145041] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.163371] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.174146] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.175052] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.175478] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.193980] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.205076] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.206490] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.207301] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.227888] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.239431] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.240330] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.241076] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.262957] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.274323] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.275712] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.276113] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.298205] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.308315] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.309263] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.309844] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.329764] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.341296] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.342324] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.342842] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.363043] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.373995] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.374830] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.375274] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.394143] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.405410] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.406365] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.406751] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.425743] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.436625] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.437570] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.438042] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.456222] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.466396] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.467386] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.467873] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.486198] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.496342] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.497226] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.497620] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.515676] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.526066] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.527067] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.527422] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.545667] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.555903] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.556803] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.557226] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.575463] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.585759] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.586651] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.587084] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.605208] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.615763] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.616640] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.617006] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.634255] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.644829] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.645799] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.646214] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.664761] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.674841] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.675745] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.676200] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.694278] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.704473] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.705368] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.705823] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.723617] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.734242] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.735126] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.735554] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.753334] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.764001] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.764948] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.765321] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.782936] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.793284] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.794310] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.794969] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.813265] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.823505] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.824407] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.824756] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.842247] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.852412] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.853263] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.853606] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.870860] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.881239] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.882108] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.882480] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.900963] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.911180] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.912187] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.912608] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.930582] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.940950] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.941917] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.942277] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.961413] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:55.971650] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:55.972503] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:55.972900] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:55.990923] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.001408] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.002311] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.002703] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.020655] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.031209] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.032110] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.032530] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.051278] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.061393] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.062343] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.063045] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.081194] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.091595] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.092590] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.093275] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.113019] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.123716] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.124998] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.125657] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.151747] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.162882] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.163755] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.164170] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.184908] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.196611] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.197748] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.198242] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.217871] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.229349] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.230365] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.230865] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.251119] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.262144] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.263082] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.263610] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.282650] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.293279] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.294158] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.294649] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.314528] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.324842] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.325785] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.326152] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.345182] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.355473] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.356316] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.356746] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.375275] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.385704] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.386578] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.386947] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.405032] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.415306] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.416200] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.416683] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.433970] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.444497] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.445472] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.445884] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.464370] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.474363] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.475284] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.475678] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.493396] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.503642] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.504563] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.504889] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.522871] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.533912] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.534756] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.535149] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.552854] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.563005] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.563906] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.564237] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.582031] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.592010] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.593025] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.593494] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.611772] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.621816] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.622880] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.623204] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.640935] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.651164] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.652033] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.652620] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.670344] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.680544] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.681496] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.681836] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.699682] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.709900] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.710869] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.711203] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.729138] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.739333] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.740229] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.740569] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.758450] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.768620] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.769675] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.770035] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.787861] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.798240] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.799247] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.799589] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.817200] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.827116] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.828042] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.828381] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.846440] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.856847] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.857784] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.858160] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.876216] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.886344] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.887282] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.887623] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.905750] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.915927] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.916830] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.917210] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.934787] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.944704] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.945643] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.946025] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.963514] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:56.973503] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:56.974387] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:56.974788] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:56.993038] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:57.003284] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:57.004154] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:57.004550] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:57.022006] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:57.032123] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:57.033011] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 13:42:57.033347] [p-9484] [t-9488] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1","action_name":"request_update_state_date","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"Awake":true,"FindMyMouse":true,"MouseHighlighter":true,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true},"download_updates_automatically":true}
+[2023-02-16 13:42:57.051694] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2023-02-16 13:42:57.061866] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2023-02-16 13:42:57.062760] [p-9484] [t-9488] [error] get_power_toys_settings(): got malformed json for Video Conference module
+[2023-02-16 14:41:54.329638] [p-8912] [t-8916] [info] runner logger is initialized
+[2023-02-16 14:41:54.495235] [p-8912] [t-8916] [info] Running powertoys with cmd args: 
+[2023-02-16 14:41:54.579266] [p-8912] [t-8916] [info] apply_general_settings: {"startup":true,"enabled":{"AlwaysOnTop":true,"Awake":true,"ColorPicker":true,"FancyZones":true,"File Explorer":true,"File Locksmith":true,"FindMyMouse":true,"Hosts":true,"Image Resizer":true,"Keyboard Manager":true,"Measure Tool":true,"MouseHighlighter":true,"MousePointerCrosshairs":false,"PowerRename":true,"PowerToys Run":true,"QuickAccent":false,"Shortcut Guide":true,"TextExtractor":true,"Video Conference":false},"is_elevated":false,"run_elevated":false,"download_updates_automatically":true,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1"}
+[2023-02-16 14:41:55.142897] [p-8912] [t-8916] [info] Runner is starting. Elevated=false
+[2023-02-16 14:41:55.530978] [p-8912] [t-8916] [trace] UnRegister hotkey action for FancyZones
+[2023-02-16 14:41:55.896488] [p-8912] [t-8916] [trace] UnRegister hotkey action for File Explorer
+[2023-02-16 14:41:56.614067] [p-8912] [t-8916] [trace] UnRegister hotkey action for Image Resizer
+[2023-02-16 14:41:56.723207] [p-8912] [t-8916] [trace] UnRegister hotkey action for Keyboard Manager
+[2023-02-16 14:41:56.875029] [p-8912] [t-8916] [trace] UnRegister hotkey action for PowerToys Run
+[2023-02-16 14:41:56.875614] [p-8912] [t-8916] [trace] Register hotkey action for PowerToys Run
+[2023-02-16 14:41:56.993044] [p-8912] [t-8916] [trace] UnRegister hotkey action for PowerRename
+[2023-02-16 14:41:57.100458] [p-8912] [t-8916] [trace] UnRegister hotkey action for Shortcut Guide
+[2023-02-16 14:41:57.272773] [p-8912] [t-8916] [trace] UnRegister hotkey action for ColorPicker
+[2023-02-16 14:41:57.273248] [p-8912] [t-8916] [trace] Register hotkey action for ColorPicker
+[2023-02-16 14:41:57.338059] [p-8912] [t-8916] [trace] UnRegister hotkey action for Awake
+[2023-02-16 14:41:58.075125] [p-8912] [t-8916] [trace] UnRegister hotkey action for FindMyMouse
+[2023-02-16 14:41:58.594060] [p-8912] [t-8916] [trace] UnRegister hotkey action for MouseHighlighter
+[2023-02-16 14:41:59.060833] [p-8912] [t-8916] [trace] UnRegister hotkey action for AlwaysOnTop
+[2023-02-16 14:41:59.091483] [p-8912] [t-8916] [trace] Register hotkey action for AlwaysOnTop
+[2023-02-16 14:41:59.503628] [p-8912] [t-8916] [trace] UnRegister hotkey action for MousePointerCrosshairs
+[2023-02-16 14:41:59.565351] [p-8912] [t-8916] [trace] UnRegister hotkey action for QuickAccent
+[2023-02-16 14:41:59.642241] [p-8912] [t-8916] [trace] UnRegister hotkey action for TextExtractor
+[2023-02-16 14:41:59.643090] [p-8912] [t-8916] [trace] Register hotkey action for TextExtractor
+[2023-02-16 14:41:59.832258] [p-8912] [t-8916] [trace] UnRegister hotkey action for File Locksmith
+[2023-02-16 14:41:59.878341] [p-8912] [t-8916] [trace] UnRegister hotkey action for Measure Tool
+[2023-02-16 14:41:59.878750] [p-8912] [t-8916] [trace] Register hotkey action for Measure Tool
+[2023-02-16 14:41:59.923399] [p-8912] [t-8916] [trace] UnRegister hotkey action for Hosts
+[2023-02-16 14:42:00.003492] [p-8912] [t-8916] [trace] UnRegister hotkey action for Video Conference
+[2023-02-16 14:42:00.004612] [p-8912] [t-8916] [info] start_enabled_powertoys: Powertoy QuickAccent explicitly disabled
+[2023-02-16 14:42:00.005055] [p-8912] [t-8916] [info] start_enabled_powertoys: Powertoy Video Conference explicitly disabled
+[2023-02-16 14:42:00.005520] [p-8912] [t-8916] [info] start_enabled_powertoys: Powertoy MousePointerCrosshairs explicitly disabled
+[2023-02-16 14:42:00.006224] [p-8912] [t-8916] [info] start_enabled_powertoys: Enabling powertoy AlwaysOnTop
+[2023-02-16 14:42:00.097034] [p-8912] [t-8916] [info] start_enabled_powertoys: Enabling powertoy Awake
+[2023-02-16 14:42:00.100732] [p-8912] [t-8916] [info] start_enabled_powertoys: Enabling powertoy ColorPicker
+[2023-02-16 14:42:00.363171] [p-8912] [t-8916] [info] start_enabled_powertoys: Enabling powertoy FancyZones
+[2023-02-16 14:42:00.640222] [p-8912] [t-8916] [info] start_enabled_powertoys: Enabling powertoy File Explorer
+[2023-02-16 14:42:00.661636] [p-8912] [t-8916] [info] start_enabled_powertoys: Enabling powertoy File Locksmith
+[2023-02-16 14:42:00.694255] [p-8912] [t-8916] [info] start_enabled_powertoys: Enabling powertoy FindMyMouse
+[2023-02-16 14:42:00.707646] [p-8912] [t-8916] [info] start_enabled_powertoys: Enabling powertoy Hosts
+[2023-02-16 14:42:00.710026] [p-8912] [t-8916] [info] start_enabled_powertoys: Enabling powertoy Image Resizer
+[2023-02-16 14:42:00.727221] [p-8912] [t-8916] [info] start_enabled_powertoys: Enabling powertoy Keyboard Manager
+[2023-02-16 14:42:00.841315] [p-8912] [t-8916] [info] start_enabled_powertoys: Enabling powertoy Measure Tool
+[2023-02-16 14:42:00.849879] [p-8912] [t-8916] [info] start_enabled_powertoys: Enabling powertoy MouseHighlighter
+[2023-02-16 14:42:00.851201] [p-8912] [t-8916] [trace] shift+win+H shortcut registered
+[2023-02-16 14:42:00.852453] [p-8912] [t-8916] [info] start_enabled_powertoys: Enabling powertoy PowerRename
+[2023-02-16 14:42:00.866662] [p-8912] [t-8916] [info] start_enabled_powertoys: Enabling powertoy PowerToys Run
+[2023-02-16 14:42:00.944693] [p-8912] [t-8916] [info] start_enabled_powertoys: Enabling powertoy Shortcut Guide
+[2023-02-16 14:42:00.958977] [p-8912] [t-8916] [trace] shift+win+ç shortcut registered
+[2023-02-16 14:42:00.960155] [p-8912] [t-8916] [info] start_enabled_powertoys: Enabling powertoy TextExtractor
+[2023-02-16 15:07:09.833353] [p-9420] [t-9424] [info] runner logger is initialized
+[2023-02-16 15:07:09.859010] [p-9420] [t-9424] [info] Running powertoys with cmd args: 
+[2023-02-16 15:07:09.882560] [p-9420] [t-9424] [info] apply_general_settings: {"startup":true,"enabled":{"AlwaysOnTop":true,"Awake":true,"ColorPicker":true,"FancyZones":true,"File Explorer":true,"File Locksmith":true,"FindMyMouse":true,"Hosts":true,"Image Resizer":true,"Keyboard Manager":true,"Measure Tool":true,"MouseHighlighter":true,"MousePointerCrosshairs":false,"PowerRename":true,"PowerToys Run":true,"QuickAccent":false,"Shortcut Guide":true,"TextExtractor":true,"Video Conference":false},"is_elevated":false,"run_elevated":false,"download_updates_automatically":true,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1"}
+[2023-02-16 15:07:09.926492] [p-9420] [t-9424] [info] Runner is starting. Elevated=false
+[2023-02-16 15:07:10.048596] [p-9420] [t-9424] [trace] UnRegister hotkey action for FancyZones
+[2023-02-16 15:07:10.321111] [p-9420] [t-9424] [trace] UnRegister hotkey action for File Explorer
+[2023-02-16 15:07:10.566537] [p-9420] [t-9424] [trace] UnRegister hotkey action for Image Resizer
+[2023-02-16 15:07:10.643794] [p-9420] [t-9424] [trace] UnRegister hotkey action for Keyboard Manager
+[2023-02-16 15:07:10.747111] [p-9420] [t-9424] [trace] UnRegister hotkey action for PowerToys Run
+[2023-02-16 15:07:10.753043] [p-9420] [t-9424] [trace] Register hotkey action for PowerToys Run
+[2023-02-16 15:07:10.849600] [p-9420] [t-9424] [trace] UnRegister hotkey action for PowerRename
+[2023-02-16 15:07:10.882242] [p-9420] [t-9424] [trace] UnRegister hotkey action for Shortcut Guide
+[2023-02-16 15:07:10.963927] [p-9420] [t-9424] [trace] UnRegister hotkey action for ColorPicker
+[2023-02-16 15:07:10.988513] [p-9420] [t-9424] [trace] Register hotkey action for ColorPicker
+[2023-02-16 15:07:11.451715] [p-9420] [t-9424] [trace] UnRegister hotkey action for Awake
+[2023-02-16 15:07:11.535411] [p-9420] [t-9424] [trace] UnRegister hotkey action for FindMyMouse
+[2023-02-16 15:07:11.608247] [p-9420] [t-9424] [trace] UnRegister hotkey action for MouseHighlighter
+[2023-02-16 15:07:11.640779] [p-9420] [t-9424] [trace] UnRegister hotkey action for AlwaysOnTop
+[2023-02-16 15:07:11.641090] [p-9420] [t-9424] [trace] Register hotkey action for AlwaysOnTop
+[2023-02-16 15:07:11.826255] [p-9420] [t-9424] [trace] UnRegister hotkey action for MousePointerCrosshairs
+[2023-02-16 15:07:11.845805] [p-9420] [t-9424] [trace] UnRegister hotkey action for QuickAccent
+[2023-02-16 15:07:11.868618] [p-9420] [t-9424] [trace] UnRegister hotkey action for TextExtractor
+[2023-02-16 15:07:11.868790] [p-9420] [t-9424] [trace] Register hotkey action for TextExtractor
+[2023-02-16 15:07:11.908842] [p-9420] [t-9424] [trace] UnRegister hotkey action for File Locksmith
+[2023-02-16 15:07:11.925501] [p-9420] [t-9424] [trace] UnRegister hotkey action for Measure Tool
+[2023-02-16 15:07:11.925647] [p-9420] [t-9424] [trace] Register hotkey action for Measure Tool
+[2023-02-16 15:07:11.949753] [p-9420] [t-9424] [trace] UnRegister hotkey action for Hosts
+[2023-02-16 15:07:12.135342] [p-9420] [t-9424] [trace] UnRegister hotkey action for Video Conference
+[2023-02-16 15:07:12.136986] [p-9420] [t-9424] [info] start_enabled_powertoys: Powertoy QuickAccent explicitly disabled
+[2023-02-16 15:07:12.137357] [p-9420] [t-9424] [info] start_enabled_powertoys: Powertoy Video Conference explicitly disabled
+[2023-02-16 15:07:12.137724] [p-9420] [t-9424] [info] start_enabled_powertoys: Powertoy MousePointerCrosshairs explicitly disabled
+[2023-02-16 15:07:12.138407] [p-9420] [t-9424] [info] start_enabled_powertoys: Enabling powertoy AlwaysOnTop
+[2023-02-16 15:07:12.338106] [p-9420] [t-9424] [info] start_enabled_powertoys: Enabling powertoy Awake
+[2023-02-16 15:07:12.350576] [p-9420] [t-9424] [info] start_enabled_powertoys: Enabling powertoy ColorPicker
+[2023-02-16 15:07:12.406764] [p-9420] [t-9424] [info] start_enabled_powertoys: Enabling powertoy FancyZones
+[2023-02-16 15:07:12.443481] [p-9420] [t-9424] [info] start_enabled_powertoys: Enabling powertoy File Explorer
+[2023-02-16 15:07:12.451934] [p-9420] [t-9424] [info] start_enabled_powertoys: Enabling powertoy File Locksmith
+[2023-02-16 15:07:12.468851] [p-9420] [t-9424] [info] start_enabled_powertoys: Enabling powertoy FindMyMouse
+[2023-02-16 15:07:12.469371] [p-9420] [t-9424] [info] start_enabled_powertoys: Enabling powertoy Hosts
+[2023-02-16 15:07:12.473209] [p-9420] [t-9424] [info] start_enabled_powertoys: Enabling powertoy Image Resizer
+[2023-02-16 15:07:12.483712] [p-9420] [t-9424] [info] start_enabled_powertoys: Enabling powertoy Keyboard Manager
+[2023-02-16 15:07:12.526199] [p-9420] [t-9424] [info] start_enabled_powertoys: Enabling powertoy Measure Tool
+[2023-02-16 15:07:12.530831] [p-9420] [t-9424] [info] start_enabled_powertoys: Enabling powertoy MouseHighlighter
+[2023-02-16 15:07:12.531546] [p-9420] [t-9424] [trace] shift+win+H shortcut registered
+[2023-02-16 15:07:12.532408] [p-9420] [t-9424] [info] start_enabled_powertoys: Enabling powertoy PowerRename
+[2023-02-16 15:07:12.545175] [p-9420] [t-9424] [info] start_enabled_powertoys: Enabling powertoy PowerToys Run
+[2023-02-16 15:07:12.626187] [p-9420] [t-9424] [info] start_enabled_powertoys: Enabling powertoy Shortcut Guide
+[2023-02-16 15:07:12.628726] [p-9420] [t-9424] [trace] shift+win+ç shortcut registered
+[2023-02-16 15:07:12.629411] [p-9420] [t-9424] [info] start_enabled_powertoys: Enabling powertoy TextExtractor
+[2023-02-16 15:09:11.759902] [p-9092] [t-9096] [info] runner logger is initialized
+[2023-02-16 15:09:11.784667] [p-9092] [t-9096] [info] Running powertoys with cmd args: 
+[2023-02-16 15:09:11.865873] [p-9092] [t-9096] [info] apply_general_settings: {"startup":true,"enabled":{"AlwaysOnTop":true,"Awake":true,"ColorPicker":true,"FancyZones":true,"File Explorer":true,"File Locksmith":true,"FindMyMouse":true,"Hosts":true,"Image Resizer":true,"Keyboard Manager":true,"Measure Tool":true,"MouseHighlighter":true,"MousePointerCrosshairs":false,"PowerRename":true,"PowerToys Run":true,"QuickAccent":false,"Shortcut Guide":true,"TextExtractor":true,"Video Conference":false},"is_elevated":false,"run_elevated":false,"download_updates_automatically":true,"is_admin":true,"theme":"system","system_theme":"light","powertoys_version":"v0.67.1"}
+[2023-02-16 15:09:12.224263] [p-9092] [t-9096] [info] Runner is starting. Elevated=false
+[2023-02-16 15:09:12.855629] [p-9092] [t-9096] [trace] UnRegister hotkey action for FancyZones
+[2023-02-16 15:09:14.899721] [p-9092] [t-9096] [trace] UnRegister hotkey action for File Explorer
+[2023-02-16 15:09:15.768470] [p-9092] [t-9096] [trace] UnRegister hotkey action for Image Resizer
+[2023-02-16 15:09:15.893351] [p-9092] [t-9096] [trace] UnRegister hotkey action for Keyboard Manager
+[2023-02-16 15:09:16.056395] [p-9092] [t-9096] [trace] UnRegister hotkey action for PowerToys Run
+[2023-02-16 15:09:16.057186] [p-9092] [t-9096] [trace] Register hotkey action for PowerToys Run
+[2023-02-16 15:09:16.175284] [p-9092] [t-9096] [trace] UnRegister hotkey action for PowerRename
+[2023-02-16 15:09:16.272139] [p-9092] [t-9096] [trace] UnRegister hotkey action for Shortcut Guide
+[2023-02-16 15:09:16.349610] [p-9092] [t-9096] [trace] UnRegister hotkey action for ColorPicker
+[2023-02-16 15:09:16.350377] [p-9092] [t-9096] [trace] Register hotkey action for ColorPicker
+[2023-02-16 15:09:16.520417] [p-9092] [t-9096] [trace] UnRegister hotkey action for Awake
+[2023-02-16 15:09:17.147496] [p-9092] [t-9096] [trace] UnRegister hotkey action for FindMyMouse
+[2023-02-16 15:09:17.336992] [p-9092] [t-9096] [trace] UnRegister hotkey action for MouseHighlighter
+[2023-02-16 15:09:18.549396] [p-9092] [t-9096] [trace] UnRegister hotkey action for AlwaysOnTop
+[2023-02-16 15:09:18.549864] [p-9092] [t-9096] [trace] Register hotkey action for AlwaysOnTop
+[2023-02-16 15:09:20.481081] [p-9092] [t-9096] [trace] UnRegister hotkey action for MousePointerCrosshairs
+[2023-02-16 15:09:20.964942] [p-9092] [t-9096] [trace] UnRegister hotkey action for QuickAccent
+[2023-02-16 15:09:21.157724] [p-9092] [t-9096] [trace] UnRegister hotkey action for TextExtractor
+[2023-02-16 15:09:21.168505] [p-9092] [t-9096] [trace] Register hotkey action for TextExtractor
+[2023-02-16 15:09:21.205594] [p-9092] [t-9096] [trace] UnRegister hotkey action for File Locksmith
+[2023-02-16 15:09:21.414075] [p-9092] [t-9096] [trace] UnRegister hotkey action for Measure Tool
+[2023-02-16 15:09:21.414276] [p-9092] [t-9096] [trace] Register hotkey action for Measure Tool
+[2023-02-16 15:09:21.507415] [p-9092] [t-9096] [trace] UnRegister hotkey action for Hosts
+[2023-02-16 15:09:22.235047] [p-9092] [t-9096] [trace] UnRegister hotkey action for Video Conference
+[2023-02-16 15:09:22.239511] [p-9092] [t-9096] [info] start_enabled_powertoys: Powertoy QuickAccent explicitly disabled
+[2023-02-16 15:09:22.240180] [p-9092] [t-9096] [info] start_enabled_powertoys: Powertoy Video Conference explicitly disabled
+[2023-02-16 15:09:22.255234] [p-9092] [t-9096] [info] start_enabled_powertoys: Powertoy MousePointerCrosshairs explicitly disabled
+[2023-02-16 15:09:22.268741] [p-9092] [t-9096] [info] start_enabled_powertoys: Enabling powertoy AlwaysOnTop
+[2023-02-16 15:09:22.470675] [p-9092] [t-9096] [info] start_enabled_powertoys: Enabling powertoy Awake
+[2023-02-16 15:09:22.490155] [p-9092] [t-9096] [info] start_enabled_powertoys: Enabling powertoy ColorPicker
+[2023-02-16 15:09:22.541085] [p-9092] [t-9096] [info] start_enabled_powertoys: Enabling powertoy FancyZones
+[2023-02-16 15:09:22.596260] [p-9092] [t-9096] [info] start_enabled_powertoys: Enabling powertoy File Explorer
+[2023-02-16 15:09:22.619460] [p-9092] [t-9096] [info] start_enabled_powertoys: Enabling powertoy File Locksmith
+[2023-02-16 15:09:22.635868] [p-9092] [t-9096] [info] start_enabled_powertoys: Enabling powertoy FindMyMouse
+[2023-02-16 15:09:22.651030] [p-9092] [t-9096] [info] start_enabled_powertoys: Enabling powertoy Hosts
+[2023-02-16 15:09:22.653255] [p-9092] [t-9096] [info] start_enabled_powertoys: Enabling powertoy Image Resizer
+[2023-02-16 15:09:22.688968] [p-9092] [t-9096] [info] start_enabled_powertoys: Enabling powertoy Keyboard Manager
+[2023-02-16 15:09:22.786803] [p-9092] [t-9096] [info] start_enabled_powertoys: Enabling powertoy Measure Tool
+[2023-02-16 15:09:22.790308] [p-9092] [t-9096] [info] start_enabled_powertoys: Enabling powertoy MouseHighlighter
+[2023-02-16 15:09:22.791763] [p-9092] [t-9096] [trace] shift+win+H shortcut registered
+[2023-02-16 15:09:22.792648] [p-9092] [t-9096] [info] start_enabled_powertoys: Enabling powertoy PowerRename
+[2023-02-16 15:09:22.802417] [p-9092] [t-9096] [info] start_enabled_powertoys: Enabling powertoy PowerToys Run
+[2023-02-16 15:09:23.003076] [p-9092] [t-9096] [info] start_enabled_powertoys: Enabling powertoy Shortcut Guide
+[2023-02-16 15:09:23.004348] [p-9092] [t-9096] [trace] shift+win+ç shortcut registered
+[2023-02-16 15:09:23.004981] [p-9092] [t-9096] [info] start_enabled_powertoys: Enabling powertoy TextExtractor

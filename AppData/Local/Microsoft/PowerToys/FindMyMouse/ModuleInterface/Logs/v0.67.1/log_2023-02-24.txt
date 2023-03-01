@@ -1,0 +1,10 @@
+[2023-02-24 13:01:22.993790] [p-9048] [t-10216] [info] Focusing the sonar on the mouse cursor.
+[2023-02-24 13:01:23.026765] [p-9048] [t-10216] [info] Detecting double left control click with 187 ms interval.
+[2023-02-24 13:22:17.489380] [p-9048] [t-10216] [info] Detecting double left control click with 3125 ms interval.
+[2023-02-24 18:17:24.421497] [p-9048] [t-10216] [info] Detecting double left control click with 1078 ms interval.
+[2023-02-24 18:49:21.758274] [p-9048] [t-10216] [info] Focusing the sonar on the mouse cursor.
+[2023-02-24 18:49:21.772585] [p-9048] [t-10216] [info] Detecting double left control click with 125 ms interval.
+[2023-02-24 19:25:52.479431] [p-9048] [t-10216] [info] Focusing the sonar on the mouse cursor.
+[2023-02-24 19:25:52.495229] [p-9048] [t-10216] [info] Detecting double left control click with 125 ms interval.
+[2023-02-24 23:20:54.802169] [p-9048] [t-10216] [info] Detecting double left control click with 1156 ms interval.
+[2023-02-24 23:43:33.642736] [p-9048] [t-10216] [info] Detecting double left control click with 813 ms interval.

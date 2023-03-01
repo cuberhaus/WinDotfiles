@@ -1,0 +1,17 @@
+[2023-02-17 16:12:57.094210] [p-14808] [t-7248] [info] powerrename logger is initialized
+[2023-02-17 16:12:57.094494] [p-14808] [t-7248] [debug] Starting PowerRename with 1 files selected
+[2023-02-17 16:12:57.166536] [p-14808] [t-7248] [info] Theme is now Light
+[2023-02-17 16:12:57.299519] [p-14808] [t-7248] [trace] winrt::PowerRenameUI::implementation::MainWindow::CreateShellItemArrayFromPaths Enter
+[2023-02-17 16:12:57.344511] [p-14808] [t-7248] [trace] winrt::PowerRenameUI::implementation::MainWindow::CreateShellItemArrayFromPaths Exit
+[2023-02-17 16:12:57.344583] [p-14808] [t-7248] [trace] winrt::PowerRenameUI::implementation::MainWindow::EnumerateShellItems Enter
+[2023-02-17 16:12:57.358731] [p-14808] [t-7248] [trace] winrt::PowerRenameUI::implementation::MainWindow::EnumerateShellItems Exit
+[2023-02-17 16:12:57.358858] [p-14808] [t-7248] [trace] winrt::PowerRenameUI::implementation::MainWindow::SetHandlers Enter
+[2023-02-17 16:12:57.359621] [p-14808] [t-7248] [trace] winrt::PowerRenameUI::implementation::MainWindow::SetHandlers Exit
+[2023-02-17 16:12:57.359668] [p-14808] [t-7248] [trace] winrt::PowerRenameUI::implementation::MainWindow::ReadSettings Enter
+[2023-02-17 16:12:57.360187] [p-14808] [t-7248] [debug] ReadSettings with persistState = true
+[2023-02-17 16:12:57.360226] [p-14808] [t-7248] [trace] winrt::PowerRenameUI::implementation::MainWindow::ReadSettings Exit
+[2023-02-17 16:12:57.360252] [p-14808] [t-7248] [trace] winrt::PowerRenameUI::implementation::MainWindow::InitAutoComplete Enter
+[2023-02-17 16:12:57.361472] [p-14808] [t-7248] [trace] winrt::PowerRenameUI::implementation::MainWindow::InitAutoComplete Exit
+[2023-02-17 16:12:57.361493] [p-14808] [t-7248] [trace] winrt::PowerRenameUI::implementation::MainWindow::SearchReplaceChanged Enter
+[2023-02-17 16:12:57.361506] [p-14808] [t-7248] [debug] Forced renaming - false
+[2023-02-17 16:12:57.361871] [p-14808] [t-7248] [trace] winrt::PowerRenameUI::implementation::MainWindow::SearchReplaceChanged Exit

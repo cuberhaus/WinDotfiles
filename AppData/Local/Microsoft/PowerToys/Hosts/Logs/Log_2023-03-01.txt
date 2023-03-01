@@ -1,0 +1,3 @@
+INFO: 11:48:40.7479426
+    [Method]: OnLaunched [Class]: App
+    Hosts started from the PowerToys Runner. Runner pid=24188

@@ -1,0 +1,50 @@
+[2023-02-22 11:05:08.670522] [p-9188] [t-2704] [info] shortcut-guide logger is initialized
+[2023-02-22 11:05:08.678735] [p-9188] [t-2704] [info] Shortcut Guide settings are empty
+[2023-02-22 11:05:08.678959] [p-9188] [t-2704] [info] Shortcut Guide is going to use default shortcut
+[2023-02-22 11:05:08.682438] [p-9188] [t-2704] [trace] GetHotkeyEx()
+[2023-02-22 11:05:11.092676] [p-9188] [t-2704] [info] Shortcut Guide is enabling
+[2023-02-22 11:05:11.092763] [p-9188] [t-2704] [trace] GetHotkeyEx()
+[2023-02-22 11:05:11.173069] [p-9188] [t-10072] [trace] Send settings telemetry
+[2023-02-22 11:05:11.302750] [p-9188] [t-10072] [trace] Started SG process with pid=11276
+[2023-02-22 16:57:19.303668] [p-9692] [t-6448] [info] shortcut-guide logger is initialized
+[2023-02-22 16:57:19.315728] [p-9692] [t-6448] [info] Shortcut Guide settings are empty
+[2023-02-22 16:57:19.316140] [p-9692] [t-6448] [info] Shortcut Guide is going to use default shortcut
+[2023-02-22 16:57:19.317564] [p-9692] [t-6448] [trace] GetHotkeyEx()
+[2023-02-22 16:57:24.053221] [p-9692] [t-6448] [info] Shortcut Guide is enabling
+[2023-02-22 16:57:24.053782] [p-9692] [t-6448] [trace] GetHotkeyEx()
+[2023-02-22 17:05:40.591945] [p-6364] [t-6328] [info] shortcut-guide logger is initialized
+[2023-02-22 17:05:40.594108] [p-6364] [t-6328] [info] Shortcut Guide settings are empty
+[2023-02-22 17:05:40.594432] [p-6364] [t-6328] [info] Shortcut Guide is going to use default shortcut
+[2023-02-22 17:05:40.594896] [p-6364] [t-6328] [trace] GetHotkeyEx()
+[2023-02-22 17:05:45.924068] [p-6364] [t-6328] [info] Shortcut Guide is enabling
+[2023-02-22 17:05:45.924899] [p-6364] [t-6328] [trace] GetHotkeyEx()
+[2023-02-22 17:30:57.736668] [p-2992] [t-2624] [info] shortcut-guide logger is initialized
+[2023-02-22 17:30:57.740777] [p-2992] [t-2624] [info] Shortcut Guide settings are empty
+[2023-02-22 17:30:57.742182] [p-2992] [t-2624] [info] Shortcut Guide is going to use default shortcut
+[2023-02-22 17:30:57.764087] [p-2992] [t-2624] [trace] GetHotkeyEx()
+[2023-02-22 17:31:02.265483] [p-2992] [t-2624] [info] Shortcut Guide is enabling
+[2023-02-22 17:31:02.266081] [p-2992] [t-2624] [trace] GetHotkeyEx()
+[2023-02-22 17:51:27.213939] [p-4576] [t-3808] [info] shortcut-guide logger is initialized
+[2023-02-22 17:51:27.302239] [p-4576] [t-3808] [info] Shortcut Guide settings are empty
+[2023-02-22 17:51:27.329429] [p-4576] [t-3808] [info] Shortcut Guide is going to use default shortcut
+[2023-02-22 17:51:27.361816] [p-4576] [t-3808] [trace] GetHotkeyEx()
+[2023-02-22 17:51:36.383496] [p-4576] [t-3808] [info] Shortcut Guide is enabling
+[2023-02-22 17:51:36.383883] [p-4576] [t-3808] [trace] GetHotkeyEx()
+[2023-02-22 17:58:32.258238] [p-4688] [t-4628] [info] shortcut-guide logger is initialized
+[2023-02-22 17:58:32.260765] [p-4688] [t-4628] [info] Shortcut Guide settings are empty
+[2023-02-22 17:58:32.282341] [p-4688] [t-4628] [info] Shortcut Guide is going to use default shortcut
+[2023-02-22 17:58:32.314876] [p-4688] [t-4628] [trace] GetHotkeyEx()
+[2023-02-22 17:58:37.127422] [p-4688] [t-4628] [info] Shortcut Guide is enabling
+[2023-02-22 17:58:37.128107] [p-4688] [t-4628] [trace] GetHotkeyEx()
+[2023-02-22 18:11:44.465774] [p-4876] [t-4888] [info] shortcut-guide logger is initialized
+[2023-02-22 18:11:44.472706] [p-4876] [t-4888] [info] Shortcut Guide settings are empty
+[2023-02-22 18:11:44.473731] [p-4876] [t-4888] [info] Shortcut Guide is going to use default shortcut
+[2023-02-22 18:11:44.475963] [p-4876] [t-4888] [trace] GetHotkeyEx()
+[2023-02-22 18:11:52.935394] [p-4876] [t-4888] [info] Shortcut Guide is enabling
+[2023-02-22 18:11:52.936235] [p-4876] [t-4888] [trace] GetHotkeyEx()
+[2023-02-22 21:16:52.112105] [p-9904] [t-4752] [info] shortcut-guide logger is initialized
+[2023-02-22 21:16:52.129193] [p-9904] [t-4752] [info] Shortcut Guide settings are empty
+[2023-02-22 21:16:52.130600] [p-9904] [t-4752] [info] Shortcut Guide is going to use default shortcut
+[2023-02-22 21:16:52.140538] [p-9904] [t-4752] [trace] GetHotkeyEx()
+[2023-02-22 21:16:55.239030] [p-9904] [t-4752] [info] Shortcut Guide is enabling
+[2023-02-22 21:16:55.267650] [p-9904] [t-4752] [trace] GetHotkeyEx()

@@ -1,0 +1,34 @@
+{
+  "custom-layouts": [
+    {
+      "uuid": "{7E293CC5-FCAD-4C38-9911-C480D16FBDA0}",
+      "name": "Dise\u00F1o personalizado 1",
+      "type": "grid",
+      "info": {
+        "rows": 2,
+        "columns": 2,
+        "rows-percentage": [
+          4990,
+          5010
+        ],
+        "columns-percentage": [
+          5041,
+          4959
+        ],
+        "cell-child-map": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "show-spacing": true,
+        "spacing": 16,
+        "sensitivity-radius": 20
+      }
+    }
+  ]
+}

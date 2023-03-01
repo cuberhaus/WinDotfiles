@@ -1,0 +1,20 @@
+[2023-02-21 09:59:18.919462] [p-6336] [t-5220] [info] shortcut-guide logger is initialized
+[2023-02-21 09:59:18.921609] [p-6336] [t-5220] [info] Shortcut Guide settings are empty
+[2023-02-21 09:59:18.922041] [p-6336] [t-5220] [info] Shortcut Guide is going to use default shortcut
+[2023-02-21 09:59:18.922482] [p-6336] [t-5220] [trace] GetHotkeyEx()
+[2023-02-21 09:59:25.887478] [p-6336] [t-5220] [info] Shortcut Guide is enabling
+[2023-02-21 09:59:25.887679] [p-6336] [t-5220] [trace] GetHotkeyEx()
+[2023-02-21 10:22:19.961349] [p-6336] [t-10848] [trace] Send settings telemetry
+[2023-02-21 10:22:20.171735] [p-6336] [t-10848] [trace] Started SG process with pid=2936
+[2023-02-21 12:10:01.364509] [p-10532] [t-7792] [info] shortcut-guide logger is initialized
+[2023-02-21 12:10:01.373647] [p-10532] [t-7792] [info] Shortcut Guide settings are empty
+[2023-02-21 12:10:01.374152] [p-10532] [t-7792] [info] Shortcut Guide is going to use default shortcut
+[2023-02-21 12:10:01.375584] [p-10532] [t-7792] [trace] GetHotkeyEx()
+[2023-02-21 12:10:03.540103] [p-10532] [t-7792] [info] Shortcut Guide is enabling
+[2023-02-21 12:10:03.540808] [p-10532] [t-7792] [trace] GetHotkeyEx()
+[2023-02-21 16:03:48.637582] [p-9000] [t-3700] [info] shortcut-guide logger is initialized
+[2023-02-21 16:03:48.640924] [p-9000] [t-3700] [info] Shortcut Guide settings are empty
+[2023-02-21 16:03:48.641485] [p-9000] [t-3700] [info] Shortcut Guide is going to use default shortcut
+[2023-02-21 16:03:48.643833] [p-9000] [t-3700] [trace] GetHotkeyEx()
+[2023-02-21 16:03:54.918617] [p-9000] [t-3700] [info] Shortcut Guide is enabling
+[2023-02-21 16:03:54.923864] [p-9000] [t-3700] [trace] GetHotkeyEx()

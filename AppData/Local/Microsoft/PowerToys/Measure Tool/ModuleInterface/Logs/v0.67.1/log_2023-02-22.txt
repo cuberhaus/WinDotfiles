@@ -1,0 +1,24 @@
+[2023-02-22 11:05:10.089690] [p-9188] [t-2704] [info] Measure Tool logger is initialized
+[2023-02-22 11:05:10.090751] [p-9188] [t-2704] [info] MeasureTool settings are empty
+[2023-02-22 11:05:10.090838] [p-9188] [t-2704] [info] MeasureTool is going to use default shortcut
+[2023-02-22 16:57:22.868236] [p-9692] [t-6448] [info] Measure Tool logger is initialized
+[2023-02-22 16:57:22.869226] [p-9692] [t-6448] [info] MeasureTool settings are empty
+[2023-02-22 16:57:22.869337] [p-9692] [t-6448] [info] MeasureTool is going to use default shortcut
+[2023-02-22 17:05:44.739649] [p-6364] [t-6328] [info] Measure Tool logger is initialized
+[2023-02-22 17:05:44.759014] [p-6364] [t-6328] [info] MeasureTool settings are empty
+[2023-02-22 17:05:44.789504] [p-6364] [t-6328] [info] MeasureTool is going to use default shortcut
+[2023-02-22 17:31:01.264818] [p-2992] [t-2624] [info] Measure Tool logger is initialized
+[2023-02-22 17:31:01.269943] [p-2992] [t-2624] [info] MeasureTool settings are empty
+[2023-02-22 17:31:01.270487] [p-2992] [t-2624] [info] MeasureTool is going to use default shortcut
+[2023-02-22 17:51:32.578105] [p-4576] [t-3808] [info] Measure Tool logger is initialized
+[2023-02-22 17:51:32.587159] [p-4576] [t-3808] [info] MeasureTool settings are empty
+[2023-02-22 17:51:32.593846] [p-4576] [t-3808] [info] MeasureTool is going to use default shortcut
+[2023-02-22 17:58:36.072187] [p-4688] [t-4628] [info] Measure Tool logger is initialized
+[2023-02-22 17:58:36.104089] [p-4688] [t-4628] [info] MeasureTool settings are empty
+[2023-02-22 17:58:36.105188] [p-4688] [t-4628] [info] MeasureTool is going to use default shortcut
+[2023-02-22 18:11:51.245231] [p-4876] [t-4888] [info] Measure Tool logger is initialized
+[2023-02-22 18:11:51.247227] [p-4876] [t-4888] [info] MeasureTool settings are empty
+[2023-02-22 18:11:51.247762] [p-4876] [t-4888] [info] MeasureTool is going to use default shortcut
+[2023-02-22 21:16:54.005648] [p-9904] [t-4752] [info] Measure Tool logger is initialized
+[2023-02-22 21:16:54.018988] [p-9904] [t-4752] [info] MeasureTool settings are empty
+[2023-02-22 21:16:54.020334] [p-9904] [t-4752] [info] MeasureTool is going to use default shortcut

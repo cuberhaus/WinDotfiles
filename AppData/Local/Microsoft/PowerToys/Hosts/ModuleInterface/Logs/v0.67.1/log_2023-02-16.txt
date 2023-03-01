@@ -1,0 +1,18 @@
+[2023-02-16 11:42:34.684899] [p-7748] [t-13748] [info] hosts logger is initialized
+[2023-02-16 11:42:35.425456] [p-7748] [t-13748] [trace] HostsModuleInterface::enable()
+[2023-02-16 11:54:10.454832] [p-9172] [t-9176] [info] hosts logger is initialized
+[2023-02-16 11:54:11.838781] [p-9172] [t-9176] [trace] HostsModuleInterface::enable()
+[2023-02-16 12:55:57.591677] [p-15620] [t-7896] [info] hosts logger is initialized
+[2023-02-16 12:55:58.120278] [p-15620] [t-7896] [trace] HostsModuleInterface::enable()
+[2023-02-16 13:00:54.118047] [p-11496] [t-9916] [info] hosts logger is initialized
+[2023-02-16 13:00:54.493315] [p-11496] [t-9916] [trace] HostsModuleInterface::enable()
+[2023-02-16 13:17:50.035647] [p-17732] [t-11464] [info] hosts logger is initialized
+[2023-02-16 13:17:50.665121] [p-17732] [t-11464] [trace] HostsModuleInterface::enable()
+[2023-02-16 13:26:45.886414] [p-9484] [t-9488] [info] hosts logger is initialized
+[2023-02-16 13:26:46.292108] [p-9484] [t-9488] [trace] HostsModuleInterface::enable()
+[2023-02-16 14:41:59.911487] [p-8912] [t-8916] [info] hosts logger is initialized
+[2023-02-16 14:42:00.708821] [p-8912] [t-8916] [trace] HostsModuleInterface::enable()
+[2023-02-16 15:07:11.939963] [p-9420] [t-9424] [info] hosts logger is initialized
+[2023-02-16 15:07:12.471524] [p-9420] [t-9424] [trace] HostsModuleInterface::enable()
+[2023-02-16 15:09:21.506686] [p-9092] [t-9096] [info] hosts logger is initialized
+[2023-02-16 15:09:22.651711] [p-9092] [t-9096] [trace] HostsModuleInterface::enable()

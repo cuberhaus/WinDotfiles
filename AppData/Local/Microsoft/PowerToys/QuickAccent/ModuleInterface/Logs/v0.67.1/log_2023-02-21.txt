@@ -1,0 +1,6 @@
+[2023-02-21 09:59:24.336916] [p-6336] [t-5220] [info] QuickAccent logger is initialized
+[2023-02-21 09:59:24.337752] [p-6336] [t-5220] [info] Launcher object is constructing
+[2023-02-21 12:10:02.088189] [p-10532] [t-7792] [info] QuickAccent logger is initialized
+[2023-02-21 12:10:02.088749] [p-10532] [t-7792] [info] Launcher object is constructing
+[2023-02-21 16:03:52.155830] [p-9000] [t-3700] [info] QuickAccent logger is initialized
+[2023-02-21 16:03:52.171449] [p-9000] [t-3700] [info] Launcher object is constructing

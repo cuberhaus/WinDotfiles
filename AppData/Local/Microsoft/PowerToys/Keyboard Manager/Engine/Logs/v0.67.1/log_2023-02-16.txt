@@ -1,0 +1,27 @@
+[2023-02-16 11:42:36.624959] [p-1748] [t-14208] [info] keyboard-manager logger is initialized
+[2023-02-16 11:42:36.680119] [p-1748] [t-14208] [trace] SettingsHelper::LoadSettings()
+[2023-02-16 11:42:37.184628] [p-1748] [t-14208] [trace] SettingsHelper::LoadSettings()
+[2023-02-16 11:54:12.140980] [p-8968] [t-8948] [info] keyboard-manager logger is initialized
+[2023-02-16 11:54:12.203702] [p-8968] [t-8948] [trace] SettingsHelper::LoadSettings()
+[2023-02-16 11:54:12.713273] [p-8968] [t-8948] [trace] SettingsHelper::LoadSettings()
+[2023-02-16 12:55:58.337513] [p-15424] [t-256] [info] keyboard-manager logger is initialized
+[2023-02-16 12:55:58.430556] [p-15424] [t-256] [trace] SettingsHelper::LoadSettings()
+[2023-02-16 12:55:58.947059] [p-15424] [t-256] [trace] SettingsHelper::LoadSettings()
+[2023-02-16 13:00:54.631108] [p-13020] [t-11452] [info] keyboard-manager logger is initialized
+[2023-02-16 13:00:54.697291] [p-13020] [t-11452] [trace] SettingsHelper::LoadSettings()
+[2023-02-16 13:00:55.208866] [p-13020] [t-11452] [trace] SettingsHelper::LoadSettings()
+[2023-02-16 13:17:50.829635] [p-17628] [t-14072] [info] keyboard-manager logger is initialized
+[2023-02-16 13:17:50.896215] [p-17628] [t-14072] [trace] SettingsHelper::LoadSettings()
+[2023-02-16 13:17:51.397502] [p-17628] [t-14072] [trace] SettingsHelper::LoadSettings()
+[2023-02-16 13:26:46.458214] [p-10508] [t-8020] [info] keyboard-manager logger is initialized
+[2023-02-16 13:26:46.600956] [p-10508] [t-8020] [trace] SettingsHelper::LoadSettings()
+[2023-02-16 13:26:47.133341] [p-10508] [t-8020] [trace] SettingsHelper::LoadSettings()
+[2023-02-16 14:42:00.977304] [p-7272] [t-10264] [info] keyboard-manager logger is initialized
+[2023-02-16 14:42:01.055451] [p-7272] [t-10264] [trace] SettingsHelper::LoadSettings()
+[2023-02-16 14:42:01.570427] [p-7272] [t-10264] [trace] SettingsHelper::LoadSettings()
+[2023-02-16 15:07:12.671563] [p-8968] [t-5904] [info] keyboard-manager logger is initialized
+[2023-02-16 15:07:12.769074] [p-8968] [t-5904] [trace] SettingsHelper::LoadSettings()
+[2023-02-16 15:07:13.283690] [p-8968] [t-5904] [trace] SettingsHelper::LoadSettings()
+[2023-02-16 15:09:22.983853] [p-12360] [t-12364] [info] keyboard-manager logger is initialized
+[2023-02-16 15:09:23.058534] [p-12360] [t-12364] [trace] SettingsHelper::LoadSettings()
+[2023-02-16 15:09:23.562956] [p-12360] [t-12364] [trace] SettingsHelper::LoadSettings()

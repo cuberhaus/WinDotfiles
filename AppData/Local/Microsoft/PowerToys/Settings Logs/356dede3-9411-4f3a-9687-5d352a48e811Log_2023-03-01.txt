@@ -1,0 +1,465 @@
+INFO: 12:01:57.1492879
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\AlwaysOnTop\settings.json does not exists.
+INFO: 12:01:57.1665764
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421170468786\AlwaysOnTop\settings.json, dryRun:True.
+INFO: 12:01:57.5646485
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Video Conference\settings.json does not exists.
+INFO: 12:01:57.5664900
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421170468786\Video Conference\settings.json, dryRun:True.
+INFO: 12:01:57.5691869
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421170468786\settings.json, dryRun:True
+INFO: 12:01:57.5697601
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421170468786\ColorPicker\settings.json, dryRun:True
+INFO: 12:01:57.5700810
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421170468786\FancyZones\custom-layouts.json, dryRun:True
+INFO: 12:01:57.5703677
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421170468786\FancyZones\layout-hotkeys.json, dryRun:True
+INFO: 12:01:57.5707055
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421170468786\FancyZones\layout-templates.json, dryRun:True
+INFO: 12:01:57.5710030
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421170468786\FancyZones\settings.json, dryRun:True
+INFO: 12:01:57.5713203
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421170468786\File Explorer\settings.json, dryRun:True
+INFO: 12:01:57.5716455
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421170468786\File Locksmith\file-locksmith-settings.json, dryRun:True
+INFO: 12:01:57.5719601
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421170468786\FindMyMouse\settings.json, dryRun:True
+INFO: 12:01:57.5722368
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421170468786\Hosts\settings.json, dryRun:True
+INFO: 12:01:57.5725425
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421170468786\Image Resizer\image-resizer-settings.json, dryRun:True
+INFO: 12:01:57.5728666
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421170468786\Image Resizer\settings.json, dryRun:True
+INFO: 12:01:57.5732023
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421170468786\Keyboard Manager\settings.json, dryRun:True
+INFO: 12:01:57.5735107
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421170468786\Measure Tool\settings.json, dryRun:True
+INFO: 12:01:57.5739103
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421170468786\MouseHighlighter\settings.json, dryRun:True
+INFO: 12:01:57.5742445
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421170468786\MousePointerCrosshairs\settings.json, dryRun:True
+INFO: 12:01:57.5745695
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421170468786\PowerRename\power-rename-settings.json, dryRun:True
+INFO: 12:01:57.5748559
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421170468786\PowerToys Run\settings.json, dryRun:True
+INFO: 12:01:57.5751440
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421170468786\Shortcut Guide\settings.json, dryRun:True
+INFO: 12:01:57.5754461
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421170468786\TextExtractor\settings.json, dryRun:True
+INFO: 12:01:57.5841546
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings took 688
+INFO: 12:02:09.2917270
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\AlwaysOnTop\settings.json does not exists.
+INFO: 12:02:09.2952028
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421292800173\AlwaysOnTop\settings.json, dryRun:True.
+INFO: 12:02:09.3681720
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Video Conference\settings.json does not exists.
+INFO: 12:02:09.3703573
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421292800173\Video Conference\settings.json, dryRun:True.
+INFO: 12:02:09.3708545
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421292800173\settings.json, dryRun:True
+INFO: 12:02:09.3712147
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421292800173\ColorPicker\settings.json, dryRun:True
+INFO: 12:02:09.3716187
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421292800173\FancyZones\custom-layouts.json, dryRun:True
+INFO: 12:02:09.3719558
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421292800173\FancyZones\layout-hotkeys.json, dryRun:True
+INFO: 12:02:09.3722761
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421292800173\FancyZones\layout-templates.json, dryRun:True
+INFO: 12:02:09.3726479
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421292800173\FancyZones\settings.json, dryRun:True
+INFO: 12:02:09.3729998
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421292800173\File Explorer\settings.json, dryRun:True
+INFO: 12:02:09.3734706
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421292800173\File Locksmith\file-locksmith-settings.json, dryRun:True
+INFO: 12:02:09.3738394
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421292800173\FindMyMouse\settings.json, dryRun:True
+INFO: 12:02:09.3741583
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421292800173\Hosts\settings.json, dryRun:True
+INFO: 12:02:09.3745290
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421292800173\Image Resizer\image-resizer-settings.json, dryRun:True
+INFO: 12:02:09.3748616
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421292800173\Image Resizer\settings.json, dryRun:True
+INFO: 12:02:09.3753112
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421292800173\Keyboard Manager\settings.json, dryRun:True
+INFO: 12:02:09.3762536
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421292800173\Measure Tool\settings.json, dryRun:True
+INFO: 12:02:09.3766090
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421292800173\MouseHighlighter\settings.json, dryRun:True
+INFO: 12:02:09.3770435
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421292800173\MousePointerCrosshairs\settings.json, dryRun:True
+INFO: 12:02:09.3773767
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421292800173\PowerRename\power-rename-settings.json, dryRun:True
+INFO: 12:02:09.3776900
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421292800173\PowerToys Run\settings.json, dryRun:True
+INFO: 12:02:09.3780180
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421292800173\Shortcut Guide\settings.json, dryRun:True
+INFO: 12:02:09.3783296
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421292800173\TextExtractor\settings.json, dryRun:True
+INFO: 12:02:09.3826632
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings took 130
+INFO: 12:02:23.2313877
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\AlwaysOnTop\settings.json does not exists.
+INFO: 12:02:23.2352343
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421432237885\AlwaysOnTop\settings.json, dryRun:False.
+INFO: 12:02:23.2849291
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Video Conference\settings.json does not exists.
+INFO: 12:02:23.2882411
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421432237885\Video Conference\settings.json, dryRun:False.
+INFO: 12:02:23.2906805
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421432237885\settings.json, dryRun:False
+INFO: 12:02:23.2945682
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421432237885\ColorPicker\settings.json, dryRun:False
+INFO: 12:02:23.2996070
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421432237885\FancyZones\custom-layouts.json, dryRun:False
+INFO: 12:02:23.3036684
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421432237885\FancyZones\layout-hotkeys.json, dryRun:False
+INFO: 12:02:23.3066678
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421432237885\FancyZones\layout-templates.json, dryRun:False
+INFO: 12:02:23.3107074
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421432237885\FancyZones\settings.json, dryRun:False
+INFO: 12:02:23.3132536
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421432237885\File Explorer\settings.json, dryRun:False
+INFO: 12:02:23.3168571
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421432237885\File Locksmith\file-locksmith-settings.json, dryRun:False
+INFO: 12:02:23.3213145
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421432237885\FindMyMouse\settings.json, dryRun:False
+INFO: 12:02:23.3250344
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421432237885\Hosts\settings.json, dryRun:False
+INFO: 12:02:23.3284549
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421432237885\Image Resizer\image-resizer-settings.json, dryRun:False
+INFO: 12:02:23.3328483
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421432237885\Image Resizer\settings.json, dryRun:False
+INFO: 12:02:23.3361741
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421432237885\Keyboard Manager\settings.json, dryRun:False
+INFO: 12:02:23.3408583
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421432237885\Measure Tool\settings.json, dryRun:False
+INFO: 12:02:23.3456197
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421432237885\MouseHighlighter\settings.json, dryRun:False
+INFO: 12:02:23.3499464
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421432237885\MousePointerCrosshairs\settings.json, dryRun:False
+INFO: 12:02:23.3535460
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421432237885\PowerRename\power-rename-settings.json, dryRun:False
+INFO: 12:02:23.3573072
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421432237885\PowerToys Run\settings.json, dryRun:False
+INFO: 12:02:23.3622333
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421432237885\Shortcut Guide\settings.json, dryRun:False
+INFO: 12:02:23.3663736
+    [Method]: BackupSettingsInternal [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221421432237885\TextExtractor\settings.json, dryRun:False
+INFO: 12:02:23.4775244
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings took 278
+INFO: 12:02:23.5891924
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings took 111
+INFO: 12:02:30.4983569
+    [Method]: BackupSettings [Class]: SettingsUtils
+    BackupSettings took 84
+INFO: 12:02:30.5856804
+    [Method]: BackupConfigsClick [Class]: GeneralViewModel
+    BackupSettings took 85
+INFO: 12:02:38.4196536
+    [Method]: DryRunBackup [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings took 45
+INFO: 12:03:27.9825684
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\AlwaysOnTop\settings.json does not exists.
+INFO: 12:03:27.9868245
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422079735390\AlwaysOnTop\settings.json, dryRun:True.
+INFO: 12:03:28.0345032
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Video Conference\settings.json does not exists.
+INFO: 12:03:28.0356793
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422079735390\Video Conference\settings.json, dryRun:True.
+INFO: 12:03:28.0360835
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422079735390\settings.json, dryRun:True
+INFO: 12:03:28.0363588
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422079735390\ColorPicker\settings.json, dryRun:True
+INFO: 12:03:28.0367155
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422079735390\FancyZones\custom-layouts.json, dryRun:True
+INFO: 12:03:28.0369816
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422079735390\FancyZones\layout-hotkeys.json, dryRun:True
+INFO: 12:03:28.0373719
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422079735390\FancyZones\layout-templates.json, dryRun:True
+INFO: 12:03:28.0376201
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422079735390\FancyZones\settings.json, dryRun:True
+INFO: 12:03:28.0380282
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422079735390\File Explorer\settings.json, dryRun:True
+INFO: 12:03:28.0383229
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422079735390\File Locksmith\file-locksmith-settings.json, dryRun:True
+INFO: 12:03:28.0385925
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422079735390\FindMyMouse\settings.json, dryRun:True
+INFO: 12:03:28.0388738
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422079735390\Hosts\settings.json, dryRun:True
+INFO: 12:03:28.0391871
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422079735390\Image Resizer\image-resizer-settings.json, dryRun:True
+INFO: 12:03:28.0394713
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422079735390\Image Resizer\settings.json, dryRun:True
+INFO: 12:03:28.0396846
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422079735390\Keyboard Manager\settings.json, dryRun:True
+INFO: 12:03:28.0399460
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422079735390\Measure Tool\settings.json, dryRun:True
+INFO: 12:03:28.0402011
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422079735390\MouseHighlighter\settings.json, dryRun:True
+INFO: 12:03:28.0406402
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422079735390\MousePointerCrosshairs\settings.json, dryRun:True
+INFO: 12:03:28.0409386
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422079735390\PowerRename\power-rename-settings.json, dryRun:True
+INFO: 12:03:28.0412221
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422079735390\PowerToys Run\settings.json, dryRun:True
+INFO: 12:03:28.0414535
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422079735390\Shortcut Guide\settings.json, dryRun:True
+INFO: 12:03:28.0416914
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422079735390\TextExtractor\settings.json, dryRun:True
+INFO: 12:03:28.0442147
+    [Method]: DryRunBackup [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings took 103
+INFO: 12:03:29.4708649
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\AlwaysOnTop\settings.json does not exists.
+INFO: 12:03:29.4726035
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422094671867\AlwaysOnTop\settings.json, dryRun:True.
+INFO: 12:03:29.5006804
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Video Conference\settings.json does not exists.
+INFO: 12:03:29.5016145
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422094671867\Video Conference\settings.json, dryRun:True.
+INFO: 12:03:29.5018376
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422094671867\settings.json, dryRun:True
+INFO: 12:03:29.5019985
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422094671867\ColorPicker\settings.json, dryRun:True
+INFO: 12:03:29.5021505
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422094671867\FancyZones\custom-layouts.json, dryRun:True
+INFO: 12:03:29.5023125
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422094671867\FancyZones\layout-hotkeys.json, dryRun:True
+INFO: 12:03:29.5024949
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422094671867\FancyZones\layout-templates.json, dryRun:True
+INFO: 12:03:29.5026447
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422094671867\FancyZones\settings.json, dryRun:True
+INFO: 12:03:29.5027915
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422094671867\File Explorer\settings.json, dryRun:True
+INFO: 12:03:29.5029381
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422094671867\File Locksmith\file-locksmith-settings.json, dryRun:True
+INFO: 12:03:29.5030862
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422094671867\FindMyMouse\settings.json, dryRun:True
+INFO: 12:03:29.5032349
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422094671867\Hosts\settings.json, dryRun:True
+INFO: 12:03:29.5035768
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422094671867\Image Resizer\image-resizer-settings.json, dryRun:True
+INFO: 12:03:29.5037527
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422094671867\Image Resizer\settings.json, dryRun:True
+INFO: 12:03:29.5039023
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422094671867\Keyboard Manager\settings.json, dryRun:True
+INFO: 12:03:29.5040763
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422094671867\Measure Tool\settings.json, dryRun:True
+INFO: 12:03:29.5042615
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422094671867\MouseHighlighter\settings.json, dryRun:True
+INFO: 12:03:29.5044082
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422094671867\MousePointerCrosshairs\settings.json, dryRun:True
+INFO: 12:03:29.5045550
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422094671867\PowerRename\power-rename-settings.json, dryRun:True
+INFO: 12:03:29.5047007
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422094671867\PowerToys Run\settings.json, dryRun:True
+INFO: 12:03:29.5048465
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422094671867\Shortcut Guide\settings.json, dryRun:True
+INFO: 12:03:29.5049936
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422094671867\TextExtractor\settings.json, dryRun:True
+INFO: 12:03:29.5052274
+    [Method]: DryRunBackup [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings took 51
+INFO: 12:03:32.3407384
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\AlwaysOnTop\settings.json does not exists.
+INFO: 12:03:32.3439485
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422123336610\AlwaysOnTop\settings.json, dryRun:False.
+INFO: 12:03:32.3864121
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings, C:\Users\polcg\AppData\Local\Microsoft\PowerToys\Video Conference\settings.json does not exists.
+INFO: 12:03:32.3882294
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422123336610\Video Conference\settings.json, dryRun:False.
+INFO: 12:03:32.3900479
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422123336610\settings.json, dryRun:False
+INFO: 12:03:32.3925324
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422123336610\ColorPicker\settings.json, dryRun:False
+INFO: 12:03:32.3956529
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422123336610\FancyZones\custom-layouts.json, dryRun:False
+INFO: 12:03:32.3987801
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422123336610\FancyZones\layout-hotkeys.json, dryRun:False
+INFO: 12:03:32.4007380
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422123336610\FancyZones\layout-templates.json, dryRun:False
+INFO: 12:03:32.4031553
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422123336610\FancyZones\settings.json, dryRun:False
+INFO: 12:03:32.4050944
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422123336610\File Explorer\settings.json, dryRun:False
+INFO: 12:03:32.4077354
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422123336610\File Locksmith\file-locksmith-settings.json, dryRun:False
+INFO: 12:03:32.4108314
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422123336610\FindMyMouse\settings.json, dryRun:False
+INFO: 12:03:32.4137144
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422123336610\Hosts\settings.json, dryRun:False
+INFO: 12:03:32.4170602
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422123336610\Image Resizer\image-resizer-settings.json, dryRun:False
+INFO: 12:03:32.4205120
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422123336610\Image Resizer\settings.json, dryRun:False
+INFO: 12:03:32.4230812
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422123336610\Keyboard Manager\settings.json, dryRun:False
+INFO: 12:03:32.4266889
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422123336610\Measure Tool\settings.json, dryRun:False
+INFO: 12:03:32.4301124
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422123336610\MouseHighlighter\settings.json, dryRun:False
+INFO: 12:03:32.4338185
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422123336610\MousePointerCrosshairs\settings.json, dryRun:False
+INFO: 12:03:32.4376747
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422123336610\PowerRename\power-rename-settings.json, dryRun:False
+INFO: 12:03:32.4402772
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422123336610\PowerToys Run\settings.json, dryRun:False
+INFO: 12:03:32.4424020
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422123336610\Shortcut Guide\settings.json, dryRun:False
+INFO: 12:03:32.4450313
+    [Method]: BackupSettings [Class]: SettingsBackupAndRestoreUtils
+    BackupSettings writing, C:\Users\polcg\AppData\Local\Temp\settings_133221422123336610\TextExtractor\settings.json, dryRun:False
+INFO: 12:03:32.5024450
+    [Method]: BackupSettings [Class]: SettingsUtils
+    BackupSettings took 191
+INFO: 12:03:32.6305423
+    [Method]: BackupConfigsClick [Class]: GeneralViewModel
+    BackupSettings took 127

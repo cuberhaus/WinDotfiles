@@ -1,0 +1,5 @@
+[2023-03-01 11:54:26.504061] [p-2376] [t-27112] [info] ColorPicker logger is initialized
+[2023-03-01 11:54:27.906259] [p-2376] [t-27112] [trace] ColorPicker::enable()
+[2023-03-01 11:54:27.907767] [p-2376] [t-27112] [trace] Starting ColorPicker process
+[2023-03-01 11:54:27.955282] [p-2376] [t-27112] [trace] Successfully started the Color Picker process
+[2023-03-01 12:08:24.525307] [p-2376] [t-27112] [trace] ColorPicker::destroy()

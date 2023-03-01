@@ -1,0 +1,24 @@
+[2023-02-23 09:49:17.739049] [p-9904] [t-8104] [info] Detecting double left control click with 719 ms interval.
+[2023-02-23 09:56:09.016649] [p-8304] [t-8948] [info] find-my-mouse logger is initialized
+[2023-02-23 09:56:09.017535] [p-8304] [t-8948] [info] Find My Mouse settings are empty
+[2023-02-23 09:56:10.490498] [p-8304] [t-12332] [info] Starting a sonar instance.
+[2023-02-23 09:56:10.506598] [p-8304] [t-12332] [info] Initialized the sonar instance.
+[2023-02-23 10:10:26.947822] [p-9152] [t-9156] [info] find-my-mouse logger is initialized
+[2023-02-23 10:10:26.948434] [p-9152] [t-9156] [info] Find My Mouse settings are empty
+[2023-02-23 10:10:28.018824] [p-9152] [t-11972] [info] Starting a sonar instance.
+[2023-02-23 10:10:28.048945] [p-9152] [t-11972] [info] Initialized the sonar instance.
+[2023-02-23 10:17:35.240474] [p-9048] [t-9032] [info] find-my-mouse logger is initialized
+[2023-02-23 10:17:35.266631] [p-9048] [t-9032] [info] Find My Mouse settings are empty
+[2023-02-23 10:17:36.749523] [p-9048] [t-10216] [info] Starting a sonar instance.
+[2023-02-23 10:17:36.779090] [p-9048] [t-10216] [info] Initialized the sonar instance.
+[2023-02-23 18:46:18.124469] [p-9048] [t-10216] [info] Detecting double left control click with 1078 ms interval.
+[2023-02-23 18:51:34.365622] [p-9048] [t-10216] [info] Focusing the sonar on the mouse cursor.
+[2023-02-23 18:51:34.431638] [p-9048] [t-10216] [info] Detecting double left control click with 453 ms interval.
+[2023-02-23 19:18:37.924225] [p-9048] [t-10216] [info] Detecting double left control click with 1375 ms interval.
+[2023-02-23 19:52:07.003762] [p-9048] [t-10216] [info] Focusing the sonar on the mouse cursor.
+[2023-02-23 19:52:07.020068] [p-9048] [t-10216] [info] Detecting double left control click with 328 ms interval.
+[2023-02-23 22:40:40.912673] [p-9048] [t-10216] [info] Detecting double left control click with 1812 ms interval.
+[2023-02-23 22:40:43.706702] [p-9048] [t-10216] [info] Detecting double left control click with 2797 ms interval.
+[2023-02-23 23:39:36.072652] [p-9048] [t-10216] [info] Detecting double left control click with 63 ms interval.
+[2023-02-23 23:47:00.590210] [p-9048] [t-10216] [info] Detecting double left control click with 1000 ms interval.
+[2023-02-23 23:47:08.811564] [p-9048] [t-10216] [info] Detecting double left control click with 78 ms interval.

@@ -1,0 +1,6 @@
+[2023-02-21 09:59:24.916351] [p-6336] [t-5220] [info] hosts logger is initialized
+[2023-02-21 09:59:25.624411] [p-6336] [t-5220] [trace] HostsModuleInterface::enable()
+[2023-02-21 12:10:02.826355] [p-10532] [t-7792] [info] hosts logger is initialized
+[2023-02-21 12:10:03.317739] [p-10532] [t-7792] [trace] HostsModuleInterface::enable()
+[2023-02-21 16:03:52.817438] [p-9000] [t-3700] [info] hosts logger is initialized
+[2023-02-21 16:03:54.621432] [p-9000] [t-3700] [trace] HostsModuleInterface::enable()

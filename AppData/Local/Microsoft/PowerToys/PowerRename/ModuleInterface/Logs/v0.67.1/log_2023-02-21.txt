@@ -1,0 +1,6 @@
+[2023-02-21 09:59:18.773747] [p-6336] [t-5220] [info] powerrename logger is initialized
+[2023-02-21 09:59:25.711891] [p-6336] [t-5220] [info] PowerRename enabled
+[2023-02-21 12:10:01.337974] [p-10532] [t-7792] [info] powerrename logger is initialized
+[2023-02-21 12:10:03.399030] [p-10532] [t-7792] [info] PowerRename enabled
+[2023-02-21 16:03:48.600478] [p-9000] [t-3700] [info] powerrename logger is initialized
+[2023-02-21 16:03:54.750776] [p-9000] [t-3700] [info] PowerRename enabled
