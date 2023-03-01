@@ -2,7 +2,7 @@
 # These should also not need any documentation
 function aliases {
     # code $dotfiles\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
-    ce $HOME\Documents\PowerShell\profile.ps1 $modules\my_git.psm1 $modules\my_rclone.psm1 $modules\my_shortcuts.psm1
+    ce $HOME\Documents\PowerShell\profile.ps1 $modules\my_git.psm1 $modules\my_rclone.psm1 $modules\my_shortcuts.psm1 $modules\my_tools.psm1
 }
 function vimrc {
     ce $dotfiles\_vimrc
