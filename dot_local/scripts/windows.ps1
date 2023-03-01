@@ -90,6 +90,7 @@ function base_install {
     choco install -y powershell-core        # Updated powershell
     choco install -y python                 # Python
     choco install -y rclone                 # Git but without version control
+    choco install -y sharpkeys # allows to take a look at this registry entries and add more keybindings easily
     choco install -y strawberryperl         # Pearl
     choco install -y wget 		            # A command-line utility for retrieving files using HTTP protocols
     choco install -y yarn                   # Packages, need it for vim
@@ -221,14 +222,18 @@ choco install -y vim, neovim
     # Install plugins
     vim +PlugInstall +qall}
 
-function swap {
-    choco install -y sharpkeys # allows to take a look at this registry entries and add more keybindings easily
+function registry {
     # better to just use register
     # cp $uncap C:\Windows\
     # Swap caps with escape https://github.com/susam/uncap#readme
     reg add "HKLM\SYSTEM\CurrentControlSet\Control\Keyboard Layout" /v "Scancode Map" /t REG_BINARY /d   "00000000000000000300000001003A003A00010000000000" 
     # To get the current binary value from sharpkeys and change it forever without having to re configurate sharpkeys just replace the binary on the registry entry above
     # reg query "HKLM\SYSTEM\CurrentControlSet\Control\Keyboard Layout" /v "Scancode Map"
+
+    # Disable sticky keys popup after pressing several times
+    Set-Location "HKCU:\Control Panel\Accessibility\StickyKeys"
+    Set-ItemProperty -Path . -Name Flags -Value 58 -Type DWord
+    Set-Location "$HOME"
 }
 
 function games_install {
