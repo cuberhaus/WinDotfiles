@@ -52,6 +52,22 @@ function gitsync {
     git submodule update --init --recursive
 }
 function pull {
+    param(
+        [int]$depth = 2
+    )
+    Write-Host "depth: $depth" -ForegroundColor Green
+    # Find all directories containing a .git subdirectory, and loop over them
+    Get-ChildItem -Path . -Directory -Recurse -Force -Depth $depth -Filter ".git" | ForEach-Object {
+        $dir = $_.FullName.Replace("\.git", "")
+        # Change into the directory and perform a git pull in a subshell
+        Write-Host "Pulling $dir" -ForegroundColor Green
+        & cmd /c "cd `"$dir`" && git pull"
+        # Push-Location $dir
+        # git pull
+        # Pop-Location
+    }
+}
+function pull_old {
     <#
     .SYNOPSIS
     Pulls the latest changes from all Git repositories within the current directory and its subdirectories.
