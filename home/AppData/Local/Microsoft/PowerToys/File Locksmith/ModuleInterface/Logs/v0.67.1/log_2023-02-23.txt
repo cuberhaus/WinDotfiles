@@ -1,6 +1,0 @@
-[2023-02-23 09:56:09.439528] [p-8304] [t-8948] [info] FileLocksmith logger is initialized
-[2023-02-23 09:56:10.474090] [p-8304] [t-8948] [info] File Locksmith enabled
-[2023-02-23 10:10:27.622542] [p-9152] [t-9156] [info] FileLocksmith logger is initialized
-[2023-02-23 10:10:28.017264] [p-9152] [t-9156] [info] File Locksmith enabled
-[2023-02-23 10:17:35.762999] [p-9048] [t-9032] [info] FileLocksmith logger is initialized
-[2023-02-23 10:17:36.747898] [p-9048] [t-9032] [info] File Locksmith enabled

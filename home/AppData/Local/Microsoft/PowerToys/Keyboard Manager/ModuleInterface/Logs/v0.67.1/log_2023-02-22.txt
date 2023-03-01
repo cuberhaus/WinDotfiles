@@ -1,8 +1,0 @@
-[2023-02-22 11:05:07.295500] [p-9188] [t-2704] [info] keyboard-manager logger is initialized
-[2023-02-22 16:57:16.552223] [p-9692] [t-6448] [info] keyboard-manager logger is initialized
-[2023-02-22 17:05:40.217649] [p-6364] [t-6328] [info] keyboard-manager logger is initialized
-[2023-02-22 17:30:57.033886] [p-2992] [t-2624] [info] keyboard-manager logger is initialized
-[2023-02-22 17:51:26.792833] [p-4576] [t-3808] [info] keyboard-manager logger is initialized
-[2023-02-22 17:58:29.411577] [p-4688] [t-4628] [info] keyboard-manager logger is initialized
-[2023-02-22 18:11:42.183761] [p-4876] [t-4888] [info] keyboard-manager logger is initialized
-[2023-02-22 21:16:51.581718] [p-9904] [t-4752] [info] keyboard-manager logger is initialized

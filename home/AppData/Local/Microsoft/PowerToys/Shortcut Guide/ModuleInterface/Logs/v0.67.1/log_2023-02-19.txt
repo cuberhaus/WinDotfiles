@@ -1,6 +1,0 @@
-[2023-02-19 12:32:55.027862] [p-14196] [t-13108] [info] shortcut-guide logger is initialized
-[2023-02-19 12:32:55.028922] [p-14196] [t-13108] [info] Shortcut Guide settings are empty
-[2023-02-19 12:32:55.029016] [p-14196] [t-13108] [info] Shortcut Guide is going to use default shortcut
-[2023-02-19 12:32:55.029269] [p-14196] [t-13108] [trace] GetHotkeyEx()
-[2023-02-19 12:32:56.488606] [p-14196] [t-13108] [info] Shortcut Guide is enabling
-[2023-02-19 12:32:56.488708] [p-14196] [t-13108] [trace] GetHotkeyEx()

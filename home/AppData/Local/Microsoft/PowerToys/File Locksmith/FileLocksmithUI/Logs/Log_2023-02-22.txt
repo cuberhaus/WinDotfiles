@@ -1,6 +1,0 @@
-INFO: 22:18:18.4253469
-    [Method]: .ctor [Class]: MainViewModel
-    Starting FileLocksmith with 1 files selected.
-INFO: 22:18:31.0221865
-    [Method]: .ctor [Class]: MainViewModel
-    Starting FileLocksmith with 1 files selected.

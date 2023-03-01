@@ -1,3 +1,0 @@
-[2023-02-18 22:00:18.915971] [p-20200] [t-16708] [info] Measure Tool logger is initialized
-[2023-02-18 22:00:18.917082] [p-20200] [t-16708] [info] MeasureTool settings are empty
-[2023-02-18 22:00:18.917227] [p-20200] [t-16708] [info] MeasureTool is going to use default shortcut

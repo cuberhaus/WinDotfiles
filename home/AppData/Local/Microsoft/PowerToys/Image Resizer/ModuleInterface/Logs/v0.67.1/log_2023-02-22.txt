@@ -1,8 +1,0 @@
-[2023-02-22 11:05:07.086788] [p-9188] [t-2704] [info] imageresizer logger is initialized
-[2023-02-22 16:57:15.809376] [p-9692] [t-6448] [info] imageresizer logger is initialized
-[2023-02-22 17:05:39.770593] [p-6364] [t-6328] [info] imageresizer logger is initialized
-[2023-02-22 17:30:55.536016] [p-2992] [t-2624] [info] imageresizer logger is initialized
-[2023-02-22 17:51:26.742004] [p-4576] [t-3808] [info] imageresizer logger is initialized
-[2023-02-22 17:58:28.951692] [p-4688] [t-4628] [info] imageresizer logger is initialized
-[2023-02-22 18:11:42.019420] [p-4876] [t-4888] [info] imageresizer logger is initialized
-[2023-02-22 21:16:50.890818] [p-9904] [t-4752] [info] imageresizer logger is initialized

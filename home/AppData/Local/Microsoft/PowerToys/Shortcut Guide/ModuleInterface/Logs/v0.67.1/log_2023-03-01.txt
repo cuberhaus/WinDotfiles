@@ -1,8 +1,0 @@
-[2023-03-01 11:54:26.476579] [p-2376] [t-27112] [info] shortcut-guide logger is initialized
-[2023-03-01 11:54:26.480798] [p-2376] [t-27112] [trace] GetHotkeyEx()
-[2023-03-01 11:54:28.411880] [p-2376] [t-27112] [info] Shortcut Guide is enabling
-[2023-03-01 11:54:28.412029] [p-2376] [t-27112] [trace] GetHotkeyEx()
-[2023-03-01 11:54:28.506407] [p-2376] [t-10376] [trace] Send settings telemetry
-[2023-03-01 11:54:28.557706] [p-2376] [t-10376] [trace] Started SG process with pid=684
-[2023-03-01 12:08:24.511433] [p-2376] [t-27112] [info] ShortcutGuideModule::disable()
-[2023-03-01 12:08:24.512258] [p-2376] [t-27112] [trace] SG process was already terminated

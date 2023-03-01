@@ -1,6 +1,0 @@
-[2023-02-20 10:22:18.559396] [p-8336] [t-8340] [info] Measure Tool logger is initialized
-[2023-02-20 10:22:18.560875] [p-8336] [t-8340] [info] MeasureTool settings are empty
-[2023-02-20 10:22:18.561043] [p-8336] [t-8340] [info] MeasureTool is going to use default shortcut
-[2023-02-20 11:33:58.669298] [p-8320] [t-8324] [info] Measure Tool logger is initialized
-[2023-02-20 11:33:58.670866] [p-8320] [t-8324] [info] MeasureTool settings are empty
-[2023-02-20 11:33:58.671059] [p-8320] [t-8324] [info] MeasureTool is going to use default shortcut

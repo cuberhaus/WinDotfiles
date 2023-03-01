@@ -1,9 +1,0 @@
-[2023-02-23 09:56:10.888117] [p-12368] [t-12372] [info] keyboard-manager logger is initialized
-[2023-02-23 09:56:10.938247] [p-12368] [t-12372] [trace] SettingsHelper::LoadSettings()
-[2023-02-23 09:56:11.447132] [p-12368] [t-12372] [trace] SettingsHelper::LoadSettings()
-[2023-02-23 10:10:28.552186] [p-4296] [t-4284] [info] keyboard-manager logger is initialized
-[2023-02-23 10:10:28.609830] [p-4296] [t-4284] [trace] SettingsHelper::LoadSettings()
-[2023-02-23 10:10:29.113768] [p-4296] [t-4284] [trace] SettingsHelper::LoadSettings()
-[2023-02-23 10:17:36.970188] [p-7928] [t-3672] [info] keyboard-manager logger is initialized
-[2023-02-23 10:17:37.096959] [p-7928] [t-3672] [trace] SettingsHelper::LoadSettings()
-[2023-02-23 10:17:37.609394] [p-7928] [t-3672] [trace] SettingsHelper::LoadSettings()

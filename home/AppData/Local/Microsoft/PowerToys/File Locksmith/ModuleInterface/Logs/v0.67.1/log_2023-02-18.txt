@@ -1,2 +1,0 @@
-[2023-02-18 22:00:18.805719] [p-20200] [t-16708] [info] FileLocksmith logger is initialized
-[2023-02-18 22:00:19.853171] [p-20200] [t-16708] [info] File Locksmith enabled

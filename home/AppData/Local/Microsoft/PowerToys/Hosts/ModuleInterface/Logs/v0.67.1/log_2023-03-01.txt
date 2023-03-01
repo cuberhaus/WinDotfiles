@@ -1,5 +1,0 @@
-[2023-03-01 11:48:36.863562] [p-24188] [t-16176] [trace] Starting Hosts process
-[2023-03-01 11:48:38.910740] [p-24188] [t-16176] [trace] Successfully started the Hosts process
-[2023-03-01 11:54:27.677872] [p-2376] [t-27112] [info] hosts logger is initialized
-[2023-03-01 11:54:28.067952] [p-2376] [t-27112] [trace] HostsModuleInterface::enable()
-[2023-03-01 12:08:24.519550] [p-2376] [t-27112] [trace] HostsModuleInterface::destroy()

@@ -1,2 +1,0 @@
-[2023-02-26 11:56:35.141223] [p-15396] [t-16464] [info] always-on-top logger is initialized
-[2023-02-26 19:19:37.231827] [p-21160] [t-21072] [info] always-on-top logger is initialized
