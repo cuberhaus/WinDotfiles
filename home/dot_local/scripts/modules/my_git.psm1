@@ -87,33 +87,48 @@ function pull {
     # Store the starting directory
     $startDirectory = (Get-Item -Path ".\").FullName
 
-    # If the -Recurse switch is specified, use the -Recurse parameter of Get-ChildItem
-    if ($Recurse) {
-        # Loop over all non-hidden directories in the current directory and its subdirectories
-        Get-ChildItem -Directory -Recurse -Force | Where-Object { !$_.Name.StartsWith('.') } | ForEach-Object {
-            # Check if the directory is a git repository
-            if (Test-Path "$($_.FullName)\.git" -PathType Container) {
-                # Change into the directory and perform a git pull
-                Set-Location $_.FullName
-                Write-Host "Pulling from $($_.FullName)" -ForegroundColor Green
-                git pull
-                Set-Location ..
-            } 
+    # Set up a trap to ensure that the function returns to the starting directory if it is stopped by the user
+    trap {
+        Set-Location $startDirectory
+        Write-Host "Function stopped by user. Returning to original directory." -ForegroundColor Yellow
+        return
+    }
+
+    # Use Try-Catch to handle errors and return to the starting directory
+    try {
+        # If the -Recurse switch is specified, use the -Recurse parameter of Get-ChildItem
+        if ($Recurse) {
+            # Loop over all non-hidden directories in the current directory and its subdirectories
+            Get-ChildItem -Directory -Recurse -Force | Where-Object { !$_.Name.StartsWith('.') } | ForEach-Object {
+                # Check if the directory is a git repository
+                if (Test-Path "$($_.FullName)\.git" -PathType Container) {
+                    # Change into the directory and perform a git pull
+                    Set-Location $_.FullName
+                    Write-Host "Pulling from $($_.FullName)" -ForegroundColor Green
+                    git pull
+                    Set-Location ..
+                } 
+            }
+        }
+        else {
+            # Loop over all non-hidden directories in the current directory
+            Get-ChildItem -Directory -Force | Where-Object { !$_.Name.StartsWith('.') } | ForEach-Object {
+                # Check if the directory is a git repository
+                if (Test-Path "$($_.FullName)\.git" -PathType Container) {
+                    # Change into the directory and perform a git pull
+                    Set-Location $_.FullName
+                    Write-Host "Pulling from $($_.FullName)" -ForegroundColor Green
+                    git pull
+                    Set-Location ..
+                } 
+            }
         }
     }
-    else {
-        # Loop over all non-hidden directories in the current directory
-        Get-ChildItem -Directory -Force | Where-Object { !$_.Name.StartsWith('.') } | ForEach-Object {
-            # Check if the directory is a git repository
-            if (Test-Path "$($_.FullName)\.git" -PathType Container) {
-                # Change into the directory and perform a git pull
-                Set-Location $_.FullName
-                Write-Host "Pulling from $($_.FullName)" -ForegroundColor Green
-                git pull
-                Set-Location ..
-            } 
-        }
+    catch {
+        Write-Error $_
+        Set-Location $startDirectory
     }
+
     # Return to the starting directory
     Set-Location $startDirectory
 }
@@ -162,32 +177,46 @@ function status {
     # Store the starting directory
     $startDirectory = (Get-Item -Path ".\").FullName
 
-    # If the -Recurse switch is specified, use the -Recurse parameter of Get-ChildItem
-    if ($Recurse) {
-        # Loop over all non-hidden directories in the current directory and its subdirectories
-        Get-ChildItem -Directory -Recurse -Force | Where-Object { !$_.Name.StartsWith('.') } | ForEach-Object {
-            # Check if the directory is a git repository
-            if (Test-Path "$($_.FullName)\.git" -PathType Container) {
-                # Change into the directory and perform a git status
-                Set-Location $_.FullName
-                Write-Host "Entering $($_.FullName)" -ForegroundColor Green
-                git status
-                Set-Location ..
-            } 
+    # Set up a trap to ensure that the function returns to the starting directory if it is stopped by the user
+    trap {
+        Set-Location $startDirectory
+        Write-Host "Function stopped by user. Returning to original directory." -ForegroundColor Yellow
+        return
+    }
+
+    # Use Try-Catch to handle errors and return to the starting directory
+    try {
+        # If the -Recurse switch is specified, use the -Recurse parameter of Get-ChildItem
+        if ($Recurse) {
+            # Loop over all non-hidden directories in the current directory and its subdirectories
+            Get-ChildItem -Directory -Recurse -Force | Where-Object { !$_.Name.StartsWith('.') } | ForEach-Object {
+                # Check if the directory is a git repository
+                if (Test-Path "$($_.FullName)\.git" -PathType Container) {
+                    # Change into the directory and perform a git status
+                    Set-Location $_.FullName
+                    Write-Host "Entering $($_.FullName)" -ForegroundColor Green
+                    git status
+                    Set-Location ..
+                } 
+            }
+        }
+        else {
+            # Loop over all non-hidden directories in the current directory
+            Get-ChildItem -Directory -Force | Where-Object { !$_.Name.StartsWith('.') } | ForEach-Object {
+                # Check if the directory is a git repository
+                if (Test-Path "$($_.FullName)\.git" -PathType Container) {
+                    # Change into the directory and perform a git status
+                    Set-Location $_.FullName
+                    Write-Host "Entering $($_.FullName)" -ForegroundColor Green
+                    git status
+                    Set-Location ..
+                } 
+            }
         }
     }
-    else {
-        # Loop over all non-hidden directories in the current directory
-        Get-ChildItem -Directory -Force | Where-Object { !$_.Name.StartsWith('.') } | ForEach-Object {
-            # Check if the directory is a git repository
-            if (Test-Path "$($_.FullName)\.git" -PathType Container) {
-                # Change into the directory and perform a git status
-                Set-Location $_.FullName
-                Write-Host "Entering $($_.FullName)" -ForegroundColor Green
-                git status
-                Set-Location ..
-            } 
-        }
+    catch {
+        Write-Error $_
+        Set-Location $startDirectory
     }
     # Return to the starting directory
     Set-Location $startDirectory
