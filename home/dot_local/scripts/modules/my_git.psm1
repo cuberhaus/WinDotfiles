@@ -52,6 +52,24 @@ function gitsync {
     git submodule update --init --recursive
 }
 function pull {
+    <#
+    .SYNOPSIS
+    Performs a git pull in all directories containing a .git subdirectory.
+
+    .PARAMETER depth
+    The maximum depth to search for git repositories. Defaults to 2 if not provided.
+
+    .DESCRIPTION
+    This function searches for all directories containing a .git subdirectory and performs a git pull in each of them.
+
+    .EXAMPLE
+    pull -depth 3
+
+    This example performs a git pull in all directories containing a .git subdirectory up to a maximum depth of 3.
+
+    .NOTES
+    Author: Pol Casacuberta
+    #>
     param(
         [int]$depth = 2
     )
@@ -62,179 +80,38 @@ function pull {
         # Change into the directory and perform a git pull in a subshell
         Write-Host "Pulling $dir" -ForegroundColor Green
         & cmd /c "cd `"$dir`" && git pull"
-        # Push-Location $dir
-        # git pull
-        # Pop-Location
     }
 }
-function pull_old {
-    <#
-    .SYNOPSIS
-    Pulls the latest changes from all Git repositories within the current directory and its subdirectories.
-
-    .DESCRIPTION
-    This function searches the current directory and its subdirectories for Git repositories and performs a "git pull" command to retrieve the latest changes from the remote repository.
-
-    .PARAMETER Recurse
-    If this switch is specified, the function will search for Git repositories in all subdirectories of the current directory.
-
-    .EXAMPLE
-    To pull the latest changes from Git repositories in the current directory, run the following command:
-    pull
-
-    .EXAMPLE
-    To pull the latest changes from Git repositories in the current directory and its subdirectories, run the following command:
-    pull -Recurse
-
-    .NOTES
-    Author: Pol Casacuberta
-    Date: 21/02/2023
-    #>
-    param(
-        [switch]$Recurse,
-        [switch]$Help
-    )
-
-    if ($Help) {
-        Get-Help pull -Full
-        return
-    }
-
-    # Store the starting directory
-    $startDirectory = (Get-Item -Path ".\").FullName
-
-    # Set up a trap to ensure that the function returns to the starting directory if it is stopped by the user
-    trap {
-        Set-Location $startDirectory
-        Write-Host "Function stopped by user. Returning to original directory." -ForegroundColor Yellow
-        return
-    }
-
-    # Use Try-Catch to handle errors and return to the starting directory
-    try {
-        # If the -Recurse switch is specified, use the -Recurse parameter of Get-ChildItem
-        if ($Recurse) {
-            # Loop over all non-hidden directories in the current directory and its subdirectories
-            Get-ChildItem -Directory -Recurse -Force | Where-Object { !$_.Name.StartsWith('.') } | ForEach-Object {
-                # Check if the directory is a git repository
-                if (Test-Path "$($_.FullName)\.git" -PathType Container) {
-                    # Change into the directory and perform a git pull
-                    Set-Location $_.FullName
-                    Write-Host "Pulling from $($_.FullName)" -ForegroundColor Green
-                    git pull
-                    Set-Location ..
-                } 
-            }
-        }
-        else {
-            # Loop over all non-hidden directories in the current directory
-            Get-ChildItem -Directory -Force | Where-Object { !$_.Name.StartsWith('.') } | ForEach-Object {
-                # Check if the directory is a git repository
-                if (Test-Path "$($_.FullName)\.git" -PathType Container) {
-                    # Change into the directory and perform a git pull
-                    Set-Location $_.FullName
-                    Write-Host "Pulling from $($_.FullName)" -ForegroundColor Green
-                    git pull
-                    Set-Location ..
-                } 
-            }
-        }
-    }
-    catch {
-        Write-Error $_
-        Set-Location $startDirectory
-    }
-
-    # Return to the starting directory
-    Set-Location $startDirectory
-}
-
-# Status -Recurse
-# Perform a git status on all git repositories in the current directory
 function status {
     <#
     .SYNOPSIS
-    Displays the git status of all repositories in the current directory (and its subdirectories, if -Recurse is specified).
+    Performs a git status in all directories containing a .git subdirectory.
+
+    .PARAMETER depth
+    The maximum depth to search for git repositories. Defaults to 2 if not provided.
 
     .DESCRIPTION
-    This function finds all git repositories in the current directory (and its subdirectories, if -Recurse is specified), and then displays the git status of each repository.
-
-    .PARAMETER Recurse
-    If specified, the function will also search for git repositories in subdirectories of the current directory.
+    This function searches for all directories containing a .git subdirectory and performs a git status in each of them.
 
     .EXAMPLE
-    PS C:\Projects> status -Recurse
-    Entering C:\Projects\Project1
-    On branch main
-    Your branch is up to date with 'origin/main'.
+    status -depth 3
 
-    nothing to commit, working tree clean
-    Entering C:\Projects\Project2
-    On branch feature/some-feature
-    Your branch is up to date with 'origin/feature/some-feature'.
-
-    nothing to commit, working tree clean
-    ...
+    This example performs a git status in all directories containing a .git subdirectory up to a maximum depth of 3.
 
     .NOTES
     Author: Pol Casacuberta
-    Date: 21/02/2023
-
     #>
     param(
-        [switch]$Recurse,
-        [switch]$Help
+        [int]$depth = 2
     )
-
-    if ($Help) {
-        Get-Help status -Full
-        return
+    Write-Host "depth: $depth" -ForegroundColor Green
+    # Find all directories containing a .git subdirectory, and loop over them
+    Get-ChildItem -Path . -Directory -Recurse -Force -Depth $depth -Filter ".git" | ForEach-Object {
+        $dir = $_.FullName.Replace("\.git", "")
+        # Change into the directory and perform a git pull in a subshell
+        Write-Host "Entering $dir" -ForegroundColor Green
+        & cmd /c "cd `"$dir`" && git status"
     }
-    # Store the starting directory
-    $startDirectory = (Get-Item -Path ".\").FullName
-
-    # Set up a trap to ensure that the function returns to the starting directory if it is stopped by the user
-    trap {
-        Set-Location $startDirectory
-        Write-Host "Function stopped by user. Returning to original directory." -ForegroundColor Yellow
-        return
-    }
-
-    # Use Try-Catch to handle errors and return to the starting directory
-    try {
-        # If the -Recurse switch is specified, use the -Recurse parameter of Get-ChildItem
-        if ($Recurse) {
-            # Loop over all non-hidden directories in the current directory and its subdirectories
-            Get-ChildItem -Directory -Recurse -Force | Where-Object { !$_.Name.StartsWith('.') } | ForEach-Object {
-                # Check if the directory is a git repository
-                if (Test-Path "$($_.FullName)\.git" -PathType Container) {
-                    # Change into the directory and perform a git status
-                    Set-Location $_.FullName
-                    Write-Host "Entering $($_.FullName)" -ForegroundColor Green
-                    git status
-                    Set-Location ..
-                } 
-            }
-        }
-        else {
-            # Loop over all non-hidden directories in the current directory
-            Get-ChildItem -Directory -Force | Where-Object { !$_.Name.StartsWith('.') } | ForEach-Object {
-                # Check if the directory is a git repository
-                if (Test-Path "$($_.FullName)\.git" -PathType Container) {
-                    # Change into the directory and perform a git status
-                    Set-Location $_.FullName
-                    Write-Host "Entering $($_.FullName)" -ForegroundColor Green
-                    git status
-                    Set-Location ..
-                } 
-            }
-        }
-    }
-    catch {
-        Write-Error $_
-        Set-Location $startDirectory
-    }
-    # Return to the starting directory
-    Set-Location $startDirectory
 }
+
 Export-ModuleMember -Function *
