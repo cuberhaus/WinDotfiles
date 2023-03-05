@@ -306,6 +306,8 @@ function errors {
     chkdsk # This will check disk for errors
     sfc /scannow # Use la herramienta Comprobador de archivos de sistema para reparar los archivos de sistema que faltan o están dañados.
     mdsched.exe #check if RAM memory works
+    # control panel -> system and security -> system -> advanced system settings -> advanced -> startup and recovery -> settings -> uncheck automatically restart
+    # control panel -> system and security -> security and maintenance -> Maintenance -> view reliability history -> view problem details -> copy to clipboard
     windbg
     %SystemRoot%\Minidump
 }
