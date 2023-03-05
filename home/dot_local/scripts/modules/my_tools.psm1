@@ -40,11 +40,11 @@ function Sync-Time {
 
 function update {
     Try {
-        choco upgrade all -y -ErrorAction Stop
-        Get-WindowsUpdate -ErrorAction Stop
-        Install-WindowsUpdate -ErrorAction Stop
+        choco upgrade all -y
+        Get-WindowsUpdate
+        Install-WindowsUpdate
         vim +PlugUpgrade +PlugUpdate +qall
-        winget upgrade --all -ErrorAction Stop
+        winget upgrade --all
     }
     Catch {
         Write-Error "Error updating: $($_.Exception.Message)"
@@ -53,7 +53,7 @@ function update {
 
 function cleanup {
     Try {
-        choco-cleaner -ErrorAction Stop
+        choco-cleaner
         vim +PlugClean +qall
     }
     Catch {
