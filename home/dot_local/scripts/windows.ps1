@@ -302,6 +302,13 @@ function remove_bloat {
     Get-AppxPackage -AllUsers Microsoft.People | Remove-AppxPackage
     Get-AppxPackage -AllUsers Microsoft.GetHelp | Remove-AppxPackage
 }
+function errors {
+    chkdsk # This will check disk for errors
+    sfc /scannow # Use la herramienta Comprobador de archivos de sistema para reparar los archivos de sistema que faltan o están dañados.
+    mdsched.exe #check if RAM memory works
+    windbg
+    %SystemRoot%\Minidump
+}
 ## Start Installation
 base_install
 registry
