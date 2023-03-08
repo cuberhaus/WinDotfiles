@@ -1,5 +1,4 @@
 $dotfiles = "C:\Users\polcg\WinDotfiles\"
-$uncap = "$dotfiles\uncap.exe" # uncap location
 $documents = "Documents"
 $cho = "choco install -y " # choco install command
 # Think about adding winget
@@ -75,7 +74,7 @@ function base_install {
     # Install Chocolatey
     Set-ExecutionPolicy Bypass -Scope Process -Force
     [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
-    iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+    Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
     # Install packages using Chocolatey
     choco install -y 7zip.install           # Archiver
@@ -205,14 +204,14 @@ function vim_install {
 
     # Install vim-plug for Neovim
     $plugPath = "$env:LOCALAPPDATA/nvim-data/site/autoload/plug.vim"
-    iwr -useb "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim" -OutFile $plugPath
+    Invoke-WebRequest -useb "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim" -OutFile $plugPath
     if (!(Test-Path $plugPath)) { throw "Failed to install vim-plug for Neovim" }
 
     # Install vim-plug for PowerShell
     $vimfilesPath = "$HOME/vimfiles"
     if (!(Test-Path $vimfilesPath)) { mkdir $vimfilesPath | Out-Null }
     $plugPath = "$vimfilesPath/autoload/plug.vim"
-    iwr -useb "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim" -OutFile $plugPath
+    Invoke-WebRequest -useb "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim" -OutFile $plugPath
     if (!(Test-Path $plugPath)) { throw "Failed to install vim-plug for PowerShell" }
 
     # Install Neovim support for npm, gem and Python3
