@@ -1,7 +1,7 @@
 $dotfiles = "C:\Users\polcg\WinDotfiles\"
 $uncap = "$dotfiles\uncap.exe" # uncap location
 $documents = "Documents"
-
+$cho = "choco install -y " # choco install command
 # Think about adding winget
 
 function Link-Dotfiles {
@@ -266,6 +266,7 @@ function path {
     [Environment]::SetEnvironmentVariable("PATH", $Env:PATH + ";C:\Program Files\Sublime Text 3\", [EnvironmentVariableTarget]::Machine)
     [Environment]::SetEnvironmentVariable("VISUAL", "code --wait", [EnvironmentVariableTarget]::Machine)
     [Environment]::SetEnvironmentVariable("EDITOR", "code --wait", [EnvironmentVariableTarget]::Machine)
+    [Environment]::SetEnvironmentVariable("cho", "$cho", [EnvironmentVariableTarget]::Machine)
 }
 function remove_bloat {
     Get-AppxPackage -AllUsers Microsoft.549981C3F5F10 | Remove-AppxPackage
