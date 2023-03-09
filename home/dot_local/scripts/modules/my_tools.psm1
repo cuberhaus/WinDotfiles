@@ -1,3 +1,19 @@
+# Simple function to start a new elevated process. If arguments are supplied then 
+# a single command is started with admin rights; if not then a new admin instance
+# of PowerShell is started.
+function admin
+{
+    if ($args.Count -gt 0)
+    {   
+       $argList = "& '" + $args + "'"
+       Start-Process wt -Verb runAs -ArgumentList $argList
+    }
+    else
+    {
+       Start-Process wt -Verb runAs
+    }
+}
+
 function Update-AppManagement {
     Try {
         $appManagementClass = Get-CimInstance -Namespace "Root\cimv2\mdm\dmmap" -ClassName "MDM_EnterpriseModernAppManagement_AppManagement01" -ErrorAction Stop
