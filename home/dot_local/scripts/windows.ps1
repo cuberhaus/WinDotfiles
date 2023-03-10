@@ -36,9 +36,7 @@ function Link-Dotfiles {
 
     # Create necessary directories
     foreach ($directory in $directories) {
-        # Write-Host "hi"
         if (-not (Test-Path $directory -PathType Container)) {
-            # Write-Host "Im in"
             New-Item -ItemType Directory -Force $directory
         }
     }
@@ -311,6 +309,28 @@ function errors {
     windbg
     %SystemRoot%\Minidump
 }
+
+function clone {
+    Set-Location $HOME\repos
+    git clone https://github.com/cuberhaus/docs.git
+    git clone https://github.com/cuberhaus/fib.git
+    git clone https://github.com/cuberhaus/dev.git 
+    Set-Location $HOME
+}
+
+function directories {
+    $directories = @(
+        "$HOME\repos"
+    )
+
+    # Create necessary directories
+    foreach ($directory in $directories) {
+        if (-not (Test-Path $directory -PathType Container)) {
+            New-Item -ItemType Directory -Force $directory
+        }
+    }
+}
+
 ## Start Installation
 base_install
 registry
@@ -320,4 +340,6 @@ vim_install
 linux
 remove_bloat
 bootloader
+directories
+clone
 
