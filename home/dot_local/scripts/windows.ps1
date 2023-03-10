@@ -78,6 +78,7 @@ function base_install {
     choco install -y 7zip.install           # Archiver
     choco install -y curl  		            # Curl is a command line tool for transferring data with URLs
     choco install -y fzf                    # Fuzzy finder
+    choco install -y gh                     # Github cli
     choco install -y git.install            # Git
     choco install -y googlechrome 	        # Web browser
     choco install -y linkshellextension     # Make links from explorer

@@ -14,6 +14,20 @@ function admin
     }
 }
 
+function clone-all {
+    # gh repo list myorgname --limit 1000 | while read -r repo _; do
+    # gh repo clone "$repo" "$repo"
+    # done
+    $orgName = "cuberhaus"
+    $repos = gh repo list $orgName --limit 1000
+
+    foreach ($repo in $repos) {
+        $repoName = $repo.Split()[0]
+        git clone $repoName
+    }
+
+}
+
 function Update-AppManagement {
     Try {
         $appManagementClass = Get-CimInstance -Namespace "Root\cimv2\mdm\dmmap" -ClassName "MDM_EnterpriseModernAppManagement_AppManagement01" -ErrorAction Stop
