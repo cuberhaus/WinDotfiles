@@ -3,3 +3,6 @@
 	name = cuberhaus
 [safe]
 	directory = C:/Users/polcg/.local/share/chezmoi
+	directory = C:/Users/polcg/repos/MD
+	directory = C:/Users/polcg/repos/fib
+	directory = C:/Users/polcg/repos/docs
