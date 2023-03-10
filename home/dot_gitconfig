@@ -1,3 +1,5 @@
 [user]
 	email = polcg10@gmail.com
 	name = cuberhaus
+[safe]
+	directory = C:/Users/polcg/.local/share/chezmoi
