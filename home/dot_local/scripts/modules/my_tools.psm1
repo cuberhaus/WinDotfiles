@@ -23,7 +23,8 @@ function clone-all {
 
     foreach ($repo in $repos) {
         $repoName = $repo.Split()[0]
-        git clone $repoName
+        Write-Host $repoName
+        gh repo clone $repoName
     }
 
 }
