@@ -13,10 +13,10 @@ $principal = New-Object Security.Principal.WindowsPrincipal $identity
 $isAdmin = $principal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
 
 Import-Module git-aliases -DisableNameChecking
-Import-Module -Name "$modules\my_git.psm1"
-Import-Module -Name "$modules\my_shortcuts.psm1"
-Import-Module -Name "$modules\my_rclone.psm1"
-Import-Module -Name "$modules\my_tools.psm1"
+Import-Module -DisableNameChecking -Name "$modules\my_git.psm1"
+Import-Module -DisableNameChecking -Name "$modules\my_shortcuts.psm1"
+Import-Module -DisableNameChecking -Name "$modules\my_rclone.psm1"
+Import-Module -DisableNameChecking -Name "$modules\my_tools.psm1"
 Import-Module 'C:\tools\poshgit\dahlbyk-posh-git-9bda399\src\posh-git.psd1'
 
 # ALIASES MUST GO AFTER MODULE IMPORTS AND CAN'T GO INSIDE MODULES
