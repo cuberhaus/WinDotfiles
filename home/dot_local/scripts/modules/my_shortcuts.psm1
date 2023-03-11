@@ -18,6 +18,9 @@ function n { notepad $args }
 function o {
     explorer .
 }
+function cr {
+    Set-Location $HOME/repos
+}
 # Navegation "cd"
 function .. {
     Set-Location ..
