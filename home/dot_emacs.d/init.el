@@ -52,7 +52,6 @@
        (setq target1-file "~/dotfiles/dotfiles/.config/my_emacs/init.el")
  (setq emacs-babel-config-file (concat home-dir "/dotfiles/dotfiles/.config" "/emacs.org")) ;; this has to be with /dotfiles/dotfiles
        )
-
        ;; Linux-specific code goes here.
       ((eq system-type 'gnu/linux)
       (setq custom-file custom-file-unix)
