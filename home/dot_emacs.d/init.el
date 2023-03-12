@@ -8,13 +8,13 @@
 (setq use-package-verbose t) ;; debug to see which packages load, and maybe shouldn't, should be off
 
 ;; Define the target file list
- ;; (setq my-target-files '("~/dotfiles/dotfiles/.config/my_emacs/init.el" "~/repos/WinDotfiles/home/dot_emacs.d/init.el"))
  ;; Intermediate paths
  (setq home-dir (getenv "HOME"))
  (setq docs-dir (concat home-dir "/repos/docs"))
  (setq config-dir (concat  home-dir "/.config"))
  (setq cache-dir (concat home-dir "/.cache"))
  (setq org-dir-string "/org")
+
  (setq default-directory (concat home-dir "/")) ;; Search default directory
 
  ;; Paths that are used in the code
