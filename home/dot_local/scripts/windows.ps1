@@ -264,6 +264,8 @@ function path {
     [Environment]::SetEnvironmentVariable("PATH", $Env:PATH + ";C:\Program Files\Sublime Text 3\", [EnvironmentVariableTarget]::Machine)
     [Environment]::SetEnvironmentVariable("VISUAL", "code --wait", [EnvironmentVariableTarget]::Machine)
     [Environment]::SetEnvironmentVariable("EDITOR", "code --wait", [EnvironmentVariableTarget]::Machine)
+    [Environment]::SetEnvironmentVariable("HOME", "C:\Users\polcg", [EnvironmentVariableTarget]::Machine)
+    setx HOME %USERPROFILE%
     [Environment]::SetEnvironmentVariable("cho", "$cho", [EnvironmentVariableTarget]::Machine)
 }
 function remove_bloat {
