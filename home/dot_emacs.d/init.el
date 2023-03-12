@@ -8,20 +8,43 @@
 
 (setq use-package-verbose t) ;; debug to see which packages load, and maybe shouldn't, should be off
 
+(setq home-dir (getenv "HOME"))
+(setq docs-dir (concat home-dir "/repos/docs"))
+(setq config-dir (concat  home-dir "/.config"))
+(setq cache-dir (concat home-dir "/.cache"))
+(setq org-dir-string "/org")
+
+(setq org-roam-dir (concat docs-dir org-dir-string "/roam"))
+(setq journal-dir (concat docs-dir org-dir-string "/Journal.org"))
+(setq tasks-dir (concat docs-dir org-dir-string "/Tasks.org"))
+(setq metrics-dir (concat docs-dir org-dir-string "/Metrics.org"))
+(setq habits-dir (concat docs-dir org-dir-string "/Habits.org"))
+(setq birthday-dir (concat docs-dir org-dir-string "/birthday.org"))
+(setq custom-file-unix (concat config-dir "/my_emacs/custom.el"))
+(setq custom-file-windows (concat home-dir "/.emacs.d/custom.el"))
+(setq languagetool-server-dir (concat home-dir "/.config/texstudio/dictionaries/LanguageTool-5.7/languagetool-server.jar"))
+(setq spell-fu-dir (concat config-dir "/spell_fu"))
+(setq ispell-personal-dir (concat config-dir "/spell_fu/.pws"))
+(setq user-emacs-dir (concat home-dir "/.cache/emacs/"))
+(setq url-history-dir (expand-file-name "url/history" user-emacs-dir))
+(setq desktop-dir (concat home-dir "/.emacs.d/"))
+(setq emacs-babel-config-file (concat config-dir "/emacs.org"))
+(setq doom-snippets-dir "~/.config/snippets")
+
 (cond ((eq system-type 'windows-nt)
        ;; Windows-specific code goes here.
-      (setq custom-file "~/.emacs.d/custom.el")
+      (setq custom-file custom-file-windows)
        )
        ;; Mac-specific code goes here.
       ((eq system-type 'darwin)
-      (setq custom-file "~/.config/my_emacs/custom.el")
+      (setq custom-file custom-file-unix)
        )
        ;; Linux-specific code goes here.
       ((eq system-type 'gnu/linux)
-      (setq custom-file "~/.config/my_emacs/custom.el")
+      (setq custom-file custom-file-unix)
        )
        )
-(load custom-file)
+    (load custom-file)
 
 ;; Initialize package sources
 (require 'package) ; bring in package module
@@ -322,13 +345,12 @@
       :ensure t
       :hook (text-mode . flycheck-languagetool-setup)
       :init
-      (setq flycheck-languagetool-server-jar (concat (getenv "HOME") "/.config/texstudio/dictionaries/LanguageTool-5.7/languagetool-server.jar")))
+      (setq flycheck-languagetool-server-jar languagetool-server-dir))
 (setq flycheck-languagetool-language "es")
 
 ;; in arch linux use languagetool path
                 ;; (setq langtool-java-classpath
                 ;;       "/usr/share/languagetool:/usr/share/java/languagetool/*")
-    (setq langtool-language-tool-server-jar (concat (getenv "HOME") "/.config/texstudio/dictionaries/LanguageTool-5.7/languagetool-server.jar"))
 (setq langtool-server-user-arguments '("-p" "8085")) ;; this makes it possible to run two servers, or rather two connections to the server from flycheck-languagetool for on the fly highlight and langtool for correction suggestions (GODLIKE)
                     (use-package langtool
                       :commands (langtool-check langtool-check-done))
@@ -358,8 +380,8 @@
     (setq ispell-dictionary "es") ;; sets spanish as default
       (setq ispell-program-name "aspell") ;; already points to aspell
       (setq ispell-extra-args '("--sug-mode=ultra" "--lang=es"))
-              (setq spell-fu-directory "~/.config/spell_fu") ;; Please create this directory manually. where spell_fu stores stuff
-              (setq ispell-personal-dictionary "~/.config/spell_fu/.pws") ;;spell_fu stores stuff here
+              (setq spell-fu-directory spell-fu-dir) ;; Please create this directory manually. where spell_fu stores stuff
+              (setq ispell-personal-dictionary ispell-personal-dir) ;;spell_fu stores stuff here
               ;; (spell-fu-dictionary-add (spell-fu-get-ispell "es"))
               ;; (spell-fu-dictionary-add (spell-fu-get-ispell "en"))
               ;; (spell-fu-dictionary-add (spell-fu-get-ispell "ca"))
@@ -380,8 +402,8 @@
 (flyspell-lazy-mode 1)
 
 ;; Change the user-emacs-directory to keep unwanted things out of ~/.emacs.d
-(setq user-emacs-directory (expand-file-name "~/.cache/emacs/")
-      url-history-file (expand-file-name "url/history" user-emacs-directory))
+(setq user-emacs-directory user-emacs-dir
+      url-history-file url-history-dir)
 
 ;; NOTE: If you want to move everything out of the ~/.emacs.d folder
 ;; reliably, set `user-emacs-directory` before loading no-littering!
@@ -419,8 +441,9 @@
 ;; (desktop-save-mode 1)
 
 ;; use only one desktop
-(setq desktop-path '("~/.emacs.d/"))
-(setq desktop-dirname "~/.emacs.d/")
+
+(setq desktop-path '(desktop-dir))
+(setq desktop-dirname desktop-dir)
 (setq desktop-base-file-name "emacs-desktop")
 
 ;; remove desktop after it's been read
@@ -852,6 +875,9 @@ _h_ decrease width    _l_ increase width
               (kill-buffer)))
       (message "Not a file visiting buffer!"))))
 
+(add-to-list 'dnd-protocol-alist
+             '("^file:///.*\\.png" . org-insert-link))
+
 (with-eval-after-load 'org
     (require 'org-tempo)
     (add-to-list 'org-structure-template-alist '("py" . "src python"))
@@ -929,9 +955,9 @@ _h_ decrease width    _l_ increase width
   (setq org-log-done 'time) ;; logs when a task goes to done C-h-v (describe variable)
   (setq org-log-into-drawer t) ;; collapse logs into a drawer
   (setq org-agenda-files
-        '("~/docs/org/birthday.org"
-          "~/docs/org/Tasks.org"
-          "~/docs/org/Habits.org"
+        (list birthday-dir
+          tasks-dir
+          habits-dir
           ))
 
   (require 'org-habit)
@@ -1014,28 +1040,28 @@ _h_ decrease width    _l_ increase width
 
  (setq org-capture-templates
     `(("t" "Tasks / Projects")
-      ("tt" "Task" entry (file+olp "~/docs/org/Tasks.org" "Inbox")
+      ("tt" "Task" entry (file+olp tasks-dir "Inbox")
            "* TODO %?\n  %U\n  %a\n  %i" :empty-lines 1)
 
       ("j" "Journal Entries")
       ("jj" "Journal" entry
-           (file+olp+datetree "~/docs/org/Journal.org")
+           (file+olp+datetree journal-dir)
            "\n* %<%I:%M %p> - Journal :journal:\n\n%?\n\n"
            ;; ,(dw/read-file-as-string "~/Notes/Templates/Daily.org")
            :clock-in :clock-resume
            :empty-lines 1)
       ("jm" "Meeting" entry
-           (file+olp+datetree "~/docs/org/Journal.org")
+           (file+olp+datetree journal-dir)
            "* %<%I:%M %p> - %a :meetings:\n\n%?\n\n"
            :clock-in :clock-resume
            :empty-lines 1)
 
       ("w" "Workflows")
-      ("we" "Checking Email" entry (file+olp+datetree "~/docs/org/Journal.org")
+      ("we" "Checking Email" entry (file+olp+datetree journal-dir)
            "* Checking Email :email:\n\n%?" :clock-in :clock-resume :empty-lines 1)
 
       ("m" "Metrics Capture")
-      ("mw" "Weight" table-line (file+headline "~/docs/org/Metrics.org" "Weight")
+      ("mw" "Weight" table-line (file+headline metrics-dir "Weight")
        "| %U | %^{Weight} | %^{Notes} |" :kill-buffer t)))
 
   )
@@ -1066,10 +1092,9 @@ _h_ decrease width    _l_ increase width
 (add-hook 'org-mode-hook 'org-fragtog-mode) ;; This should enable org-fragtog when entering org-mode
 
 ;; Automatically tangle our Emacs.org config file when we save it
-
 (defun efs/org-babel-tangle-config ()
   (when (string-equal (buffer-file-name)
-                      (expand-file-name "~/dotfiles/dotfiles/.config/emacs.org"))
+                      (expand-file-name emacs-babel-config-file))
     ;; Dynamic scoping to the rescue
     (let ((org-confirm-babel-evaluate nil))
       (org-babel-tangle))))
@@ -1081,7 +1106,7 @@ _h_ decrease width    _l_ increase width
       :init
       (setq org-roam-v2-ack t)
       :custom
-      (org-roam-directory "~/docs/org/roam")
+      (org-roam-directory org-roam-dir)
       (org-roam-completion-everywhere t)
       (org-roam-capture-templates
        '(("d" "default" plain ;; first template should be default one cause keybindings ahead will use that for fast typing
@@ -1433,13 +1458,22 @@ _h_ decrease width    _l_ increase width
 (use-package ccls
   :hook (c-mode c++-mode objc-mode))
 
+(use-package matlab-mode
+  :ensure t
+  :mode "\\.m\\'"
+  :init
+  (setq matlab-indent-function t) ; if you want function bodies indented
+  (setq matlab-shell-command "matlab")
+  :config
+  (setq matlab-indent-level 4)) ; set indentation level to 2 spaces
+
 (use-package lsp-java
   :hook (java-mode . lsp-deferred))
 
 ;; ;; yasnippet code 'optional', before auto-complete
 (use-package yasnippet)
 (use-package doom-snippets ;; this gets you nice snippets to use just tab and they will complete for you
-  :load-path "~/.config/snippets"
+  :load-path doom-snippets-dir
   :after yasnippet)
 ;; (use-package yasnippets-latex)
 (yas-global-mode 1)
@@ -1684,28 +1718,28 @@ _h_ decrease width    _l_ increase width
 
 ;; (use-package tomatinho)
 
-(use-package openwith
-  :commands (openwith-mode)
-  :config
-  (setq openwith-associations
-        (list
-          (list (openwith-make-extension-regexp
-                '("mpg" "mpeg" "mp3" "mp4"
-                  "avi" "wmv" "wav" "mov" "flv"
-                  "ogm" "ogg" "mkv"))
-                "vlc"
-                '(file))
-          (list (openwith-make-extension-regexp
-                '("xbm" "pbm" "pgm" "ppm" "pnm"
-                  "png" "gif" "bmp" "tif" "jpeg")) ;; Removed jpg because Telega was
-                  ;; causing feh to be opened...
-                  "feh"
-                  '(file))
-          (list (openwith-make-extension-regexp
-                '("pdf"))
-                "zathura"
-                '(file))))
-  )
+;; (use-package openwith
+;;   :commands (openwith-mode)
+;;   :config
+;;   (setq openwith-associations
+;;         (list
+;;           (list (openwith-make-extension-regexp
+;;                 '("mpg" "mpeg" "mp3" "mp4"
+;;                   "avi" "wmv" "wav" "mov" "flv"
+;;                   "ogm" "ogg" "mkv"))
+;;                 "vlc"
+;;                 '(file))
+;;           (list (openwith-make-extension-regexp
+;;                 '("xbm" "pbm" "pgm" "ppm" "pnm"
+;;                   "png" "gif" "bmp" "tif" "jpeg")) ;; Removed jpg because Telega was
+;;                   ;; causing feh to be opened...
+;;                   "feh"
+;;                   '(file))
+;;           (list (openwith-make-extension-regexp
+;;                 '("pdf"))
+;;                 "zathura"
+;;                 '(file))))
+;;   )
 
 ;; after startup, it is important you reset this to some reasonable default. A large 
 ;; gc-cons-threshold will cause freezing and stuttering during long-term 
