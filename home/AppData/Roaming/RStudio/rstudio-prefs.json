@@ -32,5 +32,8 @@
         "console_left_on_top": false,
         "console_right_on_top": true,
         "additional_source_columns": 0
-    }
+    },
+    "auto_save_on_blur": true,
+    "auto_save_on_idle": "commit",
+    "auto_save_idle_ms": 500
 }
