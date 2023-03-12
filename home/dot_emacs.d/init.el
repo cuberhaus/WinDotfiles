@@ -7,14 +7,13 @@
 
 (setq use-package-verbose t) ;; debug to see which packages load, and maybe shouldn't, should be off
 
-(defun my/org-taangle-to-multiple-targets ()
+(defun my/org-tangle-to-multiple-targets ()
   "Tangle the source file to two target files."
   (interactive)
   (let ((source-file  "~/dotfiles/dotfiles/.config/emacs.org")
         (target2-file "~/repos/WinDotfiles/home/dot_emacs.d/init.el")
         (target1-file "~/dotfiles/dotfiles/.config/my_emacs/init.el"))
- (org-babel-tangle-file source-file target1-file)
- ;; (org-babel-tangle-file source-file target2-file)
+ (org-babel-tangle-file source-file target1-file "emacs-lisp")
 (copy-file target1-file target2-file t)   
     ))
 
@@ -1114,8 +1113,10 @@ _h_ decrease width    _l_ increase width
                       (expand-file-name emacs-babel-config-file))
     ;; Dynamic scoping to the rescue
     (let ((org-confirm-babel-evaluate nil))
-      (org-babel-tangle))))
+      (my/org-tangle-to-multiple-targets) )))
 (add-hook 'org-mode-hook (lambda () (add-hook 'after-save-hook #'efs/org-babel-tangle-config))) ;; add hook to org mode
+
+;; (org-babel-tangle)  instead of my/org-tangle, before
 
 (use-package org-roam
       ;; :ensure t
