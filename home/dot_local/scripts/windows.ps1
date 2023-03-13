@@ -334,6 +334,9 @@ function directories {
         }
     }
 }
+function fonts() {
+    # Install fonts
+}
 
 ## Start Installation
 base_install
