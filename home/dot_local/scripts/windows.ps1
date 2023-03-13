@@ -121,11 +121,11 @@ function emacs {
 
 function full_install {
     pip3 install pipenv
-    choco install -y cmake                  # Cmake (emacs)
     choco install -y autohotkey.portable    # Automation software
     choco install -y calibre                # Books manager
     choco install -y ccleaner  	            # Cleanup
     choco install -y choco-cleaner          # Delete caches from chocolatey
+    choco install -y cmake                  # Cmake (emacs)
     choco install -y discord                # Discord
     choco install -y geforce-experience     # Nvidia card updates
     choco install -y gimp                   # Photoshop
@@ -133,6 +133,7 @@ function full_install {
     choco install -y greenshot              # Better screenshots
     choco install -y libreoffice-still      # Office suite
     choco install -y malwarebytes           # Anti-virus
+    choco install -y miktex                 # Latex (emacs needs it)
     choco install -y mobaxterm              # PAR (makes wxparaver WORK)
     choco install -y obsidian               # Readme editor
     choco install -y openjdk                # Open source java development kit
@@ -151,6 +152,7 @@ function full_install {
     choco install -y unifying               # Logitech unifying devices add and remove
     choco install -y vlc 		            # Media player
     choco install -y vscode                 # GUI Editor
+
     # choco install -y autoruns         # What programs are configured to startup automatically
 }
 
@@ -187,6 +189,7 @@ function optional {
     choco install -y tomighty               # Pomodoro timer
     choco install -y virtualbox             # Virtualization tool
     choco install -y wireshark              # Network protocol analyzer
+    # choco install -y texlive                # Latex (emacs needs it) not working
     
     # Garbage
     # choco install -y doublecmd              # ranger?
