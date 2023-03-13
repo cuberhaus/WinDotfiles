@@ -53,7 +53,6 @@
        (setq target2-file (concat home-dir "/.local/share/chezmoi/home/dot_emacs.d/init.el"))
        (setq target1-file (concat home-dir "/repos/dotfiles/.config/my_emacs/init.el"))
        (setq emacs-babel-config-file (concat home-dir "/repos/dotfiles/.config" "/emacs.org")) ;; this has to be with /dotfiles/dotfiles
-  (setq org-format-latex-options (plist-put org-format-latex-options :scale 1.0))
       )
        ;; Mac-specific code goes here.
       ((eq system-type 'darwin)
@@ -62,7 +61,6 @@
        (setq target2-file "~/repos/WinDotfiles/home/dot_emacs.d/init.el")
        (setq target1-file "~/dotfiles/dotfiles/.config/my_emacs/init.el")
  (setq emacs-babel-config-file (concat home-dir "/dotfiles/dotfiles/.config" "/emacs.org")) ;; this has to be with /dotfiles/dotfiles
-  (setq org-format-latex-options (plist-put org-format-latex-options :scale 2.0))
        )
        ;; Linux-specific code goes here.
       ((eq system-type 'gnu/linux)
@@ -71,7 +69,6 @@
        (setq target2-file "~/repos/WinDotfiles/home/dot_emacs.d/init.el")
        (setq target1-file "~/dotfiles/dotfiles/.config/my_emacs/init.el")
  (setq emacs-babel-config-file (concat home-dir "/dotfiles/dotfiles/.config" "/emacs.org")) ;; this has to be with /dotfiles/dotfiles
-  (setq org-format-latex-options (plist-put org-format-latex-options :scale 1.0))
        )
        )
 
@@ -902,6 +899,19 @@ _h_ decrease width    _l_ increase width
   :commands (org-capture org-agenda)
   :hook (org-mode . efs/org-mode-setup)
   :config
+(cond ((eq system-type 'windows-nt)
+       ;; Windows-specific code goes here.
+  (setq org-format-latex-options (plist-put org-format-latex-options :scale 1.0))
+      )
+       ;; Mac-specific code goes here.
+      ((eq system-type 'darwin)
+  (setq org-format-latex-options (plist-put org-format-latex-options :scale 2.0))
+       )
+       ;; Linux-specific code goes here.
+      ((eq system-type 'gnu/linux)
+       (setq org-format-latex-options (plist-put org-format-latex-options :scale 1.0))
+       )
+       )
   (message "Org mode loaded")
   (setq org-ellipsis " ▾"
         org-hide-emphasis-markers t ;; this hides emphasis markers like bold or itallics
