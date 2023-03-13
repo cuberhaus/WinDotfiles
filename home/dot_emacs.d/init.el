@@ -37,8 +37,6 @@
 (setq metrics-dir (concat docs-dir org-dir-string "/Metrics.org"))
 (setq habits-dir (concat docs-dir org-dir-string "/Habits.org"))
 (setq birthday-dir (concat docs-dir org-dir-string "/birthday.org"))
-(setq custom-file-unix (concat config-dir "/my_emacs/custom.el"))
-(setq custom-file-windows (concat home-dir "/.emacs.d/custom.el"))
 (setq languagetool-server-dir (concat cache-dir "/texstudio/dictionaries/LanguageTool-5.7/languagetool-server.jar"))
 (setq spell-fu-dir (concat config-dir "/spell_fu"))
 (setq ispell-personal-dir (concat config-dir "/spell_fu/.pws"))
@@ -46,29 +44,25 @@
 ;; (setq emacs-babel-config-file (concat config-dir "/emacs.org"))
 (setq doom-snippets-dir (concat config-dir "/snippets"))
 
+(setq source-file  (concat unix-dotfiles-dir "/.config/emacs.org"))
+(setq target2-file (concat windows-dotfiles-dir "/dot_emacs.d/init.el"))
+(setq target1-file (concat unix-dotfiles-dir "/.config/my_emacs/init.el"))
+(setq emacs-babel-config-file (concat unix-dotfiles-dir "/.config" "/emacs.org")) ;; this has to be with /dotfiles/dotfiles
+
 (cond ((eq system-type 'windows-nt)
        ;; Windows-specific code goes here.
-      (setq custom-file custom-file-windows)
-       (setq source-file  (concat home-dir "/repos/dotfiles/.config/emacs.org"))
-       (setq target2-file (concat home-dir "/.local/share/chezmoi/home/dot_emacs.d/init.el"))
-       (setq target1-file (concat home-dir "/repos/dotfiles/.config/my_emacs/init.el"))
-       (setq emacs-babel-config-file (concat home-dir "/repos/dotfiles/.config" "/emacs.org")) ;; this has to be with /dotfiles/dotfiles
+      ;; (setq custom-file custom-file-windows)
+      (setq custom-file (concat home-dir "/.emacs.d/custom.el"))
       )
        ;; Mac-specific code goes here.
       ((eq system-type 'darwin)
-       (setq custom-file custom-file-unix)
-       (setq source-file  "~/dotfiles/dotfiles/.config/emacs.org")
-       (setq target2-file "~/repos/WinDotfiles/home/dot_emacs.d/init.el")
-       (setq target1-file "~/dotfiles/dotfiles/.config/my_emacs/init.el")
- (setq emacs-babel-config-file (concat home-dir "/dotfiles/dotfiles/.config" "/emacs.org")) ;; this has to be with /dotfiles/dotfiles
+       (setq custom-file (concat config-dir "/my_emacs/custom.el"))
+       ;; (setq custom-file custom-file-unix)
        )
        ;; Linux-specific code goes here.
       ((eq system-type 'gnu/linux)
-      (setq custom-file custom-file-unix)
-       (setq source-file  "~/dotfiles/dotfiles/.config/emacs.org")
-       (setq target2-file "~/repos/WinDotfiles/home/dot_emacs.d/init.el")
-       (setq target1-file "~/dotfiles/dotfiles/.config/my_emacs/init.el")
- (setq emacs-babel-config-file (concat home-dir "/dotfiles/dotfiles/.config" "/emacs.org")) ;; this has to be with /dotfiles/dotfiles
+       ;; (setq custom-file custom-file-unix)
+       (setq custom-file (concat config-dir "/my_emacs/custom.el"))
        )
        )
 
@@ -122,13 +116,6 @@
 ;; (straight-use-package 'use-package)
 
 ;; Clean up unused repos with `straight-remove-unused-repos'
-
-;; (setq inhibit-startup-message t) ; Disable startup menu
-;; (scroll-bar-mode -1) ; Disable the scrollbar
-;; (tool-bar-mode -1)
-;; ;(tooltip-mode -1) disable tooltips ;; (text displayed when hovering over an element)
-;; (set-fringe-mode 10) ; Make some space
-;; (menu-bar-mode -1) ;; remove top bar
 
 ;; (setq vc-follow-symlinks nil) ;; or never follow them
 
