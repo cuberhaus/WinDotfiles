@@ -13,6 +13,18 @@
 (setq config-dir (concat  home-dir "/.config"))
 (setq cache-dir (concat home-dir "/.cache"))
 (setq org-dir-string "/org")
+(cond ((eq system-type 'windows-nt)
+       (setq unix-dotfiles-dir (concat home-dir "/repos/dotfiles"))
+       (setq windows-dotfiles-dir (concat home-dir "/.local/share/chezmoi/home/"))
+       )
+      ((eq system-type 'darwin)
+       (setq unix-dotfiles-dir (concat home-dir "/dotfiles/dotfiles"))
+       (setq windows-dotfiles-dir (concat home-dir "/repos/WinDotfiles"))
+       )
+      ((eq system-type 'gnu/linux))
+       (setq unix-dotfiles-dir (concat home-dir "/dotfiles/dotfiles"))
+       (setq windows-dotfiles-dir (concat home-dir "/repos/WinDotfiles"))
+      )
 
 (setq default-directory (concat home-dir "/")) ;; Search default directory
 
@@ -1526,7 +1538,6 @@ _h_ decrease width    _l_ increase width
   :config
   (setq explicit-shell-file-name "zsh") ;; Change this to zsh, etc
   ;;(setq explicit-zsh-args '())         ;; Use 'explicit-<shell>-args for shell-specific args
-
   ;; Match the default Bash shell prompt.  Update this if you have a custom prompt
   (setq term-prompt-regexp "^[^#$%>\n]*[#$%>] *"))
 
@@ -1659,8 +1670,6 @@ _h_ decrease width    _l_ increase width
   (pomodoro-add-to-mode-line)
   (setq pomodoro-inhibit-prompting-messages nil)
   (setq pomodoro-desktop-notification nil)
-
-;; (use-package tomatinho)
 
 ;; (use-package openwith
 ;;   :commands (openwith-mode)
