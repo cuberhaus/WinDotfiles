@@ -121,6 +121,7 @@ function emacs {
 
 function full_install {
     pip3 install pipenv
+    choco install -y cmake                  # Cmake (emacs)
     choco install -y autohotkey.portable    # Automation software
     choco install -y calibre                # Books manager
     choco install -y ccleaner  	            # Cleanup

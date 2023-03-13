@@ -113,5 +113,36 @@ function status {
         & cmd /c "cd `"$dir`" && git status"
     }
 }
+function absolute-yolo {
+    <#
+    .SYNOPSIS
+    Performs a yolo in all directories containing a .git subdirectory.
+
+    .PARAMETER depth
+    The maximum depth to search for git repositories. Defaults to 2 if not provided.
+
+    .DESCRIPTION
+    This function searches for all directories containing a .git subdirectory and performs a yolo in each of them.
+
+    .EXAMPLE
+    status -depth 3
+
+    This example performs a yolo in all directories containing a .git subdirectory up to a maximum depth of 3.
+
+    .NOTES
+    Author: Pol Casacuberta
+    #>
+    param(
+        [int]$depth = 2
+    )
+    Write-Host "depth: $depth" -ForegroundColor Green
+    # Find all directories containing a .git subdirectory, and loop over them
+    Get-ChildItem -Path . -Directory -Recurse -Force -Depth $depth -Filter ".git" | ForEach-Object {
+        $dir = $_.FullName.Replace("\.git", "")
+        # Change into the directory and perform a git pull in a subshell
+        Write-Host "Entering $dir" -ForegroundColor Green
+        & cmd /c "cd `"$dir`" && git add -A && git commit -m "This is a placeholder" && git push"
+    }
+}
 
 Export-ModuleMember -Function *
