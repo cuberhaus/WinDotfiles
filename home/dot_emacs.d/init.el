@@ -21,9 +21,10 @@
        (setq unix-dotfiles-dir (concat home-dir "/dotfiles/dotfiles"))
        (setq windows-dotfiles-dir (concat home-dir "/repos/WinDotfiles"))
        )
-      ((eq system-type 'gnu/linux))
+      ((eq system-type 'gnu/linux)
        (setq unix-dotfiles-dir (concat home-dir "/dotfiles/dotfiles"))
        (setq windows-dotfiles-dir (concat home-dir "/repos/WinDotfiles"))
+      )
       )
 
 (setq default-directory (concat home-dir "/")) ;; Search default directory
@@ -52,29 +53,28 @@
 (cond ((eq system-type 'windows-nt)
        ;; Windows-specific code goes here.
       ;; (setq custom-file custom-file-windows)
-      (setq custom-file (concat home-dir "/.emacs.d/custom.el"))
-      )
-       ;; Mac-specific code goes here.
+       (setq custom-file (concat home-dir "/.emacs.d/custom.el"))
+       )
+      ;; Mac-specific code goes here.
       ((eq system-type 'darwin)
        (setq custom-file (concat config-dir "/my_emacs/custom.el"))
        ;; (setq custom-file custom-file-unix)
        )
-       ;; Linux-specific code goes here.
+      ;; Linux-specific code goes here.
       ((eq system-type 'gnu/linux)
        ;; (setq custom-file custom-file-unix)
        (setq custom-file (concat config-dir "/my_emacs/custom.el"))
        )
-       )
+      )
 
-    (load custom-file)
+(load custom-file)
 
 (defun my/org-tangle-to-multiple-targets ()
   "Tangle the source file to two target files."
   (interactive)
- (org-babel-tangle-file source-file target1-file "emacs-lisp")
-(copy-file target1-file target2-file t)   
-
-    )
+  (org-babel-tangle-file source-file target1-file "emacs-lisp")
+  (copy-file target1-file target2-file t)   
+  )
 
 ;; Initialize package sources
 (require 'package) ; bring in package module
@@ -1694,7 +1694,6 @@ _h_ decrease width    _l_ increase width
 ;; after startup, it is important you reset this to some reasonable default. A large 
 ;; gc-cons-threshold will cause freezing and stuttering during long-term 
 ;; interactive use. I find these are nice defaults:
-
   (setq gc-cons-threshold 16777216
         gc-cons-percentage 0.1
         file-name-handler-alist last-file-name-handler-alist)
