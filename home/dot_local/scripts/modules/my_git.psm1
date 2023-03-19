@@ -1,18 +1,3 @@
-function yolo {
-    <#
-    .SYNOPSIS
-    Commits and pushes changes to a Git repository.
-
-    .DESCRIPTION
-    This function stages all changes, commits them with a placeholder message, and pushes them to the remote repository.
-
-    .EXAMPLE
-    yolo
-    #>
-    git add -A
-    git commit -m "This is a placeholder"
-    git push
-}
 function g {
     git $args
 }
@@ -113,7 +98,7 @@ function status {
         & cmd /c "cd `"$dir`" && git status"
     }
 }
-function absolute-yolo {
+function yolo {
     <#
     .SYNOPSIS
     Performs a yolo in all directories containing a .git subdirectory.
@@ -125,7 +110,7 @@ function absolute-yolo {
     This function searches for all directories containing a .git subdirectory and performs a yolo in each of them.
 
     .EXAMPLE
-    status -depth 3
+    yolo -depth 3
 
     This example performs a yolo in all directories containing a .git subdirectory up to a maximum depth of 3.
 
@@ -133,8 +118,14 @@ function absolute-yolo {
     Author: Pol Casacuberta
     #>
     param(
-        [int]$depth = 2
+        [int]$depth = 0
     )
+    if ($depth -lt 1) {
+        git add -A
+        git commit -m "This is a placeholder"
+        git push
+        return
+    }
     Write-Host "depth: $depth" -ForegroundColor Green
     # Find all directories containing a .git subdirectory, and loop over them
     Get-ChildItem -Path . -Directory -Recurse -Force -Depth $depth -Filter ".git" | ForEach-Object {
@@ -144,5 +135,20 @@ function absolute-yolo {
         & cmd /c "cd `"$dir`" && git add -A && git commit -m "This is a placeholder" && git push"
     }
 }
+# function yolo {
+#     <#
+#     .SYNOPSIS
+#     Commits and pushes changes to a Git repository.
+
+#     .DESCRIPTION
+#     This function stages all changes, commits them with a placeholder message, and pushes them to the remote repository.
+
+#     .EXAMPLE
+#     yolo
+#     #>
+#     git add -A
+#     git commit -m "This is a placeholder"
+#     git push
+# }
 
 Export-ModuleMember -Function *
