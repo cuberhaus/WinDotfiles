@@ -135,6 +135,45 @@ function yolo {
         & cmd /c "cd `"$dir`" && git add -A && git commit -m "This is a placeholder" && git push"
     }
 }
+function git_recursive {
+    param (
+        [string]$cmd,
+        [int]$depth = 2,
+        [switch]$addKey
+    )
+
+
+    if ($addKey) {
+        ssh-agent
+        ssh-add ~/.ssh/imac
+    }
+
+    # $findParams = @{
+    #     Path = '.'
+    #     Filter = '.git'
+    #     Directory = $true
+    # }
+
+    Write-Host "depth: $depth" -ForegroundColor Green
+
+    Get-ChildItem -Path . -Directory -Recurse -Force -Depth $depth -Filter ".git" | ForEach-Object {
+        $dir = $_.FullName.Replace("\.git", "")
+        # Change into the directory and perform a git pull in a subshell
+        Write-Host "Entering $dir" -ForegroundColor Green
+        & cmd /c "cd `"$dir`" && $cmd "
+    }
+
+    # Get-ChildItem @findParams -ErrorAction SilentlyContinue |
+    #     ForEach-Object {
+    #         $dir = $_.DirectoryName.Replace('\.git', '')
+
+    #         Push-Location $dir | Out-Null
+    #         Write-Host "Executing ""$cmd"" in $dir"
+    #         Invoke-Expression $cmd
+    #         Pop-Location | Out-Null
+    #     }
+}
+
 # function yolo {
 #     <#
 #     .SYNOPSIS
