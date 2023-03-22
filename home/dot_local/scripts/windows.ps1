@@ -3,62 +3,6 @@ $documents = "Documents"
 $cho = "choco install -y " # choco install command
 # Think about adding winget
 
-function Link-Dotfiles {
-    # Set up directory paths
-    $directories = @(
-        "$HOME\Documents\PowerShell",
-        "$HOME\Documents\WindowsPowerShell",
-        "$HOME\AppData\Local\nvim"
-        "$HOME\Documents\Rainmeter\Skins"
-        "$HOME\AppData\Roaming\Rainmeter"
-    )
-
-    # Set up symlink paths
-    $symlinkSources = @(
-        "$HOME\WinDotfiles\AppData\Roaming\Rainmeter\Layouts"
-        "$HOME\WinDotfiles\Documents\Rainmeter\Skins\RSS Feed",
-        "$HOME\WinDotfiles\Documents\PowerShell\profile.ps1",
-        "$HOME\WinDotfiles\Documents\PowerShell\profile.ps1",
-        "$HOME\WinDotfiles\AppData\Local\nvim\init.vim",
-        "$HOME\WinDotfiles\_vimrc",
-        "$HOME\WinDotfiles\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
-    )
-
-    $symlinkDestinations = @(
-        "$HOME\AppData\Roaming\Rainmeter\Layouts"
-        "$HOME\Documents\Rainmeter\Skins\RSS Feed",
-        "$HOME\Documents\WindowsPowerShell\profile.ps1",
-        "$HOME\Documents\PowerShell\profile.ps1",
-        "$HOME\AppData\Local\nvim\init.vim",
-        "$HOME\_vimrc",
-        "$HOME\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
-    )
-
-    # Create necessary directories
-    foreach ($directory in $directories) {
-        if (-not (Test-Path $directory -PathType Container)) {
-            New-Item -ItemType Directory -Force $directory
-        }
-    }
-
-    # Symlink files and directories
-    for ($i = 0; $i -lt $symlinkSources.Count; $i++) {
-        $source = $symlinkSources[$i]
-        $destination = $symlinkDestinations[$i]
-        if (Test-Path $destination) {
-            Remove-Item $destination -Recurse -Force # Remove file or directory if already exists on destination
-        }
-
-        if (Test-Path $source -PathType Container) {
-            # check if source is a directory
-            cmd /c mklink /d $destination $source
-        }
-        elseif (Test-Path $source) {
-            cmd /c mklink $destination $source
-        }
-    }
-}
-
 function base_install {
     # https://github.com/gluons/powershell-git-aliases
 
@@ -114,8 +58,7 @@ function linux {
 function emacs {
     # Add environment variable HOME to C:\Users\polcg\
     # Add $HOME\.emacs.d\bin\doom to path
-    # personal config not working yet on windows
-    # choco install -y emacs           # Editor
+    choco install -y emacs                  # Emacs
     # choco install -y git ripgrep llvm fd hunspell.portable 
 }
 
@@ -154,7 +97,6 @@ function full_install {
     choco install -y vlc 		            # Media player
     choco install -y vscode                 # GUI Editor
 
-    # choco install -y autoruns         # What programs are configured to startup automatically
 }
 
 function optional {
@@ -171,7 +113,7 @@ function optional {
     choco install -y intellijidea-community # Free version java IDE
     choco install -y intellijidea-ultimate  # Paid version with sql IDE
     choco install -y jdk8                   # java v8
-    choco install -y jre8 
+    choco install -y jre8                   # Java runtime environment
     choco install -y notepadplusplus.install # Editor
     choco install -y obs-studio             # Record screen in windows, works with internal audio better than mac
     choco install -y openjdk                # Open source java development kit
@@ -190,17 +132,20 @@ function optional {
     choco install -y tomighty               # Pomodoro timer
     choco install -y virtualbox             # Virtualization tool
     choco install -y wireshark              # Network protocol analyzer
-    # choco install -y texlive                # Latex (emacs needs it) not working
     
+}
+function garbage {
     # Garbage
+    # choco install -y autoruns               # What programs are configured to startup automatically
     # choco install -y doublecmd              # ranger?
-    # choco install -y pswindowsupdate 
-    # choco install -y windirstat      # View file sizes in system to clean up space
     # choco install -y logitech-options       # Old logitech options
+    # choco install -y pswindowsupdate 
     # choco install -y python2  // THIS BREAKS NEOVIM PYTHON
-    # choco install -y reflect-free    # backups (EOL) just use windows (crear una imagen de sistema)
-    # choco install -y veeam-agent     # backups This DESTROYED MY PC
-    # choco install -y wsl2            # Windows subsystem for linux 2
+    # choco install -y reflect-free           # backups (EOL) just use windows (crear una imagen de sistema)
+    # choco install -y texlive                # Latex (emacs needs it) not working
+    # choco install -y veeam-agent            # backups This DESTROYED MY PC
+    # choco install -y windirstat             # View file sizes in system to clean up space
+    # choco install -y wsl2                   # Windows subsystem for linux 2
 }
 
 function vim_install {
@@ -228,11 +173,9 @@ function vim_install {
 }
 
 function registry {
-    # better to just use register
-    # cp $uncap C:\Windows\
     # Swap caps with escape https://github.com/susam/uncap#readme
     reg add "HKLM\SYSTEM\CurrentControlSet\Control\Keyboard Layout" /v "Scancode Map" /t REG_BINARY /d   "00000000000000000300000001003A003A00010000000000" 
-    # To get the current binary value from sharpkeys and change it forever without having to re configurate sharpkeys just replace the binary on the registry entry above
+    # To get the current binary value from sharpkeys and change it forever without having to re configurate sharpkeys just replace the binary on the registry entry above, use this command to get the current value:
     # reg query "HKLM\SYSTEM\CurrentControlSet\Control\Keyboard Layout" /v "Scancode Map"
 
     # Disable sticky keys popup after pressing several times

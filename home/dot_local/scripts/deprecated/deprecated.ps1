@@ -1,3 +1,58 @@
+function Link-Dotfiles {
+    # Set up directory paths
+    $directories = @(
+        "$HOME\Documents\PowerShell",
+        "$HOME\Documents\WindowsPowerShell",
+        "$HOME\AppData\Local\nvim"
+        "$HOME\Documents\Rainmeter\Skins"
+        "$HOME\AppData\Roaming\Rainmeter"
+    )
+
+    # Set up symlink paths
+    $symlinkSources = @(
+        "$HOME\WinDotfiles\AppData\Roaming\Rainmeter\Layouts"
+        "$HOME\WinDotfiles\Documents\Rainmeter\Skins\RSS Feed",
+        "$HOME\WinDotfiles\Documents\PowerShell\profile.ps1",
+        "$HOME\WinDotfiles\Documents\PowerShell\profile.ps1",
+        "$HOME\WinDotfiles\AppData\Local\nvim\init.vim",
+        "$HOME\WinDotfiles\_vimrc",
+        "$HOME\WinDotfiles\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
+    )
+
+    $symlinkDestinations = @(
+        "$HOME\AppData\Roaming\Rainmeter\Layouts"
+        "$HOME\Documents\Rainmeter\Skins\RSS Feed",
+        "$HOME\Documents\WindowsPowerShell\profile.ps1",
+        "$HOME\Documents\PowerShell\profile.ps1",
+        "$HOME\AppData\Local\nvim\init.vim",
+        "$HOME\_vimrc",
+        "$HOME\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
+    )
+
+    # Create necessary directories
+    foreach ($directory in $directories) {
+        if (-not (Test-Path $directory -PathType Container)) {
+            New-Item -ItemType Directory -Force $directory
+        }
+    }
+
+    # Symlink files and directories
+    for ($i = 0; $i -lt $symlinkSources.Count; $i++) {
+        $source = $symlinkSources[$i]
+        $destination = $symlinkDestinations[$i]
+        if (Test-Path $destination) {
+            Remove-Item $destination -Recurse -Force # Remove file or directory if already exists on destination
+        }
+
+        if (Test-Path $source -PathType Container) {
+            # check if source is a directory
+            cmd /c mklink /d $destination $source
+        }
+        elseif (Test-Path $source) {
+            cmd /c mklink $destination $source
+        }
+    }
+}
 function pull_old {
     <#
     .SYNOPSIS
