@@ -36,6 +36,7 @@ function gitsync {
     git submodule sync
     git submodule update --init --recursive
 }
+# Order doesn't matter like in C++, functions can be used before they are defined
 function yolo {
     param(
         [int]$depth = 0
@@ -106,6 +107,33 @@ function status {
         [int]$depth = 2
     )
     git_recursive "git status" $depth
+}
+function fetch {
+    param(
+        [int]$depth = 2
+    )
+    git_recursive "git fetch" $depth
+}
+function merge {
+    param(
+        [int]$depth = 2
+    )
+    git_recursive "git merge" $depth
+}
+function git-add {
+    param(
+        [int]$depth = 2
+    )
+    git_recursive "git add -A" $depth
+}
+# Does this work?
+function commit {
+    param(
+        [int]$depth = 2,
+        [Parameter(ValueFromRemainingArguments=$true)] [string[]]$args
+    )
+    git_recursive "git commit -m $args" $depth
+    
 }
 
 Export-ModuleMember -Function *
