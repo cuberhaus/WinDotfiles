@@ -126,14 +126,13 @@ function git-add {
     )
     git_recursive "git add -A" $depth
 }
-# Does this work?
+# Here, the args parameter is defined with the ValueFromRemainingArguments attribute set to $true. This means that any remaining arguments passed to the function will be captured and assigned to this parameter as an array of strings.
 function commit {
     param(
         [int]$depth = 2,
         [Parameter(ValueFromRemainingArguments=$true)] [string[]]$args
     )
     git_recursive "git commit -m $args" $depth
-    
 }
 
 Export-ModuleMember -Function *
