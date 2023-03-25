@@ -36,106 +36,37 @@ function gitsync {
     git submodule sync
     git submodule update --init --recursive
 }
-function pull {
-    <#
-    .SYNOPSIS
-    Performs a git pull in all directories containing a .git subdirectory.
-
-    .PARAMETER depth
-    The maximum depth to search for git repositories. Defaults to 2 if not provided.
-
-    .DESCRIPTION
-    This function searches for all directories containing a .git subdirectory and performs a git pull in each of them.
-
-    .EXAMPLE
-    pull -depth 3
-
-    This example performs a git pull in all directories containing a .git subdirectory up to a maximum depth of 3.
-
-    .NOTES
-    Author: Pol Casacuberta
-    #>
-    param(
-        [int]$depth = 2
-    )
-    Write-Host "depth: $depth" -ForegroundColor Green
-    # Find all directories containing a .git subdirectory, and loop over them
-    Get-ChildItem -Path . -Directory -Recurse -Force -Depth $depth -Filter ".git" | ForEach-Object {
-        $dir = $_.FullName.Replace("\.git", "")
-        # Change into the directory and perform a git pull in a subshell
-        Write-Host "Pulling $dir" -ForegroundColor Green
-        & cmd /c "cd `"$dir`" && git pull"
-    }
-}
-function status {
-    <#
-    .SYNOPSIS
-    Performs a git status in all directories containing a .git subdirectory.
-
-    .PARAMETER depth
-    The maximum depth to search for git repositories. Defaults to 2 if not provided.
-
-    .DESCRIPTION
-    This function searches for all directories containing a .git subdirectory and performs a git status in each of them.
-
-    .EXAMPLE
-    status -depth 3
-
-    This example performs a git status in all directories containing a .git subdirectory up to a maximum depth of 3.
-
-    .NOTES
-    Author: Pol Casacuberta
-    #>
-    param(
-        [int]$depth = 2
-    )
-    Write-Host "depth: $depth" -ForegroundColor Green
-    # Find all directories containing a .git subdirectory, and loop over them
-    Get-ChildItem -Path . -Directory -Recurse -Force -Depth $depth -Filter ".git" | ForEach-Object {
-        $dir = $_.FullName.Replace("\.git", "")
-        # Change into the directory and perform a git pull in a subshell
-        Write-Host "Entering $dir" -ForegroundColor Green
-        & cmd /c "cd `"$dir`" && git status"
-    }
-}
 function yolo {
-    <#
-    .SYNOPSIS
-    Performs a yolo in all directories containing a .git subdirectory.
-
-    .PARAMETER depth
-    The maximum depth to search for git repositories. Defaults to 2 if not provided.
-
-    .DESCRIPTION
-    This function searches for all directories containing a .git subdirectory and performs a yolo in each of them.
-
-    .EXAMPLE
-    yolo -depth 3
-
-    This example performs a yolo in all directories containing a .git subdirectory up to a maximum depth of 3.
-
-    .NOTES
-    Author: Pol Casacuberta
-    #>
     param(
         [int]$depth = 0
     )
-    if ($depth -lt 1) {
-        git add -A
-        git commit -m "This is a placeholder"
-        git push
-        return
-    }
-    Write-Host "depth: $depth" -ForegroundColor Green
-    # Find all directories containing a .git subdirectory, and loop over them
-    Get-ChildItem -Path . -Directory -Recurse -Force -Depth $depth -Filter ".git" | ForEach-Object {
-        $dir = $_.FullName.Replace("\.git", "")
-        # Change into the directory and perform a git pull in a subshell
-        Write-Host "Entering $dir" -ForegroundColor Green
-        & cmd /c "cd `"$dir`" && git add -A && git commit -m "This is a placeholder" && git push"
-    }
+    git_recursive -cmd "git add -A && git commit -m 'This is a placeholder' && git push" -depth $depth
 }
 function git_recursive {
+    <#
+    .SYNOPSIS
+    Recursively performs a given Git command in all directories containing a .git subdirectory.
+
+    .PARAMETER cmd
+    The Git command to execute in each directory.
+
+    .PARAMETER depth
+    The maximum depth to search for git repositories. Defaults to 2 if not provided.
+
+    .PARAMETER addKey
+    If this switch is provided, it adds the SSH key before executing the Git command.
+
+    .DESCRIPTION
+    This function recursively searches for all directories containing a .git subdirectory up to a maximum depth, specified by the depth parameter. It then changes into each directory and executes the given Git command in a subshell. If the addKey switch is provided, it adds the SSH key before executing the Git command.
+
+    .EXAMPLE
+    git_recursive -cmd "git pull" -depth 3
+
+    This example recursively executes "git pull" in all directories containing a .git subdirectory up to a maximum depth of 3.
+
+    .NOTES
+    Author: Pol Casacuberta
+    #>
     param (
         [string]$cmd,
         [int]$depth = 2,
@@ -148,11 +79,12 @@ function git_recursive {
         ssh-add ~/.ssh/imac
     }
 
-    # $findParams = @{
-    #     Path = '.'
-    #     Filter = '.git'
-    #     Directory = $true
-    # }
+    # This is needed because otherwise the function won't work within a Git repository inside a subdirectory, only in the root directory.
+    if ($depth -lt 1) {
+        Invoke-Expression $cmd
+        # $cmd # Directly executing the command doesn't work for some reason
+        return
+    }
 
     Write-Host "depth: $depth" -ForegroundColor Green
 
@@ -162,32 +94,18 @@ function git_recursive {
         Write-Host "Entering $dir" -ForegroundColor Green
         & cmd /c "cd `"$dir`" && $cmd "
     }
-
-    # Get-ChildItem @findParams -ErrorAction SilentlyContinue |
-    #     ForEach-Object {
-    #         $dir = $_.DirectoryName.Replace('\.git', '')
-
-    #         Push-Location $dir | Out-Null
-    #         Write-Host "Executing ""$cmd"" in $dir"
-    #         Invoke-Expression $cmd
-    #         Pop-Location | Out-Null
-    #     }
 }
-
-# function yolo {
-#     <#
-#     .SYNOPSIS
-#     Commits and pushes changes to a Git repository.
-
-#     .DESCRIPTION
-#     This function stages all changes, commits them with a placeholder message, and pushes them to the remote repository.
-
-#     .EXAMPLE
-#     yolo
-#     #>
-#     git add -A
-#     git commit -m "This is a placeholder"
-#     git push
-# }
+function pull {
+    param(
+        [int]$depth = 2
+    )
+    git_recursive "git pull" $depth
+}
+function status {
+    param(
+        [int]$depth = 2
+    )
+    git_recursive "git status" $depth
+}
 
 Export-ModuleMember -Function *
