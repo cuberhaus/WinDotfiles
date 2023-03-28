@@ -21,6 +21,17 @@ function o {
 function cr {
     Set-Location $HOME/repos
 }
+
+# Never get ls wrong again
+function sl{
+    Get-ChildItem $args
+}
+function l{
+    Get-ChildItem $args
+}
+function s{
+    Get-ChildItem $args
+}
 # Navegation "cd"
 function .. {
     Set-Location ..

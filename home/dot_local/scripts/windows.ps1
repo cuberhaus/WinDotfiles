@@ -64,7 +64,6 @@ function emacs {
 
 function full_install {
     pip3 install pipenv
-    # choco install -y vmware-workstation-player # SI
     choco install -y autohotkey.portable    # Automation software
     choco install -y calibre                # Books manager
     choco install -y ccleaner  	            # Cleanup
@@ -101,6 +100,7 @@ function full_install {
 
 function optional {
     # Probably
+    choco install -y vmware-workstation-player # SI
     choco install -y adobereader  	        # Pdf viewer
     choco install -y audacity               # Audio editor
     choco install -y chocolateygui          # A gui for chocolatey package manager
