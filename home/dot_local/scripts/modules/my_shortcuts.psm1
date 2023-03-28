@@ -29,6 +29,9 @@ function la{
 function sl{
     Get-ChildItem $args
 }
+function ll{
+    Get-ChildItem $args
+}
 function l{
     Get-ChildItem $args
 }
