@@ -23,6 +23,9 @@ function cr {
 }
 
 # Never get ls wrong again
+function la{
+    Get-ChildItem $args
+}
 function sl{
     Get-ChildItem $args
 }
