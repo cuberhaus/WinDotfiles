@@ -82,6 +82,7 @@ function full_install {
     choco install -y openjdk                # Open source java development kit
     choco install -y powertoys              # Powertoys!
     choco install -y pycharm                # Best Python IDE
+    choco install -y pycharm-community      # Free version of pycharm
     choco install -y rainmeter              # "Conky" Rss feed on windows with clickable links
     choco install -y rufus                  # Burn iso's on usb
     choco install -y spotify                # Spotify
