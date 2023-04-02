@@ -101,7 +101,6 @@ function full_install {
 
 function optional {
     # Probably
-    choco install -y vmware-workstation-player # SI
     choco install -y adobereader  	        # Pdf viewer
     choco install -y audacity               # Audio editor
     choco install -y chocolateygui          # A gui for chocolatey package manager
@@ -132,6 +131,7 @@ function optional {
     choco install -y toastify  		        # Toastify adds some missing functionallity to the Spotify client.
     choco install -y tomighty               # Pomodoro timer
     choco install -y virtualbox             # Virtualization tool
+    choco install -y vmware-workstation-player # SI
     choco install -y wireshark              # Network protocol analyzer
     
 }
