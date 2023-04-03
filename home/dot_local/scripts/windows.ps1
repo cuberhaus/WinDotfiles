@@ -59,7 +59,16 @@ function emacs {
     # Add environment variable HOME to C:\Users\polcg\
     # Add $HOME\.emacs.d\bin\doom to path
     choco install -y emacs                  # Emacs
-    # choco install -y git ripgrep llvm fd hunspell.portable 
+    choco install -y git ripgrep llvm fd hunspell.portable 
+
+    # in bash
+    <#
+    [ -f ~/.emacs ] && mv ~/.emacs ~/.emacs.bak
+    [ -d ~/.emacs.d ] && mv ~/.emacs.d ~/.emacs.default
+    git clone https://github.com/plexus/chemacs2.git ~/.emacs.d
+    #> 
+    git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.config/doom-emacs
+    ~/.config/doom-emacs/bin/doom install
 }
 
 function full_install {
@@ -268,16 +277,6 @@ function clone {
     git clone https://github.com/cuberhaus/fib.git
     git clone https://github.com/cuberhaus/dev.git 
     Set-Location $HOME
-}
-function emacs {
-    # in bash
-    <#
-    [ -f ~/.emacs ] && mv ~/.emacs ~/.emacs.bak
-    [ -d ~/.emacs.d ] && mv ~/.emacs.d ~/.emacs.default
-    git clone https://github.com/plexus/chemacs2.git ~/.emacs.d
-    #> 
-    git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.config/doom-emacs
-    ~/.config/doom-emacs/bin/doom install
 }
 
 function directories {

@@ -1,3 +1,6 @@
 [submodule "home/.emacs.d"]
 	path = home/.emacs.d
 	url = https://github.com/plexus/chemacs2
+[submodule "home/dot_config/doom-emacs"]
+	path = home/dot_config/doom-emacs
+	url = https://github.com/hlissner/doom-emacs
