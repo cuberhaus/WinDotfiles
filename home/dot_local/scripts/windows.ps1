@@ -269,6 +269,16 @@ function clone {
     git clone https://github.com/cuberhaus/dev.git 
     Set-Location $HOME
 }
+function emacs {
+    # in bash
+    <#
+    [ -f ~/.emacs ] && mv ~/.emacs ~/.emacs.bak
+    [ -d ~/.emacs.d ] && mv ~/.emacs.d ~/.emacs.default
+    git clone https://github.com/plexus/chemacs2.git ~/.emacs.d
+    #> 
+    git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.config/doom-emacs
+    ~/.config/doom-emacs/bin/doom install
+}
 
 function directories {
     $directories = @(
