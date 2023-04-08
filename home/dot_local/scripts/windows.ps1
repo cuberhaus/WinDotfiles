@@ -123,7 +123,6 @@ function optional {
     choco install -y intellijidea-ultimate  # Paid version with sql IDE
     choco install -y jdk8                   # java v8
     choco install -y jre8                   # Java runtime environment
-    choco install -y notepadplusplus.install # Editor
     choco install -y obs-studio             # Record screen in windows, works with internal audio better than mac
     choco install -y openjdk                # Open source java development kit
     choco install -y pandoc                 # Universal document converter
@@ -149,6 +148,7 @@ function garbage {
     # choco install -y autoruns               # What programs are configured to startup automatically
     # choco install -y doublecmd              # ranger?
     # choco install -y logitech-options       # Old logitech options
+    # choco install -y notepadplusplus.install # Editor
     # choco install -y pswindowsupdate 
     # choco install -y python2  // THIS BREAKS NEOVIM PYTHON
     # choco install -y reflect-free           # backups (EOL) just use windows (crear una imagen de sistema)
