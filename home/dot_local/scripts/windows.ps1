@@ -140,11 +140,11 @@ function optional {
     choco install -y tomighty               # Pomodoro timer
     choco install -y virtualbox             # Virtualization tool
     choco install -y vmware-workstation-player # SI
-    choco install -y wireshark              # Network protocol analyzer
-    
+    choco install -y wireshark              # Network protocol analyzer (needs manual install of npcap)
 }
 function garbage {
     # Garbage
+    # choco install -y winpcap                # Requirement for wireshark (OBSOLETE)
     # choco install -y autoruns               # What programs are configured to startup automatically
     # choco install -y doublecmd              # ranger?
     # choco install -y logitech-options       # Old logitech options
