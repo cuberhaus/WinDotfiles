@@ -42,6 +42,7 @@ function yolo {
         [int]$depth = 0
     )
     git_recursive -cmd "git add -A && git commit -m 'This is a placeholder' && git push" -depth $depth
+    git_recursive -cmd "git add -A && git commit -m 'This is a placeholder' && git push" -depth $depth
 }
 function git_recursive {
     <#
@@ -88,6 +89,7 @@ function git_recursive {
     }
 
     Write-Host "depth: $depth" -ForegroundColor Green
+    Write-Host "cmd: $cmd" -ForegroundColor Green
 
     Get-ChildItem -Path . -Directory -Recurse -Force -Depth $depth -Filter ".git" | ForEach-Object {
         $dir = $_.FullName.Replace("\.git", "")
