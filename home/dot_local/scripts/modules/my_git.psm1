@@ -41,8 +41,9 @@ function yolo {
     param(
         [int]$depth = 0
     )
-    git_recursive -cmd "git add -A && git commit -m 'This is a placeholder' && git push" -depth $depth
-    git_recursive -cmd "git add -A && git commit -m 'This is a placeholder' && git push" -depth $depth
+    # It seems that the inner single quotes have to be double quotes escaped, otherwise the command won't work
+    # git_recursive -cmd "git add -A && git commit -m 'This is a placeholder' && git push" -depth $depth
+    git_recursive -cmd "git add -A && git commit -m `"This is a placeholder`" && git push" -depth $depth
 }
 function git_recursive {
     <#
