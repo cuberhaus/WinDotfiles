@@ -141,6 +141,7 @@ function optional {
     choco install -y virtualbox             # Virtualization tool
     choco install -y vmware-workstation-player # SI
     choco install -y wireshark              # Network protocol analyzer (needs manual install of npcap)
+    choco install -y octave.portable        # Matlab alternative
 }
 function garbage {
     # Garbage
