@@ -19,8 +19,15 @@ function gp {
 function gs {
     git status $args
 }
+# function gsu {
+#     git submodule update --remote --recursive $args
+# }
 function gsu {
-    git submodule update --remote --recursive $args
+    param(
+        [int]$depth = 0,
+        [Parameter(ValueFromRemainingArguments=$true)] [string[]]$args
+    )
+    git_recursive -cmd "git submodule update --remote --recursive $args" $depth
 }
 function gitsync {
     <#
