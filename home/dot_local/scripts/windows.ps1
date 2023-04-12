@@ -105,7 +105,6 @@ function full_install {
     choco install -y unifying               # Logitech unifying devices add and remove
     choco install -y vlc 		            # Media player
     choco install -y vscode                 # GUI Editor
-
 }
 
 function optional {
@@ -124,6 +123,7 @@ function optional {
     choco install -y jdk8                   # java v8
     choco install -y jre8                   # Java runtime environment
     choco install -y obs-studio             # Record screen in windows, works with internal audio better than mac
+    choco install -y octave.portable        # Matlab alternative
     choco install -y openjdk                # Open source java development kit
     choco install -y pandoc                 # Universal document converter
     choco install -y procexp                # Process explorer
@@ -141,11 +141,9 @@ function optional {
     choco install -y virtualbox             # Virtualization tool
     choco install -y vmware-workstation-player # SI
     choco install -y wireshark              # Network protocol analyzer (needs manual install of npcap)
-    choco install -y octave.portable        # Matlab alternative
 }
 function garbage {
     # Garbage
-    # choco install -y winpcap                # Requirement for wireshark (OBSOLETE)
     # choco install -y autoruns               # What programs are configured to startup automatically
     # choco install -y doublecmd              # ranger?
     # choco install -y logitech-options       # Old logitech options
@@ -156,6 +154,7 @@ function garbage {
     # choco install -y texlive                # Latex (emacs needs it) not working
     # choco install -y veeam-agent            # backups This DESTROYED MY PC
     # choco install -y windirstat             # View file sizes in system to clean up space
+    # choco install -y winpcap                # Requirement for wireshark (OBSOLETE)
     # choco install -y wsl2                   # Windows subsystem for linux 2
 }
 
