@@ -48,6 +48,7 @@
         [
             {
                 "colorScheme": "One Half Dark",
+                "commandline": "\"C:\\Program Files\\PowerShell\\7\\pwsh.exe\" -nologo",
                 "font": 
                 {
                     "face": "SauceCodePro NF"
