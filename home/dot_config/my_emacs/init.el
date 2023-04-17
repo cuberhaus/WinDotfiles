@@ -51,23 +51,8 @@
 (setq target2-file (concat windows-dotfiles-dir "/dot_config/my_emacs/init.el"))
 (setq target1-file (concat unix-dotfiles-dir "/.config/my_emacs/init.el"))
 (setq emacs-babel-config-file (concat unix-dotfiles-dir "/.config" "/emacs.org")) ;; this has to be with /dotfiles/dotfiles
+(setq custom-file (concat config-dir "/my_emacs/custom.el"))
 
-(cond ((eq system-type 'windows-nt)
-       ;; Windows-specific code goes here.
-      ;; (setq custom-file custom-file-windows)
-       (setq custom-file (concat config-dir "/my_emacs/custom.el"))
-       )
-      ;; Mac-specific code goes here.
-      ((eq system-type 'darwin)
-       (setq custom-file (concat config-dir "/my_emacs/custom.el"))
-       ;; (setq custom-file custom-file-unix)
-       )
-      ;; Linux-specific code goes here.
-      ((eq system-type 'gnu/linux)
-       ;; (setq custom-file custom-file-unix)
-       (setq custom-file (concat config-dir "/my_emacs/custom.el"))
-       )
-      )
 
 (load custom-file)
 
@@ -598,7 +583,7 @@
       "o" '(:ignore o :which-key "open") 
       "ot" '(vterm-toggle :which-key "Toggle vterm")
       "od" '(vterm-toggle-cd :which-key "Toggle vterm on current folder")
-      "o-" '(dired-jump :which-key "Toggle vterm")
+      "o-" '(dired-jump :which-key "Dired jump")
       "X" '(org-capture :which-key "Org-capture") ;; this is F*** awesome
       "c" '(:ignore c :which-key "code") 
       "cf" '(format-all-buffer :which-key "code") 
