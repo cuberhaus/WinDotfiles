@@ -1,6 +1,6 @@
 function update {
     Try {
-        choco upgrade all -y --except='openjdk, pycharm'
+        choco upgrade all -y --except='openjdk, pycharm, octave.portable'
         Get-WindowsUpdate
         Install-WindowsUpdate
         vim +PlugUpgrade +PlugUpdate +qall
