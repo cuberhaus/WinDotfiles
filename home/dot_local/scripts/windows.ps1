@@ -18,26 +18,29 @@ function base_install {
     [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
     Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
-    # Install packages using Chocolatey
-    choco install -y 7zip.install           # Archiver
-    choco install -y curl  		            # Curl is a command line tool for transferring data with URLs
-    choco install -y fzf                    # Fuzzy finder
-    choco install -y gh                     # Github cli
-    choco install -y git.install            # Git
-    choco install -y googlechrome 	        # Web browser
-    choco install -y linkshellextension     # Make links from explorer
-    choco install -y make                   # Makefiles
-    choco install -y nirlauncher            # Have gui for sysinternals (MUST GO FIRST)
-    choco install -y openssh 	            # SSH client
-    choco install -y poshgit                # Git bar
-    choco install -y powershell-core        # Updated powershell
-    choco install -y python                 # Python
-    choco install -y rclone                 # Git but without version control
-    choco install -y sharpkeys # allows to take a look at this registry entries and add more keybindings easily
-    choco install -y strawberryperl         # Pearl
-    choco install -y wget 		            # A command-line utility for retrieving files using HTTP protocols
-    choco install -y yarn                   # Packages, need it for vim
-    choco install -y zip                    # Zip from terminal
+    $softwareList = @(
+        "7zip.install", # Archiver
+        "curl", # Curl is a command line tool for transferring data with URLs
+        "fzf", # Fuzzy finder
+        "gh", # GitHub CLI
+        "git.install", # Git
+        "googlechrome", # Web browser
+        "linkshellextension", # Make links from Explorer
+        "make", # Makefiles
+        "nirlauncher", # Have GUI for Sysinternals (MUST GO FIRST)
+        "openssh", # SSH client
+        "poshgit", # Git bar
+        "powershell-core", # Updated PowerShell
+        "python", # Python
+        "rclone", # Git but without version control
+        "sharpkeys", # Allows you to manage registry entries and keybindings easily
+        "strawberryperl", # Perl
+        "wget", # A command-line utility for retrieving files using HTTP protocols
+        "yarn", # Packages, needed for Vim
+        "zip"                     # Zip from terminal
+    )
+
+    InstallSoftware $softwareList
 
     # Install git-aliases module
     Install-Module git-aliases -Scope CurrentUser -AllowClobber
@@ -71,92 +74,111 @@ function emacs {
     ~/.config/doom-emacs/bin/doom install
 }
 
+function InstallSoftware($software) {
+    foreach ($app in $software) {
+        Write-Host "Installing $app..."
+        choco install -y $app
+    }
+}
+
 function full_install {
     pip3 install pipenv
-    choco install -y autohotkey.portable    # Automation software
-    choco install -y calibre                # Books manager
-    choco install -y ccleaner  	            # Cleanup
-    choco install -y choco-cleaner          # Delete caches from chocolatey
-    choco install -y cmake                  # Cmake (emacs)
-    choco install -y discord                # Discord
-    choco install -y geforce-experience     # Nvidia card updates
-    choco install -y gimp                   # Photoshop
-    choco install -y git-lfs                # Git large file storage
-    choco install -y greenshot              # Better screenshots
-    choco install -y libreoffice-still      # Office suite
-    choco install -y malwarebytes           # Anti-virus
-    choco install -y miktex                 # Latex (emacs needs it)
-    choco install -y mobaxterm              # PAR (makes wxparaver WORK)
-    choco install -y obsidian               # Readme editor
-    choco install -y openjdk                # Open source java development kit
-    choco install -y powertoys              # Powertoys!
-    choco install -y pycharm                # Best Python IDE
-    choco install -y pycharm-community      # Free version of pycharm
-    choco install -y rainmeter              # "Conky" Rss feed on windows with clickable links
-    choco install -y rufus                  # Burn iso's on usb
-    choco install -y spotify                # Spotify
-    choco install -y sublimemerge           # Editor merge
-    choco install -y sublimetext3           # fast editor
-    choco install -y sysinternals --params "/Sysinternals"  # tools for windows
-    choco install -y thunderbird            # Email client
-    choco install -y tor-browser            # Browse the web without restrictions and without being traced
-    choco install -y transmission           # Simple torrent client
-    choco install -y treesizefree           # View file sizes in system that clog memory
-    choco install -y unifying               # Logitech unifying devices add and remove
-    choco install -y vlc 		            # Media player
-    choco install -y vscode                 # GUI Editor
-    # choco install -y cuda                   # Nvidia cuda
+    # List of software to install
+    $softwareList = @(
+        "autohotkey.portable", # Automation software
+        "calibre", # Books manager
+        "ccleaner", # Cleanup
+        "choco-cleaner", # Delete caches from chocolatey
+        "cmake", # Cmake (emacs)
+        "discord", # Discord
+        "geforce-experience", # Nvidia card updates
+        "gimp", # Photoshop
+        "git-lfs", # Git large file storage
+        "greenshot", # Better screenshots
+        "libreoffice-still", # Office suite
+        "malwarebytes", # Anti-virus
+        "miktex", # Latex (emacs needs it)
+        "mobaxterm", # PAR (makes wxparaver WORK)
+        "obsidian", # Readme editor
+        "openjdk", # Open source java development kit
+        "powertoys", # Powertoys!
+        "pycharm", # Best Python IDE
+        "pycharm-community", # Free version of pycharm
+        "rainmeter", # "Conky" Rss feed on windows with clickable links
+        "rufus", # Burn iso's on usb
+        "spotify", # Spotify
+        "sublimemerge", # Editor merge
+        "sublimetext3", # fast editor
+        "sysinternals", # tools for windows
+        "thunderbird", # Email client
+        "tor-browser", # Browse the web without restrictions and without being traced
+        "transmission", # Simple torrent client
+        "treesizefree", # View file sizes in system that clog memory
+        "unifying", # Logitech unifying devices add and remove
+        "vlc", # Media player
+        "vscode"                  # GUI Editor
+        # "cuda"                   # Nvidia cuda
+    )
+
+    InstallSoftware $softwareList
 }
 
 function optional {
-    choco install -y zotero                 # Bibliography manager
-    choco install -y adobereader  	        # Pdf viewer
-    choco install -y audacity               # Audio editor
-    choco install -y chocolateygui          # A gui for chocolatey package manager
-    choco install -y chromium               # Open source Web browser
-    choco install -y cpu-z.install          # List pc infor
-    choco install -y doxygen.install        # c++ documentation
-    choco install -y eclipse                # java/SQL IDE // doesnt quite work properly??
-    choco install -y firefox                # Open source web browser
-    choco install -y ganttproject           # Gantt 
-    choco install -y intellijidea-community # Free version java IDE
-    choco install -y intellijidea-ultimate  # Paid version with sql IDE
-    choco install -y jdk8                   # java v8
-    choco install -y jre8                   # Java runtime environment
-    choco install -y obs-studio             # Record screen in windows, works with internal audio better than mac
-    choco install -y octave.portable        # Matlab alternative
-    choco install -y openjdk                # Open source java development kit
-    choco install -y pandoc                 # Universal document converter
-    choco install -y procexp                # Process explorer
-    choco install -y putty                  # SSH telnet
-    choco install -y pycharm-community      # Community version
-    choco install -y r.project              # Probabilitat i estadística
-    choco install -y r.studio               # Probabilitat i estadística IDE
-    choco install -y skype 		            # Skype
-    choco install -y slack                  # Slack
-    choco install -y teamviewer             # Control other pc remotely
-    choco install -y telegram               # Telegram
-    choco install -y texstudio              # Latex
-    choco install -y toastify  		        # Toastify adds some missing functionallity to the Spotify client.
-    choco install -y tomighty               # Pomodoro timer
-    choco install -y virtualbox             # Virtualization tool
-    choco install -y vmware-workstation-player # SI
-    choco install -y wireshark              # Network protocol analyzer (needs manual install of npcap)
+    $softwareList = @(
+        "adobereader", # Pdf viewer
+        "audacity", # Audio editor
+        "chocolateygui", # A gui for chocolatey package manager
+        "chromium", # Open source Web browser
+        "cpu-z.install", # List pc infor
+        "doxygen.install", # C++ documentation
+        "eclipse", # Java/SQL IDE
+        "firefox", # Open source web browser
+        "ganttproject", # Gantt chart project management
+        "intellijidea-community", # Free version Java IDE
+        "intellijidea-ultimate", # Paid version with SQL IDE
+        "jdk8", # Java v8
+        "jre8", # Java runtime environment
+        "obs-studio", # Screen recording software
+        "octave.portable", # Matlab alternative
+        "openjdk", # Open source Java Development Kit
+        "pandoc", # Universal document converter
+        "procexp", # Process explorer
+        "putty", # SSH telnet
+        "pycharm-community", # Community version of PyCharm
+        "r.project", # Probabilitat i estadística
+        "r.studio", # Probabilitat i estadística IDE
+        "skype", # Skype
+        "slack", # Slack
+        "teamviewer", # Control other PC remotely
+        "telegram", # Telegram
+        "texstudio", # LaTeX
+        "toastify", # Adds missing functionality to the Spotify client
+        "tomighty", # Pomodoro timer
+        "virtualbox", # Virtualization tool
+        "vmware-workstation-player", # SI
+        "wireshark", # Network protocol analyzer (needs manual install of npcap)
+        "zotero"                   # Bibliography manager
+    )
+
+    InstallSoftware $softwareList
 }
 function garbage {
-    # Garbage
-    # choco install -y autoruns               # What programs are configured to startup automatically
-    # choco install -y doublecmd              # ranger?
-    # choco install -y logitech-options       # Old logitech options
-    # choco install -y notepadplusplus.install # Editor
-    # choco install -y pswindowsupdate 
-    # choco install -y python2  // THIS BREAKS NEOVIM PYTHON
-    # choco install -y reflect-free           # backups (EOL) just use windows (crear una imagen de sistema)
-    # choco install -y texlive                # Latex (emacs needs it) not working
-    # choco install -y veeam-agent            # backups This DESTROYED MY PC
-    # choco install -y windirstat             # View file sizes in system to clean up space
-    # choco install -y winpcap                # Requirement for wireshark (OBSOLETE)
-    # choco install -y wsl2                   # Windows subsystem for linux 2
+    $garbageList = @(
+        # "autoruns",                            # What programs are configured to startup automatically
+        # "doublecmd",                           # ranger?
+        # "logitech-options",                    # Old Logitech Options
+        # "notepadplusplus.install",             # Editor
+        # "pswindowsupdate",
+        # "python2",                             # THIS BREAKS NEOVIM PYTHON
+        # "reflect-free",                        # Backups (EOL) just use Windows (create a system image)
+        # "texlive",                             # LaTeX (emacs needs it) - not working
+        # "veeam-agent",                         # Backups - this destroyed my PC
+        # "windirstat",                          # View file sizes in the system to clean up space
+        # "winpcap",                             # Requirement for Wireshark (OBSOLETE)
+        # "wsl2"                                 # Windows Subsystem for Linux 2
+    )
+
+    InstallSoftware $garbageList
 }
 
 function vim_install {
@@ -194,13 +216,17 @@ function registry {
     Set-ItemProperty -Path . -Name Flags -Value 58 -Type DWord
     Set-Location "$HOME"
 }
-
 function games_install {
-    choco install -y goggalaxy 
-    choco install -y leagueoflegends 
-    choco install -y steam 
-    choco install -y epicgameslauncher 
+    $gamesList = @(
+        "goggalaxy",
+        "leagueoflegends",
+        "steam",
+        "epicgameslauncher"
+    )
+
+    InstallSoftware $gamesList
 }
+
 
 function schedule_tasks {
     # Activate the Windows Time service # not working yet
@@ -296,10 +322,11 @@ function fonts() {
     # Install fonts
 }
 
+# schedule_tasks
+
 ## Start Installation
 base_install
 registry
-# schedule_tasks
 full_install
 vim_install
 linux
