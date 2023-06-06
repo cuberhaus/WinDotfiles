@@ -105,6 +105,7 @@ function full_install {
     choco install -y unifying               # Logitech unifying devices add and remove
     choco install -y vlc 		            # Media player
     choco install -y vscode                 # GUI Editor
+    # choco install -y cuda                   # Nvidia cuda
 }
 
 function optional {
