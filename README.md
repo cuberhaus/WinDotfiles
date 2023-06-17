@@ -24,6 +24,7 @@ Dotfiles are configuration files that are used to customize the behavior of vari
 (irm -useb https://get.chezmoi.io/ps1) | powershell -c -
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
 choco install chezmoi
 chezmoi init https://github.com/cuberhaus/WinDotfiles.git
 chezmoi apply
