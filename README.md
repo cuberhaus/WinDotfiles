@@ -23,7 +23,7 @@ Dotfiles are configuration files that are used to customize the behavior of vari
 ### Installation (One-liner)
 
 ```
-sh -c "$(curl -fsLS get.chezmoi.io)"
+(irm -useb https://get.chezmoi.io/ps1) | powershell -c -
 chezmoi init https://github.com/cuberhaus/WinDotfiles.git
 chezmoi apply
 cd .local\share\chezmoi
