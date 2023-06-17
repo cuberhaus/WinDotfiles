@@ -21,9 +21,10 @@ Dotfiles are configuration files that are used to customize the behavior of vari
 [Dubious ownership](https://stackoverflow.com/questions/73485958/how-to-correct-git-reporting-detected-dubious-ownership-in-repository-withou)
 
 ### Installation (One-liner)
-
-```
 (irm -useb https://get.chezmoi.io/ps1) | powershell -c -
+```
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+choco install chezmoi
 chezmoi init https://github.com/cuberhaus/WinDotfiles.git
 chezmoi apply
 cd .local\share\chezmoi
