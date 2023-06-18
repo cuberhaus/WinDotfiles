@@ -19,6 +19,8 @@ function base_install {
     Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
     $softwareList = @(
+        "nodejs.install", # Nodejs (needed for Vim, npm)
+        "ruby", # Ruby (needed for Vim, gem)
         "7zip.install", # Archiver
         "curl", # Curl is a command line tool for transferring data with URLs
         "fzf", # Fuzzy finder
@@ -106,7 +108,7 @@ function full_install {
         "pycharm-community", # Free version of pycharm
         "rainmeter", # "Conky" Rss feed on windows with clickable links
         "rufus", # Burn iso's on usb
-        "spotify", # Spotify
+        # "spotify", # Spotify there's some errors with the installation
         "sublimemerge", # Editor merge
         "sublimetext3", # fast editor
         "sysinternals", # tools for windows
@@ -182,19 +184,15 @@ function garbage {
 }
 
 function vim_install {
-    choco install -y vim, neovim
+    choco install -y vim neovim
 
     # Install vim-plug for Neovim
-    $plugPath = "$env:LOCALAPPDATA/nvim-data/site/autoload/plug.vim"
-    Invoke-WebRequest -useb "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim" -OutFile $plugPath
-    if (!(Test-Path $plugPath)) { throw "Failed to install vim-plug for Neovim" }
+    Invoke-WebRequest -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
+    New-Item "$env:LOCALAPPDATA/nvim-data/site/autoload/plug.vim" -Force 
 
     # Install vim-plug for PowerShell
-    $vimfilesPath = "$HOME/vimfiles"
-    if (!(Test-Path $vimfilesPath)) { mkdir $vimfilesPath | Out-Null }
-    $plugPath = "$vimfilesPath/autoload/plug.vim"
-    Invoke-WebRequest -useb "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim" -OutFile $plugPath
-    if (!(Test-Path $plugPath)) { throw "Failed to install vim-plug for PowerShell" }
+    Invoke-WebRequest -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
+    New-Item $HOME/vimfiles/autoload/plug.vim -Force 
 
     # Install Neovim support for npm, gem and Python3
     npm install -g neovim
@@ -325,6 +323,7 @@ function fonts() {
 # schedule_tasks
 
 ## Start Installation
+directories
 base_install
 registry
 full_install
@@ -332,6 +331,5 @@ vim_install
 linux
 remove_bloat
 bootloader
-directories
 clone
 
