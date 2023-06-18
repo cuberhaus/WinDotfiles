@@ -1,7 +1,4 @@
 # This profile is only used by Microsoft PowerShell.
-# Check $PROFILE in PowerShell to see which profile is being used.
-# $PROFILE | Format-List * -Force
-
 # $dotfiles = "C:\Users\polcg\WinDotfiles"
 $dotfiles = "C:\Users\polcg\.local\share\chezmoi\home"
 $scripts = "$HOME\.local\scripts"
@@ -15,6 +12,9 @@ Import-Module -Name "$modules\my_shortcuts.psm1"
 Import-Module -Name "$modules\my_rclone.psm1"
 Import-Module -Name "$modules\my_tools.psm1"
 Import-Module 'C:\tools\poshgit\dahlbyk-posh-git-9bda399\src\posh-git.psd1'
+function l{
+    Get-ChildItem -Force -Color
+}
 
 # Import the Chocolatey Profile that contains the necessary code to enable
 # tab-completions to function for `choco`.

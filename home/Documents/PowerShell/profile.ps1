@@ -1,6 +1,5 @@
 # This profile is only used by Microsoft PowerShell.
 # $dotfiles = "C:\Users\polcg\WinDotfiles"
-$cho = "choco install -y " # choco install command
 $dotfiles = "C:\Users\polcg\.local\share\chezmoi\home"
 $scripts = "$HOME\.local\scripts"
 $modules = "$HOME\.local\scripts\modules"
