@@ -299,6 +299,7 @@ function errors {
 function clone {
     Set-Location $HOME\repos
     git clone https://github.com/cuberhaus/docs.git
+    git clone https://github.com/cuberhaus/dotfiles.git
     git clone https://github.com/cuberhaus/fib.git
     git clone https://github.com/cuberhaus/dev.git 
     Set-Location $HOME
