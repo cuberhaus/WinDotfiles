@@ -18,6 +18,14 @@
             "keys": "ctrl+shift+f"
         },
         {
+            "command": "unbound",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+c"
+        },
+        {
             "command": 
             {
                 "action": "splitPane",
@@ -25,14 +33,6 @@
                 "splitMode": "duplicate"
             },
             "keys": "alt+shift+d"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+v"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+c"
         }
     ],
     "copyFormatting": "none",
@@ -116,6 +116,12 @@
                 "hidden": false,
                 "name": "Developer PowerShell for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": true,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl"
             }
         ]
     },
