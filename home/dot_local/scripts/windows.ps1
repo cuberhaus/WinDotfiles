@@ -1,4 +1,4 @@
-$dotfiles = "C:\Users\polcg\WinDotfiles\"
+/$dotfiles = "C:\Users\polcg\WinDotfiles\"
 $documents = "Documents"
 $cho = "choco install -y " # choco install command
 # Think about adding winget
@@ -140,7 +140,7 @@ function optional {
         "intellijidea-ultimate", # Paid version with SQL IDE
         "jdk8", # Java v8
         "jre8", # Java runtime environment
-        "obs-studio", # Screen recording software
+        # "obs-studio", # Screen recording software
         "octave.portable", # Matlab alternative
         "openjdk", # Open source Java Development Kit
         "pandoc", # Universal document converter
@@ -325,4 +325,6 @@ linux
 remove_bloat
 bootloader
 clone
+emacs
+fonts
 
