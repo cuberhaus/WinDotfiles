@@ -1,4 +1,4 @@
-/$dotfiles = "C:\Users\polcg\WinDotfiles\"
+$dotfiles = "C:\Users\polcg\WinDotfiles\"
 $documents = "Documents"
 $cho = "choco install -y " # choco install command
 # Think about adding winget
