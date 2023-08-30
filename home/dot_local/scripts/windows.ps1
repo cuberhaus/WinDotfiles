@@ -127,6 +127,7 @@ function full_install {
 
 function optional {
     $softwareList = @(
+        "anaconda3", # Python IDE
         "adobereader", # Pdf viewer
         "audacity", # Audio editor
         "chocolateygui", # A gui for chocolatey package manager
