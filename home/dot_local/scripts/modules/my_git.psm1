@@ -101,7 +101,7 @@ function git_recursive {
 
     Get-ChildItem -Path . -Directory -Recurse -Force -Depth $depth -Filter ".git" | ForEach-Object {
         $dir = $_.FullName.Replace("\.git", "")
-        # Change into the directory and perform a git pull in a subshell
+        Write-Verbose -Message "Change into the directory and perform a git pull in a subshell" 
         Write-Host "Entering $dir" -ForegroundColor Green
         & cmd /c "cd `"$dir`" && $cmd "
     }
