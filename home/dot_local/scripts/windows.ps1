@@ -29,7 +29,7 @@ function base_install {
         "googlechrome", # Web browser
         "linkshellextension", # Make links from Explorer
         "make", # Makefiles
-        "nirlauncher", # Have GUI for Sysinternals (MUST GO FIRST)
+        # "nirlauncher", # Have GUI for Sysinternals (MUST GO FIRST)
         "openssh", # SSH client
         "poshgit", # Git bar
         "powershell-core", # Updated PowerShell
