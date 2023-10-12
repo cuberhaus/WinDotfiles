@@ -7,3 +7,13 @@
 	directory = C:/Users/polcg/repos/fib
 	directory = C:/Users/polcg/repos/docs
 	directory = "*"
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[credential "https://github.com"]
+	cuberhaus = cuberhaus
+	username = cuberhaus
+[credential "https://github.com."]
+	username = cuberhaus
