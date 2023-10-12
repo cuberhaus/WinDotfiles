@@ -97,6 +97,7 @@ function full_install {
         "gimp", # Photoshop
         "git-lfs", # Git large file storage
         "greenshot", # Better screenshots
+        "intellijidea-ultimate", # Paid version with SQL IDE
         "libreoffice-still", # Office suite
         "malwarebytes", # Anti-virus
         "miktex", # Latex (emacs needs it)
@@ -105,10 +106,8 @@ function full_install {
         "openjdk", # Open source java development kit
         "powertoys", # Powertoys!
         "pycharm", # Best Python IDE
-        "pycharm-community", # Free version of pycharm
         "rainmeter", # "Conky" Rss feed on windows with clickable links
         "rufus", # Burn iso's on usb
-        # "spotify", # Spotify there's some errors with the installation
         "sublimemerge", # Editor merge
         "sublimetext3", # fast editor
         "sysinternals", # tools for windows
@@ -120,6 +119,8 @@ function full_install {
         "vlc", # Media player
         "vscode"                  # GUI Editor
         # "cuda"                   # Nvidia cuda
+        # "pycharm-community", # Free version of pycharm
+        # "spotify", # Spotify there's some errors with the installation
     )
 
     InstallSoftware $softwareList
@@ -127,21 +128,16 @@ function full_install {
 
 function optional {
     $softwareList = @(
-        "anaconda3", # Python IDE
-        "adobereader", # Pdf viewer
         "audacity", # Audio editor
-        "chocolateygui", # A gui for chocolatey package manager
         "chromium", # Open source Web browser
         "cpu-z.install", # List pc infor
         "doxygen.install", # C++ documentation
         "eclipse", # Java/SQL IDE
         "firefox", # Open source web browser
         "ganttproject", # Gantt chart project management
-        "intellijidea-community", # Free version Java IDE
-        "intellijidea-ultimate", # Paid version with SQL IDE
         "jdk8", # Java v8
         "jre8", # Java runtime environment
-        # "obs-studio", # Screen recording software
+        "obs-studio", # Screen recording software
         "octave.portable", # Matlab alternative
         "openjdk", # Open source Java Development Kit
         "pandoc", # Universal document converter
@@ -161,6 +157,10 @@ function optional {
         "vmware-workstation-player", # SI
         "wireshark", # Network protocol analyzer (needs manual install of npcap)
         "zotero"                   # Bibliography manager
+        # "adobereader", # Pdf viewer
+        # "anaconda3", # Python IDE
+        # "chocolateygui", # A gui for chocolatey package manager
+        # "intellijidea-community", # Free version Java IDE
     )
 
     InstallSoftware $softwareList
