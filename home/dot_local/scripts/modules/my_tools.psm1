@@ -3,6 +3,16 @@ function update {
         choco upgrade all -y --except='openjdk, pycharm, octave.portable'
         Get-WindowsUpdate
         Install-WindowsUpdate
+    }
+    Catch {
+        Write-Error "Error updating: $($_.Exception.Message)"
+    }
+}
+function updateall {
+    Try {
+        choco upgrade all -y --except='openjdk, pycharm, octave.portable'
+        Get-WindowsUpdate
+        Install-WindowsUpdate
         vim +PlugUpgrade +PlugUpdate +qall
         winget upgrade --all
     }
@@ -10,6 +20,7 @@ function update {
         Write-Error "Error updating: $($_.Exception.Message)"
     }
 }
+
 function cleanup {
     Try {
         choco-cleaner
