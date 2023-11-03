@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profile>
+<profileinfo name="personal"/>
+<keyitems>
+<item key_value="75" fnlayer="0" layoutkeyvalue="0" layoutkeydesc="" macro_type="2" macro_value="100" macro_2value="0" macro_3value="0" macro_desc="K45"/>
+<item key_value="78" fnlayer="0" layoutkeyvalue="0" layoutkeydesc="" macro_type="2" macro_value="53" macro_2value="0" macro_3value="0" macro_desc="~"/>
+<item key_value="-1" fnlayer="0" layoutkeyvalue="0" layoutkeydesc="" macro_type="2" macro_value="39" macro_2value="0" macro_3value="0" macro_desc="0"/>
+<item key_value="76" fnlayer="1" layoutkeyvalue="0" layoutkeydesc="" macro_type="2" macro_value="100" macro_2value="0" macro_3value="0" macro_desc="K45"/>
+<item key_value="4" fnlayer="1" layoutkeyvalue="0" layoutkeydesc="" macro_type="12" macro_value="506" macro_2value="0" macro_3value="0" macro_desc="Previous"/>
+<item key_value="22" fnlayer="1" layoutkeyvalue="0" layoutkeydesc="" macro_type="12" macro_value="504" macro_2value="0" macro_3value="0" macro_desc="Play/Pause"/>
+<item key_value="7" fnlayer="1" layoutkeyvalue="0" layoutkeydesc="" macro_type="12" macro_value="507" macro_2value="0" macro_3value="0" macro_desc="Next"/>
+<item key_value="20" fnlayer="1" layoutkeyvalue="0" layoutkeydesc="" macro_type="12" macro_value="501" macro_2value="0" macro_3value="0" macro_desc="Calculator"/>
+<item key_value="16" fnlayer="1" layoutkeyvalue="0" layoutkeydesc="" macro_type="12" macro_value="502" macro_2value="0" macro_3value="0" macro_desc="Email"/>
+<item key_value="17" fnlayer="1" layoutkeyvalue="0" layoutkeydesc="" macro_type="12" macro_value="500" macro_2value="0" macro_3value="0" macro_desc="My Computer"/>
+<item key_value="-1" fnlayer="1" layoutkeyvalue="0" layoutkeydesc="" macro_type="12" macro_value="517" macro_2value="0" macro_3value="0" macro_desc="Web Search"/>
+<item key_value="10" fnlayer="1" layoutkeyvalue="0" layoutkeydesc="" macro_type="12" macro_value="517" macro_2value="0" macro_3value="0" macro_desc="Web Search"/>
+<item key_value="5" fnlayer="1" layoutkeyvalue="0" layoutkeydesc="" macro_type="12" macro_value="511" macro_2value="0" macro_3value="0" macro_desc="Web"/>
+<item key_value="25" fnlayer="1" layoutkeyvalue="0" layoutkeydesc="" macro_type="12" macro_value="517" macro_2value="0" macro_3value="0" macro_desc="Web Search"/>
+<item key_value="29" fnlayer="1" layoutkeyvalue="0" layoutkeydesc="" macro_type="12" macro_value="514" macro_2value="0" macro_3value="0" macro_desc="Web Backward"/>
+<item key_value="27" fnlayer="1" layoutkeyvalue="0" layoutkeydesc="" macro_type="12" macro_value="515" macro_2value="0" macro_3value="0" macro_desc="Web Foreward"/>
+</keyitems>
+</profile>
