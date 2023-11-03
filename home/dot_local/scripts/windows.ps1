@@ -158,7 +158,7 @@ function optional {
         "wireshark", # Network protocol analyzer (needs manual install of npcap)
         "zotero"                   # Bibliography manager
         # "adobereader", # Pdf viewer
-        # "anaconda3", # Python IDE
+        # "anaconda3", # Python IDE DO NOT INSTALL LIKE THIS PLEASE
         # "chocolateygui", # A gui for chocolatey package manager
         # "intellijidea-community", # Free version Java IDE
     )
@@ -250,7 +250,6 @@ function path {
     [Environment]::SetEnvironmentVariable("EDITOR", "code --wait", [EnvironmentVariableTarget]::Machine)
     [Environment]::SetEnvironmentVariable("HOME", "C:\Users\polcg", [EnvironmentVariableTarget]::Machine)
     setx HOME %USERPROFILE%
-    # [Environment]::SetEnvironmentVariable("cho", "$cho", [EnvironmentVariableTarget]::Machine)
 }
 function remove_bloat {
     Get-AppxPackage -AllUsers Microsoft.549981C3F5F10 | Remove-AppxPackage # Cortana
