@@ -14,7 +14,7 @@ function updateall {
         Get-WindowsUpdate
         Install-WindowsUpdate
         vim +PlugUpgrade +PlugUpdate +qall
-        winget upgrade --all
+        # winget upgrade --all
     }
     Catch {
         Write-Error "Error updating: $($_.Exception.Message)"
