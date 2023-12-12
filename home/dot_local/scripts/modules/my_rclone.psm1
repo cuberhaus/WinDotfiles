@@ -10,7 +10,7 @@ function rclonepull_calibre {
     .EXAMPLE
     rclonepull_calibre
     #>
-    rclone copy -P --create-empty-src-dirs "drive:Calibre/Calibre Library" "C:\Users\polcg\Calibre Library"
+    rclone copy -P --create-empty-src-dirs "drive:Calibre/Calibre Library" "$HOME\Calibre Library"
 }
 function rclonepush_calibre {
     <#
@@ -23,7 +23,7 @@ function rclonepush_calibre {
     .EXAMPLE
     rclonepush_calibre
     #>
-    rclone copy -P --create-empty-src-dirs "C:\Users\polcg\Calibre Library" "drive:Calibre/Calibre Library"
+    rclone copy -P --create-empty-src-dirs "$HOME\Calibre Library" "drive:Calibre/Calibre Library"
 }
 function rclonepull_thunderbird {
     <#
@@ -36,7 +36,7 @@ function rclonepull_thunderbird {
     .EXAMPLE
     rclonepull_thunderbird
     #>
-    rclone copy -P --create-empty-src-dirs drive:Thunderbird/ C:\Users\polcg\AppData\Roaming\Thunderbird\
+    rclone copy -P --create-empty-src-dirs drive:Thunderbird/ $HOME\Roaming\Thunderbird\
 }
 function rclonepush_thunderbird {
     <#
@@ -49,7 +49,7 @@ function rclonepush_thunderbird {
     .EXAMPLE
     rclonepush_thunderbird
     #>
-    rclone copy -P --create-empty-src-dirs C:\Users\polcg\AppData\Roaming\Thunderbird\ drive:Thunderbird/
+    rclone copy -P --create-empty-src-dirs $HOME\AppData\Roaming\Thunderbird\ drive:Thunderbird/
 }
 
 Export-ModuleMember -Function *

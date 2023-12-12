@@ -70,19 +70,15 @@
                 "name": "Command Prompt"
             },
             {
-                "colorScheme": "Ubuntu-ColorScheme",
-                "commandline": "ubuntu.exe",
-                "cursorShape": "filledBox",
-                "font": 
-                {
-                    "face": "Cascadia Mono",
-                    "size": 13.0
-                },
-                "guid": "{56d291be-9c93-4d71-8211-38db8791b478}",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
-                "icon": "https://assets.ubuntu.com/v1/49a1a858-favicon-32x32.png",
+                "name": "Windows PowerShell"
+            },
+            {
+                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
+                "hidden": false,
                 "name": "Ubuntu",
-                "tabTitle": "Ubuntu"
+                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
             },
             {
                 "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
@@ -91,9 +87,16 @@
                 "source": "Windows.Terminal.Wsl"
             },
             {
-                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "guid": "{f792bece-aa64-5b67-80c1-06ffdfbd60e4}",
                 "hidden": false,
-                "name": "Windows PowerShell"
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{21998c0b-bfa5-567d-8ed0-3f513676c700}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },

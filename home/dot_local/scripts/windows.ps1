@@ -1,4 +1,4 @@
-$dotfiles = "C:\Users\polcg\WinDotfiles\"
+$dotfiles = "C:\Users\pol\WinDotfiles\"
 $documents = "Documents"
 $cho = "choco install -y " # choco install command
 # Think about adding winget
@@ -318,13 +318,14 @@ function fonts() {
 ## Start Installation
 directories
 base_install
+path
 registry
 full_install
 vim_install
 linux
-remove_bloat
-bootloader
+# remove_bloat
 clone
 emacs
 fonts
+
 

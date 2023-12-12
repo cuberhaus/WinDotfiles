@@ -1,6 +1,6 @@
 # This profile is only used by Microsoft PowerShell.
-# $dotfiles = "C:\Users\polcg\WinDotfiles"
-$dotfiles = "C:\Users\polcg\.local\share\chezmoi\home"
+# $dotfiles = "$HOME\WinDotfiles"
+$dotfiles = "$HOME\.local\share\chezmoi\home"
 $scripts = "$HOME\.local\scripts"
 $modules = "$HOME\.local\scripts\modules"
 # https://github.com/ralish/PSDotFiles
