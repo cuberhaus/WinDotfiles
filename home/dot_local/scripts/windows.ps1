@@ -67,6 +67,7 @@ function emacs {
     choco install -y git ripgrep llvm fd hunspell.portable 
     Set-Location $dotfiles
     git submodule update --init --recursive # Get chemacs submodule
+    chezmoi apply # have to put the submodule in the correct place in $HOME
 
     # in bash, This should already be done by having submodule
     <#
