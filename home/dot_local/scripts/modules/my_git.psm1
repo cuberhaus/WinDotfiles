@@ -1,3 +1,7 @@
+# At the beginning of your module/script
+$originalWarningPreference = $WarningPreference
+$WarningPreference = 'SilentlyContinue'
+
 function g {
     git $args
 }
@@ -150,3 +154,6 @@ function commit {
 }
 
 Export-ModuleMember -Function *
+
+# At the end of your module/script
+$WarningPreference = $originalWarningPreference

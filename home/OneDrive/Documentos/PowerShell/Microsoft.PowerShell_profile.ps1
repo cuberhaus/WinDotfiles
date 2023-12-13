@@ -11,12 +11,15 @@ $identity = [Security.Principal.WindowsIdentity]::GetCurrent()
 $principal = New-Object Security.Principal.WindowsPrincipal $identity
 $isAdmin = $principal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
 
-Import-Module git-aliases -DisableNameChecking
-Import-Module -DisableNameChecking -Name "$modules\my_git.psm1"
-Import-Module -DisableNameChecking -Name "$modules\my_shortcuts.psm1"
-Import-Module -DisableNameChecking -Name "$modules\my_rclone.psm1"
-Import-Module -DisableNameChecking -Name "$modules\my_tools.psm1"
+$originalWarningPreference = $WarningPreference
+$WarningPreference = 'SilentlyContinue'
+Import-Module git-aliases -DisableNameChecking  -WarningAction SilentlyContinue
+Import-Module  -WarningAction SilentlyContinue -DisableNameChecking -Name "$modules\my_git.psm1"
+Import-Module  -WarningAction SilentlyContinue -DisableNameChecking -Name "$modules\my_shortcuts.psm1"
+Import-Module  -WarningAction SilentlyContinue -DisableNameChecking -Name "$modules\my_rclone.psm1"
+Import-Module  -WarningAction SilentlyContinue -DisableNameChecking -Name "$modules\my_tools.psm1"
 Import-Module 'C:\tools\poshgit\dahlbyk-posh-git-9bda399\src\posh-git.psd1'
+$WarningPreference = $originalWarningPreference
 
 # ALIASES MUST GO AFTER MODULE IMPORTS AND CAN'T GO INSIDE MODULES
 # Set UNIX-like aliases for the admin command, so sudo <command> will run the command
