@@ -1,3 +1,10 @@
+# Get the %APPDATA% path
+$appDataPath = [Environment]::GetFolderPath('ApplicationData')
+
+# Construct the Thunderbird profiles path
+$thunderbirdProfilesPath = Join-Path $appDataPath 'Thunderbird\Profiles'
+$calibreLibraryPath = "$HOME\Calibre Library"
+
 # Rclone token might need to be refreshed (rclone config and reconfigure the remote)
 function rclonepull_calibre {
     <#
@@ -10,7 +17,7 @@ function rclonepull_calibre {
     .EXAMPLE
     rclonepull_calibre
     #>
-    rclone copy -P --create-empty-src-dirs "drive:Calibre/Calibre Library" "$HOME\Calibre Library"
+    rclone copy -P --create-empty-src-dirs "drive:Calibre/Calibre Library" $calibreLibraryPath
 }
 function rclonepush_calibre {
     <#
@@ -23,7 +30,7 @@ function rclonepush_calibre {
     .EXAMPLE
     rclonepush_calibre
     #>
-    rclone copy -P --create-empty-src-dirs "$HOME\Calibre Library" "drive:Calibre/Calibre Library"
+    rclone copy -P --create-empty-src-dirs $calibreLibraryPath "drive:Calibre/Calibre Library"
 }
 function rclonepull_thunderbird {
     <#
@@ -36,7 +43,8 @@ function rclonepull_thunderbird {
     .EXAMPLE
     rclonepull_thunderbird
     #>
-    rclone copy -P --create-empty-src-dirs drive:Thunderbird/ $HOME\Roaming\Thunderbird\
+    # rclone copy -P --create-empty-src-dirs drive:Thunderbird/ $HOME\Roaming\Thunderbird\
+    rclone copy -P --create-empty-src-dirs drive:Thunderbird/ $thunderbirdProfilesPath
 }
 function rclonepush_thunderbird {
     <#
@@ -49,7 +57,7 @@ function rclonepush_thunderbird {
     .EXAMPLE
     rclonepush_thunderbird
     #>
-    rclone copy -P --create-empty-src-dirs $HOME\AppData\Roaming\Thunderbird\ drive:Thunderbird/
+    rclone copy -P --create-empty-src-dirs $thunderbirdProfilesPath drive:Thunderbird/
 }
 
 Export-ModuleMember -Function *
