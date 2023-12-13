@@ -98,6 +98,7 @@ function full_install {
         "choco-cleaner", # Delete caches from chocolatey
         "cmake", # Cmake (emacs)
         "discord", # Discord
+        "forticlientvpn",
         "geforce-experience", # Nvidia card updates
         "gimp", # Photoshop
         "git-lfs", # Git large file storage
