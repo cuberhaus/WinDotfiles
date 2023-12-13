@@ -65,15 +65,19 @@ function emacs {
     # Add $HOME\.emacs.d\bin\doom to path
     choco install -y emacs                  # Emacs
     choco install -y git ripgrep llvm fd hunspell.portable 
+    Set-Location $dotfiles
+    git submodule update --init --recursive # Get chemacs submodule
 
-    # in bash
+    # in bash, This should already be done by having submodule
     <#
     [ -f ~/.emacs ] && mv ~/.emacs ~/.emacs.bak
     [ -d ~/.emacs.d ] && mv ~/.emacs.d ~/.emacs.default
     git clone https://github.com/plexus/chemacs2.git ~/.emacs.d
     #> 
-    git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.config/doom-emacs
-    ~/.config/doom-emacs/bin/doom install
+
+    # Doom emacs
+    git clone --depth 1 https://github.com/doomemacs/doomemacs "$HOME\.config\doom-emacs"
+    & "$HOME\.config\doom-emacs\bin\doom" install
 }
 
 function InstallSoftware($software) {
