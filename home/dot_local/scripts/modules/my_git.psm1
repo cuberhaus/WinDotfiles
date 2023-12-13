@@ -16,6 +16,10 @@ function gm {
 function gp {
     git push $args
 }
+# Use this function to force push to the remote repository. It's useful when you have to rewrite the history of a branch, for example when you have to squash commits. Or amend the last commit to change the commit message. (yolo)
+function gpf {
+    git push --force-with-lease $args
+}
 function gs {
     git status $args
 }
