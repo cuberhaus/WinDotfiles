@@ -39,6 +39,8 @@ function base_install {
         "wget", # A command-line utility for retrieving files using HTTP protocols
         "yarn", # Packages, needed for Vim
         "freefilesync", # Sync files
+        "winscp", # FTP client
+        "filezilla"
         "zip"                     # Zip from terminal
         # "nirlauncher", # Have GUI for Sysinternals (MUST GO FIRST)
         # "rsync" # Rsync for windows
@@ -107,7 +109,6 @@ function full_install {
         "greenshot", # Better screenshots
         "intellijidea-ultimate", # Paid version with SQL IDE
         "libreoffice-still", # Office suite
-        "malwarebytes", # Anti-virus
         "miktex", # Latex (emacs needs it)
         "mobaxterm", # PAR (makes wxparaver WORK)
         "obsidian", # Readme editor
@@ -143,8 +144,10 @@ function optional {
         "eclipse", # Java/SQL IDE
         "firefox", # Open source web browser
         "ganttproject", # Gantt chart project management
+        "googledrive" # Google drive
         "jdk8", # Java v8
         "jre8", # Java runtime environment
+        "malwarebytes", # Anti-virus
         "obs-studio", # Screen recording software
         "octave.portable", # Matlab alternative
         "openjdk", # Open source Java Development Kit
@@ -164,6 +167,7 @@ function optional {
         "virtualbox", # Virtualization tool
         "vmware-workstation-player", # SI
         "wireshark", # Network protocol analyzer (needs manual install of npcap)
+        "zoom", # Zoom
         "zotero"                   # Bibliography manager
         # "adobereader", # Pdf viewer
         # "anaconda3", # Python IDE DO NOT INSTALL LIKE THIS PLEASE
