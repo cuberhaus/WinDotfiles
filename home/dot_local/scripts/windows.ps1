@@ -19,8 +19,6 @@ function base_install {
     Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
     $softwareList = @(
-        "nodejs.install", # Nodejs (needed for Vim, npm)
-        "ruby", # Ruby (needed for Vim, gem)
         "7zip.install", # Archiver
         "curl", # Curl is a command line tool for transferring data with URLs
         "fzf", # Fuzzy finder
@@ -29,17 +27,21 @@ function base_install {
         "googlechrome", # Web browser
         "linkshellextension", # Make links from Explorer
         "make", # Makefiles
-        # "nirlauncher", # Have GUI for Sysinternals (MUST GO FIRST)
+        "nodejs.install", # Nodejs (needed for Vim, npm)
         "openssh", # SSH client
         "poshgit", # Git bar
         "powershell-core", # Updated PowerShell
         "python", # Python
         "rclone", # Git but without version control
+        "ruby", # Ruby (needed for Vim, gem)
         "sharpkeys", # Allows you to manage registry entries and keybindings easily
         "strawberryperl", # Perl
         "wget", # A command-line utility for retrieving files using HTTP protocols
         "yarn", # Packages, needed for Vim
+        "freefilesync", # Sync files
         "zip"                     # Zip from terminal
+        # "nirlauncher", # Have GUI for Sysinternals (MUST GO FIRST)
+        # "rsync" # Rsync for windows
     )
 
     InstallSoftware $softwareList
