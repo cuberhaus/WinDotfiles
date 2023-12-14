@@ -3,6 +3,9 @@
 function aliases {
     ce $HOME\Documents\PowerShell\profile.ps1 $HOME\OneDrive\Documentos\PowerShell\Microsoft.PowerShell_profile.ps1 $HOME\OneDrive\Documentos\PowerShell\profile.ps1  $modules\my_git.psm1 $modules\my_rclone.psm1 $modules\my_shortcuts.psm1 $modules\my_tools.psm1 
 }
+function check_sleep {
+    powercfg /a 
+}
 
 function battery {
     powercfg /batteryreport /output ".\battery-report.html"
