@@ -179,3 +179,13 @@ If user and computer name are different you will have to change that in the task
 > tip: do not use the GUI
 
 [windows 10 icon]: https://i.imgur.com/b3co2Zl.png
+
+## RECOVER WINDOWS BOOT EFI
+[Video](https://www.youtube.com/watch?v=CZ17JrgFFhw&t=932s)
+
+Important command:
+
+c:\windows is where your healthy windows is (it just does not have the EFI entry to boot into it) v: is where the EFI installation will go
+```
+bcdboot c:\windows /s v: /f UEFI
+```
