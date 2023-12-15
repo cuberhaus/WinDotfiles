@@ -140,11 +140,13 @@ function optional {
         "audacity", # Audio editor
         "chromium", # Open source Web browser
         "cpu-z.install", # List pc infor
+        "cygwin", # Linux terminal
         "doxygen.install", # C++ documentation
         "eclipse", # Java/SQL IDE
         "firefox", # Open source web browser
         "ganttproject", # Gantt chart project management
         "googledrive" # Google drive
+        "itunes", # Music player
         "jdk8", # Java v8
         "jre8", # Java runtime environment
         "malwarebytes", # Anti-virus
