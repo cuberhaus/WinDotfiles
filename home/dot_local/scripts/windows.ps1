@@ -137,6 +137,7 @@ function full_install {
 
 function optional {
     $softwareList = @(
+        "postman", # API testing
         "audacity", # Audio editor
         "chromium", # Open source Web browser
         "cpu-z.install", # List pc infor
