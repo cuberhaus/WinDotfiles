@@ -137,11 +137,11 @@ function full_install {
 
 function optional {
     $softwareList = @(
-        "postman", # API testing
         "audacity", # Audio editor
         "chromium", # Open source Web browser
         "cpu-z.install", # List pc infor
         "cygwin", # Linux terminal
+        "docker-desktop"
         "doxygen.install", # C++ documentation
         "eclipse", # Java/SQL IDE
         "firefox", # Open source web browser
@@ -155,6 +155,7 @@ function optional {
         "octave.portable", # Matlab alternative
         "openjdk", # Open source Java Development Kit
         "pandoc", # Universal document converter
+        "postman", # API testing
         "procexp", # Process explorer
         "putty", # SSH telnet
         "pycharm-community", # Community version of PyCharm
