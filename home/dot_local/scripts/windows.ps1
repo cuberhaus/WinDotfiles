@@ -137,11 +137,12 @@ function full_install {
 
 function optional {
     $softwareList = @(
+        "androidstudio" # Android IDE
         "audacity", # Audio editor
         "chromium", # Open source Web browser
         "cpu-z.install", # List pc infor
         "cygwin", # Linux terminal
-        "docker-desktop"
+        "docker-desktop" # Docker
         "doxygen.install", # C++ documentation
         "eclipse", # Java/SQL IDE
         "firefox", # Open source web browser
