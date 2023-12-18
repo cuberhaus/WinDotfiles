@@ -225,7 +225,7 @@ function vim_install {
     # Paths for these are not being detected
     npm install -g neovim
     gem install neovim
-    pip install --upgrade neovim
+    pip install --upgrade neovim # needs to add python from microsoft store first, type python in powershell and it will ask you to install it
 }
 
 function registry {
@@ -274,6 +274,13 @@ function path {
     [Environment]::SetEnvironmentVariable("EDITOR", "code --wait", [EnvironmentVariableTarget]::Machine)
     [Environment]::SetEnvironmentVariable("HOME", "C:\Users\polcg", [EnvironmentVariableTarget]::Machine)
     setx HOME %USERPROFILE%
+
+    #Extras
+    [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\nodejs", [EnvironmentVariableTarget]::Machine)
+    [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\tools\ruby31\bin", [EnvironmentVariableTarget]::Machine)
+
+
+
 }
 function remove_bloat {
     Get-AppxPackage -AllUsers Microsoft.549981C3F5F10 | Remove-AppxPackage # Cortana
