@@ -138,7 +138,7 @@ function merge {
     )
     git_recursive "git merge" $depth
 }
-function git-add {
+function gadd {
     param(
         [int]$depth = 2
     )
