@@ -27,7 +27,7 @@ function base_install {
         "googlechrome", # Web browser
         "linkshellextension", # Make links from Explorer
         "make", # Makefiles
-        "nodejs.install", # Nodejs (needed for Vim, npm)
+        "nodejs", # Nodejs (needed for Vim, npm)
         "openssh", # SSH client
         "poshgit", # Git bar
         "powershell-core", # Updated PowerShell
@@ -48,9 +48,17 @@ function base_install {
 
     InstallSoftware $softwareList
 
+}
+
+function run_on_second_execution {
+    # RUN AFTER REBOOT
+    pip3 install pipenv
     # Install git-aliases module
     Install-Module git-aliases -Scope CurrentUser -AllowClobber
+    emacs_install
+    vim_install
 }
+
 
 function linux {
     # Enable Windows Subsystem for Linux
@@ -64,7 +72,7 @@ function linux {
     #wsl --set-default-version 2
 }
 
-function emacs {
+function emacs_install {
     # Add environment variable HOME to C:\Users\polcg\
     # Add $HOME\.emacs.d\bin\doom to path
     choco install -y emacs                  # Emacs
@@ -91,9 +99,7 @@ function InstallSoftware($software) {
         choco install -y $app
     }
 }
-
 function full_install {
-    pip3 install pipenv
     # List of software to install
     $softwareList = @(
         "autohotkey.portable", # Automation software
@@ -103,7 +109,6 @@ function full_install {
         "cmake", # Cmake (emacs)
         "discord", # Discord
         "forticlientvpn",
-        "geforce-experience", # Nvidia card updates
         "gimp", # Photoshop
         "git-lfs", # Git large file storage
         "greenshot", # Better screenshots
@@ -137,6 +142,7 @@ function full_install {
 
 function optional {
     $softwareList = @(
+        "geforce-experience", # Nvidia card updates
         "androidstudio" # Android IDE
         "audacity", # Audio editor
         "chromium", # Open source Web browser
@@ -212,13 +218,14 @@ function vim_install {
     Invoke-WebRequest -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
     New-Item $HOME/vimfiles/autoload/plug.vim -Force 
 
+    # Install plugins
+    vim +PlugInstall +qall
+
     # Install Neovim support for npm, gem and Python3
+    # Paths for these are not being detected
     npm install -g neovim
     gem install neovim
     pip install --upgrade neovim
-
-    # Install plugins
-    vim +PlugInstall +qall
 }
 
 function registry {
@@ -338,11 +345,11 @@ base_install
 path
 registry
 full_install
-vim_install
+# vim_install
 linux
 # remove_bloat
 clone
-emacs
+# emacs_install
 fonts
 
 
