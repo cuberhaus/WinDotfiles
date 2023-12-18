@@ -57,6 +57,7 @@ function run_on_second_execution {
     Install-Module git-aliases -Scope CurrentUser -AllowClobber
     emacs_install
     vim_install
+    clone
 }
 
 
@@ -342,7 +343,7 @@ function directories {
     }
 }
 function fonts() {
-    # Install fonts
+    # Install fonts WIP
 }
 
 # schedule_tasks
@@ -353,11 +354,12 @@ base_install
 path
 registry
 full_install
-# vim_install
 linux
 # remove_bloat
-clone
-# emacs_install
 fonts
+#games_install
 
+
+# ON SECOND INSTALL
+# run_on_second_execution
 
