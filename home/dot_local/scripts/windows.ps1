@@ -142,9 +142,7 @@ function full_install {
 
 function optional {
     $softwareList = @(
-        "flutter", # Flutter
-        "geforce-experience", # Nvidia card updates
-        "androidstudio", # Android IDE
+        "androidstudio", # Android IDE to use with flutter (android emulator)
         "audacity", # Audio editor
         "chromium", # Open source Web browser
         "cpu-z.install", # List pc infor
@@ -153,7 +151,9 @@ function optional {
         "doxygen.install", # C++ documentation
         "eclipse", # Java/SQL IDE
         "firefox", # Open source web browser
+        "flutter", # Flutter to make apps
         "ganttproject", # Gantt chart project management
+        "geforce-experience", # Nvidia card updates
         "googledrive", # Google drive
         "itunes", # Music player
         "jdk8", # Java v8
