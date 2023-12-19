@@ -143,6 +143,7 @@ function full_install {
 
 function optional {
     $softwareList = @(
+        "throttlestop" # Undervolt CPU
         "hwinfo", # Hardware info
         "shutup10", # Disable telemetry https://community.frame.work/t/power-optimizations-under-windows-lower-temps-longer-battery-life/19505
         "androidstudio", # Android IDE to use with flutter (android emulator)
