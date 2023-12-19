@@ -1,8 +1,7 @@
 $dotfiles = "$HOME\WinDotfiles\"
 $documents = "Documents"
 $cho = "choco install -y " # choco install command
-# Think about adding winget
-
+# Consider installing windbg, from microsoft
 function base_install {
     # https://github.com/gluons/powershell-git-aliases
 
@@ -144,6 +143,8 @@ function full_install {
 
 function optional {
     $softwareList = @(
+        "hwinfo", # Hardware info
+        "shutup10", # Disable telemetry https://community.frame.work/t/power-optimizations-under-windows-lower-temps-longer-battery-life/19505
         "androidstudio", # Android IDE to use with flutter (android emulator)
         "audacity", # Audio editor
         "chromium", # Open source Web browser
