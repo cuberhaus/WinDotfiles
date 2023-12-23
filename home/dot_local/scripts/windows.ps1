@@ -18,6 +18,7 @@ function base_install {
     Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
     $softwareList = @(
+        "winrar" # Archiver
         "7zip.install", # Archiver
         "curl", # Curl is a command line tool for transferring data with URLs
         "fzf", # Fuzzy finder
@@ -102,7 +103,7 @@ function InstallSoftware($software) {
 function full_install {
     # List of software to install
     $softwareList = @(
-        "auto-dark-mode", # Dark mode for windows
+        # "auto-dark-mode", # Dark mode for windows # Causes BSOD?
         "autohotkey.portable", # Automation software
         "calibre", # Books manager
         "ccleaner", # Cleanup
@@ -143,9 +144,9 @@ function full_install {
 
 function optional {
     $softwareList = @(
-        "throttlestop" # Undervolt CPU
-        "hwinfo", # Hardware info
-        "shutup10", # Disable telemetry https://community.frame.work/t/power-optimizations-under-windows-lower-temps-longer-battery-life/19505
+        # "throttlestop" # Undervolt CPU # cant use on AMD
+        # "hwinfo", # Hardware info 
+        # "shutup10", # Disable telemetry https://community.frame.work/t/power-optimizations-under-windows-lower-temps-longer-battery-life/19505
         "androidstudio", # Android IDE to use with flutter (android emulator)
         "audacity", # Audio editor
         "chromium", # Open source Web browser
