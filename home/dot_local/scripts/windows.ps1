@@ -50,6 +50,13 @@ function base_install {
 
 }
 
+function framework() {
+    # https://www.amd.com/es/support # AMD drivers
+
+    # https://knowledgebase.frame.work/en_us/framework-laptop-bios-and-driver-releases-amd-ryzen-7040-series-r1rXGVL16 # Framework drivers and BIOS
+    # https://community.frame.work/t/power-optimizations-under-windows-lower-temps-longer-battery-life/19505 # Power optimizations 
+}
+
 function run_on_second_execution {
     # RUN AFTER REBOOT
     pip3 install pipenv
