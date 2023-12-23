@@ -55,6 +55,9 @@ function framework() {
 
     # https://knowledgebase.frame.work/en_us/framework-laptop-bios-and-driver-releases-amd-ryzen-7040-series-r1rXGVL16 # Framework drivers and BIOS
     # https://community.frame.work/t/power-optimizations-under-windows-lower-temps-longer-battery-life/19505 # Power optimizations 
+
+    # Activate Windows and donwload and activate Office
+    # irm https://massgrave.dev/get | iex
 }
 
 function run_on_second_execution {
