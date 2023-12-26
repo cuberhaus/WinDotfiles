@@ -13,6 +13,10 @@ function battery {
 function vimrc {
     ce $HOME\_vimrc
 }
+# function emacs_config {
+#     ce $HOME\.config\my_emacs\init.el
+# It should open with README.org in emacs
+# }
 function windows {
     ce $scripts\windows.ps1
 }
