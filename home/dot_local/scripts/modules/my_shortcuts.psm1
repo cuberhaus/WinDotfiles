@@ -11,7 +11,7 @@ function battery {
     powercfg /batteryreport /output ".\battery-report.html"
 }
 function vimrc {
-    ce $dotfiles\_vimrc
+    ce $HOME\_vimrc
 }
 function windows {
     ce $scripts\windows.ps1
