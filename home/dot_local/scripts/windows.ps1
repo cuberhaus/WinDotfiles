@@ -70,6 +70,18 @@ function run_on_second_execution {
     clone
 }
 
+# DOES NOT WORK
+function jupyter_install{
+    # Jupyter path
+    [Environment]::SetEnvironmentVariable("PATH", $Env:PATH + ";C:\Users\pol\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages", [EnvironmentVariableTarget]::Machine)
+
+    choco install dotnet-sdk # needed for jupyter
+    dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org
+    dotnet tool install --global Microsoft.dotnet-interactive
+    mkdir C:\Users\pol\AppData\Roaming\jupyter\kernels
+    dotnet interactive jupyter install
+    pip install jupyter
+}
 
 function linux {
     # Enable Windows Subsystem for Linux
