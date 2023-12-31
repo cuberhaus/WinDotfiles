@@ -125,7 +125,7 @@ function InstallSoftware($software) {
 function full_install {
     # List of software to install
     $softwareList = @(
-        # "auto-dark-mode", # Dark mode for windows # Causes BSOD?
+        "auto-dark-mode", # Dark mode for windows # Causes BSOD? Does not cause BSOD
         "autohotkey.portable", # Automation software
         "calibre", # Books manager
         "ccleaner", # Cleanup
@@ -133,6 +133,7 @@ function full_install {
         "cmake", # Cmake (emacs)
         "discord", # Discord
         "forticlientvpn",
+        "fxsound", # Sound enhancer
         "gimp", # Photoshop
         "git-lfs", # Git large file storage
         "greenshot", # Better screenshots
