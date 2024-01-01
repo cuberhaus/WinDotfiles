@@ -43,7 +43,7 @@ function base_install {
         "filezilla"
         "zip"                     # Zip from terminal
         # "nirlauncher", # Have GUI for Sysinternals (MUST GO FIRST)
-        # "rsync" # Rsync for windows
+        # "rsync" # Rsync for windows, does not work very well, use rclone instead
     )
 
     InstallSoftware $softwareList
@@ -125,7 +125,7 @@ function InstallSoftware($software) {
 function full_install {
     # List of software to install
     $softwareList = @(
-        "auto-dark-mode", # Dark mode for windows # Causes BSOD? Does not cause BSOD
+        "auto-dark-mode", # Dark mode for windows
         "autohotkey.portable", # Automation software
         "calibre", # Books manager
         "ccleaner", # Cleanup
@@ -133,15 +133,16 @@ function full_install {
         "cmake", # Cmake (emacs)
         "discord", # Discord
         "forticlientvpn",
-        "fxsound", # Sound enhancer
+        "fxsound", # Sound enhancer (framework)
         "gimp", # Photoshop
         "git-lfs", # Git large file storage
         "greenshot", # Better screenshots
+        "hwinfo", # Hardware info, better than CPU-Z, RAM, CPU, GPU, SSD 
         "intellijidea-ultimate", # Paid version with SQL IDE
         "libreoffice-still", # Office suite
         "miktex", # Latex (emacs needs it)
         "mobaxterm", # PAR (makes wxparaver WORK)
-        "obsidian", # Readme editor
+        "obsidian", # Readme editor, Journal, task manager
         "openjdk", # Open source java development kit
         "powertoys", # Powertoys!
         "pycharm", # Best Python IDE
@@ -156,8 +157,7 @@ function full_install {
         "treesizefree", # View file sizes in system that clog memory
         "unifying", # Logitech unifying devices add and remove
         "vlc", # Media player
-        "vscode"                  # GUI Editor
-        # "cuda"                   # Nvidia cuda
+        "vscode" # GUI Editor
         # "pycharm-community", # Free version of pycharm
         # "spotify", # Spotify there's some errors with the installation
     )
@@ -167,13 +167,12 @@ function full_install {
 
 function optional {
     $softwareList = @(
-        # "throttlestop" # Undervolt CPU # cant use on AMD
-        # "hwinfo", # Hardware info 
         # "shutup10", # Disable telemetry https://community.frame.work/t/power-optimizations-under-windows-lower-temps-longer-battery-life/19505
         "androidstudio", # Android IDE to use with flutter (android emulator)
         "audacity", # Audio editor
         "chromium", # Open source Web browser
-        "cpu-z.install", # List pc infor
+        "cpu-z.install", # List pc information
+        "cuda" # Nvidia cuda
         "cygwin", # Linux terminal
         "docker-desktop" # Docker
         "doxygen.install", # C++ documentation
@@ -209,9 +208,11 @@ function optional {
         "wireshark", # Network protocol analyzer (needs manual install of npcap)
         "zoom", # Zoom
         "zotero"                   # Bibliography manager
+
         # "adobereader", # Pdf viewer
         # "anaconda3", # Python IDE DO NOT INSTALL LIKE THIS PLEASE
         # "chocolateygui", # A gui for chocolatey package manager
+        # "throttlestop" # Undervolt CPU # cant use on AMD
         # "intellijidea-community", # Free version Java IDE
     )
 
