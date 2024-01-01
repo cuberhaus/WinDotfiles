@@ -141,7 +141,7 @@ function full_install {
         "inkscape" # Needed for svg in latex compiling
         "intellijidea-ultimate", # Paid version with SQL IDE
         "libreoffice-still", # Office suite
-        "miktex", # Latex (emacs needs it)
+        "miktex", # Latex (emacs needs it) (biber is better than bibtex)
         "mobaxterm", # PAR (makes wxparaver WORK)
         "obsidian", # Readme editor, Journal, task manager
         "openjdk", # Open source java development kit
