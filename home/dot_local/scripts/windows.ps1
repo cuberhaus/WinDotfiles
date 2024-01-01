@@ -138,6 +138,7 @@ function full_install {
         "git-lfs", # Git large file storage
         "greenshot", # Better screenshots
         "hwinfo", # Hardware info, better than CPU-Z, RAM, CPU, GPU, SSD 
+        "inkscape" # Needed for svg in latex compiling
         "intellijidea-ultimate", # Paid version with SQL IDE
         "libreoffice-still", # Office suite
         "miktex", # Latex (emacs needs it)
@@ -151,6 +152,7 @@ function full_install {
         "sublimemerge", # Editor merge
         "sublimetext3", # fast editor
         "sysinternals", # tools for windows
+        "texmaker", # Latex (emacs needs it)
         "texstudio", # LaTeX
         "thunderbird", # Email client
         "tor-browser", # Browse the web without restrictions and without being traced
