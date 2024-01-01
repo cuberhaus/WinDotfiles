@@ -151,6 +151,7 @@ function full_install {
         "sublimemerge", # Editor merge
         "sublimetext3", # fast editor
         "sysinternals", # tools for windows
+        "texstudio", # LaTeX
         "thunderbird", # Email client
         "tor-browser", # Browse the web without restrictions and without being traced
         "transmission", # Simple torrent client
@@ -200,7 +201,6 @@ function optional {
         "slack", # Slack
         "teamviewer", # Control other PC remotely
         "telegram", # Telegram
-        "texstudio", # LaTeX
         "toastify", # Adds missing functionality to the Spotify client
         "tomighty", # Pomodoro timer
         "virtualbox", # Virtualization tool
