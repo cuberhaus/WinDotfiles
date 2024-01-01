@@ -35,5 +35,6 @@
     },
     "auto_save_on_blur": true,
     "auto_save_on_idle": "commit",
-    "auto_save_idle_ms": 500
+    "auto_save_idle_ms": 500,
+    "editor_theme": "Solarized Dark"
 }
