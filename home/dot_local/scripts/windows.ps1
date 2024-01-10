@@ -62,6 +62,7 @@ function framework() {
 
 function run_on_second_execution {
     # RUN AFTER REBOOT
+    # type python in powershell and it will ask you to install it
     pip3 install pipenv
     # Install git-aliases module
     Install-Module git-aliases -Scope CurrentUser -AllowClobber
@@ -125,6 +126,7 @@ function InstallSoftware($software) {
 function full_install {
     # List of software to install
     $softwareList = @(
+        "r.studio"
         "auto-dark-mode", # Dark mode for windows
         "autohotkey.portable", # Automation software
         "calibre", # Books manager
@@ -320,6 +322,9 @@ function path {
     #Extras
     [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\nodejs", [EnvironmentVariableTarget]::Machine)
     [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\tools\ruby31\bin", [EnvironmentVariableTarget]::Machine)
+
+    # Git if it is not added automatically
+    #setx PATH "%PATH%;C:\Program Files\Git\bin"
 
 
 
