@@ -126,7 +126,6 @@ function InstallSoftware($software) {
 function full_install {
     # List of software to install
     $softwareList = @(
-        "r.studio"
         "auto-dark-mode", # Dark mode for windows
         "autohotkey.portable", # Automation software
         "calibre", # Books manager
@@ -165,6 +164,9 @@ function full_install {
         "vscode" # GUI Editor
         # "pycharm-community", # Free version of pycharm
         # "spotify", # Spotify there's some errors with the installation
+
+        "r"
+        "r.studio"
     )
 
     InstallSoftware $softwareList
@@ -292,6 +294,11 @@ function games_install {
     )
 
     InstallSoftware $gamesList
+}
+
+function linux_files() {
+    choco install ext2fsd
+    #diskinternals linux reader (funciona prou be)
 }
 
 
