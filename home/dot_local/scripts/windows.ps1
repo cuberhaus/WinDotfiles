@@ -165,8 +165,9 @@ function full_install {
         # "pycharm-community", # Free version of pycharm
         # "spotify", # Spotify there's some errors with the installation
 
-        "r"
-        "r.studio"
+        "r" # Probabilitat i estadística
+        "r.studio" # Probabilitat i estadística IDE
+        "rtools" # R compiler
     )
 
     InstallSoftware $softwareList
