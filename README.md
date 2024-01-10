@@ -29,9 +29,10 @@ choco install chezmoi
 chezmoi init https://github.com/cuberhaus/WinDotfiles.git
 chezmoi apply
 cd .local\share\chezmoi
+choco install git -y
 git config --global safe.directory '*'
 Set-ExecutionPolicy unrestricted
-.\bin\windows.ps1
+.\home\dot_local\scripts\windows.ps1
 ```
 
 To install the dotfiles on Windows 11, follow these steps:
