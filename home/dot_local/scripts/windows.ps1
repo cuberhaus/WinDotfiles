@@ -18,13 +18,15 @@ function base_install {
     Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
     $softwareList = @(
-        "winrar" # Archiver
         "7zip.install", # Archiver
         "curl", # Curl is a command line tool for transferring data with URLs
+        "filezilla"
+        "freefilesync", # Sync files
         "fzf", # Fuzzy finder
         "gh", # GitHub CLI
         "git.install", # Git
         "googlechrome", # Web browser
+        "javaruntime" # Java
         "linkshellextension", # Make links from Explorer
         "make", # Makefiles
         "nodejs", # Nodejs (needed for Vim, npm)
@@ -37,10 +39,9 @@ function base_install {
         "sharpkeys", # Allows you to manage registry entries and keybindings easily
         "strawberryperl", # Perl
         "wget", # A command-line utility for retrieving files using HTTP protocols
-        "yarn", # Packages, needed for Vim
-        "freefilesync", # Sync files
+        "winrar" # Archiver
         "winscp", # FTP client
-        "filezilla"
+        "yarn", # Packages, needed for Vim
         "zip"                     # Zip from terminal
         # "nirlauncher", # Have GUI for Sysinternals (MUST GO FIRST)
         # "rsync" # Rsync for windows, does not work very well, use rclone instead
