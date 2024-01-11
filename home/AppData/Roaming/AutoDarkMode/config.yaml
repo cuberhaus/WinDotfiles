@@ -64,7 +64,7 @@ Tunable:
   DebugTimerMessage: false
   ShowTrayIcon: true
   AlwaysFullDwmRefresh: false
-  UICulture: es
+  UICulture: en
 GPUMonitoring:
   Enabled: false
   Threshold: 30
@@ -105,12 +105,12 @@ WallpaperSwitch:
       Light: '#FFFFFF'
       Dark: '#000000'
     Monitors:
+    - Id: '\\?\DISPLAY#SDC4197#5&2bc08d98&0&UID512#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}'
+      LightThemeWallpaper: C:\Windows\Web\Wallpaper\Windows\img0.jpg
+      DarkThemeWallpaper: C:\Users\polcg\.local\share\chezmoi\misc\wallpapers\Wallpaper\Windows\img19.jpg
     - Id: '\\?\DISPLAY#BOE0BCA#5&5f304d&0&UID256#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}'
       LightThemeWallpaper: C:\Windows\Web\Wallpaper\Windows\img0.jpg
       DarkThemeWallpaper: C:\Windows\web\wallpaper\Windows\img19.jpg
-    - Id: '\\?\DISPLAY#SDC4197#5&2bc08d98&0&UID512#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}'
-      LightThemeWallpaper: C:\Windows\Web\Wallpaper\HP Backgrounds\backgroundDefault.jpg
-      DarkThemeWallpaper: C:\Windows\Web\Wallpaper\HP Backgrounds\backgroundDefault.jpg
 Updater:
   AutoInstall: false
   Enabled: true
