@@ -183,7 +183,7 @@ function optional {
         "cpu-z.install", # List pc information
         "cuda" # Nvidia cuda
         "cygwin", # Linux terminal
-        "docker-desktop" # Docker
+        "docker-desktop" # Docker, do not install docker inside ubuntu WSL2 onlya this package is needed, docker will be able to be used inside ubuntu as well
         "doxygen.install", # C++ documentation
         "eclipse", # Java/SQL IDE
         "firefox", # Open source web browser
