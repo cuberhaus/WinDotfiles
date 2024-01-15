@@ -64,9 +64,9 @@ function ..... {
 function c {
     chezmoi $args
 }
-function vim {
-    nvim $args
-}
+# function vim {
+#     nvim $args
+# }
 # This will open the file in vim and apply the changes to the home directory as well as the source file
 function ce {
     chezmoi edit --apply $args

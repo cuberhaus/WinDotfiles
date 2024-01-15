@@ -246,7 +246,8 @@ function garbage {
 }
 
 function vim_install {
-    choco install -y vim neovim
+    choco install -y vim 
+    choco install neovim -y --package-parameters="'/NeoVimOnPathForAll'"
 
     # Install vim-plug for Neovim
     Invoke-WebRequest -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
@@ -332,11 +333,8 @@ function path {
     [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\nodejs", [EnvironmentVariableTarget]::Machine)
     [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\tools\ruby31\bin", [EnvironmentVariableTarget]::Machine)
 
-    # Git if it is not added automatically
-    #setx PATH "%PATH%;C:\Program Files\Git\bin"
-
-
-
+    # [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\tools\neovim\Neovim\bin", [EnvironmentVariableTarget]::Machine)
+    # [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\Git\bin", [EnvironmentVariableTarget]::Machine)
 }
 function remove_bloat {
     Get-AppxPackage -AllUsers Microsoft.549981C3F5F10 | Remove-AppxPackage # Cortana
