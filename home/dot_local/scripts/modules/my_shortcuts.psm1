@@ -18,7 +18,7 @@ function vimrc {
 # It should open with README.org in emacs
 # }
 function windows {
-    ce $scripts\windows.ps1 $scripts\windows_functions.ps1 $scripts\windows_functions_reboot.ps1
+    ce $scripts\windows_functions.ps1 $scripts\windows.ps1  $scripts\windows_functions_reboot.ps1
 }
 function win {
     windows
