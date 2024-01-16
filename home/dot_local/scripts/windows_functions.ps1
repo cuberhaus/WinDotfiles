@@ -54,7 +54,6 @@ function base_install {
 
 function associate_extensions() {
     # These will work if there does not exist an entry in the registry for the extension otherwise just set manually
-
     cmd.exe /c "assoc .frag=VSCodeSourceFile"
     cmd.exe /c "assoc .vert=VSCodeSourceFile"
     cmd.exe /c "assoc .geom=VSCodeSourceFile"
@@ -81,17 +80,6 @@ function framework() {
 
     # Activate Windows and donwload and activate Office
     # irm https://massgrave.dev/get | iex
-}
-
-function run_on_second_execution {
-    # RUN AFTER REBOOT
-    # type python in powershell and it will ask you to install it
-    pip3 install pipenv
-    # Install git-aliases module
-    Install-Module git-aliases -Scope CurrentUser -AllowClobber
-    emacs_install
-    vim_install
-    clone
 }
 
 # DOES NOT WORK
