@@ -57,6 +57,8 @@ function associate_extensions() {
     cmd.exe /c "assoc .frag=VSCodeSourceFile"
     cmd.exe /c "assoc .vert=VSCodeSourceFile"
     cmd.exe /c "assoc .geom=VSCodeSourceFile"
+    cmd.exe /c "assoc .ps1=VSCodeSourceFile"
+    cmd.exe /c "assoc .psm1=VSCodeSourceFile"
     cmd.exe /c "assoc .hs=VSCodeSourceFile"
     cmd.exe /c "assoc .py=VSCodeSourceFile"
     cmd.exe /c "assoc .cc=VSCodeSourceFile"
@@ -69,7 +71,6 @@ function associate_extensions() {
     cmd.exe /c "assoc .r=RWorkspace"
     cmd.exe /c "assoc .rmd=RWorkspace"
     cmd.exe /c "assoc .csv=Excel.CSV"
-    
 }
 
 function framework() {
