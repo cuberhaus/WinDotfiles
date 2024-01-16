@@ -51,6 +51,27 @@ function base_install {
 
 }
 
+function associate_extensions() {
+    # These will work if there does not exist an entry in the registry for the extension otherwise just set manually
+
+    cmd.exe /c "assoc .frag=VSCodeSourceFile"
+    cmd.exe /c "assoc .vert=VSCodeSourceFile"
+    cmd.exe /c "assoc .geom=VSCodeSourceFile"
+    cmd.exe /c "assoc .hs=VSCodeSourceFile"
+    cmd.exe /c "assoc .py=VSCodeSourceFile"
+    cmd.exe /c "assoc .cc=VSCodeSourceFile"
+    cmd.exe /c "assoc .hh=VSCodeSourceFile"
+    cmd.exe /c "assoc .hh=VSCodeSourceFile"
+    cmd.exe /c "assoc .sql=VSCodeSourceFile"
+    cmd.exe /c "assoc .el=VSCodeSourceFile"
+    cmd.exe /c "assoc .org=VSCodeSourceFile"
+    cmd.exe /c "assoc .js=VSCodeSourceFile"
+    cmd.exe /c "assoc .r=RWorkspace"
+    cmd.exe /c "assoc .rmd=RWorkspace"
+    cmd.exe /c "assoc .csv=Excel.CSV"
+    
+}
+
 function framework() {
     # https://www.amd.com/es/support # AMD drivers
 

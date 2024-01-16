@@ -8,6 +8,26 @@ function update {
         Write-Error "Error updating: $($_.Exception.Message)"
     }
 }
+function Add-ToSystemPath {
+    param (
+        [string]$NewPath
+    )
+
+    # Get the current system PATH environment variable
+    $currentPath = [Environment]::GetEnvironmentVariable("Path", [EnvironmentVariableTarget]::Machine)
+
+    # Add the new path to the current PATH, if it's not already included
+    if ($currentPath -notcontains $NewPath) {
+        $newPathValue = $currentPath + ";" + $NewPath
+
+        # Set the new PATH environment variable
+        [Environment]::SetEnvironmentVariable("Path", $newPathValue, [EnvironmentVariableTarget]::Machine)
+    }
+    else {
+        Write-Host "The path is already in the system PATH."
+    }
+}
+
 function updateall {
     Try {
         choco upgrade all -y --except='openjdk, pycharm, octave.portable'
