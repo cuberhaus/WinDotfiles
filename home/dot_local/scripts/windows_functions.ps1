@@ -54,45 +54,45 @@ function base_install {
 
 function associate_extensions() {
     # These will work if there does not exist an entry in the registry for the extension otherwise just set manually
-    cmd.exe /c "assoc .R=RWorkspace"
-    cmd.exe /c "assoc .bat=VSCodeSourceFile"
-    cmd.exe /c "assoc .c=VSCodeSourceFile"
-    cmd.exe /c "assoc .cc=VSCodeSourceFile"
-    cmd.exe /c "assoc .cpp=VSCodeSourceFile"
-    cmd.exe /c "assoc .css=VSCodeSourceFile"
-    cmd.exe /c "assoc .csv=Excel.CSV"
-    cmd.exe /c "assoc .el=VSCodeSourceFile"
-    cmd.exe /c "assoc .frag=VSCodeSourceFile"
-    cmd.exe /c "assoc .geom=VSCodeSourceFile"
-    cmd.exe /c "assoc .go=VSCodeSourceFile"
-    cmd.exe /c "assoc .hh=VSCodeSourceFile"
-    cmd.exe /c "assoc .hs=VSCodeSourceFile"
-    cmd.exe /c "assoc .ini=VSCodeSourceFile"
-    cmd.exe /c "assoc .java=VSCodeSourceFile"
-    cmd.exe /c "assoc .js=VSCodeSourceFile"
-    cmd.exe /c "assoc .json=VSCodeSourceFile"
+    cmd.exe /c "assoc .R=RWorkspace" # R
+    cmd.exe /c "assoc .bat=VSCodeSourceFile" # Batch
+    cmd.exe /c "assoc .c=VSCodeSourceFile" # C
+    cmd.exe /c "assoc .cc=VSCodeSourceFile" # C++
+    cmd.exe /c "assoc .cpp=VSCodeSourceFile" # C++
+    cmd.exe /c "assoc .css=VSCodeSourceFile" # CSS
+    cmd.exe /c "assoc .csv=Excel.CSV" # CSV
+    cmd.exe /c "assoc .el=VSCodeSourceFile" # Emacs Lisp
+    cmd.exe /c "assoc .frag=VSCodeSourceFile" # GLSL
+    cmd.exe /c "assoc .geom=VSCodeSourceFile" # GLSL
+    cmd.exe /c "assoc .go=VSCodeSourceFile" # Go
+    cmd.exe /c "assoc .hh=VSCodeSourceFile" # C++
+    cmd.exe /c "assoc .hs=VSCodeSourceFile" # Haskell
+    cmd.exe /c "assoc .ini=VSCodeSourceFile" 
+    cmd.exe /c "assoc .java=VSCodeSourceFile" # Java
+    cmd.exe /c "assoc .js=VSCodeSourceFile" # JavaScript
+    cmd.exe /c "assoc .json=VSCodeSourceFile" # JSON
     cmd.exe /c "assoc .kt=VSCodeSourceFile" # Kotlin
     cmd.exe /c "assoc .log=VSCodeSourceFile" # Better with sublime text
-    cmd.exe /c "assoc .lua=VSCodeSourceFile"
+    cmd.exe /c "assoc .lua=VSCodeSourceFile" # Lua
     cmd.exe /c "assoc .md=VSCodeSourceFile" # Better with sublime text
-    cmd.exe /c "assoc .org=VSCodeSourceFile"
-    cmd.exe /c "assoc .php=VSCodeSourceFile"
+    cmd.exe /c "assoc .org=VSCodeSourceFile" 
+    cmd.exe /c "assoc .php=VSCodeSourceFile" # PHP
     cmd.exe /c "assoc .pl=VSCodeSourceFile" # Pearl
     cmd.exe /c "assoc .pm=VSCodeSourceFile" # Pearl
-    cmd.exe /c "assoc .ps1=VSCodeSourceFile"
-    cmd.exe /c "assoc .psm1=VSCodeSourceFile"
-    cmd.exe /c "assoc .py=VSCodeSourceFile"
-    cmd.exe /c "assoc .r=RWorkspace"
-    cmd.exe /c "assoc .rmd=RWorkspace"
-    cmd.exe /c "assoc .sql=VSCodeSourceFile"
+    cmd.exe /c "assoc .ps1=VSCodeSourceFile" # Powershell
+    cmd.exe /c "assoc .psm1=VSCodeSourceFile" # Powershell
+    cmd.exe /c "assoc .py=VSCodeSourceFile" # Python
+    cmd.exe /c "assoc .r=RWorkspace" # R
+    cmd.exe /c "assoc .rmd=RWorkspace" # R
+    cmd.exe /c "assoc .sql=VSCodeSourceFile" # SQL
     cmd.exe /c "assoc .tex=VSCodeSourceFile" # maybe should open with texstudio
-    cmd.exe /c "assoc .toml=VSCodeSourceFile"
-    cmd.exe /c "assoc .vert=VSCodeSourceFile"
-    cmd.exe /c "assoc .xls=Excel.CSV"
-    cmd.exe /c "assoc .xlsm=Excel.CSV"
-    cmd.exe /c "assoc .xlsx=Excel.CSV"
-    cmd.exe /c "assoc .xml=VSCodeSourceFile"
-    cmd.exe /c "assoc .yml=VSCodeSourceFile"
+    cmd.exe /c "assoc .toml=VSCodeSourceFile" # TOML
+    cmd.exe /c "assoc .vert=VSCodeSourceFile" # GLSL
+    cmd.exe /c "assoc .xls=Excel.CSV" # Excel
+    cmd.exe /c "assoc .xlsm=Excel.CSV" # Excel
+    cmd.exe /c "assoc .xlsx=Excel.CSV" # Excel
+    cmd.exe /c "assoc .xml=VSCodeSourceFile" # XML
+    cmd.exe /c "assoc .yml=VSCodeSourceFile" # YAML
 }
 
 function framework() {
@@ -160,7 +160,6 @@ function InstallSoftware($software) {
 function full_install {
     # List of software to install
     $softwareList = @(
-        "sumatrapdf" # PDF viewer
         "auto-dark-mode", # Dark mode for windows
         "autohotkey.portable", # Automation software
         "calibre", # Books manager
@@ -199,6 +198,7 @@ function full_install {
         "vscode" # GUI Editor
         # "pycharm-community", # Free version of pycharm
         # "spotify", # Spotify there's some errors with the installation
+        # "sumatrapdf" # PDF viewer
 
         "r" # Probabilitat i estadística
         "r.studio" # Probabilitat i estadística IDE

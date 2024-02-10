@@ -1,3 +1,4 @@
+# Source function library.
 . C:\Users\polcg\.local\share\chezmoi\home\dot_local\scripts\windows_functions.ps1
 
 # RUN AFTER REBOOT
