@@ -79,6 +79,29 @@ function admin
 # }
 
 function Clone-All {
+        <#
+    .SYNOPSIS
+    Clones all repositories from a specified GitHub organization.
+
+    .DESCRIPTION
+    The Clone-All function automates the process of cloning all repositories from a GitHub organization. 
+    It fetches a list of repositories belonging to the specified organization and clones each repository to the local machine.
+
+    .PARAMETER orgName
+    Specifies the name of the GitHub organization. 
+    If not provided, it defaults to "cuberhaus".
+
+    .EXAMPLE
+    Clone-All
+    Clones all repositories from the "cuberhaus" GitHub organization.
+
+    .EXAMPLE
+    Clone-All -orgName "myOrganization"
+    Clones all repositories from the "myOrganization" GitHub organization.
+
+    .NOTES
+    GitHub CLI (gh) must be installed and configured for this function to work properly.
+    #>
     param (
         [string]$orgName = "cuberhaus"
     )

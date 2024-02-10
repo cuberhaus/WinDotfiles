@@ -160,6 +160,7 @@ function InstallSoftware($software) {
 function full_install {
     # List of software to install
     $softwareList = @(
+        "sumatrapdf" # PDF viewer
         "auto-dark-mode", # Dark mode for windows
         "autohotkey.portable", # Automation software
         "calibre", # Books manager
