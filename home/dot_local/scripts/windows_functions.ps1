@@ -161,7 +161,8 @@ function full_install {
     # List of software to install
     $softwareList = @(
         "auto-dark-mode", # Dark mode for windows
-        "autohotkey.portable", # Automation software
+        "autohotkey", # Automation software
+        # "autohotkey.portable", # Automation software
         "calibre", # Books manager
         "ccleaner", # Cleanup
         "choco-cleaner", # Delete caches from chocolatey
