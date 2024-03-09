@@ -160,6 +160,7 @@ function InstallSoftware($software) {
 function full_install {
     # List of software to install
     $softwareList = @(
+        "logseq"
         "auto-dark-mode", # Dark mode for windows
         "autohotkey", # Automation software
         # "autohotkey.portable", # Automation software
