@@ -160,6 +160,8 @@ function InstallSoftware($software) {
 function full_install {
     # List of software to install
     $softwareList = @(
+        "sendtokindle" # Kindle
+        "kindle" # Kindle
         "logseq"
         "auto-dark-mode", # Dark mode for windows
         "autohotkey", # Automation software
