@@ -21,7 +21,7 @@ function base_install {
     $softwareList = @(
         "7zip.install", # Archiver
         "curl", # Curl is a command line tool for transferring data with URLs
-        "filezilla"
+        "filezilla" # Manage files in FTP
         "freefilesync", # Sync files
         "fzf", # Fuzzy finder
         "gh", # GitHub CLI
