@@ -61,7 +61,11 @@ function rclonepush_thunderbird {
 }
 
 function rclone_sync_push_thunderbird {
-    rclone copy -P --create-empty-src-dirs $thunderbirdProfilesPath drive:Thunderbird/
+    rclone sync -P --create-empty-src-dirs $thunderbirdProfilesPath drive:Thunderbird/
+}
+
+function rclone_sync_push_calibre {
+    rclone sync -P --create-empty-src-dirs $calibreLibraryPath "drive:Calibre/Calibre Library"
 }
 
 Export-ModuleMember -Function *
