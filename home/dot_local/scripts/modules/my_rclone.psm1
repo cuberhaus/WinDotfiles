@@ -60,4 +60,8 @@ function rclonepush_thunderbird {
     rclone copy -P --create-empty-src-dirs $thunderbirdProfilesPath drive:Thunderbird/
 }
 
+function rclone_sync_push_thunderbird {
+    rclone copy -P --create-empty-src-dirs $thunderbirdProfilesPath drive:Thunderbird/
+}
+
 Export-ModuleMember -Function *
