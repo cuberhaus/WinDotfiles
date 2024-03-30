@@ -2,8 +2,11 @@
 $appDataPath = [Environment]::GetFolderPath('ApplicationData')
 
 # Construct the Thunderbird profiles path
+$drivePath = "drive:4 Archive/rcloneBackups"
+
 $thunderbirdProfilesPath = Join-Path $appDataPath 'Thunderbird\Profiles'
 $calibreLibraryPath = "$HOME\Calibre Library"
+$ankiPath = Join-Path $appDataPath 'Anki2\'
 
 # Rclone token might need to be refreshed (rclone config and reconfigure the remote)
 function rclonepull_calibre {
@@ -17,7 +20,7 @@ function rclonepull_calibre {
     .EXAMPLE
     rclonepull_calibre
     #>
-    rclone copy -P --create-empty-src-dirs "drive:Calibre/Calibre Library" $calibreLibraryPath
+    rclone copy -P --create-empty-src-dirs "$($drivePath)/Calibre/Calibre Library" $calibreLibraryPath
 }
 function rclonepush_calibre {
     <#
@@ -30,7 +33,7 @@ function rclonepush_calibre {
     .EXAMPLE
     rclonepush_calibre
     #>
-    rclone copy -P --create-empty-src-dirs $calibreLibraryPath "drive:Calibre/Calibre Library"
+    rclone copy -P --create-empty-src-dirs $calibreLibraryPath "$($drivePath)/Calibre/Calibre Library"
 }
 function rclonepull_thunderbird {
     <#
@@ -44,7 +47,7 @@ function rclonepull_thunderbird {
     rclonepull_thunderbird
     #>
     # rclone copy -P --create-empty-src-dirs drive:Thunderbird/ $HOME\Roaming\Thunderbird\
-    rclone copy -P --create-empty-src-dirs drive:Thunderbird/ $thunderbirdProfilesPath
+    rclone copy -P --create-empty-src-dirs "$($drivePath)/Thunderbird/" $thunderbirdProfilesPath
 }
 function rclonepush_thunderbird {
     <#
@@ -57,15 +60,37 @@ function rclonepush_thunderbird {
     .EXAMPLE
     rclonepush_thunderbird
     #>
-    rclone copy -P --create-empty-src-dirs $thunderbirdProfilesPath drive:Thunderbird/
+    rclone copy -P --create-empty-src-dirs $thunderbirdProfilesPath "$($drivePath)/Thunderbird/"
 }
 
 function rclone_sync_push_thunderbird {
-    rclone sync -P --create-empty-src-dirs $thunderbirdProfilesPath drive:Thunderbird/
+    rclone sync -P --create-empty-src-dirs $thunderbirdProfilesPath "$($drivePath)/Thunderbird/"
 }
 
 function rclone_sync_push_calibre {
     rclone sync -P --create-empty-src-dirs $calibreLibraryPath "drive:Calibre/Calibre Library"
+}
+
+function rclonepull_anki {
+    rclone copy -P --create-empty-src-dirs "$($drivePath)/Anki/" $ankiPath
+}
+function rclonepush_anki {
+    rclone copy -P --create-empty-src-dirs $ankiPath "$($drivePath)/Anki/"
+}
+
+function rclonepull_everything {
+
+    rclone copy -P --create-empty-src-dirs "$($drivePath)/Anki/" $ankiPath
+
+    rclone copy -P --create-empty-src-dirs "$($drivePath)/Thunderbird/" $thunderbirdProfilesPath
+
+    rclone copy -P --create-empty-src-dirs "$($drivePath)/Calibre Library" $calibreLibraryPath
+}
+
+function rclonepush_everything {
+    rclone sync -P --create-empty-src-dirs $thunderbirdProfilesPath "$($drivePath)/Thunderbird/"
+    rclone sync -P --create-empty-src-dirs $calibreLibraryPath "drive:Calibre/Calibre Library"
+    rclone copy -P --create-empty-src-dirs $ankiPath "$($drivePath)/Anki/"
 }
 
 Export-ModuleMember -Function *
