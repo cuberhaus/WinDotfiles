@@ -79,18 +79,21 @@ function rclonepush_anki {
 }
 
 function rclonepull_everything {
-
+    Write-Host "Pulling Anki data..."
     rclone copy -P --create-empty-src-dirs "$($drivePath)/Anki/" $ankiPath
-
+    Write-Host "Pulling Thunderbird data..."
     rclone copy -P --create-empty-src-dirs "$($drivePath)/Thunderbird/" $thunderbirdProfilesPath
-
+    Write-Host "Pulling Calibre data..."
     rclone copy -P --create-empty-src-dirs "$($drivePath)/Calibre Library" $calibreLibraryPath
 }
 
 function rclonepush_everything {
-    rclone sync -P --create-empty-src-dirs $thunderbirdProfilesPath "$($drivePath)/Thunderbird/"
-    rclone sync -P --create-empty-src-dirs $calibreLibraryPath "drive:Calibre/Calibre Library"
+    Write-Host "Backiping up Anki data..."
     rclone copy -P --create-empty-src-dirs $ankiPath "$($drivePath)/Anki/"
+    Write-Host "Backiping up Thunderbird data..."
+    rclone copy -P --create-empty-src-dirs $thunderbirdProfilesPath "$($drivePath)/Thunderbird/"
+    Write-Host "Backiping up Calibre data..."
+    rclone copy -P --create-empty-src-dirs $calibreLibraryPath "$($drivePath)/Calibre Library"
 }
 
 Export-ModuleMember -Function *
