@@ -160,6 +160,7 @@ function InstallSoftware($software) {
 function full_install {
     # List of software to install
     $softwareList = @(
+        "joplin"
         "sendtokindle" # Kindle
         "kindle" # Kindle
         "logseq"
