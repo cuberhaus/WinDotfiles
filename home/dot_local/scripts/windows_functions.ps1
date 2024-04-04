@@ -160,13 +160,8 @@ function InstallSoftware($software) {
 function full_install {
     # List of software to install
     $softwareList = @(
-        "joplin"
-        "sendtokindle" # Kindle
-        "kindle" # Kindle
-        "logseq"
         "auto-dark-mode", # Dark mode for windows
         "autohotkey", # Automation software
-        # "autohotkey.portable", # Automation software
         "calibre", # Books manager
         "ccleaner", # Cleanup
         "choco-cleaner", # Delete caches from chocolatey
@@ -180,7 +175,10 @@ function full_install {
         "hwinfo", # Hardware info, better than CPU-Z, RAM, CPU, GPU, SSD 
         "inkscape" # Needed for svg in latex compiling
         "intellijidea-ultimate", # Paid version with SQL IDE
+        "joplin" # Note taking (evernote alternative?)
+        "kindle" # Kindle
         "libreoffice-still", # Office suite
+        "logseq" # Note taking
         "miktex", # Latex (emacs needs it) (biber is better than bibtex)
         "mobaxterm", # PAR (makes wxparaver WORK)
         "obsidian", # Readme editor, Journal, task manager
@@ -189,6 +187,7 @@ function full_install {
         "pycharm", # Best Python IDE
         "rainmeter", # "Conky" Rss feed on windows with clickable links
         "rufus", # Burn iso's on usb
+        "sendtokindle" # Kindle
         "sublimemerge", # Editor merge
         "sublimetext3", # fast editor
         "sysinternals", # tools for windows
@@ -201,6 +200,8 @@ function full_install {
         "unifying", # Logitech unifying devices add and remove
         "vlc", # Media player
         "vscode" # GUI Editor
+        "xnview" # Image browser (can view images from drive much better than windows photos)
+        # "autohotkey.portable", # Automation software
         # "pycharm-community", # Free version of pycharm
         # "spotify", # Spotify there's some errors with the installation
         # "sumatrapdf" # PDF viewer
