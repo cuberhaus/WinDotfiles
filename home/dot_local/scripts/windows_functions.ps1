@@ -19,6 +19,7 @@ function base_install {
     Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
     $softwareList = @(
+        "anki"
         "7zip.install", # Archiver
         "curl", # Curl is a command line tool for transferring data with URLs
         "filezilla" # Manage files in FTP
