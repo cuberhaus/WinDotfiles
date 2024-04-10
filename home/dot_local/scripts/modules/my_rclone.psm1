@@ -88,12 +88,20 @@ function rclonepull_everything {
 }
 
 function rclonepush_everything {
-    Write-Host "Backiping up Anki data..."
-    rclone copy -P --create-empty-src-dirs $ankiPath "$($drivePath)/Anki/"
-    Write-Host "Backiping up Thunderbird data..."
-    rclone copy -P --create-empty-src-dirs $thunderbirdProfilesPath "$($drivePath)/Thunderbird/"
-    Write-Host "Backiping up Calibre data..."
-    rclone copy -P --create-empty-src-dirs $calibreLibraryPath "$($drivePath)/Calibre Library"
+    $title = "Confirmation"
+    $message = "Are you sure you want to proceed? This could delete all your books, email configuration, and Anki cards."
+    $choices = [System.Management.Automation.Host.ChoiceDescription[]]('&Yes', '&No')
+
+    $choice = $Host.UI.PromptForChoice($title, $message, $choices, 1) # Default choice is "No"
+
+    if ($choice -eq 0) { # 0 corresponds to the index of the '&Yes' choice
+        Write-Host "Backiping up Anki data..."
+        rclone sync -P --create-empty-src-dirs $ankiPath "$($drivePath)/Anki/"
+        Write-Host "Backiping up Thunderbird data..."
+        rclone sync -P --create-empty-src-dirs $thunderbirdProfilesPath "$($drivePath)/Thunderbird/"
+        Write-Host "Backiping up Calibre data..."
+        rclone copy -P --create-empty-src-dirs $calibreLibraryPath "$($drivePath)/Calibre Library"
+    }
 }
 
 Export-ModuleMember -Function *
