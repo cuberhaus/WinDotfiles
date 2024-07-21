@@ -30,6 +30,9 @@ function o {
 function cr {
     Set-Location $HOME/repos
 }
+function co {
+    Set-Location $HOME/repos/obsidian_vault
+}
 
 # Never get ls wrong again
 function la{
