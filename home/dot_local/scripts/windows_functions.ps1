@@ -161,7 +161,6 @@ function InstallSoftware($software) {
 function full_install {
     # List of software to install
     $softwareList = @(
-        "zettlr"
         "auto-dark-mode", # Dark mode for windows
         "autohotkey", # Automation software
         "calibre", # Books manager
@@ -169,20 +168,16 @@ function full_install {
         "choco-cleaner", # Delete caches from chocolatey
         "cmake", # Cmake (emacs)
         "discord", # Discord
-        "forticlientvpn",
+        "forticlientvpn", # VPN
         "fxsound", # Sound enhancer (framework)
         "gimp", # Photoshop
         "git-lfs", # Git large file storage
-        "greenshot", # Better screenshots
         "hwinfo", # Hardware info, better than CPU-Z, RAM, CPU, GPU, SSD 
         "inkscape" # Needed for svg in latex compiling
         "intellijidea-ultimate", # Paid version with SQL IDE
-        "joplin" # Note taking (evernote alternative?)
         "kindle" # Kindle
         "libreoffice-still", # Office suite
-        "logseq" # Note taking
         "miktex", # Latex (emacs needs it) (biber is better than bibtex)
-        "mobaxterm", # PAR (makes wxparaver WORK)
         "obsidian", # Readme editor, Journal, task manager
         "openjdk", # Open source java development kit
         "powertoys", # Powertoys!
@@ -203,10 +198,16 @@ function full_install {
         "vlc", # Media player
         "vscode" # GUI Editor
         "xnview" # Image browser (can view images from drive much better than windows photos)
+
         # "autohotkey.portable", # Automation software
+        # "greenshot", # Better screenshots
+        # "joplin" # Note taking (evernote alternative?)
+        # "logseq" # Note taking
+        # "mobaxterm", # PAR (makes wxparaver WORK)
         # "pycharm-community", # Free version of pycharm
         # "spotify", # Spotify there's some errors with the installation
         # "sumatrapdf" # PDF viewer
+        # "zettlr"
 
         "r" # Probabilitat i estadística
         "r.studio" # Probabilitat i estadística IDE
