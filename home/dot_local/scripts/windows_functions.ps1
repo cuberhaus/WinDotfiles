@@ -168,6 +168,7 @@ function full_install {
         "choco-cleaner", # Delete caches from chocolatey
         "cmake", # Cmake (emacs)
         "discord", # Discord
+        "explorer" # File searcher
         "forticlientvpn", # VPN
         "fxsound", # Sound enhancer (framework)
         "gimp", # Photoshop
@@ -180,6 +181,7 @@ function full_install {
         "miktex", # Latex (emacs needs it) (biber is better than bibtex)
         "obsidian", # Readme editor, Journal, task manager
         "openjdk", # Open source java development kit
+        "playnite" # Game manager
         "powertoys", # Powertoys!
         "pycharm", # Best Python IDE
         "rainmeter", # "Conky" Rss feed on windows with clickable links
