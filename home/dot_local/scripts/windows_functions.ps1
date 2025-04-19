@@ -169,7 +169,6 @@ function full_install {
         "cmake", # Cmake (emacs)
         "discord", # Discord
         "explorer" # File searcher
-        "forticlientvpn", # VPN
         "fxsound", # Sound enhancer (framework)
         "gimp", # Photoshop
         "git-lfs", # Git large file storage
@@ -202,6 +201,7 @@ function full_install {
         "xnview" # Image browser (can view images from drive much better than windows photos)
 
         # "autohotkey.portable", # Automation software
+        # "forticlientvpn", # VPN
         # "greenshot", # Better screenshots
         # "joplin" # Note taking (evernote alternative?)
         # "logseq" # Note taking
